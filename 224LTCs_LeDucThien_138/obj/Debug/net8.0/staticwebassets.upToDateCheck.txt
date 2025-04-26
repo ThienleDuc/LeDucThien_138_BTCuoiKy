@@ -4,6 +4,7 @@ wwwroot\assets\demo\chart-pie-demo.js
 wwwroot\assets\demo\datatables-demo.js
 wwwroot\assets\img\error-404-monochrome.svg
 wwwroot\assets\img\logo-truong-250.png
+wwwroot\css\site.css
 wwwroot\css\styles.css
 wwwroot\favicon.ico
 wwwroot\js\datatables-simple-demo.js

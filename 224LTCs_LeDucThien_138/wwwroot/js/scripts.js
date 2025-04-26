@@ -5,6 +5,11 @@
     */
 
 $(window).on('load', function () {
+    // Gọi hàm loadLayout khi trang đã tải xong
+    $(window).on('load', function () {
+        loadLayout(); // Bắt đầu tải các phần
+    });
+
     // Lắng nghe sự kiện click trên nút sidebarToggle
     $('#sidebarToggle').on('click', function (event) {
         event.preventDefault();
