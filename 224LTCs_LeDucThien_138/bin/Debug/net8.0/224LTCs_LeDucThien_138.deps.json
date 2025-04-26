@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "224LTCs_LeDucThien_138/1.0.0": {
+        "runtime": {
+          "224LTCs_LeDucThien_138.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "224LTCs_LeDucThien_138/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
