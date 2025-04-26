@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Admin - Đăng nhập";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+<div class="mb-3">
+    <a asp-area="" asp-action="Index" asp-controller="Home" class="btn btn-primary">
+        <i class="fa-solid fa-house"></i>
+    </a>
+</div>
+<div class="card shadow p-4" style="width: 100%; max-width: 400px;">
+    <form>
+        <div class="mb-3">
+            <label for="inputEmail" class="form-label">Tài khoản</label>
+            <div class="input-group border rounded">
+                <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                <input type="email" class="form-control border-0" id="inputEmail" placeholder="Nhập tài khoản">
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Mật khẩu</label>
+            <div class="input-group border rounded">
+                <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                <input type="password" id="password" class="form-control border-0" placeholder="Nhập mật khẩu">
+                <span class="input-group-text" style="cursor: pointer;" id="togglePassword">
+                    <i class="fa-solid fa-eye" id="eyeIcon"></i>
+                </span>
+            </div>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="rememberCheck">
+            <label class="form-check-label" for="rememberCheck">Nhớ mật khẩu</label>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Đăng nhập</button>
+    </form>
+</div>
+
+<script>
+    function togglePassword() {
+        const pwInput = document.getElementById("password");
+        const eyeIcon = document.getElementById("eyeIcon");
+
+        if (pwInput.type === "password") {
+            pwInput.type = "text";
+            eyeIcon.classList.remove("fa-eye");
+            eyeIcon.classList.add("fa-eye-slash");
+        } else {
+            pwInput.type = "password";
+            eyeIcon.classList.remove("fa-eye-slash");
+            eyeIcon.classList.add("fa-eye");
+        }
+    }
+
+    // Gắn sự kiện cho nút bấm
+    document.getElementById('togglePassword').addEventListener('click', togglePassword);
+</script>

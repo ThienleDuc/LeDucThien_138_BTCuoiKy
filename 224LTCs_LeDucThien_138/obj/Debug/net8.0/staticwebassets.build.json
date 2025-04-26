@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yF1QczihJLD9h5r1l1fK5wUtDj9gruJxgg4VRabnaeY=",
+  "Hash": "taQEnzBcvsr9qsg23bzV0G/fFmZpzXdjpfaYr3Nt49k=",
   "Source": "224LTCs_LeDucThien_138",
   "BasePath": "_content/224LTCs_LeDucThien_138",
   "Mode": "Default",
@@ -262,8 +262,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "dqle62frat",
-      "Integrity": "hSOKtaoLbtAX3QLxogVcaVg8Fv7Y6HTCcpJqVePv720=",
+      "Fingerprint": "vcap8rhnxq",
+      "Integrity": "ryS/nFzD40gnTGYGqAN/rD1xtCk+q/0PxnWtXpgaf5o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\scripts.js"
@@ -2370,51 +2370,6 @@
       ]
     },
     {
-      "Route": "js/scripts.dqle62frat.js",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\scripts.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "976"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"hSOKtaoLbtAX3QLxogVcaVg8Fv7Y6HTCcpJqVePv720=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 25 Mar 2023 22:09:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "dqle62frat"
-        },
-        {
-          "Name": "label",
-          "Value": "js/scripts.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-hSOKtaoLbtAX3QLxogVcaVg8Fv7Y6HTCcpJqVePv720="
-        }
-      ]
-    },
-    {
       "Route": "js/scripts.js",
       "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\scripts.js",
       "Selectors": [],
@@ -2425,7 +2380,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "976"
+          "Value": "825"
         },
         {
           "Name": "Content-Type",
@@ -2433,11 +2388,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hSOKtaoLbtAX3QLxogVcaVg8Fv7Y6HTCcpJqVePv720=\""
+          "Value": "\"ryS/nFzD40gnTGYGqAN/rD1xtCk+q/0PxnWtXpgaf5o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 25 Mar 2023 22:09:39 GMT"
+          "Value": "Sat, 26 Apr 2025 17:05:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2447,7 +2402,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hSOKtaoLbtAX3QLxogVcaVg8Fv7Y6HTCcpJqVePv720="
+          "Value": "sha256-ryS/nFzD40gnTGYGqAN/rD1xtCk+q/0PxnWtXpgaf5o="
+        }
+      ]
+    },
+    {
+      "Route": "js/scripts.vcap8rhnxq.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\scripts.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "825"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ryS/nFzD40gnTGYGqAN/rD1xtCk+q/0PxnWtXpgaf5o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 26 Apr 2025 17:05:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vcap8rhnxq"
+        },
+        {
+          "Name": "label",
+          "Value": "js/scripts.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ryS/nFzD40gnTGYGqAN/rD1xtCk+q/0PxnWtXpgaf5o="
         }
       ]
     },

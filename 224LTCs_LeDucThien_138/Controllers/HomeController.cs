@@ -18,7 +18,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult TimKiem()
         {
             return View();
         }

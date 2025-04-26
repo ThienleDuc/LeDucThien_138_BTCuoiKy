@@ -120,17 +120,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xnqwbb6zwd"},{"Name":"integrity","Value":"sha256-A5r4X24Y4UOeA7FBC6HS3voj76xkmczywh9qO\u002BLy5hQ="},{"Name":"label","Value":"_content/224LTCs_LeDucThien_138/js/datatables-simple-demo.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"312"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022A5r4X24Y4UOeA7FBC6HS3voj76xkmczywh9qO\u002BLy5hQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 25 Mar 2023 22:09:39 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/224LTCs_LeDucThien_138/js/scripts.dqle62frat.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\scripts.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"dqle62frat"},{"Name":"integrity","Value":"sha256-hSOKtaoLbtAX3QLxogVcaVg8Fv7Y6HTCcpJqVePv720="},{"Name":"label","Value":"_content/224LTCs_LeDucThien_138/js/scripts.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"976"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022hSOKtaoLbtAX3QLxogVcaVg8Fv7Y6HTCcpJqVePv720=\u0022"},{"Name":"Last-Modified","Value":"Sat, 25 Mar 2023 22:09:39 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/224LTCs_LeDucThien_138/js/scripts.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\scripts.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-hSOKtaoLbtAX3QLxogVcaVg8Fv7Y6HTCcpJqVePv720="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"976"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022hSOKtaoLbtAX3QLxogVcaVg8Fv7Y6HTCcpJqVePv720=\u0022"},{"Name":"Last-Modified","Value":"Sat, 25 Mar 2023 22:09:39 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ryS/nFzD40gnTGYGqAN/rD1xtCk\u002Bq/0PxnWtXpgaf5o="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"825"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ryS/nFzD40gnTGYGqAN/rD1xtCk\u002Bq/0PxnWtXpgaf5o=\u0022"},{"Name":"Last-Modified","Value":"Sat, 26 Apr 2025 17:05:11 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/224LTCs_LeDucThien_138/js/scripts.vcap8rhnxq.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\scripts.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vcap8rhnxq"},{"Name":"integrity","Value":"sha256-ryS/nFzD40gnTGYGqAN/rD1xtCk\u002Bq/0PxnWtXpgaf5o="},{"Name":"label","Value":"_content/224LTCs_LeDucThien_138/js/scripts.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"825"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ryS/nFzD40gnTGYGqAN/rD1xtCk\u002Bq/0PxnWtXpgaf5o=\u0022"},{"Name":"Last-Modified","Value":"Sat, 26 Apr 2025 17:05:11 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/224LTCs_LeDucThien_138/lib/bootstrap/dist/css/bootstrap-grid.agp80tu62r.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css'))</AssetFile>
