@@ -3,21 +3,23 @@
     * Copyright 2013-2023 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-sb-admin/blob/master/LICENSE)
     */
+// 
+// Scripts
+// 
 
-$(window).on('load', function () {
-    // Gọi hàm loadLayout khi trang đã tải xong
-    $(window).on('load', function () {
-        loadLayout(); // Bắt đầu tải các phần
-    });
+window.addEventListener('DOMContentLoaded', event => {
 
-    // Lắng nghe sự kiện click trên nút sidebarToggle
-    $('#sidebarToggle').on('click', function (event) {
-        event.preventDefault();
+    // Toggle the side navigation
+    const sidebarToggle = document.body.querySelector('#sidebarToggle');
+    if (sidebarToggle) {
         // Uncomment Below to persist sidebar toggle between refreshes
         // if (localStorage.getItem('sb|sidebar-toggle') === 'true') {
         //     document.body.classList.toggle('sb-sidenav-toggled');
         // }
-        $('body').toggleClass('sb-sidenav-toggled');
-        localStorage.setItem('sb|sidebar-toggle', $('body').hasClass('sb-sidenav-toggled'));
-    });
+        sidebarToggle.addEventListener('click', event => {
+            event.preventDefault();
+            document.body.classList.toggle('sb-sidenav-toggled');
+            localStorage.setItem('sb|sidebar-toggle', document.body.classList.contains('sb-sidenav-toggled'));
+        });
+    }
 });

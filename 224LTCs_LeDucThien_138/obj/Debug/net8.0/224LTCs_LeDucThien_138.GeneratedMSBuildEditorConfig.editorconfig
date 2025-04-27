@@ -72,6 +72,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWRlTmF2QmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/WORKSPACE/project_LTCs/224LTCs_LeDucThien_138/224LTCs_LeDucThien_138/Views/Shared/_TopNavBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ub3BOYXZCYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/WORKSPACE/project_LTCs/224LTCs_LeDucThien_138/224LTCs_LeDucThien_138/Views/SinhVien/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2luaFZpZW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -80,8 +84,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2luaFZpZW5cVGltS2llbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/WORKSPACE/project_LTCs/224LTCs_LeDucThien_138/224LTCs_LeDucThien_138/Views/TopNavBar/_TopNavBar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9wTmF2QmFyXF9Ub3BOYXZCYXIuY3NodG1s
+[D:/WORKSPACE/project_LTCs/224LTCs_LeDucThien_138/224LTCs_LeDucThien_138/Views/TopNavBar/AdminSetting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9wTmF2QmFyXEFkbWluU2V0dGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/WORKSPACE/project_LTCs/224LTCs_LeDucThien_138/224LTCs_LeDucThien_138/Views/TopNavBar/GiangVienSetting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9wTmF2QmFyXEdpYW5nVmllblNldHRpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/WORKSPACE/project_LTCs/224LTCs_LeDucThien_138/224LTCs_LeDucThien_138/Views/TopNavBar/SinhVienSetting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9wTmF2QmFyXFNpbmhWaWVuU2V0dGluZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/WORKSPACE/project_LTCs/224LTCs_LeDucThien_138/224LTCs_LeDucThien_138/Views/_ViewImports.cshtml]

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "neGIeOKkhkNK+KdJZba3jyUvFTDGL2QGZ0vcFij8iIs=",
+  "Hash": "8VDhfS3U/G/RaV63z9YpY7D5uJzpf+8MGtr6YkYAkY4=",
   "Source": "224LTCs_LeDucThien_138",
   "BasePath": "_content/224LTCs_LeDucThien_138",
   "Mode": "Default",
@@ -283,11 +283,53 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "x14dv1v1v3",
-      "Integrity": "xaja+HQaiLU8wldHxPQhDPl1RG5sjn1T/uNEiwbs+KA=",
+      "Fingerprint": "0tfi81vsm9",
+      "Integrity": "fEMvLYiR5bjRpI++v9aqW60Tv+KOWPpuksDIbhRQnTI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\scripts.js"
+    },
+    {
+      "Identity": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\togglePassword.js",
+      "SourceId": "224LTCs_LeDucThien_138",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\",
+      "BasePath": "_content/224LTCs_LeDucThien_138",
+      "RelativePath": "js/togglePassword#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6bzaajpc7v",
+      "Integrity": "vih3PODfk5/k29O7d4xicQXuCmwZepnF0sCsuWw3wFM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\togglePassword.js"
+    },
+    {
+      "Identity": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\uploadAvatar.js",
+      "SourceId": "224LTCs_LeDucThien_138",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\",
+      "BasePath": "_content/224LTCs_LeDucThien_138",
+      "RelativePath": "js/uploadAvatar#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1ei8csrsg2",
+      "Integrity": "GTuB+ov1kQFVUd+ZApF7nrgpCxrsTEg7gke1bQ0UQLo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\uploadAvatar.js"
     },
     {
       "Identity": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
@@ -2167,7 +2209,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 18:05:22 GMT"
+          "Value": "Sat, 26 Apr 2025 18:06:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2204,7 +2246,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 18:05:22 GMT"
+          "Value": "Sat, 26 Apr 2025 18:06:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2473,6 +2515,51 @@
       ]
     },
     {
+      "Route": "js/scripts.0tfi81vsm9.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\scripts.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "997"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fEMvLYiR5bjRpI++v9aqW60Tv+KOWPpuksDIbhRQnTI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 10:29:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0tfi81vsm9"
+        },
+        {
+          "Name": "label",
+          "Value": "js/scripts.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fEMvLYiR5bjRpI++v9aqW60Tv+KOWPpuksDIbhRQnTI="
+        }
+      ]
+    },
+    {
       "Route": "js/scripts.js",
       "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\scripts.js",
       "Selectors": [],
@@ -2483,7 +2570,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "989"
+          "Value": "997"
         },
         {
           "Name": "Content-Type",
@@ -2491,11 +2578,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xaja+HQaiLU8wldHxPQhDPl1RG5sjn1T/uNEiwbs+KA=\""
+          "Value": "\"fEMvLYiR5bjRpI++v9aqW60Tv+KOWPpuksDIbhRQnTI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 17:32:59 GMT"
+          "Value": "Sun, 27 Apr 2025 10:29:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2505,13 +2592,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-xaja+HQaiLU8wldHxPQhDPl1RG5sjn1T/uNEiwbs+KA="
+          "Value": "sha256-fEMvLYiR5bjRpI++v9aqW60Tv+KOWPpuksDIbhRQnTI="
         }
       ]
     },
     {
-      "Route": "js/scripts.x14dv1v1v3.js",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\scripts.js",
+      "Route": "js/togglePassword.6bzaajpc7v.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\togglePassword.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2520,7 +2607,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "989"
+          "Value": "616"
         },
         {
           "Name": "Content-Type",
@@ -2528,11 +2615,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xaja+HQaiLU8wldHxPQhDPl1RG5sjn1T/uNEiwbs+KA=\""
+          "Value": "\"vih3PODfk5/k29O7d4xicQXuCmwZepnF0sCsuWw3wFM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 17:32:59 GMT"
+          "Value": "Sun, 27 Apr 2025 10:15:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2542,15 +2629,134 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "x14dv1v1v3"
+          "Value": "6bzaajpc7v"
         },
         {
           "Name": "label",
-          "Value": "js/scripts.js"
+          "Value": "js/togglePassword.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-xaja+HQaiLU8wldHxPQhDPl1RG5sjn1T/uNEiwbs+KA="
+          "Value": "sha256-vih3PODfk5/k29O7d4xicQXuCmwZepnF0sCsuWw3wFM="
+        }
+      ]
+    },
+    {
+      "Route": "js/togglePassword.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\togglePassword.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "616"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vih3PODfk5/k29O7d4xicQXuCmwZepnF0sCsuWw3wFM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 10:15:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vih3PODfk5/k29O7d4xicQXuCmwZepnF0sCsuWw3wFM="
+        }
+      ]
+    },
+    {
+      "Route": "js/uploadAvatar.1ei8csrsg2.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\uploadAvatar.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2991"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GTuB+ov1kQFVUd+ZApF7nrgpCxrsTEg7gke1bQ0UQLo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 10:25:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1ei8csrsg2"
+        },
+        {
+          "Name": "label",
+          "Value": "js/uploadAvatar.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GTuB+ov1kQFVUd+ZApF7nrgpCxrsTEg7gke1bQ0UQLo="
+        }
+      ]
+    },
+    {
+      "Route": "js/uploadAvatar.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\uploadAvatar.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2991"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GTuB+ov1kQFVUd+ZApF7nrgpCxrsTEg7gke1bQ0UQLo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 10:25:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GTuB+ov1kQFVUd+ZApF7nrgpCxrsTEg7gke1bQ0UQLo="
         }
       ]
     },

@@ -1,4 +1,9 @@
-﻿<nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+﻿@{
+    string UserType = Context.Request.Cookies["UserType"];
+    string HoTen = Context.Request.Cookies["HoTen"];
+
+}
+<nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
     <div class="sb-sidenav-menu">
         <div class="nav">
             <div class="sb-sidenav-menu-heading">Quản lý lớp học phần</div>
@@ -64,6 +69,17 @@
         </div>
     </div>
     <div class="sb-sidenav-footer">
-        <div class="small">Đăng nhập từ:<span class="ps-1 fw-bold">ADMIN</span></div>
+        @if (!string.IsNullOrEmpty(UserType) && !string.IsNullOrEmpty(HoTen))
+        {
+            @if (UserType == "Admin")
+            {
+                <div class="small">Đăng nhập từ: <span class="ps-1 fw-bold">@UserType</span></div>
+                <div class="small fw-bold">@HoTen</div>
+            }
+        }
+        else
+        {
+            <div class="small fw-bold">Chưa đăng nhập</div>
+        }
     </div>
 </nav>

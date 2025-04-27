@@ -49,6 +49,14 @@
       "PackagePath": "staticwebassets\\js\\scripts.js"
     },
     {
+      "Id": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\togglePassword.js",
+      "PackagePath": "staticwebassets\\js\\togglePassword.js"
+    },
+    {
+      "Id": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\uploadAvatar.js",
+      "PackagePath": "staticwebassets\\js\\uploadAvatar.js"
+    },
+    {
       "Id": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },

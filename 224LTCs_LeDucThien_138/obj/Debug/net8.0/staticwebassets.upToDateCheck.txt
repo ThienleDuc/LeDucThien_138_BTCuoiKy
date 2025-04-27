@@ -9,6 +9,8 @@ wwwroot\css\styles.css
 wwwroot\favicon.ico
 wwwroot\js\datatables-simple-demo.js
 wwwroot\js\scripts.js
+wwwroot\js\togglePassword.js
+wwwroot\js\uploadAvatar.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap.min.css

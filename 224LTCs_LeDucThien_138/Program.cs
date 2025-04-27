@@ -1,7 +1,19 @@
+using _224LTCs_LeDucThien_138.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// New add services to the container.
+builder.Services.AddSingleton<ConnectionDatabase>();
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+builder.Services.AddScoped<CookieHelper>();
+builder.Services.AddScoped<SinhVienRepos>();
+builder.Services.AddScoped<GiangVienRepos>();
+builder.Services.AddScoped<PhongHocRepos>();
+builder.Services.AddScoped<TaiKhoanAdminRepos>();
 
 var app = builder.Build();
 
@@ -25,3 +37,5 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+

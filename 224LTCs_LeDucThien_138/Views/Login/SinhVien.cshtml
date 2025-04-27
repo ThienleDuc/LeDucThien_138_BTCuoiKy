@@ -35,24 +35,4 @@
     </form>
 </div>
 
-<script>
-    function togglePassword() {
-        const pwInput = document.getElementById("password");
-        const eyeIcon = document.getElementById("eyeIcon");
-
-        if (pwInput.type === "password") {
-            pwInput.type = "text";
-            eyeIcon.classList.remove("fa-eye");
-            eyeIcon.classList.add("fa-eye-slash");
-        } else {
-            pwInput.type = "password";
-            eyeIcon.classList.remove("fa-eye-slash");
-            eyeIcon.classList.add("fa-eye");
-        }
-    }
-
-    // Gắn sự kiện cho nút bấm
-    document.getElementById('togglePassword').addEventListener('click', togglePassword);
-</script>
-
 
