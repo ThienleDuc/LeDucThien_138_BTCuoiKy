@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8VDhfS3U/G/RaV63z9YpY7D5uJzpf+8MGtr6YkYAkY4=",
+  "Hash": "EMEoHUfWinzfOnIpPQ6cQ7FyttC06N9/xcWs3QPDS0g=",
   "Source": "224LTCs_LeDucThien_138",
   "BasePath": "_content/224LTCs_LeDucThien_138",
   "Mode": "Default",
@@ -290,12 +290,12 @@
       "OriginalItemSpec": "wwwroot\\js\\scripts.js"
     },
     {
-      "Identity": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\togglePassword.js",
+      "Identity": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\site.js",
       "SourceId": "224LTCs_LeDucThien_138",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\",
       "BasePath": "_content/224LTCs_LeDucThien_138",
-      "RelativePath": "js/togglePassword#[.{fingerprint}]?.js",
+      "RelativePath": "js/site#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -308,7 +308,7 @@
       "Integrity": "vih3PODfk5/k29O7d4xicQXuCmwZepnF0sCsuWw3wFM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\togglePassword.js"
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
       "Identity": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\uploadAvatar.js",
@@ -2597,8 +2597,8 @@
       ]
     },
     {
-      "Route": "js/togglePassword.6bzaajpc7v.js",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\togglePassword.js",
+      "Route": "js/site.6bzaajpc7v.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2619,7 +2619,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 10:15:16 GMT"
+          "Value": "Mon, 28 Apr 2025 18:18:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2633,7 +2633,7 @@
         },
         {
           "Name": "label",
-          "Value": "js/togglePassword.js"
+          "Value": "js/site.js"
         },
         {
           "Name": "integrity",
@@ -2642,8 +2642,8 @@
       ]
     },
     {
-      "Route": "js/togglePassword.js",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\togglePassword.js",
+      "Route": "js/site.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2664,7 +2664,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 10:15:16 GMT"
+          "Value": "Mon, 28 Apr 2025 18:18:27 GMT"
         },
         {
           "Name": "Cache-Control",

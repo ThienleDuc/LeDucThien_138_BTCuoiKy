@@ -3,172 +3,28 @@
   "WorkspaceRootPath": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\views\\login\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\login\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\models\\cookiehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\models\\cookiehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\views\\topnavbar\\adminsetting.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\topnavbar\\adminsetting.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\views\\login\\giangvien.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\login\\giangvien.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\views\\topnavbar\\giangviensetting.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\topnavbar\\giangviensetting.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\views\\shared\\_layoutlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\shared\\_layoutlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\views\\shared\\_topnavbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\shared\\_topnavbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\views\\shared\\_sidenavbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\shared\\_sidenavbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\views\\sinhvien\\timkiem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\sinhvien\\timkiem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\views\\lophocphan\\timkiem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\lophocphan\\timkiem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\models\\taikhoanadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\models\\taikhoanadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\views\\lophocphan\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\lophocphan\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\models\\connectiondatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\models\\connectiondatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\views\\sinhvien\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\sinhvien\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\views\\home\\timkiem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\home\\timkiem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\views\\giangvien\\timkiem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\giangvien\\timkiem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\views\\giangvien\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\giangvien\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\models\\giangvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\models\\giangvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\models\\phonghoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\models\\phonghoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\models\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\models\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\models\\lophocphan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\models\\lophocphan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\wwwroot\\js\\uploadavatar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\wwwroot\\js\\uploadavatar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\views\\topnavbar\\sinhviensetting.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\topnavbar\\sinhviensetting.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\wwwroot\\js\\scripts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\wwwroot\\js\\scripts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\controllers\\topnavbarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\controllers\\topnavbarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\wwwroot\\js\\togglepassword.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\wwwroot\\js\\togglepassword.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\views\\login\\sinhvien.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\login\\sinhvien.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\views\\topnavbar\\updatetaikhoanadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\topnavbar\\updatetaikhoanadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\controllers\\giangviencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\controllers\\giangviencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\controllers\\sinhviencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\controllers\\sinhviencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\controllers\\lophocphancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\controllers\\lophocphancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\wwwroot\\assets\\demo\\chart-area-demo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\wwwroot\\assets\\demo\\chart-area-demo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\wwwroot\\assets\\demo\\chart-bar-demo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\wwwroot\\assets\\demo\\chart-bar-demo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\wwwroot\\assets\\demo\\chart-pie-demo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\wwwroot\\assets\\demo\\chart-pie-demo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\224ltcs_leducthien_138\\224ltcs_leducthien_138\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -178,561 +34,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Admin.cshtml",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\Login\\Admin.cshtml",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\Login\\Admin.cshtml",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\Login\\Admin.cshtml",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\Login\\Admin.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-26T12:56:44.635Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "AdminSetting.cshtml",
               "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\TopNavBar\\AdminSetting.cshtml",
               "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\TopNavBar\\AdminSetting.cshtml",
               "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\TopNavBar\\AdminSetting.cshtml",
               "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\TopNavBar\\AdminSetting.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-27T08:36:18.315Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GiangVienSetting.cshtml",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\TopNavBar\\GiangVienSetting.cshtml",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\TopNavBar\\GiangVienSetting.cshtml",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\TopNavBar\\GiangVienSetting.cshtml",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\TopNavBar\\GiangVienSetting.cshtml",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAACAAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-27T10:28:14.465Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_LayoutLogin.cshtml",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\Shared\\_LayoutLogin.cshtml",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\Shared\\_LayoutLogin.cshtml",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\Shared\\_LayoutLogin.cshtml",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\Shared\\_LayoutLogin.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-26T12:46:23.63Z",
+              "WhenOpened": "2025-04-28T16:55:38.615Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "GiangVien.cshtml",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\Login\\GiangVien.cshtml",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\Login\\GiangVien.cshtml",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\Login\\GiangVien.cshtml",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\Login\\GiangVien.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Title": "UpdateTaiKhoanAdmin.cshtml",
+              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\TopNavBar\\UpdateTaiKhoanAdmin.cshtml",
+              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\TopNavBar\\UpdateTaiKhoanAdmin.cshtml",
+              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\TopNavBar\\UpdateTaiKhoanAdmin.cshtml",
+              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\TopNavBar\\UpdateTaiKhoanAdmin.cshtml",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAmwEgAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-26T14:05:23.558Z",
+              "WhenOpened": "2025-04-28T16:57:07.363Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Controllers\\LoginController.cs",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACcAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T12:45:18.67Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CookieHelper.cs",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Models\\CookieHelper.cs",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Models\\CookieHelper.cs",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Models\\CookieHelper.cs",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Models\\CookieHelper.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T12:42:29.595Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_TopNavBar.cshtml",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\Shared\\_TopNavBar.cshtml",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\Shared\\_TopNavBar.cshtml",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\Shared\\_TopNavBar.cshtml",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\Shared\\_TopNavBar.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACgAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-26T17:23:40.451Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "_SideNavBar.cshtml",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\Shared\\_SideNavBar.cshtml",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\Shared\\_SideNavBar.cshtml",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\Shared\\_SideNavBar.cshtml",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\Shared\\_SideNavBar.cshtml",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAAIAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-21T15:07:46.256Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TimKiem.cshtml",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\SinhVien\\TimKiem.cshtml",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\SinhVien\\TimKiem.cshtml",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\SinhVien\\TimKiem.cshtml",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\SinhVien\\TimKiem.cshtml",
-              "ViewState": "AgIAABwAAAAAAAAAAAAewDIAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-26T15:49:19.34Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-21T14:24:56.299Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Program.cs",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Program.cs",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Program.cs",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAewCAAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T14:51:52.312Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "TimKiem.cshtml",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\LopHocPhan\\TimKiem.cshtml",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\LopHocPhan\\TimKiem.cshtml",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\LopHocPhan\\TimKiem.cshtml",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\LopHocPhan\\TimKiem.cshtml",
-              "ViewState": "AgIAACgAAAAAAAAAAAAewDgAAABpAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-26T14:40:23.664Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "TaiKhoanAdmin.cs",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Models\\TaiKhoanAdmin.cs",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Models\\TaiKhoanAdmin.cs",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Models\\TaiKhoanAdmin.cs",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Models\\TaiKhoanAdmin.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAuwDsAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T11:14:26.888Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\LopHocPhan\\Index.cshtml",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\LopHocPhan\\Index.cshtml",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\LopHocPhan\\Index.cshtml",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\LopHocPhan\\Index.cshtml",
-              "ViewState": "AgIAACgAAAAAAAAAAAAewEEAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-26T14:39:33.249Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 5,
               "Title": "styles.css",
               "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\css\\styles.css",
               "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\wwwroot\\css\\styles.css",
               "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\css\\styles.css",
               "RelativeToolTip": "224LTCs_LeDucThien_138\\wwwroot\\css\\styles.css",
-              "ViewState": "AgIAAJ4AAAAAAAAAAAAQwK4AAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAPYdAAAAAAAAAAAswN0dAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-27T08:48:54.472Z",
+              "WhenOpened": "2025-04-28T17:18:04.352Z",
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ConnectionDatabase.cs",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Models\\ConnectionDatabase.cs",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Models\\ConnectionDatabase.cs",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Models\\ConnectionDatabase.cs",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Models\\ConnectionDatabase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "TaiKhoanAdmin.cs",
+              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Models\\TaiKhoanAdmin.cs",
+              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Models\\TaiKhoanAdmin.cs",
+              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Models\\TaiKhoanAdmin.cs",
+              "RelativeToolTip": "224LTCs_LeDucThien_138\\Models\\TaiKhoanAdmin.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T10:49:36.403Z",
+              "WhenOpened": "2025-04-28T16:55:33.466Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\SinhVien\\Index.cshtml",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\SinhVien\\Index.cshtml",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\SinhVien\\Index.cshtml",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\SinhVien\\Index.cshtml",
-              "ViewState": "AgIAACgAAAAAAAAAAAAewEEAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-26T15:49:00.506Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "TimKiem.cshtml",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\Home\\TimKiem.cshtml",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\Home\\TimKiem.cshtml",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\Home\\TimKiem.cshtml",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\Home\\TimKiem.cshtml",
-              "ViewState": "AgIAACgAAAAAAAAAAAAewEEAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-26T14:15:29.587Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAACgAAAAAAAAAAAAewEEAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-21T14:29:30.303Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "TimKiem.cshtml",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\GiangVien\\TimKiem.cshtml",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\GiangVien\\TimKiem.cshtml",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\GiangVien\\TimKiem.cshtml",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\GiangVien\\TimKiem.cshtml",
-              "ViewState": "AgIAACgAAAAAAAAAAAAewEEAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-26T15:46:48.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\GiangVien\\Index.cshtml",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\GiangVien\\Index.cshtml",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\GiangVien\\Index.cshtml",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\GiangVien\\Index.cshtml",
-              "ViewState": "AgIAACgAAAAAAAAAAAAewDgAAABpAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-26T15:46:25.728Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "GiangVien.cs",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Models\\GiangVien.cs",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Models\\GiangVien.cs",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Models\\GiangVien.cs",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Models\\GiangVien.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T10:35:42.005Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "PhongHoc.cs",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Models\\PhongHoc.cs",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Models\\PhongHoc.cs",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Models\\PhongHoc.cs",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Models\\PhongHoc.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T10:36:07.098Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "SinhVien.cs",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Models\\SinhVien.cs",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Models\\SinhVien.cs",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Models\\SinhVien.cs",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Models\\SinhVien.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAABAAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T10:37:22.132Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "LopHocPhan.cs",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Models\\LopHocPhan.cs",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Models\\LopHocPhan.cs",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Models\\LopHocPhan.cs",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Models\\LopHocPhan.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T10:37:05.02Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "SinhVienSetting.cshtml",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\TopNavBar\\SinhVienSetting.cshtml",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\TopNavBar\\SinhVienSetting.cshtml",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\TopNavBar\\SinhVienSetting.cshtml",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\TopNavBar\\SinhVienSetting.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-27T10:29:19.296Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "uploadAvatar.js",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\uploadAvatar.js",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\wwwroot\\js\\uploadAvatar.js",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\uploadAvatar.js",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\wwwroot\\js\\uploadAvatar.js",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAADIAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-27T10:24:47.856Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "togglePassword.js",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\togglePassword.js",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\wwwroot\\js\\togglePassword.js",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\togglePassword.js",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\wwwroot\\js\\togglePassword.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-27T09:57:36.028Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "scripts.js",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\scripts.js",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\wwwroot\\js\\scripts.js",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\scripts.js",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\wwwroot\\js\\scripts.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-26T09:52:31.897Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 2,
               "Title": "TopNavBarController.cs",
               "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Controllers\\TopNavBarController.cs",
               "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Controllers\\TopNavBarController.cs",
               "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Controllers\\TopNavBarController.cs",
               "RelativeToolTip": "224LTCs_LeDucThien_138\\Controllers\\TopNavBarController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADcAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T15:17:15.556Z",
+              "WhenOpened": "2025-04-28T16:55:31.99Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "SinhVien.cshtml",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\Login\\SinhVien.cshtml",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\Login\\SinhVien.cshtml",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\Login\\SinhVien.cshtml",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\Login\\SinhVien.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-26T14:05:45.405Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "site.css",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\wwwroot\\css\\site.css",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAAIkAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-26T18:00:35.183Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "GiangVienController.cs",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Controllers\\GiangVienController.cs",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Controllers\\GiangVienController.cs",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Controllers\\GiangVienController.cs",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Controllers\\GiangVienController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T14:33:05.342Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T14:59:33.769Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "SinhVienController.cs",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Controllers\\SinhVienController.cs",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Controllers\\SinhVienController.cs",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Controllers\\SinhVienController.cs",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Controllers\\SinhVienController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T14:33:29.381Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "LopHocPhanController.cs",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Controllers\\LopHocPhanController.cs",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Controllers\\LopHocPhanController.cs",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Controllers\\LopHocPhanController.cs",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Controllers\\LopHocPhanController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T14:32:37.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "_Layout.cshtml.css",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\Shared\\_Layout.cshtml.css",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\Shared\\_Layout.cshtml.css",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\Shared\\_Layout.cshtml.css",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\Shared\\_Layout.cshtml.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-21T14:42:45.982Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "chart-area-demo.js",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\demo\\chart-area-demo.js",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\wwwroot\\assets\\demo\\chart-area-demo.js",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\demo\\chart-area-demo.js",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\wwwroot\\assets\\demo\\chart-area-demo.js",
+              "DocumentIndex": 3,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "224LTCs_LeDucThien_138\\Controllers\\LoginController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-26T09:53:41.655Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T16:55:30.897Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "chart-bar-demo.js",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\demo\\chart-bar-demo.js",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\wwwroot\\assets\\demo\\chart-bar-demo.js",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\demo\\chart-bar-demo.js",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\wwwroot\\assets\\demo\\chart-bar-demo.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-26T09:53:31.92Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "chart-pie-demo.js",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\demo\\chart-pie-demo.js",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\wwwroot\\assets\\demo\\chart-pie-demo.js",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\demo\\chart-pie-demo.js",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\wwwroot\\assets\\demo\\chart-pie-demo.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-26T09:53:28.368Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\_ViewStart.cshtml",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-21T14:51:37.6Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

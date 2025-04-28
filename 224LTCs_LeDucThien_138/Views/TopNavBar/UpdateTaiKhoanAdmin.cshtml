@@ -1,0 +1,73 @@
+﻿@model _224LTCs_LeDucThien_138.Models.TaiKhoanAdmin;
+@{
+    ViewData["Title"] = "Admin - Cập nhật";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container px-4">
+    <h1 class="mt-4 text-uppercase">Thông tin chung</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item active">Cập nhật thông tin</li>
+    </ol>
+    <div class="row justify-content-center">
+        <!-- Card Thông Tin -->
+        <div class="col-md-6">
+            <div class="card shadow rounded-4">
+                <div class="card-body p-4">
+                    <form method="post" asp-area="" asp-action="UpdateTaiKhoanAdmin" asp-controller="TopNavBar">
+                        <input type="hidden" name="MaTaiKhoan" value="@Model.MaTaiKhoan" />
+
+                        <div class="mb-3">
+                            <label for="hoTen" class="form-label">Họ và Tên</label>
+                            <input type="text" class="form-control" id="hoTen" name="HoTen" value="@Model.HoTen"/>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Giới Tính</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="GioiTinh" id="nam" value="true" @(Model.GioiTinh ? "checked" : "")>
+                                <label class="form-check-label" for="nam">Nam</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="GioiTinh" id="nu" value="false" @(!Model.GioiTinh ? "checked" : "")>
+                                <label class="form-check-label" for="nu">Nữ</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="diaChi" class="form-label">Địa Chỉ</label>
+                            <textarea class="form-control" id="diaChi" name="DiaChi" rows="2">@Model.DiaChi</textarea>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="sdt" class="form-label">Số Điện Thoại</label>
+                                <input type="text" pattern="[0-9]*" class="form-control" id="sdt" name="Sdt" value="@Model.Sdt" />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="Email" value="@Model.Email" />
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="password" class="form-label">Mật khẩu</label>
+                                <div class="input-group border rounded">
+                                    <input type="password" id="password" name="MatKhau" class="form-control border-0" value="@Model.MatKhau" placeholder="Nhập mật khẩu" />
+                                    <span class="input-group-text" style="cursor: pointer;" id="togglePassword">
+                                        <i class="fa-solid fa-eye" id="eyeIcon"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">Cập Nhật Thông Tin</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

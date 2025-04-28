@@ -1,5 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
 using System.ComponentModel.DataAnnotations;
+using System.Data;
 
 namespace _224LTCs_LeDucThien_138.Models
 {
@@ -91,6 +92,61 @@ namespace _224LTCs_LeDucThien_138.Models
             }
 
             return list;
+        }
+
+        public TaiKhoanAdmin GetAdminById(string maTaiKhoan)
+        {
+            TaiKhoanAdmin admin = null;
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                string query = @"SELECT MaTaiKhoan, MatKhau, HoTen, GioiTinh, DiaChi, Sdt, Email, Anh 
+                         FROM TaiKhoanAdmin 
+                         WHERE MaTaiKhoan = @MaTaiKhoan;";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@MaTaiKhoan", maTaiKhoan);
+                conn.Open();
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        admin = new TaiKhoanAdmin
+                        {
+                            MaTaiKhoan = reader["MaTaiKhoan"].ToString(),
+                            MatKhau = reader["MatKhau"].ToString(),
+                            HoTen = reader["HoTen"].ToString(),
+                            GioiTinh = reader["GioiTinh"] != DBNull.Value && Convert.ToBoolean(reader["GioiTinh"]),
+                            DiaChi = reader["DiaChi"].ToString(),
+                            Sdt = reader["Sdt"].ToString(),
+                            Email = reader["Email"].ToString(),
+                            Anh = reader["Anh"].ToString()
+                        };
+                    }
+                }
+            }
+
+            return admin;
+        }
+
+        public bool UpdateTaiKhoanAdmin(TaiKhoanAdmin taiKhoanAdmin)
+        {
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                SqlCommand cmd = new SqlCommand("UpdateTaiKhoanAdmin", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@MaTaiKhoan", taiKhoanAdmin.MaTaiKhoan ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@MatKhau", taiKhoanAdmin.MatKhau ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@HoTen", taiKhoanAdmin.HoTen ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@GioiTinh", taiKhoanAdmin.GioiTinh ? 1: 0);
+                cmd.Parameters.AddWithValue("@DiaChi", taiKhoanAdmin.DiaChi ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@Sdt", taiKhoanAdmin.Sdt ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@Email", taiKhoanAdmin.Email ?? (object)DBNull.Value);
+
+                conn.Open();
+                int result = cmd.ExecuteNonQuery();
+                return result > 0;
+            }
         }
 
     }

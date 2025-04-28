@@ -42,6 +42,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
                 // Lưu UserType
                 _cookieHelper.SetCookie("UserType", "Admin");
                 _cookieHelper.SetCookie("HoTen", admin.HoTen);
+                _cookieHelper.SetCookie("MaTaiKhoan", admin.MaTaiKhoan);
 
                 return RedirectToAction("Index", "Home"); // Redirect đến trang chủ hoặc trang Admin
             }
@@ -69,6 +70,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             // Xoá cookie nếu có
             _cookieHelper.RemoveCookie("UserType");
             _cookieHelper.RemoveCookie("HoTen");
+            _cookieHelper.RemoveCookie("MaTaiKhoan");
 
             // Redirect về trang đăng nhập hoặc trang chủ
             return RedirectToAction("Index", "Home");

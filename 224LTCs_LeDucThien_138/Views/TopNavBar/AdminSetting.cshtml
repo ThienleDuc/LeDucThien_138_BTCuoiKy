@@ -1,10 +1,15 @@
-﻿@{
+﻿@model _224LTCs_LeDucThien_138.Models.TaiKhoanAdmin;
+@{
     ViewData["Title"] = "Admin - Setting";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="container py-4 px-4">
-    <div class="row justify-content-center">
+<div class="container px-4">
+    <h1 class="mt-4 text-uppercase">Thông tin chung</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item active">Thông tin tài khoản</li>
+    </ol>
+    <div class="row">
         <!-- Card Ảnh Đại Diện -->
         <div class="col-md-4 mb-4">
             <div class="card shadow rounded-4 text-center">
@@ -22,63 +27,63 @@
         </div>
 
         <!-- Card Thông Tin -->
-        <div class="col-md-8">
+        <div class="col-md-6">
             <div class="card shadow rounded-4">
                 <div class="card-body p-4">
-                    <form>
-                        <div class="row mb-3">
-                            <div class="col-md-6">
-                                <label for="maTaiKhoan" class="form-label">Mã Tài Khoản</label>
-                                <input type="text" class="form-control" id="maTaiKhoan" value="AD001" readonly>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="password" class="form-label">Mật khẩu</label>
-                                <div class="input-group border rounded">
-                                    <input type="password" id="password" class="form-control border-0" placeholder="Nhập mật khẩu">
-                                    <span class="input-group-text" style="cursor: pointer;" id="togglePassword">
-                                        <i class="fa-solid fa-eye" id="eyeIcon"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="hoTen" class="form-label">Họ và Tên</label>
-                            <input type="text" class="form-control" id="hoTen" value="Lê Đức Thiện">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Giới Tính</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gioiTinh" id="nam" checked>
-                                <label class="form-check-label" for="nam">Nam</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gioiTinh" id="nu">
-                                <label class="form-check-label" for="nu">Nữ</label>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="diaChi" class="form-label">Địa Chỉ</label>
-                            <textarea class="form-control" id="diaChi" rows="2">123 Đường ABC, Quận XYZ, TP. Đà Nẵng</textarea>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-md-6">
-                                <label for="sdt" class="form-label">Số Điện Thoại</label>
-                                <input type="text" class="form-control" id="sdt" value="0901234567">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" value="admin@example.com">
-                            </div>
-                        </div>
-                        <div class="d-grid">
-                            <button type="submit" class="btn btn-primary btn-lg">Cập Nhật Thông Tin</button>
-                        </div>
-                    </form>
+                    <div class="row mb-3 align-items-center">
+                        <label for="maTaiKhoan" class="col-3 form-label mb-0 text-muted fw-bold">Mã Tài Khoản</label>
+                        <p class="col form-control-plaintext mb-0 ">@Model.MaTaiKhoan</p> <!-- Chỉ hiển thị thông tin -->
+                    </div>
+                    <div class="row mb-3 align-items-center">
+                        <label for="password" class="col-3 form-label mb-0 text-muted fw-bold">Mật khẩu</label>
+                        <p class="col form-control-plaintext mb-0 ">******</p> <!-- Chỉ hiển thị mật khẩu dạng ẩn -->
+                    </div>
+                    <div class="row mb-3 align-items-center">
+                        <label for="hoTen" class="col-3 form-label mb-0 text-muted fw-bold text-black">Họ và Tên</label>
+                        <p class="col form-control-plaintext mb-0 ">@Model.HoTen</p> <!-- Chỉ hiển thị thông tin -->
+                    </div>
+                    <div class="row mb-3 align-items-center">
+                        <label class="col-3 form-label mb-0 text-muted fw-bold text-black">Giới Tính</label>
+                        <p class="col form-control-plaintext mb-0 ">@((Model.GioiTinh ? "Nam" : "Nữ"))</p> <!-- Hiển thị Giới tính -->
+                    </div>
+                    <div class="row mb-3 align-items-center">
+                        <label for="diaChi" class="col-3 form-label mb-0 text-muted fw-bold">Địa Chỉ</label>
+                        <p class="col form-control-plaintext mb-0 ">@Model.DiaChi</p> <!-- Chỉ hiển thị thông tin -->
+                    </div>
+                    <div class="row mb-3 align-items-center">
+                        <label for="sdt" class="col-3 form-label mb-0 text-muted fw-bold">Số Điện Thoại</label>
+                        <p class="col form-control-plaintext mb-0 ">@Model.Sdt</p> <!-- Chỉ hiển thị thông tin -->
+                    </div>
+                    <div class="row mb-3 align-items-center">
+                        <label for="email" class="col-3 form-label mb-0 text-muted fw-bold">Email</label>
+                        <p class="col form-control-plaintext mb-0 ">@Model.Email</p> <!-- Chỉ hiển thị thông tin -->
+                    </div>
+                    <div class="d-grid">
+                        <a asp-action="UpdateTaiKhoanAdmin" asp-controller="TopNavBar" asp-route-MaTaiKhoan="@Model.MaTaiKhoan" class="text-primary text-decoration-none">Thay đổi</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<script src="~/js/togglePassword.js"></script>
-<script src="~/js/uploadAvatar.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <text>
+                    document.getElementById('toastContent').innerText = '@TempData["SuccessMessage"]';
+                    var toast = new bootstrap.Toast(document.getElementById('toastMessage'));
+                    toast.show();
+        </text>
+    }
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <text>
+                    document.getElementById('toastContent').innerText = '@TempData["ErrorMessage"]';
+                    var toast = new bootstrap.Toast(document.getElementById('toastMessage'));
+                    toast.show();
+        </text>
+    }
+    });
+</script>
+}
