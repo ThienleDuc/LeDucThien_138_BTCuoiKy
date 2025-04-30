@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EMEoHUfWinzfOnIpPQ6cQ7FyttC06N9/xcWs3QPDS0g=",
+  "Hash": "uQ07lUX/v709m0tMUiiU6JNHYYOWRMYTKq/yeff0wk0=",
   "Source": "224LTCs_LeDucThien_138",
   "BasePath": "_content/224LTCs_LeDucThien_138",
   "Mode": "Default",
@@ -143,6 +143,111 @@
       "OriginalItemSpec": "wwwroot\\assets\\demo\\datatables-demo.js"
     },
     {
+      "Identity": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\401-error.png",
+      "SourceId": "224LTCs_LeDucThien_138",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\",
+      "BasePath": "_content/224LTCs_LeDucThien_138",
+      "RelativePath": "assets/img/401-error#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "q8qj44nupi",
+      "Integrity": "ZvBJAQ5hXzu5yN+3whtq3l5SVGJQ5BxqoeRjpDX0FMc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\401-error.png"
+    },
+    {
+      "Identity": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\anh-avatar-cute-49.jpg",
+      "SourceId": "224LTCs_LeDucThien_138",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\",
+      "BasePath": "_content/224LTCs_LeDucThien_138",
+      "RelativePath": "assets/img/anh-avatar-cute-49#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nuajc5qo7n",
+      "Integrity": "rx3nd25xbChSpkGZ1G2nRDAIS99njw9EN75TE0SYR/A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\anh-avatar-cute-49.jpg"
+    },
+    {
+      "Identity": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\anime-avatar-2.jpg",
+      "SourceId": "224LTCs_LeDucThien_138",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\",
+      "BasePath": "_content/224LTCs_LeDucThien_138",
+      "RelativePath": "assets/img/anime-avatar-2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4eqxpcqwwo",
+      "Integrity": "JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\anime-avatar-2.jpg"
+    },
+    {
+      "Identity": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\avatar-anime-1.jpg",
+      "SourceId": "224LTCs_LeDucThien_138",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\",
+      "BasePath": "_content/224LTCs_LeDucThien_138",
+      "RelativePath": "assets/img/avatar-anime-1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "56lf5zd8mq",
+      "Integrity": "7XnztGEnkNIPc/LhfLCxtvPe7xustMRPE8fS/FFXQ2g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\avatar-anime-1.jpg"
+    },
+    {
+      "Identity": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\avatar-default.svg",
+      "SourceId": "224LTCs_LeDucThien_138",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\",
+      "BasePath": "_content/224LTCs_LeDucThien_138",
+      "RelativePath": "assets/img/avatar-default#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tlbtg811m9",
+      "Integrity": "AWC7nvC3mGJaz2nP830RqS4P0jdyhoZezsKZf+raCN0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\avatar-default.svg"
+    },
+    {
       "Identity": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\error-404-monochrome.svg",
       "SourceId": "224LTCs_LeDucThien_138",
       "SourceType": "Discovered",
@@ -199,8 +304,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "q013n21cud",
-      "Integrity": "FgnfYO+8a+ue96DDE2vMzITYCiNbIe6OcmxxYaV2c/A=",
+      "Fingerprint": "utt6kry0pw",
+      "Integrity": "gtzt8fP3gPxyMIWccmTyewj06Q9Hnv4Ov/tj1MAPxIo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -304,19 +409,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "6bzaajpc7v",
-      "Integrity": "vih3PODfk5/k29O7d4xicQXuCmwZepnF0sCsuWw3wFM=",
+      "Fingerprint": "retfnbf2hr",
+      "Integrity": "Xcrm0tT4BcXa2dgfIENtddPoMoREwPkjl/gt36kXb9I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\uploadAvatar.js",
+      "Identity": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\splitPage.js",
       "SourceId": "224LTCs_LeDucThien_138",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\",
       "BasePath": "_content/224LTCs_LeDucThien_138",
-      "RelativePath": "js/uploadAvatar#[.{fingerprint}]?.js",
+      "RelativePath": "js/splitPage#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -325,11 +430,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "1ei8csrsg2",
-      "Integrity": "GTuB+ov1kQFVUd+ZApF7nrgpCxrsTEg7gke1bQ0UQLo=",
+      "Fingerprint": "pt0p35mqi8",
+      "Integrity": "kzjcgtlTRWjMT+siAUcNGzJP7fX1UJYqpSghf8lJmIA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\uploadAvatar.js"
+      "OriginalItemSpec": "wwwroot\\js\\splitPage.js"
     },
     {
       "Identity": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
@@ -2023,6 +2128,416 @@
       ]
     },
     {
+      "Route": "assets/img/401-error.png",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\401-error.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29330"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZvBJAQ5hXzu5yN+3whtq3l5SVGJQ5BxqoeRjpDX0FMc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 08:12:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZvBJAQ5hXzu5yN+3whtq3l5SVGJQ5BxqoeRjpDX0FMc="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/401-error.q8qj44nupi.png",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\401-error.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29330"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZvBJAQ5hXzu5yN+3whtq3l5SVGJQ5BxqoeRjpDX0FMc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 08:12:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q8qj44nupi"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/401-error.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZvBJAQ5hXzu5yN+3whtq3l5SVGJQ5BxqoeRjpDX0FMc="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/anh-avatar-cute-49.jpg",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\anh-avatar-cute-49.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "86517"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rx3nd25xbChSpkGZ1G2nRDAIS99njw9EN75TE0SYR/A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:02:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rx3nd25xbChSpkGZ1G2nRDAIS99njw9EN75TE0SYR/A="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/anh-avatar-cute-49.nuajc5qo7n.jpg",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\anh-avatar-cute-49.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "86517"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rx3nd25xbChSpkGZ1G2nRDAIS99njw9EN75TE0SYR/A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:02:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nuajc5qo7n"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/anh-avatar-cute-49.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rx3nd25xbChSpkGZ1G2nRDAIS99njw9EN75TE0SYR/A="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/anime-avatar-2.4eqxpcqwwo.jpg",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\anime-avatar-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "87840"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 09:09:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4eqxpcqwwo"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/anime-avatar-2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/anime-avatar-2.jpg",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\anime-avatar-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "87840"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 09:09:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/avatar-anime-1.56lf5zd8mq.jpg",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\avatar-anime-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "675819"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7XnztGEnkNIPc/LhfLCxtvPe7xustMRPE8fS/FFXQ2g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Dec 2024 08:41:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "56lf5zd8mq"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/avatar-anime-1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7XnztGEnkNIPc/LhfLCxtvPe7xustMRPE8fS/FFXQ2g="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/avatar-anime-1.jpg",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\avatar-anime-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "675819"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7XnztGEnkNIPc/LhfLCxtvPe7xustMRPE8fS/FFXQ2g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Dec 2024 08:41:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7XnztGEnkNIPc/LhfLCxtvPe7xustMRPE8fS/FFXQ2g="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/avatar-default.svg",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\avatar-default.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "509"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AWC7nvC3mGJaz2nP830RqS4P0jdyhoZezsKZf+raCN0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 08:54:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AWC7nvC3mGJaz2nP830RqS4P0jdyhoZezsKZf+raCN0="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/avatar-default.tlbtg811m9.svg",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\avatar-default.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "509"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AWC7nvC3mGJaz2nP830RqS4P0jdyhoZezsKZf+raCN0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 08:54:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tlbtg811m9"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/avatar-default.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AWC7nvC3mGJaz2nP830RqS4P0jdyhoZezsKZf+raCN0="
+        }
+      ]
+    },
+    {
       "Route": "assets/img/error-404-monochrome.svg",
       "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\error-404-monochrome.svg",
       "Selectors": [],
@@ -2197,7 +2712,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10242"
+          "Value": "10240"
         },
         {
           "Name": "Content-Type",
@@ -2205,11 +2720,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"FgnfYO+8a+ue96DDE2vMzITYCiNbIe6OcmxxYaV2c/A=\""
+          "Value": "\"gtzt8fP3gPxyMIWccmTyewj06Q9Hnv4Ov/tj1MAPxIo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 18:06:16 GMT"
+          "Value": "Tue, 29 Apr 2025 11:37:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2219,12 +2734,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-FgnfYO+8a+ue96DDE2vMzITYCiNbIe6OcmxxYaV2c/A="
+          "Value": "sha256-gtzt8fP3gPxyMIWccmTyewj06Q9Hnv4Ov/tj1MAPxIo="
         }
       ]
     },
     {
-      "Route": "css/site.q013n21cud.css",
+      "Route": "css/site.utt6kry0pw.css",
       "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2234,7 +2749,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10242"
+          "Value": "10240"
         },
         {
           "Name": "Content-Type",
@@ -2242,11 +2757,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"FgnfYO+8a+ue96DDE2vMzITYCiNbIe6OcmxxYaV2c/A=\""
+          "Value": "\"gtzt8fP3gPxyMIWccmTyewj06Q9Hnv4Ov/tj1MAPxIo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 18:06:16 GMT"
+          "Value": "Tue, 29 Apr 2025 11:37:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2256,7 +2771,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "q013n21cud"
+          "Value": "utt6kry0pw"
         },
         {
           "Name": "label",
@@ -2264,7 +2779,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-FgnfYO+8a+ue96DDE2vMzITYCiNbIe6OcmxxYaV2c/A="
+          "Value": "sha256-gtzt8fP3gPxyMIWccmTyewj06Q9Hnv4Ov/tj1MAPxIo="
         }
       ]
     },
@@ -2291,7 +2806,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 18:01:33 GMT"
+          "Value": "Tue, 29 Apr 2025 15:52:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2328,7 +2843,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 18:01:33 GMT"
+          "Value": "Tue, 29 Apr 2025 15:52:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2597,51 +3112,6 @@
       ]
     },
     {
-      "Route": "js/site.6bzaajpc7v.js",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "616"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vih3PODfk5/k29O7d4xicQXuCmwZepnF0sCsuWw3wFM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 18:18:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "6bzaajpc7v"
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-vih3PODfk5/k29O7d4xicQXuCmwZepnF0sCsuWw3wFM="
-        }
-      ]
-    },
-    {
       "Route": "js/site.js",
       "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\site.js",
       "Selectors": [],
@@ -2652,7 +3122,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "616"
+          "Value": "1416"
         },
         {
           "Name": "Content-Type",
@@ -2660,11 +3130,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vih3PODfk5/k29O7d4xicQXuCmwZepnF0sCsuWw3wFM=\""
+          "Value": "\"Xcrm0tT4BcXa2dgfIENtddPoMoREwPkjl/gt36kXb9I=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 18:18:27 GMT"
+          "Value": "Wed, 30 Apr 2025 14:24:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2674,13 +3144,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vih3PODfk5/k29O7d4xicQXuCmwZepnF0sCsuWw3wFM="
+          "Value": "sha256-Xcrm0tT4BcXa2dgfIENtddPoMoREwPkjl/gt36kXb9I="
         }
       ]
     },
     {
-      "Route": "js/uploadAvatar.1ei8csrsg2.js",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\uploadAvatar.js",
+      "Route": "js/site.retfnbf2hr.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2689,7 +3159,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2991"
+          "Value": "1416"
         },
         {
           "Name": "Content-Type",
@@ -2697,11 +3167,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"GTuB+ov1kQFVUd+ZApF7nrgpCxrsTEg7gke1bQ0UQLo=\""
+          "Value": "\"Xcrm0tT4BcXa2dgfIENtddPoMoREwPkjl/gt36kXb9I=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 10:25:01 GMT"
+          "Value": "Wed, 30 Apr 2025 14:24:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2711,21 +3181,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1ei8csrsg2"
+          "Value": "retfnbf2hr"
         },
         {
           "Name": "label",
-          "Value": "js/uploadAvatar.js"
+          "Value": "js/site.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-GTuB+ov1kQFVUd+ZApF7nrgpCxrsTEg7gke1bQ0UQLo="
+          "Value": "sha256-Xcrm0tT4BcXa2dgfIENtddPoMoREwPkjl/gt36kXb9I="
         }
       ]
     },
     {
-      "Route": "js/uploadAvatar.js",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\uploadAvatar.js",
+      "Route": "js/splitPage.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\splitPage.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2734,7 +3204,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2991"
+          "Value": "3842"
         },
         {
           "Name": "Content-Type",
@@ -2742,11 +3212,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"GTuB+ov1kQFVUd+ZApF7nrgpCxrsTEg7gke1bQ0UQLo=\""
+          "Value": "\"kzjcgtlTRWjMT+siAUcNGzJP7fX1UJYqpSghf8lJmIA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 10:25:01 GMT"
+          "Value": "Wed, 30 Apr 2025 17:35:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2756,7 +3226,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-GTuB+ov1kQFVUd+ZApF7nrgpCxrsTEg7gke1bQ0UQLo="
+          "Value": "sha256-kzjcgtlTRWjMT+siAUcNGzJP7fX1UJYqpSghf8lJmIA="
+        }
+      ]
+    },
+    {
+      "Route": "js/splitPage.pt0p35mqi8.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\splitPage.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3842"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kzjcgtlTRWjMT+siAUcNGzJP7fX1UJYqpSghf8lJmIA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 17:35:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pt0p35mqi8"
+        },
+        {
+          "Name": "label",
+          "Value": "js/splitPage.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kzjcgtlTRWjMT+siAUcNGzJP7fX1UJYqpSghf8lJmIA="
         }
       ]
     },

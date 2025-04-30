@@ -8,5 +8,10 @@ namespace _224LTCs_LeDucThien_138.Controllers
         {
             return View();
         }
+
+        public IActionResult Error401() { 
+        
+            return View();
+        }
     }
 }

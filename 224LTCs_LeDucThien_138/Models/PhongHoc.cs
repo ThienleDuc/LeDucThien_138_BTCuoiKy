@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.Data.SqlClient;
+using System.ComponentModel.DataAnnotations;
+using System.Data;
 
 namespace _224LTCs_LeDucThien_138.Models
 {
@@ -35,5 +37,139 @@ namespace _224LTCs_LeDucThien_138.Models
         {
             _connectionDatabase = connectionDatabase;
         }
+
+        public List<PhongHoc> GetAllPhong()
+        {
+            List<PhongHoc> list = new List<PhongHoc>();
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                string query = @"SELECT MaPhong, TenPhong, SucChua FROM Phong;";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                conn.Open();
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        list.Add(new PhongHoc
+                        {
+                            MaPhong = reader.GetInt32(reader.GetOrdinal("MaPhong")),
+                            TenPhong = reader.GetString(reader.GetOrdinal("TenPhong")),
+                            SucChua = reader.GetInt32(reader.GetOrdinal("SucChua"))
+                        });
+                    }
+                }
+            }
+
+            return list;
+        }
+
+        public PhongHoc GetPhongnById(string maPhong)
+        {
+            PhongHoc phong = null;
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                string query = @"SELECT MaPhong, TenPhong, SucChua 
+                        FROM Phong
+                        WHERE MaPhong = @MaPhong;";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@MaPhong", maPhong);
+                conn.Open();
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        phong = new PhongHoc
+                        {
+                            MaPhong = reader.GetInt32(reader.GetOrdinal("MaPhong")),
+                            TenPhong = reader.GetString(reader.GetOrdinal("TenPhong")),
+                            SucChua = reader.GetInt32(reader.GetOrdinal("SucChua"))
+                        };
+                    }
+                }
+            }
+
+            return phong;
+        }
+
+        public List<PhongHoc> TimKiemPhong(string keyword)
+        {
+            List<PhongHoc> danhSach = new List<PhongHoc>();
+
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                SqlCommand cmd = new SqlCommand("SearchPhong", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Keyword", keyword);
+                
+                conn.Open();
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        PhongHoc phong = new PhongHoc
+                        {
+                            MaPhong = Convert.ToInt32(reader["MaPhong"]),
+                            TenPhong = reader.GetString(reader.GetOrdinal("TenPhong")),
+                            SucChua = Convert.ToInt32(reader["SucChua"])
+                        };
+
+                        danhSach.Add(phong);
+                    }
+                }
+            }
+
+            return danhSach;
+        }
+
+        public bool AddPhong(PhongHoc phong)
+        {
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                SqlCommand cmd = new SqlCommand("AddPhong", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@TenPhong", phong.TenPhong ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@SucChua", phong.SucChua);
+
+                conn.Open();
+                int result = cmd.ExecuteNonQuery();
+                return result > 0;
+            }
+        }
+
+        public bool UpdatePhong(PhongHoc phong)
+        {
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                SqlCommand cmd = new SqlCommand("UpdatePhong", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@MaPhong", phong.MaPhong);
+                cmd.Parameters.AddWithValue("@TenPhong", phong.TenPhong ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@SucChua", phong.SucChua);
+
+                conn.Open();
+                int result = cmd.ExecuteNonQuery();
+                return result > 0;
+            }
+        }
+
+        public bool DeletePhong(int maPhong)
+        {
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                string query = "DELETE FROM Phong WHERE MaPhong = @MaPhong";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@MaPhong", maPhong);
+
+                conn.Open();
+                int result = cmd.ExecuteNonQuery();
+                return result > 0;
+            }
+        }
+
     }
 }

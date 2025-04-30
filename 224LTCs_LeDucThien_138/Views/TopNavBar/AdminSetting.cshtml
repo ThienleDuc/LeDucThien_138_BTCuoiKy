@@ -9,21 +9,59 @@
     <ol class="breadcrumb mb-4">
         <li class="breadcrumb-item active">Thông tin tài khoản</li>
     </ol>
-    <div class="row">
+    <div class="row mb-4">
         <!-- Card Ảnh Đại Diện -->
-        <div class="col-md-4 mb-4">
-            <div class="card shadow rounded-4 text-center">
+        <div class="col-md-3">
+            <div class="card shadow rounded-4 text-center mb-2">
                 <div class="card-body p-4">
-                    <!-- Ảnh đại diện hiển thị mặc định -->
-                    <img id="anhDaiDien" src="https://www.w3schools.com/w3images/avatar2.png" alt="Ảnh Đại Diện" class="rounded-circle mb-3" width="150" height="150">
+                    <form method="post" asp-action="UploadAvatar" asp-controller="TopNavBar" enctype="multipart/form-data">
+                        <!-- Ảnh đại diện hiển thị mặc định -->
+                        <img id="anhDaiDien"
+                             src="@Url.Content(string.IsNullOrEmpty(Model.Anh) ? "~/assets/img/avatar-default.svg" : "~/assets/img/" + Model.Anh)"
+                             alt="Ảnh Đại Diện" class="rounded-circle mb-3" width="120" height="120">
 
-                    <!-- Form chọn ảnh từ máy tính -->
-                    <div class="mb-3">
-                        <label for="uploadAnh" class="form-label">Chọn ảnh (.jpg hoặc .png)</label>
-                        <input type="file" class="form-control" id="uploadAnh" accept="image/*">
-                    </div>
+                        <!-- Input file ẩn -->
+                        <input type="file" id="uploadAnh" name="Anh" accept="image/*" hidden />
+
+                        <p class="text-muted small mb-2">
+                            Lưu ý: jpg/jpeg/png &lt;2MB
+                        </p>                        
+                        
+                        <div class="d-flex align-items-center justify-content-center">
+                            <!-- Nút chọn ảnh -->
+                            <div class="px-1 d-grid">
+                                <button type="button" class="btn btn-primary btn-sm fw-bold font-monospace" onclick="document.getElementById('uploadAnh').click();">
+                                    Chọn ảnh
+                                </button>
+                            </div>
+
+                            <!-- Nút tải ảnh lên (ẩn ban đầu) -->
+                            <div class="px-1 d-grid d-none" id="div-btnUploadAvatar">
+                                <button type="submit" id="btnUploadAvatar" class="btn btn-success btn-sm fw-bold font-monospace">
+                                    Đăng tải
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
+
+            <!-- Hiển thị thông báo từ TempData -->
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    @TempData["SuccessMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Đóng"></button>
+                </div>
+            }
+
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    @TempData["ErrorMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Đóng"></button>
+                </div>
+            }
         </div>
 
         <!-- Card Thông Tin -->
@@ -31,59 +69,36 @@
             <div class="card shadow rounded-4">
                 <div class="card-body p-4">
                     <div class="row mb-3 align-items-center">
-                        <label for="maTaiKhoan" class="col-3 form-label mb-0 text-muted fw-bold">Mã Tài Khoản</label>
-                        <p class="col form-control-plaintext mb-0 ">@Model.MaTaiKhoan</p> <!-- Chỉ hiển thị thông tin -->
-                    </div>
-                    <div class="row mb-3 align-items-center">
-                        <label for="password" class="col-3 form-label mb-0 text-muted fw-bold">Mật khẩu</label>
-                        <p class="col form-control-plaintext mb-0 ">******</p> <!-- Chỉ hiển thị mật khẩu dạng ẩn -->
-                    </div>
-                    <div class="row mb-3 align-items-center">
                         <label for="hoTen" class="col-3 form-label mb-0 text-muted fw-bold text-black">Họ và Tên</label>
-                        <p class="col form-control-plaintext mb-0 ">@Model.HoTen</p> <!-- Chỉ hiển thị thông tin -->
+                        <p class="col form-control-plaintext mb-0 font-monospace">@Model.HoTen</p> <!-- Chỉ hiển thị thông tin -->
                     </div>
                     <div class="row mb-3 align-items-center">
                         <label class="col-3 form-label mb-0 text-muted fw-bold text-black">Giới Tính</label>
-                        <p class="col form-control-plaintext mb-0 ">@((Model.GioiTinh ? "Nam" : "Nữ"))</p> <!-- Hiển thị Giới tính -->
+                        <p class="col form-control-plaintext mb-0 font-monospace">@((Model.GioiTinh ? "Nam" : "Nữ"))</p> <!-- Hiển thị Giới tính -->
+                    </div>
+                    <div class="row mb-3 align-items-center">
+                        <label class="col-3 form-label mb-0 text-muted fw-bold text-black">Ngày Sinh</label>
+                        <p class="col form-control-plaintext mb-0 font-monospace">@Model.NgaySinh?.ToString("dd/MM/yyyy")</p> <!-- Chỉ hiển thị thông tin -->
                     </div>
                     <div class="row mb-3 align-items-center">
                         <label for="diaChi" class="col-3 form-label mb-0 text-muted fw-bold">Địa Chỉ</label>
-                        <p class="col form-control-plaintext mb-0 ">@Model.DiaChi</p> <!-- Chỉ hiển thị thông tin -->
+                        <p class="col form-control-plaintext mb-0 font-monospace">@Model.DiaChi</p> <!-- Chỉ hiển thị thông tin -->
                     </div>
                     <div class="row mb-3 align-items-center">
                         <label for="sdt" class="col-3 form-label mb-0 text-muted fw-bold">Số Điện Thoại</label>
-                        <p class="col form-control-plaintext mb-0 ">@Model.Sdt</p> <!-- Chỉ hiển thị thông tin -->
+                        <p class="col form-control-plaintext mb-0 font-monospace">@Model.Sdt</p> <!-- Chỉ hiển thị thông tin -->
                     </div>
                     <div class="row mb-3 align-items-center">
                         <label for="email" class="col-3 form-label mb-0 text-muted fw-bold">Email</label>
-                        <p class="col form-control-plaintext mb-0 ">@Model.Email</p> <!-- Chỉ hiển thị thông tin -->
+                        <p class="col form-control-plaintext mb-0 font-monospace">@Model.Email</p> <!-- Chỉ hiển thị thông tin -->
                     </div>
                     <div class="d-grid">
-                        <a asp-action="UpdateTaiKhoanAdmin" asp-controller="TopNavBar" asp-route-MaTaiKhoan="@Model.MaTaiKhoan" class="text-primary text-decoration-none">Thay đổi</a>
+                        <a asp-action="UpdateTaiKhoanAdmin" asp-controller="TopNavBar" class="btn-link text-decoration-none">
+                            Thay đổi
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-    @if (TempData["SuccessMessage"] != null)
-    {
-        <text>
-                    document.getElementById('toastContent').innerText = '@TempData["SuccessMessage"]';
-                    var toast = new bootstrap.Toast(document.getElementById('toastMessage'));
-                    toast.show();
-        </text>
-    }
-    @if (TempData["ErrorMessage"] != null)
-    {
-        <text>
-                    document.getElementById('toastContent').innerText = '@TempData["ErrorMessage"]';
-                    var toast = new bootstrap.Toast(document.getElementById('toastMessage'));
-                    toast.show();
-        </text>
-    }
-    });
-</script>
-}

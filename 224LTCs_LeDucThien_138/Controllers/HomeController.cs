@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using _224LTCs_LeDucThien_138.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,27 +5,28 @@ namespace _224LTCs_LeDucThien_138.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ConnectionDatabase _connectionDatabase;
+        private readonly PhongHocRepos _phongHocRepos;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ConnectionDatabase connectionDatabase)
         {
-            _logger = logger;
+            _connectionDatabase = connectionDatabase;
+            _phongHocRepos = new PhongHocRepos(_connectionDatabase);
         }
 
         public IActionResult Index()
         {
-            return View();
+            var phong = _phongHocRepos.GetAllPhong();
+            if (phong == null) {
+                return RedirectToAction("Error401", "Error");
+            }
+            return View(phong);
         }
 
         public IActionResult TimKiem()
         {
             return View();
         }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+    
     }
 }

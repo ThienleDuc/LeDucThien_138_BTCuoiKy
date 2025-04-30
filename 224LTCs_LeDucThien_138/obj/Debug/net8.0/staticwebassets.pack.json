@@ -21,6 +21,26 @@
       "PackagePath": "staticwebassets\\assets\\demo\\datatables-demo.js"
     },
     {
+      "Id": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\401-error.png",
+      "PackagePath": "staticwebassets\\assets\\img\\401-error.png"
+    },
+    {
+      "Id": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\anh-avatar-cute-49.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\anh-avatar-cute-49.jpg"
+    },
+    {
+      "Id": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\anime-avatar-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\anime-avatar-2.jpg"
+    },
+    {
+      "Id": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\avatar-anime-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\avatar-anime-1.jpg"
+    },
+    {
+      "Id": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\avatar-default.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\avatar-default.svg"
+    },
+    {
       "Id": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\error-404-monochrome.svg",
       "PackagePath": "staticwebassets\\assets\\img\\error-404-monochrome.svg"
     },
@@ -53,8 +73,8 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\uploadAvatar.js",
-      "PackagePath": "staticwebassets\\js\\uploadAvatar.js"
+      "Id": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\splitPage.js",
+      "PackagePath": "staticwebassets\\js\\splitPage.js"
     },
     {
       "Id": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\lib\\bootstrap\\LICENSE",
