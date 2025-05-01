@@ -124,6 +124,37 @@ namespace _224LTCs_LeDucThien_138.Models
             return danhSach;
         }
 
+        public bool IsTenPhongExists(string tenPhong)
+        {
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                conn.Open();
+                string query = "SELECT COUNT(*) FROM Phong WHERE TenPhong = @TenPhong";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@TenPhong", tenPhong);
+                    int count = (int)cmd.ExecuteScalar();
+                    return count > 0;
+                }
+            }
+        }
+
+        public bool IsThisPhong(int maPhong, string tenPhong)
+        {
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                conn.Open();
+                string query = "SELECT COUNT(*) FROM Phong WHERE TenPhong = @TenPhong AND MaPhong = @MaPhong";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@MaPhong", maPhong);
+                    cmd.Parameters.AddWithValue("@TenPhong", tenPhong);
+                    int count = (int)cmd.ExecuteScalar();
+                    return count > 0;
+                }
+            }
+        }
+
         public bool AddPhong(PhongHoc phong)
         {
             using (SqlConnection conn = _connectionDatabase.GetConnection())

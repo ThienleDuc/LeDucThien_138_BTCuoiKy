@@ -1,70 +1,50 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.Data.SqlClient;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Data;
 
 namespace _224LTCs_LeDucThien_138.Models
 {
     public class SinhVien
     {
-        // MaSV là khóa chính (Primary Key)
         [Key]
-        [StringLength(14)] // Độ dài của MaSV là 14 ký tự
+        [StringLength(14)]
         public string MaSV { get; set; }
 
-        // MaLSH là một khóa ngoại, không cần ánh xạ đặc biệt nếu bạn đã có lớp LSH khác
-        public int MaLSH { get; set; }
+        public int? MaLSH { get; set; }  
 
-        // TenSV có độ dài tối đa là 50 ký tự
         [StringLength(50)]
         public string TenSV { get; set; }
 
-        // GioiTinh là kiểu BIT, có thể là true/false
         public bool GioiTinh { get; set; }
 
-        // NgaySinh là kiểu DATE
         [DataType(DataType.Date)]
-        public DateTime? NgaySinh { get; set; }
+        public DateTime NgaySinh { get; set; }
 
-        // Cccd có độ dài là 12 ký tự
         [StringLength(12)]
         public string Cccd { get; set; }
 
-        // DiaChi là kiểu NVARCHAR(MAX)
         public string DiaChi { get; set; }
 
-        // Sdt có độ dài là 10 ký tự
         [StringLength(10)]
         public string Sdt { get; set; }
 
-        // Email là kiểu VARCHAR(MAX), có thể có độ dài linh hoạt
-        [EmailAddress]
         public string Email { get; set; }
 
-        // MatKhau có độ dài tối đa là 10 ký tự
         [StringLength(10)]
         public string MatKhau { get; set; }
 
-        // Anh là kiểu VARCHAR(MAX), có thể chứa link ảnh hoặc dữ liệu ảnh
         public string Anh { get; set; }
 
-        // Constructor không tham số
-        public SinhVien() { }
+        // Thêm navigation property để lấy TenLSH từ LopSinhHoat
+        [ForeignKey("MaLSH")]
+        public LopSinhHoat LopSinhHoat { get; set; }
 
-        // Constructor có tham số để khởi tạo các thuộc tính
-        public SinhVien(string maSV, int maLSH, string tenSV, bool gioiTinh, DateTime? ngaySinh, string cccd,
-                        string diaChi, string sdt, string email, string matKhau, string anh)
-        {
-            MaSV = maSV;
-            MaLSH = maLSH;
-            TenSV = tenSV;
-            GioiTinh = gioiTinh;
-            NgaySinh = ngaySinh;
-            Cccd = cccd;
-            DiaChi = diaChi;
-            Sdt = sdt;
-            Email = email;
-            MatKhau = matKhau;
-            Anh = anh;
-        }
+        // Không ánh xạ sang DB, chỉ dùng để hiển thị TenLSH
+        [NotMapped]
+        public string TenLSH => LopSinhHoat?.TenLSH;
     }
+
 
     public class SinhVienRepos
     {
@@ -74,5 +54,117 @@ namespace _224LTCs_LeDucThien_138.Models
         {
             _connectionDatabase = connectionDatabase;
         }
+
+        public List<SinhVien> GetAllSinhVien()
+        {
+            List<SinhVien> list = new List<SinhVien>();
+
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                string query = @"SELECT MaSV, MaLSH, TenSV, GioiTinh, NgaySinh, Cccd, DiaChi, Sdt, Email, MatKhau, Anh FROM SinhVien;";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                conn.Open();
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        list.Add(new SinhVien
+                        {
+                            MaSV = reader.GetString(reader.GetOrdinal("MaSV")),
+                            MaLSH = Convert.ToInt32(reader["MaLSH"]),
+                            TenSV = reader.GetString(reader.GetOrdinal("TenSV")),
+                            GioiTinh = Convert.ToBoolean(reader["GioiTinh"]),
+                            NgaySinh = Convert.ToDateTime(reader["NgaySinh"]),
+                            Cccd = reader.GetString(reader.GetOrdinal("Cccd")),
+                            DiaChi = reader.GetString(reader.GetOrdinal("DiaChi")),
+                            Sdt = reader.GetString(reader.GetOrdinal("Sdt")),
+                            Email = reader.GetString(reader.GetOrdinal("Email")),
+                            MatKhau = reader.GetString(reader.GetOrdinal("MatKhau")),
+                            Anh = reader.GetString(reader.GetOrdinal("Anh"))
+                        });
+                    }
+                }
+            }
+
+            return list;
+        }
+
+        public SinhVien GetSinhVienById(string maSV)
+        {
+            SinhVien sv = null;
+
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                string query = @"SELECT MaSV, MaLSH, TenSV, GioiTinh, NgaySinh, Cccd, DiaChi, Sdt, Email, MatKhau, Anh
+                         FROM SinhVien
+                         WHERE MaSV = @MaSV";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@MaSV", maSV);
+
+                conn.Open();
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        sv = new SinhVien
+                        {
+                            MaSV = reader.GetString(reader.GetOrdinal("MaSV")),
+                            MaLSH = Convert.ToInt32(reader["MaLSH"]),
+                            TenSV = reader.GetString(reader.GetOrdinal("TenSV")),
+                            GioiTinh = Convert.ToBoolean(reader["GioiTinh"]),
+                            NgaySinh = Convert.ToDateTime(reader["NgaySinh"]),
+                            Cccd = reader.GetString(reader.GetOrdinal("Cccd")),
+                            DiaChi = reader.GetString(reader.GetOrdinal("DiaChi")),
+                            Sdt = reader.GetString(reader.GetOrdinal("Sdt")),
+                            Email = reader.GetString(reader.GetOrdinal("Email")),
+                            MatKhau = reader.GetString(reader.GetOrdinal("MatKhau")),
+                            Anh = reader.GetString(reader.GetOrdinal("Anh"))
+                        };
+                    }
+                }
+            }
+
+            return sv;
+        }
+
+        public List<SinhVien> TimKiemSinhVien(string keyword)
+        {
+            List<SinhVien> danhSach = new List<SinhVien>();
+
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                SqlCommand cmd = new SqlCommand("SearchSinhVien", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Keyword", keyword);
+
+                conn.Open();
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        danhSach.Add(new SinhVien
+                        {
+                            MaSV = reader.GetString(reader.GetOrdinal("MaSV")),
+                            MaLSH = Convert.ToInt32(reader["MaLSH"]),
+                            TenSV = reader.GetString(reader.GetOrdinal("TenSV")),
+                            GioiTinh = Convert.ToBoolean(reader["GioiTinh"]),
+                            NgaySinh = Convert.ToDateTime(reader["NgaySinh"]),
+                            Cccd = reader.GetString(reader.GetOrdinal("Cccd")),
+                            DiaChi = reader.GetString(reader.GetOrdinal("DiaChi")),
+                            Sdt = reader.GetString(reader.GetOrdinal("Sdt")),
+                            Email = reader.GetString(reader.GetOrdinal("Email")),
+                            MatKhau = reader.GetString(reader.GetOrdinal("MatKhau")),
+                            Anh = reader.GetString(reader.GetOrdinal("Anh"))
+                        });
+                    }
+                }
+            }
+
+            return danhSach;
+        }
+
     }
 }

@@ -29,7 +29,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
         public IActionResult Admin(string username, string password, bool rememberMe)
         {
             // Kiểm tra đăng nhập
-            var admin = _taiKhoanAdminRepos.GetAllAdmin().FirstOrDefault(a => a.MaTaiKhoan == username && a.MatKhau == password);
+            var admin = _taiKhoanAdminRepos.GetTaiKhoanAdmin(username, password);
 
             if (admin != null)
             {

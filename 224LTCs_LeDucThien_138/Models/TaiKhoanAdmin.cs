@@ -125,6 +125,42 @@ namespace _224LTCs_LeDucThien_138.Models
             return admin;
         }
 
+        public TaiKhoanAdmin GetTaiKhoanAdmin(string maTaiKhoan, string matKhau)
+        {
+            TaiKhoanAdmin admin = null;
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                string query = @"SELECT MaTaiKhoan, MatKhau, HoTen, GioiTinh, NgaySinh, DiaChi, Sdt, Email, Anh 
+                         FROM TaiKhoanAdmin 
+                         WHERE MaTaiKhoan = @MaTaiKhoan AND MatKhau = @MatKhau;";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@MaTaiKhoan", maTaiKhoan);
+                cmd.Parameters.AddWithValue("@MatKhau", matKhau);
+                conn.Open();
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        admin = new TaiKhoanAdmin
+                        {
+                            MaTaiKhoan = reader.GetString(reader.GetOrdinal("MaTaiKhoan")),
+                            MatKhau = reader.GetString(reader.GetOrdinal("MatKhau")),
+                            HoTen = reader.GetString(reader.GetOrdinal("HoTen")),
+                            GioiTinh = reader["GioiTinh"] != DBNull.Value && Convert.ToBoolean(reader["GioiTinh"]),
+                            NgaySinh = reader["NgaySinh"] != DBNull.Value ? (DateTime?)reader.GetDateTime("NgaySinh") : DateTime.Now,
+                            DiaChi = reader.GetString(reader.GetOrdinal("DiaChi")),
+                            Sdt = reader.GetString(reader.GetOrdinal("Sdt")),
+                            Email = reader.GetString(reader.GetOrdinal("Email")),
+                            Anh = reader.GetString(reader.GetOrdinal("Anh"))
+                        };
+                    }
+                }
+            }
+
+            return admin;
+        }
+
         public bool UpdateTaiKhoanAdmin(TaiKhoanAdmin taiKhoanAdmin)
         {
             using (SqlConnection conn = _connectionDatabase.GetConnection())

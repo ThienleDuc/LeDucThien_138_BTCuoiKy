@@ -1,0 +1,30 @@
+﻿<!-- Modal thêm mới phòng -->
+<div class="modal fade" id="addPhongModal" tabindex="-1" aria-labelledby="addPhongModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <form id="addPhongForm" method="post" asp-action="ThemPhong" asp-controller="Home">
+            <!-- Sửa action phù hợp với route của bạn -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addPhongModalLabel">Thêm Mới Phòng</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-8">
+                            <label for="AddTenPhong" class="form-label">Tên Phòng</label>
+                            <input type="text" class="form-control" id="AddTenPhong" name="TenPhong" placeholder="Tên không được trùng" required>
+                        </div>
+                        <div class="col-4">
+                            <label for="AddSucChua" class="form-label">Sức Chứa</label>
+                            <input type="number" class="form-control" id="AddSucChua" name="SucChua" min="1" placeholder="Số lượng" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    <button type="submit" class="btn btn-primary">Lưu</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

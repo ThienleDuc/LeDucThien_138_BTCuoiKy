@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("224LTCs_LeDucThien_138")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6569ed6b2023d29e66948a309624dfb28df08ca4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d528383bdf5c687aefefafa9921fd22625f5f6c3")]
 [assembly: System.Reflection.AssemblyProductAttribute("224LTCs_LeDucThien_138")]
 [assembly: System.Reflection.AssemblyTitleAttribute("224LTCs_LeDucThien_138")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

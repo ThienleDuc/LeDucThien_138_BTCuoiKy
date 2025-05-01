@@ -45,21 +45,52 @@
                 </div>
                 <div class="col-6">
                     <div class="d-flex align-items-center justify-content-end">
-                        <form class="flex-grow-1">
+                        <form class="flex-grow-1" method="get" asp-action="TimKiem" asp-controller="Home" onsubmit="return validateSearch()">
                             <div class="d-flex justify-content-end">
                                 <div class="d-md-inline-block form-inline flex-grow-1">
                                     <div class="input-group">
-                                        <input class="form-control" type="text" placeholder="Tìm kiếm..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-                                        <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                                        <input id="tuKhoaInput" class="form-control" type="text" placeholder="Tìm kiếm..." aria-label="Tìm kiếm..." aria-describedby="btnNavbarSearch" name="TuKhoa" />
+                                        <button class="btn btn-primary" id="btnNavbarSearch" type="submit"><i class="fas fa-search"></i></button>
                                     </div>
                                 </div>
                             </div>
                         </form>
-                        <a href="#" class="ms-2 btn bg-success text-light fw-bold font-monospace"><i class="fa-solid fa-plus"></i> Thêm Mới</a>
+
+                        <script>
+                            function validateSearch() {
+                                const input = document.getElementById('tuKhoaInput').value.trim();
+                                if (input === '') {
+                                    // Nếu rỗng, không cho submit
+                                    return false;
+                                }
+                                // Cho phép submit nếu có giá trị
+                                return true;
+                            }
+                        </script>
+
+                        <a href="#" class="ms-2 btn bg-success text-light fw-bold font-monospace" 
+                            data-bs-toggle="modal" data-bs-target="#addPhongModal">
+                            <i class="fa-solid fa-plus"></i> Thêm Mới
+                        </a>
                     </div>
                 </div>
             </div>
+            <!-- Hiển thị thông báo từ TempData -->
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success alert-dismissible fade show mb-3" role="alert">
+                    @TempData["SuccessMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Đóng"></button>
+                </div>
+            }
 
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger alert-dismissible fade show mb-3" role="alert">
+                    @TempData["ErrorMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Đóng"></button>
+                </div>
+            }
             <table class="table table-bordered table-hover">
                 <thead>
                     <tr>
@@ -83,7 +114,9 @@
                                     <a href="#" class="text-decoration-none text-black"><i class="fa-regular fa-eye"></i></a>
                                 </td>
                                 <td class="text-center">
-                                    <a href="#" class="text-decoration-none text-warning"><i class="fa-duotone fa-solid fa-pen-to-square"></i></a>
+                                    <a href="#" class="text-decoration-none text-warning">
+                                        <i class="fa-duotone fa-solid fa-pen-to-square"></i>
+                                    </a>
                                 </td>
                                 <td class="text-center">
                                     <a href="#" class="text-decoration-none text-danger"
@@ -106,10 +139,17 @@
                                     <a href="#" class="text-decoration-none text-black"><i class="fa-regular fa-eye"></i></a>
                                 </td>
                                 <td class="text-center">
-                                    <a href="#" class="text-decoration-none text-warning"><i class="fa-duotone fa-solid fa-pen-to-square"></i></a>
+                                    <a href="#" class="text-decoration-none text-warning" 
+                                        data-bs-toggle="modal" data-bs-target="#updatePhongModal" 
+                                        data-maphong="@Model[i].MaPhong"
+                                        data-tenphong="@Model[i].TenPhong"
+                                        data-soluong="@Model[i].SucChua">
+                                        <i class="fa-duotone fa-solid fa-pen-to-square"></i>
+                                    </a>
                                 </td>
                                 <td class="text-center">
-                                    <a href="#" class="text-decoration-none text-danger"
+                                    <a class="text-decoration-none text-danger"
+                                       asp-action="XoaPhong" asp-controller="Home" asp-route-maPhong="@Model[i].MaPhong"
                                        onclick="return confirm('Bạn có chắc muốn xóa phòng học này không?');">
                                         <i class="fa-regular fa-trash-can"></i>
                                     </a>
@@ -133,5 +173,7 @@
         </div>
     </div>
 </div>
+<partial name="~/Views/Home/AddPhong.cshtml"></partial>
+<partial name="~/Views/Home/UpdatePhong.cshtml"></partial>
 
 <script src="~/js/splitPage.js"></script>
