@@ -17,8 +17,17 @@
             row.classList.toggle("d-none", index < start || index >= end);
         });
 
-        startRow.textContent = Math.min(start + 1, totalRows);
-        endRow.textContent = Math.min(end, totalRows);
+        if (totalRows === 0) {
+            startRow.textContent = 0;
+            endRow.textContent = 0;
+        } else if (totalRows <= rowsPerPageSelect.value) {
+            startRow.textContent = start + 1;
+            endRow.textContent = totalRows
+        } else
+        {
+            startRow.textContent = start + 1;
+            endRow.textContent = end;
+        }
     }
 
     function createPageButton(page, label, isActive = false, isDisabled = false) {

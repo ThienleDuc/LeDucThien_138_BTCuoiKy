@@ -49,7 +49,7 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <div class="d-flex align-items-center justify-content-end">
+                    <div class="d-flex gap-2 align-items-center justify-content-end">
                         <form class="flex-grow-1" method="get" asp-action="TimKiem" asp-controller="Home" onsubmit="return validateSearch()">
                             <div class="d-flex justify-content-end">
                                 <div class="d-md-inline-block form-inline flex-grow-1">
@@ -73,7 +73,7 @@
                             }
                         </script>
 
-                        <a href="#" class="ms-2 btn bg-success text-light fw-bold font-monospace"
+                        <a href="#" class="btn bg-success text-light fw-bold font-monospace"
                         data-bs-toggle="modal" data-bs-target="#addPhongModal">
                             <i class="fa-solid fa-plus"></i> Thêm Mới
                         </a>
@@ -115,7 +115,7 @@
                     {
                         @foreach (var p in Model)
                         {
-                            <tr>
+                            <tr class="data-row">
                                 <!-- Mặc định 10 dòng -->
                                 <td>@p.MaPhong</td>
                                 <td>@p.TenPhong</td>
@@ -171,25 +171,16 @@
                 </tbody>
             </table>
 
-            @if (Model.Count >= 5)
-            {
-                <div class="d-flex align-items-center justify-content-between">
-                    <div>
-                        Hiển thị <span id="startRow">1</span> đến <span id="endRow">10</span> trong số <span id="totalRows">@Model.Count</span> mục
-                    </div>
-
-                    <nav>
-                        <ul class="pagination m-0" id="pagination">
-                        </ul>
-                    </nav>
-                </div>
-            } else
-            {
+            <div class="d-flex align-items-center justify-content-between">
                 <div>
-                    Hiển thị <span>1</span> đến <span>@Model.Count</span> trong số <span id="totalRows">@Model.Count</span> mục
+                    Hiển thị <span id="startRow">1</span> đến <span id="endRow">10</span> trong số <span id="totalRows">@Model.Count</span> mục
                 </div>
-            }
 
+                <nav>
+                    <ul class="pagination m-0" id="pagination">
+                    </ul>
+                </nav>
+            </div>
         </div>
     </div>
 </div>

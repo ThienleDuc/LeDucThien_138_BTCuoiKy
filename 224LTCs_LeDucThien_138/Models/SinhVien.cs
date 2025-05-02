@@ -7,6 +7,10 @@ namespace _224LTCs_LeDucThien_138.Models
 {
     public class SinhVien
     {
+        public SinhVien()
+        {
+        }
+
         [Key]
         [StringLength(14)]
         public string MaSV { get; set; }
@@ -19,7 +23,7 @@ namespace _224LTCs_LeDucThien_138.Models
         public bool GioiTinh { get; set; }
 
         [DataType(DataType.Date)]
-        public DateTime NgaySinh { get; set; }
+        public DateTime? NgaySinh { get; set; }
 
         [StringLength(12)]
         public string Cccd { get; set; }
@@ -43,6 +47,24 @@ namespace _224LTCs_LeDucThien_138.Models
         // Không ánh xạ sang DB, chỉ dùng để hiển thị TenLSH
         [NotMapped]
         public string TenLSH => LopSinhHoat?.TenLSH;
+
+        public SinhVien(string maSV, int? maLSH, string tenSV, bool gioiTinh, DateTime? ngaySinh, 
+            string cccd, string diaChi, string sdt, string email, string matKhau, string anh, 
+            LopSinhHoat lopSinhHoat)
+        {
+            MaSV = maSV;
+            MaLSH = maLSH;
+            TenSV = tenSV;
+            GioiTinh = gioiTinh;
+            NgaySinh = ngaySinh;
+            Cccd = cccd;
+            DiaChi = diaChi;
+            Sdt = sdt;
+            Email = email;
+            MatKhau = matKhau;
+            Anh = anh;
+            LopSinhHoat = lopSinhHoat;
+        }
     }
 
 
@@ -61,7 +83,11 @@ namespace _224LTCs_LeDucThien_138.Models
 
             using (SqlConnection conn = _connectionDatabase.GetConnection())
             {
-                string query = @"SELECT MaSV, MaLSH, TenSV, GioiTinh, NgaySinh, Cccd, DiaChi, Sdt, Email, MatKhau, Anh FROM SinhVien;";
+                string query = @" SELECT sv.MaSV, sv.MaLSH, sv.TenSV, sv.GioiTinh, sv.NgaySinh, sv.Cccd, sv.DiaChi,
+                            sv.Sdt, sv.Email, sv.MatKhau, sv.Anh,
+                            lsh.TenLSH
+                            FROM SinhVien sv
+                            LEFT JOIN LopSinhHoat lsh ON sv.MaLSH = lsh.MaLSH;";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 conn.Open();
 
@@ -72,16 +98,20 @@ namespace _224LTCs_LeDucThien_138.Models
                         list.Add(new SinhVien
                         {
                             MaSV = reader.GetString(reader.GetOrdinal("MaSV")),
-                            MaLSH = Convert.ToInt32(reader["MaLSH"]),
+                            MaLSH = reader["MaLSH"] != DBNull.Value ? Convert.ToInt32(reader["MaLSH"]) : (int?)null,
                             TenSV = reader.GetString(reader.GetOrdinal("TenSV")),
-                            GioiTinh = Convert.ToBoolean(reader["GioiTinh"]),
-                            NgaySinh = Convert.ToDateTime(reader["NgaySinh"]),
+                            GioiTinh = reader["GioiTinh"] != DBNull.Value && Convert.ToBoolean(reader["GioiTinh"]),
+                            NgaySinh = reader["NgaySinh"] != DBNull.Value ? (DateTime?)reader.GetDateTime("NgaySinh") : DateTime.Now,
                             Cccd = reader.GetString(reader.GetOrdinal("Cccd")),
                             DiaChi = reader.GetString(reader.GetOrdinal("DiaChi")),
                             Sdt = reader.GetString(reader.GetOrdinal("Sdt")),
                             Email = reader.GetString(reader.GetOrdinal("Email")),
                             MatKhau = reader.GetString(reader.GetOrdinal("MatKhau")),
-                            Anh = reader.GetString(reader.GetOrdinal("Anh"))
+                            Anh = reader["Anh"]?.ToString(),
+                            LopSinhHoat = new LopSinhHoat
+                            {
+                                TenLSH = reader["TenLSH"]?.ToString()
+                            }
                         });
                     }
                 }
@@ -90,15 +120,207 @@ namespace _224LTCs_LeDucThien_138.Models
             return list;
         }
 
+        public List<SinhVien> GetSinhVienByNienKhoa(string maNK)
+        {
+            List<SinhVien> list = new List<SinhVien>();
+
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                string query = @"
+                        SELECT sv.*, lsh.TenLSH
+                        FROM SinhVien sv
+                        INNER JOIN LopSinhHoat lsh ON sv.MaLSH = lsh.MaLSH
+                        WHERE lsh.MaNK = @MaNK;";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@MaNK", maNK);
+
+                conn.Open();
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        list.Add(new SinhVien
+                        {
+                            MaSV = reader.GetString(reader.GetOrdinal("MaSV")),
+                            MaLSH = reader["MaLSH"] != DBNull.Value ? Convert.ToInt32(reader["MaLSH"]) : (int?)null,
+                            TenSV = reader.GetString(reader.GetOrdinal("TenSV")),
+                            GioiTinh = reader["GioiTinh"] != DBNull.Value && Convert.ToBoolean(reader["GioiTinh"]),
+                            NgaySinh = reader["NgaySinh"] != DBNull.Value ? (DateTime?)reader.GetDateTime("NgaySinh") : DateTime.Now,
+                            Cccd = reader.GetString(reader.GetOrdinal("Cccd")),
+                            DiaChi = reader.GetString(reader.GetOrdinal("DiaChi")),
+                            Sdt = reader.GetString(reader.GetOrdinal("Sdt")),
+                            Email = reader.GetString(reader.GetOrdinal("Email")),
+                            MatKhau = reader.GetString(reader.GetOrdinal("MatKhau")),
+                            Anh = reader["Anh"]?.ToString(),
+                            LopSinhHoat = new LopSinhHoat
+                            {
+                                TenLSH = reader["TenLSH"]?.ToString()
+                            }
+                        });
+                    }
+                }
+            }
+
+            return list;
+        }
+
+        public List<SinhVien> GetSinhVienByKhoa(string maNK, int maKhoa)
+        {
+            List<SinhVien> list = new List<SinhVien>();
+
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                string query = @"
+                        SELECT sv.*, lsh.TenLSH
+                        FROM SinhVien sv
+                        INNER JOIN LopSinhHoat lsh ON sv.MaLSH = lsh.MaLSH
+                        INNER JOIN ChuyenNganh cn ON lsh.MaNganh = cn.MaNganh
+                        WHERE lsh.MaNK = @MaNK AND cn.MaKhoa = @MaKhoa;";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@MaNK", maNK);
+                cmd.Parameters.AddWithValue("@MaKhoa", maKhoa);
+
+                conn.Open();
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        list.Add(new SinhVien
+                        {
+                            MaSV = reader.GetString(reader.GetOrdinal("MaSV")),
+                            MaLSH = reader["MaLSH"] != DBNull.Value ? Convert.ToInt32(reader["MaLSH"]) : (int?)null,
+                            TenSV = reader.GetString(reader.GetOrdinal("TenSV")),
+                            GioiTinh = reader["GioiTinh"] != DBNull.Value && Convert.ToBoolean(reader["GioiTinh"]),
+                            NgaySinh = reader["NgaySinh"] != DBNull.Value ? (DateTime?)reader.GetDateTime("NgaySinh") : DateTime.Now,
+                            Cccd = reader.GetString(reader.GetOrdinal("Cccd")),
+                            DiaChi = reader.GetString(reader.GetOrdinal("DiaChi")),
+                            Sdt = reader.GetString(reader.GetOrdinal("Sdt")),
+                            Email = reader.GetString(reader.GetOrdinal("Email")),
+                            MatKhau = reader.GetString(reader.GetOrdinal("MatKhau")),
+                            Anh = reader["Anh"]?.ToString(),
+                            LopSinhHoat = new LopSinhHoat
+                            {
+                                TenLSH = reader["TenLSH"]?.ToString()
+                            }
+                        });
+                    }
+                }
+            }
+
+            return list;
+        }
+
+        public List<SinhVien> GetSinhVienByChuyenNganh(string maNK, int maKhoa, int maNganh)
+        {
+            List<SinhVien> list = new List<SinhVien>();
+
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                string query = @"
+                    SELECT sv.*, lsh.TenLSH
+                    FROM SinhVien sv
+                    INNER JOIN LopSinhHoat lsh ON sv.MaLSH = lsh.MaLSH
+                    INNER JOIN ChuyenNganh cn ON cn.MaNganh = lsh.MaNganh
+                    WHERE lsh.MaNK = @MaNK AND lsh.MaNganh = @MaNganh AND cn.MaKhoa = @MaKhoa;";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@MaNK", maNK);
+                cmd.Parameters.AddWithValue("@MaKhoa", maKhoa);
+                cmd.Parameters.AddWithValue("@MaNganh", maNganh);
+
+                conn.Open();
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        list.Add(new SinhVien
+                        {
+                            MaSV = reader.GetString(reader.GetOrdinal("MaSV")),
+                            MaLSH = reader["MaLSH"] != DBNull.Value ? Convert.ToInt32(reader["MaLSH"]) : (int?)null,
+                            TenSV = reader.GetString(reader.GetOrdinal("TenSV")),
+                            GioiTinh = reader["GioiTinh"] != DBNull.Value && Convert.ToBoolean(reader["GioiTinh"]),
+                            NgaySinh = reader["NgaySinh"] != DBNull.Value ? (DateTime?)reader.GetDateTime("NgaySinh") : DateTime.Now,
+                            Cccd = reader.GetString(reader.GetOrdinal("Cccd")),
+                            DiaChi = reader.GetString(reader.GetOrdinal("DiaChi")),
+                            Sdt = reader.GetString(reader.GetOrdinal("Sdt")),
+                            Email = reader.GetString(reader.GetOrdinal("Email")),
+                            MatKhau = reader.GetString(reader.GetOrdinal("MatKhau")),
+                            Anh = reader["Anh"]?.ToString(),
+                            LopSinhHoat = new LopSinhHoat
+                            {
+                                TenLSH = reader["TenLSH"]?.ToString()
+                            }
+                        });
+                    }
+                }
+            }
+
+            return list;
+        }
+
+        public List<SinhVien> GetSinhVienByLSH(string maNK, int maKhoa, int maNganh, int maLSH)
+        {
+            List<SinhVien> list = new List<SinhVien>();
+
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                string query = @"
+                    SELECT sv.*, lsh.TenLSH
+                    FROM SinhVien sv
+                    INNER JOIN LopSinhHoat lsh ON sv.MaLSH = lsh.MaLSH
+                    INNER JOIN ChuyenNganh cn ON cn.MaNganh = lsh.MaNganh
+                    WHERE lsh.MaNK = @MaNK AND cn.MaKhoa = @MaKhoa AND cn.MaNganh = @MaNganh AND sv.MaLSH = @MalSH;";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@MaNK", maNK);
+                cmd.Parameters.AddWithValue("@MaKhoa", maKhoa);
+                cmd.Parameters.AddWithValue("@MaNganh", maNganh);
+                cmd.Parameters.AddWithValue("@MaLSH", maLSH);
+
+                conn.Open();
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        list.Add(new SinhVien
+                        {
+                            MaSV = reader.GetString(reader.GetOrdinal("MaSV")),
+                            MaLSH = reader["MaLSH"] != DBNull.Value ? Convert.ToInt32(reader["MaLSH"]) : (int?)null,
+                            TenSV = reader.GetString(reader.GetOrdinal("TenSV")),
+                            GioiTinh = reader["GioiTinh"] != DBNull.Value && Convert.ToBoolean(reader["GioiTinh"]),
+                            NgaySinh = reader["NgaySinh"] != DBNull.Value ? (DateTime?)reader.GetDateTime("NgaySinh") : DateTime.Now,
+                            Cccd = reader.GetString(reader.GetOrdinal("Cccd")),
+                            DiaChi = reader.GetString(reader.GetOrdinal("DiaChi")),
+                            Sdt = reader.GetString(reader.GetOrdinal("Sdt")),
+                            Email = reader.GetString(reader.GetOrdinal("Email")),
+                            MatKhau = reader.GetString(reader.GetOrdinal("MatKhau")),
+                            Anh = reader["Anh"]?.ToString(),
+                            LopSinhHoat = new LopSinhHoat
+                            {
+                                TenLSH = reader["TenLSH"]?.ToString()
+                            }
+                        });
+                    }
+                }
+            }
+
+            return list;
+        }
+
+
         public SinhVien GetSinhVienById(string maSV)
         {
             SinhVien sv = null;
 
             using (SqlConnection conn = _connectionDatabase.GetConnection())
             {
-                string query = @"SELECT MaSV, MaLSH, TenSV, GioiTinh, NgaySinh, Cccd, DiaChi, Sdt, Email, MatKhau, Anh
-                         FROM SinhVien
-                         WHERE MaSV = @MaSV";
+                string query = @" SELECT sv.MaSV, sv.MaLSH, sv.TenSV, sv.GioiTinh, sv.NgaySinh, sv.Cccd, sv.DiaChi,
+                            sv.Sdt, sv.Email, sv.MatKhau, sv.Anh,
+                            lsh.TenLSH
+                            FROM SinhVien sv
+                            LEFT JOIN LopSinhHoat lsh ON sv.MaLSH = lsh.MaLSH;";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@MaSV", maSV);
 
@@ -111,16 +333,20 @@ namespace _224LTCs_LeDucThien_138.Models
                         sv = new SinhVien
                         {
                             MaSV = reader.GetString(reader.GetOrdinal("MaSV")),
-                            MaLSH = Convert.ToInt32(reader["MaLSH"]),
+                            MaLSH = reader["MaLSH"] != DBNull.Value ? Convert.ToInt32(reader["MaLSH"]) : (int?)null,
                             TenSV = reader.GetString(reader.GetOrdinal("TenSV")),
-                            GioiTinh = Convert.ToBoolean(reader["GioiTinh"]),
-                            NgaySinh = Convert.ToDateTime(reader["NgaySinh"]),
+                            GioiTinh = reader["GioiTinh"] != DBNull.Value && Convert.ToBoolean(reader["GioiTinh"]),
+                            NgaySinh = reader["NgaySinh"] != DBNull.Value ? (DateTime?)reader.GetDateTime("NgaySinh") : DateTime.Now,
                             Cccd = reader.GetString(reader.GetOrdinal("Cccd")),
                             DiaChi = reader.GetString(reader.GetOrdinal("DiaChi")),
                             Sdt = reader.GetString(reader.GetOrdinal("Sdt")),
                             Email = reader.GetString(reader.GetOrdinal("Email")),
                             MatKhau = reader.GetString(reader.GetOrdinal("MatKhau")),
-                            Anh = reader.GetString(reader.GetOrdinal("Anh"))
+                            Anh = reader["Anh"]?.ToString(),
+                            LopSinhHoat = new LopSinhHoat
+                            {
+                                TenLSH = reader["TenLSH"]?.ToString()
+                            }
                         };
                     }
                 }
