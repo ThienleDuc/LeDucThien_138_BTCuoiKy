@@ -7,7 +7,7 @@ namespace _224LTCs_LeDucThien_138.Models
     public class LopSinhHoat
     {
         [Key]
-        public int MaLSH { get; set; }
+        public string MaLSH { get; set; }
 
         public int? MaNganh { get; set; }
 
@@ -26,7 +26,7 @@ namespace _224LTCs_LeDucThien_138.Models
         {
         }
 
-        public LopSinhHoat(int maLSH, int? maNganh, string tenLSH, NienKhoa nienKhoa, string maNK, ICollection<SinhVien> sinhViens)
+        public LopSinhHoat(string maLSH, int? maNganh, string tenLSH, NienKhoa nienKhoa, string maNK, ICollection<SinhVien> sinhViens)
         {
             MaLSH = maLSH;
             MaNganh = maNganh;
@@ -66,7 +66,7 @@ namespace _224LTCs_LeDucThien_138.Models
 
                         list.Add(new LopSinhHoat
                         {
-                            MaLSH = reader.GetInt32(reader.GetOrdinal("MaLSH")),
+                            MaLSH = reader.GetString(reader.GetOrdinal("MaLSH")),
                             MaNganh = reader.GetInt32(reader.GetOrdinal("MaNganh")),
                             TenLSH = reader.GetString(reader.GetOrdinal("TenLSH")),
                             MaNK = reader.GetString(reader.GetOrdinal("MaNK"))

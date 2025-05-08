@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "h589ThAA/lu0A1rGop71mbJZdY3sZ+DeODV3QgGemK0=",
+  "Hash": "oS/0PaZbi3zIOQoueFG8GIn5qJwjgionDGiQgIfUeZU=",
   "Source": "224LTCs_LeDucThien_138",
   "BasePath": "_content/224LTCs_LeDucThien_138",
   "Mode": "Default",
@@ -395,6 +395,27 @@
       "OriginalItemSpec": "wwwroot\\js\\LoadAvatar.js"
     },
     {
+      "Identity": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadPhongHoc.js",
+      "SourceId": "224LTCs_LeDucThien_138",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\",
+      "BasePath": "_content/224LTCs_LeDucThien_138",
+      "RelativePath": "js/LoadPhongHoc#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qnk9qdanef",
+      "Integrity": "KiFs5/EZ4m/OvuTIrbFu30I8SezBYWOeX1Sp3hAUnSE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\LoadPhongHoc.js"
+    },
+    {
       "Identity": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadSinhvien.js",
       "SourceId": "224LTCs_LeDucThien_138",
       "SourceType": "Discovered",
@@ -409,11 +430,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pw4nidesbt",
-      "Integrity": "ZwHHlbpT14b6OmQzxXiRMRHHbBqB/oVrLVDFwa2wwRg=",
+      "Fingerprint": "184ixragpr",
+      "Integrity": "H23mZgZ6R4zgssfQdDGEBrh6Yw1DxdnmLh5y0tk0p3o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\LoadSinhvien.js"
+    },
+    {
+      "Identity": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\paginationModule.js",
+      "SourceId": "224LTCs_LeDucThien_138",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\",
+      "BasePath": "_content/224LTCs_LeDucThien_138",
+      "RelativePath": "js/paginationModule#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "be9wowa0zr",
+      "Integrity": "ky8IkfTTDlc7N5JA8+3FTJAoANw32bcmyX/kVV0dMho=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\paginationModule.js"
     },
     {
       "Identity": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\scripts.js",
@@ -435,27 +477,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\scripts.js"
-    },
-    {
-      "Identity": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\splitPage.js",
-      "SourceId": "224LTCs_LeDucThien_138",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\",
-      "BasePath": "_content/224LTCs_LeDucThien_138",
-      "RelativePath": "js/splitPage#[.{fingerprint}]?.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "6j653dzix2",
-      "Integrity": "UpejCAAw3CFmyh1ZgcNwJEWRIxaENvkvJWoxTZ691dc=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\splitPage.js"
     },
     {
       "Identity": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\TogglePassword.js",
@@ -1700,7 +1721,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 14:33:47 GMT"
+          "Value": "Thu, 08 May 2025 08:57:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1745,7 +1766,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 14:33:47 GMT"
+          "Value": "Thu, 08 May 2025 08:57:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1790,7 +1811,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 14:33:47 GMT"
+          "Value": "Thu, 08 May 2025 08:57:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1827,7 +1848,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 14:33:47 GMT"
+          "Value": "Thu, 08 May 2025 08:57:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3154,6 +3175,133 @@
       ]
     },
     {
+      "Route": "js/LoadPhongHoc.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadPhongHoc.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "355"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KiFs5/EZ4m/OvuTIrbFu30I8SezBYWOeX1Sp3hAUnSE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 10:36:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KiFs5/EZ4m/OvuTIrbFu30I8SezBYWOeX1Sp3hAUnSE="
+        }
+      ]
+    },
+    {
+      "Route": "js/LoadPhongHoc.qnk9qdanef.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadPhongHoc.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "355"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KiFs5/EZ4m/OvuTIrbFu30I8SezBYWOeX1Sp3hAUnSE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 10:36:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qnk9qdanef"
+        },
+        {
+          "Name": "label",
+          "Value": "js/LoadPhongHoc.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KiFs5/EZ4m/OvuTIrbFu30I8SezBYWOeX1Sp3hAUnSE="
+        }
+      ]
+    },
+    {
+      "Route": "js/LoadSinhvien.184ixragpr.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadSinhvien.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4951"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H23mZgZ6R4zgssfQdDGEBrh6Yw1DxdnmLh5y0tk0p3o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 17:57:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "184ixragpr"
+        },
+        {
+          "Name": "label",
+          "Value": "js/LoadSinhvien.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-H23mZgZ6R4zgssfQdDGEBrh6Yw1DxdnmLh5y0tk0p3o="
+        }
+      ]
+    },
+    {
       "Route": "js/LoadSinhvien.js",
       "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadSinhvien.js",
       "Selectors": [],
@@ -3164,7 +3312,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4198"
+          "Value": "4951"
         },
         {
           "Name": "Content-Type",
@@ -3172,11 +3320,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZwHHlbpT14b6OmQzxXiRMRHHbBqB/oVrLVDFwa2wwRg=\""
+          "Value": "\"H23mZgZ6R4zgssfQdDGEBrh6Yw1DxdnmLh5y0tk0p3o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 19:23:08 GMT"
+          "Value": "Thu, 08 May 2025 17:57:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3186,13 +3334,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ZwHHlbpT14b6OmQzxXiRMRHHbBqB/oVrLVDFwa2wwRg="
+          "Value": "sha256-H23mZgZ6R4zgssfQdDGEBrh6Yw1DxdnmLh5y0tk0p3o="
         }
       ]
     },
     {
-      "Route": "js/LoadSinhvien.pw4nidesbt.js",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadSinhvien.js",
+      "Route": "js/paginationModule.be9wowa0zr.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\paginationModule.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3201,7 +3349,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4198"
+          "Value": "4354"
         },
         {
           "Name": "Content-Type",
@@ -3209,11 +3357,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZwHHlbpT14b6OmQzxXiRMRHHbBqB/oVrLVDFwa2wwRg=\""
+          "Value": "\"ky8IkfTTDlc7N5JA8+3FTJAoANw32bcmyX/kVV0dMho=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 19:23:08 GMT"
+          "Value": "Thu, 08 May 2025 17:55:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3223,15 +3371,52 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "pw4nidesbt"
+          "Value": "be9wowa0zr"
         },
         {
           "Name": "label",
-          "Value": "js/LoadSinhvien.js"
+          "Value": "js/paginationModule.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ZwHHlbpT14b6OmQzxXiRMRHHbBqB/oVrLVDFwa2wwRg="
+          "Value": "sha256-ky8IkfTTDlc7N5JA8+3FTJAoANw32bcmyX/kVV0dMho="
+        }
+      ]
+    },
+    {
+      "Route": "js/paginationModule.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\paginationModule.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4354"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ky8IkfTTDlc7N5JA8+3FTJAoANw32bcmyX/kVV0dMho=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 17:55:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ky8IkfTTDlc7N5JA8+3FTJAoANw32bcmyX/kVV0dMho="
         }
       ]
     },
@@ -3318,88 +3503,6 @@
       ]
     },
     {
-      "Route": "js/splitPage.6j653dzix2.js",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\splitPage.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4105"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"UpejCAAw3CFmyh1ZgcNwJEWRIxaENvkvJWoxTZ691dc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 19:14:45 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "6j653dzix2"
-        },
-        {
-          "Name": "label",
-          "Value": "js/splitPage.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-UpejCAAw3CFmyh1ZgcNwJEWRIxaENvkvJWoxTZ691dc="
-        }
-      ]
-    },
-    {
-      "Route": "js/splitPage.js",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\splitPage.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4105"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"UpejCAAw3CFmyh1ZgcNwJEWRIxaENvkvJWoxTZ691dc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 19:14:45 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-UpejCAAw3CFmyh1ZgcNwJEWRIxaENvkvJWoxTZ691dc="
-        }
-      ]
-    },
-    {
       "Route": "js/TogglePassword.js",
       "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\TogglePassword.js",
       "Selectors": [],
@@ -3422,7 +3525,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 14:15:24 GMT"
+          "Value": "Thu, 08 May 2025 10:15:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3459,7 +3562,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 14:15:24 GMT"
+          "Value": "Thu, 08 May 2025 10:15:00 GMT"
         },
         {
           "Name": "Cache-Control",

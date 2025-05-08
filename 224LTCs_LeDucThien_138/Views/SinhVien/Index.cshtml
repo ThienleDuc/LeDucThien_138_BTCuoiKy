@@ -72,8 +72,7 @@
                             }
                         </script>
 
-                        <a href="#" class="btn bg-success text-light fw-bold font-monospace"
-                           data-bs-toggle="modal" data-bs-target="#addPhongModal">
+                        <a asp-action="ThemSinhVien" asp-controller="SinhVien" class="btn bg-success text-light fw-bold font-monospace">
                             <i class="fa-solid fa-plus"></i> Thêm Mới
                         </a>
                     </div>
@@ -81,7 +80,7 @@
             </div>
             <div class="d-flex gap-2 mb-3">
                 <select id="chooseNK" class="form-select w-auto">
-                    <option selected disabledclass="text-center">Niên khóa</option>
+                    <option selected disabled class="text-center">Niên khóa</option>
                 </select>
                 <select id="chooseKhoa" class="form-select w-auto">
                     <option selected disabled class="text-center">Khoa</option>
@@ -115,9 +114,9 @@
                 <partial name="~/Views/SinhVien/TableSinhVien.cshtml" model="Model"></partial>
             </div>
 
-            <div id="" class="d-flex align-items-center justify-content-between">
+            <div id="pagination-container" class="d-flex align-items-center justify-content-between">
                 <div>
-                    Hiển thị <span id="startRow">1</span> đến <span id="endRow">10</span> trong số <span id="totalRows">@Model.Count</span> mục
+                    Hiển thị <span id="startRow"></span> đến <span id="endRow"></span> trong số <span id="totalRows">@Model.Count</span> mục
                 </div>
 
                 <nav>
@@ -128,5 +127,4 @@
         </div>
     </div>
 </div>
-<script src="~/js/splitPage.js"></script>
-<script src="~/js/LoadSinhvien.js"></script>
+<script type="module" src="~/js/LoadSinhvien.js"></script>

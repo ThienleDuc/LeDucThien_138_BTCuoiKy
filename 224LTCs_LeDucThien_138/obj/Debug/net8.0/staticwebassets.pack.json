@@ -65,6 +65,10 @@
       "PackagePath": "staticwebassets\\js\\LoadAvatar.js"
     },
     {
+      "Id": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadPhongHoc.js",
+      "PackagePath": "staticwebassets\\js\\LoadPhongHoc.js"
+    },
+    {
       "Id": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadSinhvien.js",
       "PackagePath": "staticwebassets\\js\\LoadSinhvien.js"
     },
@@ -77,12 +81,12 @@
       "PackagePath": "staticwebassets\\js\\datatables-simple-demo.js"
     },
     {
-      "Id": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\scripts.js",
-      "PackagePath": "staticwebassets\\js\\scripts.js"
+      "Id": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\paginationModule.js",
+      "PackagePath": "staticwebassets\\js\\paginationModule.js"
     },
     {
-      "Id": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\splitPage.js",
-      "PackagePath": "staticwebassets\\js\\splitPage.js"
+      "Id": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\js\\scripts.js"
     },
     {
       "Id": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\lib\\bootstrap\\LICENSE",

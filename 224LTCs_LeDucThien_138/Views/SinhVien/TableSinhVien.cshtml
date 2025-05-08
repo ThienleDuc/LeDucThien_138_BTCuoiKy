@@ -30,8 +30,9 @@
                         </a>
                     </td>
                     <td class="text-center">
-                        <a href="#" class="text-decoration-none text-danger"
-                           onclick="return confirm('Bạn có chắc muốn xóa phòng học này không?');">
+                        <a class="text-decoration-none text-danger"
+                           asp-action="XoaSinhVien" asp-controller="SinhVien" asp-route-maSV="@Model.MaSV"
+                           onclick="return confirm('Bạn có chắc muốn xóa sinh viên này không?');">
                             <i class="fa-regular fa-trash-can"></i>
                         </a>
                     </td>
@@ -46,7 +47,7 @@
                     <!-- Mặc định 10 dòng -->
                     <td>@Model[i].MaSV</td>
                     <td>@Model[i].TenSV</td>
-                    <td>@(Model[i].GioiTinh) ? Nam : Nữ</td>
+                    <td>@(Model[i].GioiTinh ? "Nam" : "Nữ")</td>
                     <td>@Model[i].NgaySinh?.ToString("dd/MM/yyyy")</td>
                     <td>@Model[i].DiaChi</td>
 
@@ -64,8 +65,8 @@
                     </td>
                     <td class="text-center">
                         <a class="text-decoration-none text-danger"
-                           asp-action="XoaPhong" asp-controller="Home" asp-route-maPhong=""
-                           onclick="return confirm('Bạn có chắc muốn xóa phòng học này không?');">
+                           asp-action="XoaSinhVien" asp-controller="SinhVien" asp-route-maSV="@Model[i].MaSV"
+                           onclick="return confirm('Bạn có chắc muốn xóa sinh viên này không?');">
                             <i class="fa-regular fa-trash-can"></i>
                         </a>
                     </td>

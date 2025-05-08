@@ -1,4 +1,6 @@
-﻿document.addEventListener("DOMContentLoaded", function () {
+﻿import { initPagination } from './paginationModule.js';
+
+document.addEventListener("DOMContentLoaded", function () {
     // Hàm helper: gọi GET và parse JSON
     function fetchData(url, callback) {
         fetch(url)
@@ -7,6 +9,7 @@
             .catch(err => console.error("Fetch error:", err));
     }
 
+    const container = document.getElementById('TableSinhVien-container');
     const maNienKhoaSelect = document.getElementById('chooseNK');
     const maKhoaSelect = document.getElementById('chooseKhoa');
     const maNganhSelect = document.getElementById('chooseCN');
@@ -28,6 +31,7 @@
         });
     });
 
+
     // Khi chọn Khoa → Hiển thị chuyên ngành
     document.getElementById('chooseKhoa').addEventListener('change', function () {
         const maKhoa = this.value;
@@ -44,11 +48,12 @@
                 maNganhSelect.add(option);
             });
         });
+
     });
 
     // Khi chọn Chuyên ngành hoặc Niên khóa → Hiển thị LSH
     function updateLopSinhHoat() {
-        const maNganh = maNganhSelect.value;
+        const maNganh = parseInt(maNganhSelect.value);
         const maNK = maNienKhoaSelect.value;
 
         maLSHSelect.innerHTML = '';
@@ -60,22 +65,21 @@
                 maLSHSelect.add(option);
             });
         });
+
     }
 
     function updateTableSinhVien() {
-        const container = document.getElementById('TableSinhVien-container');
-
         if (!maNienKhoaSelect || !maKhoaSelect || !maNganhSelect || !maLSHSelect || !container) {
             console.error("Không tìm thấy phần tử DOM cần thiết.");
             return;
         }
 
-        const maNienKhoa = maNienKhoaSelect.value;
+        const maNienKhoa = maNienKhoaSelect.value || null;
         const maKhoa = parseInt(maKhoaSelect.value) || 0;
         const maNganh = parseInt(maNganhSelect.value) || 0;
-        const maLSH = parseInt(maLSHSelect.value) || 0;
+        const maLSH = maLSHSelect.value || null;
 
-        const url = `/SinhVien/Index?makhoa=${maKhoa}&maNganh=${maNganh}&maLSH=${maLSH}&maNienKhoa=${encodeURIComponent(maNienKhoa)}`;
+        const url = `/SinhVien/Index?maKhoa=${maKhoa}&maNganh=${maNganh}&maLSH=${maLSH}&maNienKhoa=${encodeURIComponent(maNienKhoa)}`;
 
         fetch(url, {
             headers: {
@@ -90,11 +94,20 @@
             })
             .then(html => {
                 container.innerHTML = html;
+                initPagination({
+                    tableSelector: '.data-row',
+                    rowsPerPageSelector: '#rowsPerPage',
+                    paginationSelector: '#pagination',
+                    startRowSelector: '#startRow',
+                    endRowSelector: '#endRow'
+                });
             })
             .catch(error => {
                 console.error('Lỗi khi tải bảng sinh viên:', error);
                 container.innerHTML = "<p class='text-danger'>Không thể tải dữ liệu.</p>";
             });
+        console.log(maNienKhoa, maKhoa, maNganh, maLSH);
+
     }
 
     const controls_ULSH = [maNienKhoaSelect, maNganhSelect];
@@ -103,7 +116,18 @@
     });
 
     const controls_UTSV = [maNienKhoaSelect, maKhoaSelect, maNganhSelect, maLSHSelect];
-    controls_UTSV.forEach(select => {
-        select.addEventListener('change', updateTableSinhVien);
-    });
+
+    if (container) {
+        initPagination({
+            tableSelector: '.data-row',
+            rowsPerPageSelector: '#rowsPerPage',
+            paginationSelector: '#pagination',
+            startRowSelector: '#startRow',
+            endRowSelector: '#endRow'
+        });
+
+        controls_UTSV.forEach(select => {
+            select.addEventListener('change', updateTableSinhVien);
+        });
+    }
 });

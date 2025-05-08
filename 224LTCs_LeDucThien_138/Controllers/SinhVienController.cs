@@ -51,7 +51,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return Json(list);
         }
 
-        private List<SinhVien> LayDanhSachSinhVien(int makhoa, int maNganh, int maLSH, string maNienKhoa)
+        private List<SinhVien> LayDanhSachSinhVien(int makhoa, int maNganh, string maLSH, string maNienKhoa)
         {
             if (CoDayDuThongTinLSH(maNienKhoa, makhoa, maNganh, maLSH))
                 return LayTheoLop(maNienKhoa, makhoa, maNganh, maLSH);
@@ -68,8 +68,8 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return LayTatCaSinhVien();
         }
 
-        private bool CoDayDuThongTinLSH(string maNienKhoa, int makhoa, int maNganh, int maLSH)
-            => !string.IsNullOrEmpty(maNienKhoa) && makhoa > 0 && maNganh > 0 && maLSH > 0;
+        private bool CoDayDuThongTinLSH(string maNienKhoa, int makhoa, int maNganh, string maLSH)
+            => !string.IsNullOrEmpty(maNienKhoa) && makhoa > 0 && maNganh > 0 && !string.IsNullOrEmpty(maLSH);
 
         private bool CoThongTinChuyenNganh(string maNienKhoa, int makhoa, int maNganh)
             => !string.IsNullOrEmpty(maNienKhoa) && makhoa > 0 && maNganh > 0;
@@ -86,15 +86,14 @@ namespace _224LTCs_LeDucThien_138.Controllers
         private List<SinhVien> LayTheoChuyenNganh(string maNienKhoa, int makhoa, int maNganh)
             => _sinhVienRepos.GetSinhVienByChuyenNganh(maNienKhoa, makhoa, maNganh);
 
-        private List<SinhVien> LayTheoLop(string maNienKhoa, int makhoa, int maNganh, int maLSH)
+        private List<SinhVien> LayTheoLop(string maNienKhoa, int makhoa, int maNganh, string maLSH)
             => _sinhVienRepos.GetSinhVienByLSH(maNienKhoa, makhoa, maNganh, maLSH);
 
         private List<SinhVien> LayTatCaSinhVien()
             => _sinhVienRepos.GetAllSinhVien();
 
-
         [HttpGet]
-        public IActionResult Index(int makhoa, int maNganh, int maLSH, string maNienKhoa)
+        public IActionResult Index(int makhoa, int maNganh, string maLSH, string maNienKhoa)
         {
             var sv = LayDanhSachSinhVien(makhoa, maNganh, maLSH, maNienKhoa);
 
@@ -106,6 +105,53 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return View(sv);
         }
 
+        public IActionResult ThemSinhVien()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult ThemSinhVien(SinhVien sinhVien, string maNK, int maKhoa, int maNganh, string maLSH)
+        {
+            if (string.IsNullOrEmpty(maNK) || maKhoa <= 0 || maNganh <= 0 || string.IsNullOrEmpty(maLSH)) 
+            {
+                TempData["ErrorMessage"] = "Có lỗi khi thêm niên khóa, Khoa, ngành và lớp sinh hoạt";
+            } else
+            {
+                sinhVien.MaLSH = maLSH;
+                bool isAdded = _sinhVienRepos.AddSinhVien(sinhVien, maNK, maKhoa, maNganh, maLSH);
+
+                if (isAdded)
+                {
+                    TempData["SuccessMessage"] = "Đã được thêm thành công!";
+                    return RedirectToAction("Index", "SinhVien");
+                }
+                else
+                {
+                    TempData["ErrorMessage"] = "Có lỗi xảy ra khi thêm";
+                }
+            }
+
+            return RedirectToAction("Index", "SinhVien");
+        }
+
+
+        public IActionResult XoaSinhVien(string maSV)
+        {
+            bool isDeleted = _sinhVienRepos.DeleteSinhVien(maSV);
+
+            if (isDeleted)
+            {
+                TempData["SuccessMessage"] = "Xóa thành công!";
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "Không tìm thấy hoặc có lỗi khi xóa!";
+            }
+
+            return RedirectToAction("Index");
+        }
 
         public IActionResult TimKiem()
         {

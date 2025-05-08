@@ -15,7 +15,7 @@ namespace _224LTCs_LeDucThien_138.Models
         [StringLength(14)]
         public string MaSV { get; set; }
 
-        public int? MaLSH { get; set; }  
+        public string MaLSH { get; set; }  
 
         [StringLength(50)]
         public string TenSV { get; set; }
@@ -48,7 +48,7 @@ namespace _224LTCs_LeDucThien_138.Models
         [NotMapped]
         public string TenLSH => LopSinhHoat?.TenLSH;
 
-        public SinhVien(string maSV, int? maLSH, string tenSV, bool gioiTinh, DateTime? ngaySinh, 
+        public SinhVien(string maSV, string maLSH, string tenSV, bool gioiTinh, DateTime? ngaySinh, 
             string cccd, string diaChi, string sdt, string email, string matKhau, string anh, 
             LopSinhHoat lopSinhHoat)
         {
@@ -98,7 +98,7 @@ namespace _224LTCs_LeDucThien_138.Models
                         list.Add(new SinhVien
                         {
                             MaSV = reader.GetString(reader.GetOrdinal("MaSV")),
-                            MaLSH = reader["MaLSH"] != DBNull.Value ? Convert.ToInt32(reader["MaLSH"]) : (int?)null,
+                            MaLSH = reader.GetString(reader.GetOrdinal("MaLSH")),
                             TenSV = reader.GetString(reader.GetOrdinal("TenSV")),
                             GioiTinh = reader["GioiTinh"] != DBNull.Value && Convert.ToBoolean(reader["GioiTinh"]),
                             NgaySinh = reader["NgaySinh"] != DBNull.Value ? (DateTime?)reader.GetDateTime("NgaySinh") : DateTime.Now,
@@ -143,7 +143,7 @@ namespace _224LTCs_LeDucThien_138.Models
                         list.Add(new SinhVien
                         {
                             MaSV = reader.GetString(reader.GetOrdinal("MaSV")),
-                            MaLSH = reader["MaLSH"] != DBNull.Value ? Convert.ToInt32(reader["MaLSH"]) : (int?)null,
+                            MaLSH = reader.GetString(reader.GetOrdinal("MaLSH")),
                             TenSV = reader.GetString(reader.GetOrdinal("TenSV")),
                             GioiTinh = reader["GioiTinh"] != DBNull.Value && Convert.ToBoolean(reader["GioiTinh"]),
                             NgaySinh = reader["NgaySinh"] != DBNull.Value ? (DateTime?)reader.GetDateTime("NgaySinh") : DateTime.Now,
@@ -190,7 +190,7 @@ namespace _224LTCs_LeDucThien_138.Models
                         list.Add(new SinhVien
                         {
                             MaSV = reader.GetString(reader.GetOrdinal("MaSV")),
-                            MaLSH = reader["MaLSH"] != DBNull.Value ? Convert.ToInt32(reader["MaLSH"]) : (int?)null,
+                            MaLSH = reader.GetString(reader.GetOrdinal("MaLSH")),
                             TenSV = reader.GetString(reader.GetOrdinal("TenSV")),
                             GioiTinh = reader["GioiTinh"] != DBNull.Value && Convert.ToBoolean(reader["GioiTinh"]),
                             NgaySinh = reader["NgaySinh"] != DBNull.Value ? (DateTime?)reader.GetDateTime("NgaySinh") : DateTime.Now,
@@ -238,7 +238,7 @@ namespace _224LTCs_LeDucThien_138.Models
                         list.Add(new SinhVien
                         {
                             MaSV = reader.GetString(reader.GetOrdinal("MaSV")),
-                            MaLSH = reader["MaLSH"] != DBNull.Value ? Convert.ToInt32(reader["MaLSH"]) : (int?)null,
+                            MaLSH = reader.GetString(reader.GetOrdinal("MaLSH")),
                             TenSV = reader.GetString(reader.GetOrdinal("TenSV")),
                             GioiTinh = reader["GioiTinh"] != DBNull.Value && Convert.ToBoolean(reader["GioiTinh"]),
                             NgaySinh = reader["NgaySinh"] != DBNull.Value ? (DateTime?)reader.GetDateTime("NgaySinh") : DateTime.Now,
@@ -260,7 +260,7 @@ namespace _224LTCs_LeDucThien_138.Models
             return list;
         }
 
-        public List<SinhVien> GetSinhVienByLSH(string maNK, int maKhoa, int maNganh, int maLSH)
+        public List<SinhVien> GetSinhVienByLSH(string maNK, int maKhoa, int maNganh, string maLSH)
         {
             List<SinhVien> list = new List<SinhVien>();
 
@@ -287,7 +287,7 @@ namespace _224LTCs_LeDucThien_138.Models
                         list.Add(new SinhVien
                         {
                             MaSV = reader.GetString(reader.GetOrdinal("MaSV")),
-                            MaLSH = reader["MaLSH"] != DBNull.Value ? Convert.ToInt32(reader["MaLSH"]) : (int?)null,
+                            MaLSH = reader.GetString(reader.GetOrdinal("MaLSH")),
                             TenSV = reader.GetString(reader.GetOrdinal("TenSV")),
                             GioiTinh = reader["GioiTinh"] != DBNull.Value && Convert.ToBoolean(reader["GioiTinh"]),
                             NgaySinh = reader["NgaySinh"] != DBNull.Value ? (DateTime?)reader.GetDateTime("NgaySinh") : DateTime.Now,
@@ -333,7 +333,7 @@ namespace _224LTCs_LeDucThien_138.Models
                         sv = new SinhVien
                         {
                             MaSV = reader.GetString(reader.GetOrdinal("MaSV")),
-                            MaLSH = reader["MaLSH"] != DBNull.Value ? Convert.ToInt32(reader["MaLSH"]) : (int?)null,
+                            MaLSH = reader.GetString(reader.GetOrdinal("MaLSH")),
                             TenSV = reader.GetString(reader.GetOrdinal("TenSV")),
                             GioiTinh = reader["GioiTinh"] != DBNull.Value && Convert.ToBoolean(reader["GioiTinh"]),
                             NgaySinh = reader["NgaySinh"] != DBNull.Value ? (DateTime?)reader.GetDateTime("NgaySinh") : DateTime.Now,
@@ -374,7 +374,7 @@ namespace _224LTCs_LeDucThien_138.Models
                         danhSach.Add(new SinhVien
                         {
                             MaSV = reader.GetString(reader.GetOrdinal("MaSV")),
-                            MaLSH = Convert.ToInt32(reader["MaLSH"]),
+                            MaLSH = reader.GetString(reader.GetOrdinal("MaLSH")),
                             TenSV = reader.GetString(reader.GetOrdinal("TenSV")),
                             GioiTinh = Convert.ToBoolean(reader["GioiTinh"]),
                             NgaySinh = Convert.ToDateTime(reader["NgaySinh"]),
@@ -390,6 +390,48 @@ namespace _224LTCs_LeDucThien_138.Models
             }
 
             return danhSach;
+        }
+
+        public bool AddSinhVien(SinhVien sinhVien, string maNK, int maKhoa, int maNganh, string maLSH)
+        {
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                SqlCommand cmd = new SqlCommand("AddSinhVien", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@MaNK", maNK);
+                cmd.Parameters.AddWithValue("@MaKhoa", maKhoa);
+                cmd.Parameters.AddWithValue("@MaNganh", maNganh);
+                cmd.Parameters.AddWithValue("@MaLSH", maLSH);
+                cmd.Parameters.AddWithValue("@TenSV", sinhVien.TenSV ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@GioiTinh", sinhVien.GioiTinh);
+                cmd.Parameters.AddWithValue("@NgaySinh", sinhVien.NgaySinh ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@Cccd", sinhVien.Cccd ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@DiaChi", sinhVien.DiaChi ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@Sdt", sinhVien.Sdt ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@Email", sinhVien.Email ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@MatKhau", sinhVien.MatKhau ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@Anh", sinhVien.Anh ?? (object)DBNull.Value);
+
+                conn.Open();
+                int result = cmd.ExecuteNonQuery();
+                return result > 0;
+            }
+        }
+
+
+        public bool DeleteSinhVien(string maSV)
+        {
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                string query = "DELETE FROM SinhVien WHERE MaSV = @MaSV";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@MaSV", maSV);
+
+                conn.Open();
+                int result = cmd.ExecuteNonQuery();
+                return result > 0;
+            }
         }
 
     }

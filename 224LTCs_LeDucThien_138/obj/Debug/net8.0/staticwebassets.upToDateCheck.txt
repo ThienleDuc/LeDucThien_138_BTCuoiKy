@@ -14,9 +14,10 @@ wwwroot\css\styles.css
 wwwroot\favicon.ico
 wwwroot\js\datatables-simple-demo.js
 wwwroot\js\LoadAvatar.js
+wwwroot\js\LoadPhongHoc.js
 wwwroot\js\LoadSinhvien.js
+wwwroot\js\paginationModule.js
 wwwroot\js\scripts.js
-wwwroot\js\splitPage.js
 wwwroot\js\TogglePassword.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
