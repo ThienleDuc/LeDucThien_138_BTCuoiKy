@@ -51,56 +51,9 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return Json(list);
         }
 
-        private List<SinhVien> LayDanhSachSinhVien(int makhoa, int maNganh, string maLSH, string maNienKhoa)
+        public IActionResult Index()
         {
-            if (CoDayDuThongTinLSH(maNienKhoa, makhoa, maNganh, maLSH))
-                return LayTheoLop(maNienKhoa, makhoa, maNganh, maLSH);
-
-            if (CoThongTinChuyenNganh(maNienKhoa, makhoa, maNganh))
-                return LayTheoChuyenNganh(maNienKhoa, makhoa, maNganh);
-
-            if (CoThongTinKhoa(maNienKhoa, makhoa))
-                return LayTheoKhoa(maNienKhoa, makhoa);
-
-            if (!string.IsNullOrEmpty(maNienKhoa))
-                return LayTheoNienKhoa(maNienKhoa);
-
-            return LayTatCaSinhVien();
-        }
-
-        private bool CoDayDuThongTinLSH(string maNienKhoa, int makhoa, int maNganh, string maLSH)
-            => !string.IsNullOrEmpty(maNienKhoa) && makhoa > 0 && maNganh > 0 && !string.IsNullOrEmpty(maLSH);
-
-        private bool CoThongTinChuyenNganh(string maNienKhoa, int makhoa, int maNganh)
-            => !string.IsNullOrEmpty(maNienKhoa) && makhoa > 0 && maNganh > 0;
-
-        private bool CoThongTinKhoa(string maNienKhoa, int makhoa)
-            => !string.IsNullOrEmpty(maNienKhoa) && makhoa > 0;
-
-        private List<SinhVien> LayTheoNienKhoa(string maNienKhoa)
-            => _sinhVienRepos.GetSinhVienByNienKhoa(maNienKhoa);
-
-        private List<SinhVien> LayTheoKhoa(string maNienKhoa, int makhoa)
-            => _sinhVienRepos.GetSinhVienByKhoa(maNienKhoa, makhoa);
-
-        private List<SinhVien> LayTheoChuyenNganh(string maNienKhoa, int makhoa, int maNganh)
-            => _sinhVienRepos.GetSinhVienByChuyenNganh(maNienKhoa, makhoa, maNganh);
-
-        private List<SinhVien> LayTheoLop(string maNienKhoa, int makhoa, int maNganh, string maLSH)
-            => _sinhVienRepos.GetSinhVienByLSH(maNienKhoa, makhoa, maNganh, maLSH);
-
-        private List<SinhVien> LayTatCaSinhVien()
-            => _sinhVienRepos.GetAllSinhVien();
-
-        [HttpGet]
-        public IActionResult Index(int makhoa, int maNganh, string maLSH, string maNienKhoa)
-        {
-            var sv = LayDanhSachSinhVien(makhoa, maNganh, maLSH, maNienKhoa);
-
-            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
-            {
-                return PartialView("TableSinhVien", sv);
-            }
+            var sv = _sinhVienRepos.GetAllSinhVien();
 
             return View(sv);
         }
@@ -120,7 +73,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             } else
             {
                 sinhVien.MaLSH = maLSH;
-                bool isAdded = _sinhVienRepos.AddSinhVien(sinhVien, maNK, maKhoa, maNganh, maLSH);
+                bool isAdded = _sinhVienRepos.AddSinhVien(sinhVien, maNK, maKhoa, maNganh,  maLSH);
 
                 if (isAdded)
                 {
@@ -136,6 +89,37 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return RedirectToAction("Index", "SinhVien");
         }
 
+        [HttpGet]
+        public IActionResult SuaSinhVien(string maSV)
+        {
+            var sv = _sinhVienRepos.GetSinhVienById(maSV);
+            if (sv == null)
+            {
+                TempData["ErrorMessage"] = "Sinh viên không tồn tại.";
+                return RedirectToAction("Index");
+            }
+            return View(sv);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult SuaSinhVien(SinhVien sinhVien)
+        {
+
+            bool isAdded = _sinhVienRepos.UpdateSinhVien(sinhVien);
+
+            if (isAdded)
+            {
+                TempData["SuccessMessage"] = "Đã được cập nhật thành công!";
+                return RedirectToAction("Index", "SinhVien");
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "Có lỗi xảy ra khi cập nhật";
+            }
+
+            return RedirectToAction("Index", "SinhVien");
+        }
 
         public IActionResult XoaSinhVien(string maSV)
         {
@@ -153,9 +137,12 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return RedirectToAction("Index");
         }
 
-        public IActionResult TimKiem()
+        [HttpGet]
+        public IActionResult TimKiem(string maNK,int? maKhoa, int? maNganh, string maLSH, string TuKhoa)
         {
-            return View();
+            var sv = _sinhVienRepos.GetSinhVienFiltered(maNK, maKhoa, maNganh, maLSH, TuKhoa);
+
+            return View(sv);
         }
     }
 }

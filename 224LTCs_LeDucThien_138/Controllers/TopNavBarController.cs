@@ -95,7 +95,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
                     return RedirectToAction("AdminSetting", "TopNavBar");
                 }
 
-                var fileName = Path.GetFileName(Anh.FileName);
+                var fileName = Path.GetFileName(Anh.FileName); 
                 var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/assets/img", fileName);
 
                 using (var stream = new FileStream(path, FileMode.Create))

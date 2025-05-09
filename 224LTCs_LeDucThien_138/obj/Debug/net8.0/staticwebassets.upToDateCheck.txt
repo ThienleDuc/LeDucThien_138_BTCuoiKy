@@ -8,6 +8,7 @@ wwwroot\assets\img\anime-avatar-2.jpg
 wwwroot\assets\img\avatar-anime-1.jpg
 wwwroot\assets\img\avatar-default.svg
 wwwroot\assets\img\error-404-monochrome.svg
+wwwroot\assets\img\Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg
 wwwroot\assets\img\logo-truong-250.png
 wwwroot\css\site.css
 wwwroot\css\styles.css

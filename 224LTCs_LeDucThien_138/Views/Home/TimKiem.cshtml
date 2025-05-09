@@ -50,7 +50,7 @@
                 </div>
                 <div class="col-6">
                     <div class="d-flex gap-2 align-items-center justify-content-end">
-                        <form class="flex-grow-1" method="get" asp-action="TimKiem" asp-controller="Home" onsubmit="return validateSearch()">
+                        <form method="get" asp-action="TimKiem" asp-controller="Home" onsubmit="return validateSearch()">
                             <div class="d-flex justify-content-end">
                                 <div class="d-md-inline-block form-inline flex-grow-1">
                                     <div class="input-group">
@@ -72,12 +72,20 @@
                             return true;
                             }
                         </script>
-
-                        <a href="#" class="btn bg-success text-light fw-bold font-monospace"
-                        data-bs-toggle="modal" data-bs-target="#addPhongModal">
-                            <i class="fa-solid fa-plus"></i> Thêm Mới
-                        </a>
                     </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-6 d-flex justify-content-start">
+                    <a asp-action="TimKiem" asp-controller="Home" class="btn border rounded bg-transparent">
+                        <i class="fa-solid fa-arrows-rotate text-success"></i> Làm mới
+                    </a>
+                </div>
+                <div class="col-6 d-flex justify-content-end">
+                    <a href="#" class="btn bg-success text-light fw-bold font-monospace"
+                       data-bs-toggle="modal" data-bs-target="#addPhongModal">
+                        <i class="fa-solid fa-plus"></i> Thêm Mới
+                    </a>
                 </div>
             </div>
             <!-- Hiển thị thông báo từ TempData -->

@@ -198,6 +198,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\error-404-monochrome.svg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>224LTCs_LeDucThien_138</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/224LTCs_LeDucThien_138</BasePath>
+      <RelativePath>assets/img/Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>pntc0l69lj</Fingerprint>
+      <Integrity>28qLt6AurFDOZbGGf6lhPVqDs6kwJ52xn81jd1U0DCE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\logo-truong-250.png'))">
       <SourceType>Package</SourceType>
       <SourceId>224LTCs_LeDucThien_138</SourceId>
@@ -336,8 +354,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>184ixragpr</Fingerprint>
-      <Integrity>H23mZgZ6R4zgssfQdDGEBrh6Yw1DxdnmLh5y0tk0p3o=</Integrity>
+      <Fingerprint>w9kq2etei4</Fingerprint>
+      <Integrity>3IxGntYEB2/RYvJPD46jdx0AFvot50y3gHWPq7FZtbM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoadSinhvien.js'))</OriginalItemSpec>
