@@ -13,11 +13,7 @@ wwwroot\assets\img\logo-truong-250.png
 wwwroot\css\site.css
 wwwroot\css\styles.css
 wwwroot\favicon.ico
-wwwroot\js\datatables-simple-demo.js
-wwwroot\js\LoadAvatar.js
 wwwroot\js\LoadCanBo.js
-wwwroot\js\LoadPhongHoc.js
-wwwroot\js\LoadSinhvien.js
 wwwroot\js\paginationModule.js
 wwwroot\js\scripts.js
 wwwroot\js\TogglePassword.js
