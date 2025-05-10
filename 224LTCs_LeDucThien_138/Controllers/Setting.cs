@@ -3,13 +3,13 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace _224LTCs_LeDucThien_138.Controllers
 {
-    public class TopNavBarController : Controller
+    public class Setting : Controller
     {
         private readonly ConnectionDatabase _connectionDatabase;
         private readonly TaiKhoanAdminRepos _taiKhoanAdminRepos;
         private readonly CookieHelper _cookieHelper;
 
-        public TopNavBarController(ConnectionDatabase connectionDatabase, CookieHelper cookieHelper)
+        public Setting(ConnectionDatabase connectionDatabase, CookieHelper cookieHelper)
         {
             _connectionDatabase = connectionDatabase;
             _taiKhoanAdminRepos = new TaiKhoanAdminRepos(_connectionDatabase);
@@ -55,7 +55,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
                 if (isUpdated)
                 {
                     TempData["SuccessMessage"] = "Cập nhật thành công!";
-                    return RedirectToAction("AdminSetting", "TopNavBar");
+                    return RedirectToAction("AdminSetting", "Setting");
                 }
 
             }
@@ -85,14 +85,14 @@ namespace _224LTCs_LeDucThien_138.Controllers
                 if (!allowedExtensions.Contains(extension))
                 {
                     TempData["ErrorMessage"] = "Chỉ chấp nhận định dạng ảnh .jpg, .jpeg hoặc .png.";
-                    return RedirectToAction("AdminSetting","TopNavBar");
+                    return RedirectToAction("AdminSetting","Setting");
                 }
 
                 // Giới hạn kích thước 2MB
                 if (Anh.Length > 2 * 1024 * 1024)
                 {
                     TempData["ErrorMessage"] = "Ảnh phải có kích thước nhỏ hơn 2MB.";
-                    return RedirectToAction("AdminSetting", "TopNavBar");
+                    return RedirectToAction("AdminSetting", "Setting");
                 }
 
                 var fileName = Path.GetFileName(Anh.FileName); 
@@ -124,17 +124,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
                 TempData["ErrorMessage"] = "Vui lòng chọn một ảnh hợp lệ.";
             }
 
-            return RedirectToAction("AdminSetting", "TopNavBar");
-        }
-
-        public IActionResult GiangVienSetting()
-        {
-            return View();
-        }
-
-        public IActionResult SinhVienSetting()
-        {
-            return View();
+            return RedirectToAction("AdminSetting", "Setting");
         }
     }
 }

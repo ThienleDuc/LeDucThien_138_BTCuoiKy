@@ -10,16 +10,7 @@ builder.Services.AddSingleton<ConnectionDatabase>();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
 builder.Services.AddScoped<CookieHelper>();
-builder.Services.AddScoped<SinhVienRepos>();
-builder.Services.AddScoped<CanBoRepos>();
-builder.Services.AddScoped<LopSinhHoatRepos>();
-builder.Services.AddScoped<KhoaRepos>();
-builder.Services.AddScoped<ChuyenNganhRepos>();
-builder.Services.AddScoped<NienKhoaRepos>();
-builder.Services.AddScoped<PhongHocRepos>();
 builder.Services.AddScoped<TaiKhoanAdminRepos>();
-builder.Services.AddScoped<HocViRepos>();
-builder.Services.AddScoped<ChucVuRepos>();
 
 var app = builder.Build();
 
@@ -40,7 +31,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Setting}/{action=AdminSetting}/{id?}");
 
 app.Run();
 

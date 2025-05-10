@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b1ZE6xWAdw8=",
+  "dgSpecHash": "261SypOki2s=",
   "success": true,
-  "projectFilePath": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj",
+  "projectFilePath": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\khacd\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\khacd\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

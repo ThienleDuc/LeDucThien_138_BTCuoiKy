@@ -14,7 +14,7 @@
         <div class="col-md-3">
             <div class="card shadow rounded-4 text-center mb-2">
                 <div class="card-body p-4">
-                    <form method="post" asp-action="UploadAvatar" asp-controller="TopNavBar" enctype="multipart/form-data">
+                    <form method="post" asp-action="UploadAvatar" asp-controller="Setting" enctype="multipart/form-data">
                         <!-- Ảnh đại diện hiển thị mặc định -->
                         <img id="anhDaiDien"
                              src="@Url.Content(string.IsNullOrEmpty(Model.Anh) ? "~/assets/img/avatar-default.svg" : "~/assets/img/" + Model.Anh)"
@@ -24,7 +24,7 @@
                         <input type="file" id="uploadAnh" name="Anh" accept="image/*" hidden />
 
                         <p class="text-muted small mb-2">
-                            Lưu ý: jpg/jpeg/png &lt;2MB
+                            <strong class="text-danger">*Lưu ý:</strong> jpg/jpeg/png &lt;2MB
                         </p>                        
                         
                         <div class="d-flex align-items-center justify-content-center">
@@ -93,7 +93,7 @@
                         <p class="col form-control-plaintext mb-0 font-monospace">@Model.Email</p> <!-- Chỉ hiển thị thông tin -->
                     </div>
                     <div class="d-grid">
-                        <a asp-action="UpdateTaiKhoanAdmin" asp-controller="TopNavBar" class="btn-link text-decoration-none">
+                        <a asp-action="UpdateTaiKhoanAdmin" asp-controller="Setting" class="btn-link text-decoration-none">
                             Thay đổi
                         </a>
                     </div>

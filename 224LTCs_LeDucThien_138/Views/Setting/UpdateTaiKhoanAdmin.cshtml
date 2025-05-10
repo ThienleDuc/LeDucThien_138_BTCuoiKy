@@ -12,10 +12,10 @@
      <!-- Card Thông Tin -->
     <div class="card shadow rounded-4">
         <div class="card-body p-4">
-            <form method="post" asp-area="" asp-action="UpdateTaiKhoanAdmin" asp-controller="TopNavBar">
+            <form method="post" asp-area="" asp-action="UpdateTaiKhoanAdmin" asp-controller="Setting">
                 <div class="row">
                     <div class="text-end">
-                        <button onclick="history.back()" class="btn btn-close fw-bold bg-secondary border rounded" title="Đóng"></button>
+                        <a asp-action="AdminSetting" asp-controller="Setting" class="btn btn-close fw-bold bg-secondary border rounded" title="Đóng"></a>
                     </div>
                     <div class="col-md-6">
                         <div class="mb-3">
