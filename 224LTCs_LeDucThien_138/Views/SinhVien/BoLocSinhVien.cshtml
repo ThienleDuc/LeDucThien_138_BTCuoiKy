@@ -1,4 +1,4 @@
-﻿<!-- Modal bộ lọc -->
+﻿﻿<!-- Modal bộ lọc -->
 <div class="modal fade" id="filterModalSinhVien" tabindex="-1" aria-labelledby="filterModalSinhVienLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -8,7 +8,7 @@
             </div>
             <form method="get" asp-action="TimKiem" asp-controller="SinhVien">
                 <div class="modal-body">
-                    <input type="hidden" name="TuKhoa" value="@Context.Request.Query["TuKhoa"].ToString()"/>
+                    <input type="hidden" name="TuKhoa" value="@Context.Request.Query["TuKhoa"].ToString()" />
                     <div class="mb-3">
                         <label for="chooseKhoa" class="form-label">Khoa</label>
                         <select id="chooseKhoa" class="form-select" name="maKhoa">

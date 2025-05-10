@@ -1,50 +1,47 @@
-﻿@model _224LTCs_LeDucThien_138.Models.SinhVien;
+﻿@model _224LTCs_LeDucThien_138.Models.CanBo;
 
 @{
-    ViewData["Title"] = "Sinh viên - Thêm Sinh Viên";
+    ViewData["Title"] = "Cán Bộ & Giảng Viên - Thêm Cán Bộ & Giảng viên";
     Layout = "~/Views/Shared/_Layout.cshtml";
-    ViewData["HeadCollapse"] = "SinhVien";
-    ViewData["SinhVien"] = "SinhVien-Add";
+    ViewData["HeadCollapse"] = "CanBo";
+    ViewData["CanBo"] = "CanBo-Add";
 }
 
 <div class="container px-4 py-4">
-    <h1 class="mt-4 text-uppercase">Sinh viên</h1>
+    <h1 class="mt-4 text-uppercase">Cán bộ - Giảng viên</h1>
     <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item active">Thêm sinh viên</li>
+        <li class="breadcrumb-item active">Thêm cán bộ - giảng viên</li>
     </ol>
 
     <!-- Card Thêm Sinh Viên -->
     <div class="card shadow rounded-4">
         <div class="card-body p-4">
-            <form method="post" asp-area="" asp-action="ThemSinhVien" asp-controller="SinhVien">
+            <form method="post" asp-action="ThemCanBo" asp-controller="CanBo">
                 <div class="row">
                     <div class="text-end">
                         <button onclick="history.back()" class="btn btn-close fw-bold bg-secondary border rounded" title="Đóng"></button>
                     </div>
 
-                    <div class="d-flex gap-2 mb-3">
-                        <select id="chooseKhoa" class="form-select w-auto" name="maKhoa">
-                            <option selected disabled">Khoa</option>
+                    <div class="d-flex gap-2 mb-3" id="SelectWrapper">
+                        <select id="chooseCV" class="form-select w-auto" name="maChucVu">
+                            <option selected disabled>Chức vụ</option>
                         </select>
-                        <select id="chooseCN" class="form-select w-auto" name="maNganh">
-                            <option selected disabled>Chuyên ngành</option>
+                        <select id="chooseHV" class="form-select w-auto" name="maHocVi">
+                            <option selected disabled>Học vị</option>
                         </select>
-                        <select id="chooseNK" class="form-select w-auto" name="maNK">
-                            <option selected disabled>Niên khóa</option>
-                        </select>
-                        <select id="chooseLSH" class="form-select w-auto" name="maLSH">
-                            <option selected disabled>Lớp sinh hoạt</option>
+                        <select id="chooseKhoa" class="form-select w-auto d-none" name="maKhoa">
+                            <option selected disabled>Khoa</option>
                         </select>
                     </div>
-                    
+
                     <div class="mb-3">
-                        <small><strong class="text-danger">*Lưu ý:</strong> Chọn cả bốn thay đổi để thêm thành công sinh viên</small>
+                        <small><strong class="text-danger">*Lưu ý: </strong>Chọn chức vụ "Giảng viên" &rarr; chọn khoa. Không để trống học vị, chức vụ và khoa (nếu có).</small>
                     </div>
 
                     <div class="col-md-6">
                         <div class="mb-3">
                             <label for="hoTen" class="form-label">Họ và Tên</label>
-                            <input type="text" class="form-control" id="hoTen" name="TenSV" placeholder="Nhập họ và tên" required />
+                            <input type="text" class="form-control" id="hoTen" name="TenCB" placeholder="Nhập họ và tên" required />
                         </div>
 
                         <div class="mb-3">
@@ -104,7 +101,7 @@
                             </div>
                             <div class="col-md-6 align-content-end">
                                 <div class="d-grid">
-                                    <button type="submit" class="btn btn-primary fw-bold">Thêm Sinh Viên</button>
+                                    <button type="submit" class="btn btn-primary fw-bold">Thêm cán bộ - giảng viên</button>
                                 </div>
                             </div>
                         </div>
@@ -116,4 +113,4 @@
 </div>
 
 <script src="~/js/TogglePassword.js"></script>
-<script type="module" src="~/js/LoadSinhvien.js"></script>
+<script type="module" src="~/js/LoadCanBo.js"></script>

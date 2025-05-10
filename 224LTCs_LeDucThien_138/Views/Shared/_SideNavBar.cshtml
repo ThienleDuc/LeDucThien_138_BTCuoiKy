@@ -30,18 +30,6 @@
                 </nav>
             </div>
 
-            <a class="nav-link collapsed @(ViewData["HeadCollapse"] == "GiangVien"? "active" : "")" asp-area="" asp-action="Index" asp-controller="GiangVien" data-bs-toggle="collapse" data-bs-target="#collapseGiangVien" aria-expanded="false" aria-controls="collapseGiangVien">
-                <div class="sb-nav-link-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
-                Giảng viên
-                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-            </a>
-            <div class="collapse" id="collapseGiangVien" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                <nav class="sb-sidenav-menu-nested nav">
-                    <a class="nav-link @(ViewData["GiangVien"] == "GiangVien-Index" ? "active" : "")" asp-area="" asp-action="Index" asp-controller="GiangVien">Danh sách</a>
-                    <a class="nav-link @(ViewData["GiangVien"] == "GiangVien-TimKiem" ? "active" : "")" asp-area="" asp-action="TimKiem" asp-controller="GiangVien">Tìm kiếm</a>
-                </nav>
-            </div>
-
             <a class="nav-link collapsed @(ViewData["HeadCollapse"] == "SinhVien"? "active" : "")" asp-area="" asp-action="Index" asp-controller="SinhVien" data-bs-toggle="collapse" data-bs-target="#collapseSinhVien" aria-expanded="false" aria-controls="collapseSinhVien">
                 <div class="sb-nav-link-icon"><i class="fa-solid fa-graduation-cap"></i></div>
                 Sinh viên
@@ -54,6 +42,18 @@
                 </nav>
             </div>
 
+            <a class="nav-link collapsed @(ViewData["HeadCollapse"] == "CanBo"? "active" : "")" asp-area="" asp-action="Index" asp-controller="CanBo" data-bs-toggle="collapse" data-bs-target="#collapseCanBo" aria-expanded="false" aria-controls="collapseCanBo">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                Cán bộ - Giảng viên
+                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+            </a>
+            <div class="collapse" id="collapseCanBo" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                <nav class="sb-sidenav-menu-nested nav">
+                    <a class="nav-link @(ViewData["CanBo"] == "CanBo-Index" ? "active" : "")" asp-area="" asp-action="Index" asp-controller="CanBo">Danh sách</a>
+                    <a class="nav-link @(ViewData["CanBo"] == "CanBo-TimKiem" ? "active" : "")" asp-area="" asp-action="TimKiem" asp-controller="CanBo">Tìm kiếm</a>
+                </nav>
+            </div>
+
             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLogin" aria-expanded="false" aria-controls="collapseLogin">
                 <div class="sb-nav-link-icon"><i class="fa-solid fa-right-to-bracket"></i></div>
                 Đăng nhập
@@ -62,7 +62,7 @@
             <div class="collapse" id="collapseLogin" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                 <nav class="sb-sidenav-menu-nested nav">
                     <a class="nav-link" asp-area="" asp-action="Admin" asp-controller="Login">Admin</a>
-                    <a class="nav-link" asp-area="" asp-action="GiangVien" asp-controller="Login">Giảng viên</a>
+                    <a class="nav-link" asp-area="" asp-action="CanBo" asp-controller="Login">Giảng viên</a>
                     <a class="nav-link" asp-area="" asp-action="SinhVien" asp-controller="Login">Sinh viên</a>
                 </nav>
             </div>

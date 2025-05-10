@@ -6,7 +6,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
     {
         private readonly ConnectionDatabase _connectionDatabase;
         private readonly TaiKhoanAdminRepos _taiKhoanAdminRepos;
-        private readonly GiangVienRepos _giangVienRepos;
+        private readonly CanBoRepos _canBoRepos;
         private readonly SinhVienRepos _sinhVienRepos;
         private readonly CookieHelper _cookieHelper;
 
@@ -14,7 +14,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
         {
             _connectionDatabase = connectionDatabase;
             _taiKhoanAdminRepos = new TaiKhoanAdminRepos(_connectionDatabase);
-            _giangVienRepos = new GiangVienRepos(_connectionDatabase);
+            _canBoRepos = new CanBoRepos(_connectionDatabase);
             _sinhVienRepos = new SinhVienRepos(_connectionDatabase);
             _cookieHelper = cookieHelper;
         }

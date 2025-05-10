@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2bpFv9N2XDKaPx302SFhEb85rYx9agCJmdMgPj0sm3g=",
+  "Hash": "+eoHnk5726OagaCrFPj+BlhVt90QETuZ02RJ3dbBLx8=",
   "Source": "224LTCs_LeDucThien_138",
   "BasePath": "_content/224LTCs_LeDucThien_138",
   "Mode": "Default",
@@ -416,6 +416,27 @@
       "OriginalItemSpec": "wwwroot\\js\\LoadAvatar.js"
     },
     {
+      "Identity": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadCanBo.js",
+      "SourceId": "224LTCs_LeDucThien_138",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\",
+      "BasePath": "_content/224LTCs_LeDucThien_138",
+      "RelativePath": "js/LoadCanBo#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "skaq7oapyo",
+      "Integrity": "DF/C40+SrJFHgzlwdelNmENTdaBURAtI6+sedv5VccE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\LoadCanBo.js"
+    },
+    {
       "Identity": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadPhongHoc.js",
       "SourceId": "224LTCs_LeDucThien_138",
       "SourceType": "Discovered",
@@ -451,8 +472,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "w9kq2etei4",
-      "Integrity": "3IxGntYEB2/RYvJPD46jdx0AFvot50y3gHWPq7FZtbM=",
+      "Fingerprint": "wu5fzzzw2c",
+      "Integrity": "mJW2X7ICU4fEP5BNuKj7EWcrb83MAnCXxB2Spqjqs3g=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\LoadSinhvien.js"
@@ -3278,6 +3299,88 @@
       ]
     },
     {
+      "Route": "js/LoadCanBo.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadCanBo.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3576"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DF/C40+SrJFHgzlwdelNmENTdaBURAtI6+sedv5VccE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 10 May 2025 10:47:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DF/C40+SrJFHgzlwdelNmENTdaBURAtI6+sedv5VccE="
+        }
+      ]
+    },
+    {
+      "Route": "js/LoadCanBo.skaq7oapyo.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadCanBo.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3576"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DF/C40+SrJFHgzlwdelNmENTdaBURAtI6+sedv5VccE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 10 May 2025 10:47:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "skaq7oapyo"
+        },
+        {
+          "Name": "label",
+          "Value": "js/LoadCanBo.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DF/C40+SrJFHgzlwdelNmENTdaBURAtI6+sedv5VccE="
+        }
+      ]
+    },
+    {
       "Route": "js/LoadPhongHoc.js",
       "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadPhongHoc.js",
       "Selectors": [],
@@ -3370,7 +3473,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2800"
+          "Value": "2802"
         },
         {
           "Name": "Content-Type",
@@ -3378,11 +3481,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3IxGntYEB2/RYvJPD46jdx0AFvot50y3gHWPq7FZtbM=\""
+          "Value": "\"mJW2X7ICU4fEP5BNuKj7EWcrb83MAnCXxB2Spqjqs3g=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 14:16:34 GMT"
+          "Value": "Fri, 09 May 2025 14:44:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3392,12 +3495,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-3IxGntYEB2/RYvJPD46jdx0AFvot50y3gHWPq7FZtbM="
+          "Value": "sha256-mJW2X7ICU4fEP5BNuKj7EWcrb83MAnCXxB2Spqjqs3g="
         }
       ]
     },
     {
-      "Route": "js/LoadSinhvien.w9kq2etei4.js",
+      "Route": "js/LoadSinhvien.wu5fzzzw2c.js",
       "AssetFile": "D:\\WORKSPACE\\project_LTCs\\224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadSinhvien.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3407,7 +3510,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2800"
+          "Value": "2802"
         },
         {
           "Name": "Content-Type",
@@ -3415,11 +3518,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3IxGntYEB2/RYvJPD46jdx0AFvot50y3gHWPq7FZtbM=\""
+          "Value": "\"mJW2X7ICU4fEP5BNuKj7EWcrb83MAnCXxB2Spqjqs3g=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 14:16:34 GMT"
+          "Value": "Fri, 09 May 2025 14:44:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3429,7 +3532,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "w9kq2etei4"
+          "Value": "wu5fzzzw2c"
         },
         {
           "Name": "label",
@@ -3437,7 +3540,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-3IxGntYEB2/RYvJPD46jdx0AFvot50y3gHWPq7FZtbM="
+          "Value": "sha256-mJW2X7ICU4fEP5BNuKj7EWcrb83MAnCXxB2Spqjqs3g="
         }
       ]
     },

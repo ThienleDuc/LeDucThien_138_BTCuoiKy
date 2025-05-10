@@ -83,9 +83,7 @@ namespace _224LTCs_LeDucThien_138.Models
 
             using (SqlConnection conn = _connectionDatabase.GetConnection())
             {
-                string query = @" SELECT sv.MaSV, sv.MaLSH, sv.TenSV, sv.GioiTinh, sv.NgaySinh, sv.Cccd, sv.DiaChi,
-                            sv.Sdt, sv.Email, sv.MatKhau, sv.Anh,
-                            lsh.TenLSH
+                string query = @" SELECT sv.*, lsh.TenLSH
                             FROM SinhVien sv
                             LEFT JOIN LopSinhHoat lsh ON sv.MaLSH = lsh.MaLSH;";
                 SqlCommand cmd = new SqlCommand(query, conn);
@@ -225,47 +223,6 @@ namespace _224LTCs_LeDucThien_138.Models
             Console.WriteLine($"maSV: {maSV}");
 
             return sv;
-        }
-
-        public List<SinhVien> TimKiemSinhVien(string keyword)
-        {
-            List<SinhVien> danhSach = new List<SinhVien>();
-
-            using (SqlConnection conn = _connectionDatabase.GetConnection())
-            {
-                SqlCommand cmd = new SqlCommand("SearchSinhVien", conn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Keyword", keyword);
-
-                conn.Open();
-
-                using (SqlDataReader reader = cmd.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        danhSach.Add(new SinhVien
-                        {
-                            MaSV = reader["MaSV"]?.ToString(),
-                            MaLSH = reader["MaLSH"]?.ToString(),
-                            TenSV = reader["TenSV"]?.ToString(),
-                            GioiTinh = reader["GioiTinh"] != DBNull.Value && Convert.ToBoolean(reader["GioiTinh"]),
-                            NgaySinh = reader["NgaySinh"] != DBNull.Value ? (DateTime?)reader["NgaySinh"] : null,
-                            Cccd = reader["Cccd"]?.ToString(),
-                            DiaChi = reader["DiaChi"]?.ToString(),
-                            Sdt = reader["Sdt"]?.ToString(),
-                            Email = reader["Email"]?.ToString(),
-                            MatKhau = reader["MatKhau"]?.ToString(),
-                            Anh = reader["Anh"]?.ToString(),
-                            LopSinhHoat = new LopSinhHoat
-                            {
-                                TenLSH = reader["TenLSH"]?.ToString()
-                            }
-                        });
-                    }
-                }
-            }
-
-            return danhSach;
         }
 
         public bool AddSinhVien(SinhVien sinhVien, string maNK, int maKhoa, int maNganh, string maLSH)

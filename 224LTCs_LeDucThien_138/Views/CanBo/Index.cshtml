@@ -1,15 +1,14 @@
-﻿@model List<_224LTCs_LeDucThien_138.Models.SinhVien>
+﻿@model List<_224LTCs_LeDucThien_138.Models.CanBo>
 @{
-    ViewData["Title"] = "Sinh viên - Tìm kiếm";
-    ViewData["HeadCollapse"] = "SinhVien";
-    ViewData["SinhVien"] = "SinhVien-TimKiem";
-    var tuKhoa = Context.Request.Query["TuKhoa"].ToString();
+    ViewData["Title"] = "Cán Bộ & Giảng Viên - Xem danh sách";
+    ViewData["HeadCollapse"] = "CanBo";
+    ViewData["CanBo"] = "CanBo-Index";
 }
 
 <div class="container-fluid px-4">
-    <h1 class="mt-4 text-uppercase">Sinh viên</h1>
+    <h1 class="mt-4 text-uppercase">Cán Bộ - Giảng viên</h1>
     <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item active">Tìm kiếm</li>
+        <li class="breadcrumb-item active">Xem danh sách</li>
     </ol>
 
     <div class="card mb-4">
@@ -50,12 +49,12 @@
                 </div>
                 <div class="col-6">
                     <div class="d-flex gap-2 align-items-center justify-content-end">
-                        <form method="get" asp-action="TimKiem" asp-controller="SinhVien" onsubmit="return validateSearch()">
+                        <form method="get" asp-action="TimKiem" asp-controller="CanBo" onsubmit="return validateSearch()">
                             <div class="d-flex justify-content-end">
                                 <div class="d-md-inline-block form-inline flex-grow-1">
                                     <div class="input-group">
-                                        <input id="tuKhoaInput" class="form-control" type="text" placeholder="Tìm kiếm..." aria-label="Tìm kiếm..." aria-describedby="btnNavbarSearch" name="TuKhoa" value="@tuKhoa" />
-                                        <button class="btn btn-primary" id="btnNavbarSearch" type="@(!string.IsNullOrWhiteSpace(tuKhoa) ? "submit" : "button") "><i class="fas fa-search"></i></button>
+                                        <input id="tuKhoaInput" class="form-control" type="text" placeholder="Tìm kiếm..." aria-label="Tìm kiếm..." aria-describedby="btnNavbarSearch" name="TuKhoa" />
+                                        <button class="btn btn-primary" id="btnNavbarSearch" type="submit"><i class="fas fa-search"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -72,20 +71,18 @@
                                 return true;
                             }
                         </script>
+
                     </div>
                 </div>
             </div>
             <div class="row mb-3">
-                <div class="col-6 d-flex justify-content-start gap-2">
-                    <a asp-action="TimKiem" asp-controller="SinhVien" class="btn border rounded bg-transparent">
-                        <i class="fa-solid fa-arrows-rotate text-success"></i> Làm mới
-                    </a>
-                    <button class="btn btn-light border rounded" data-bs-toggle="modal" data-bs-target="#filterModalSinhVien">
+                <div class="col-6 d-flex justify-content-start">
+                    <button class="btn btn-light border rounded" data-bs-toggle="modal" data-bs-target="#filterModalCanBo">
                         <i class="fa-solid fa-filter text-muted"></i> Lọc
                     </button>
                 </div>
                 <div class="col-6 d-flex justify-content-end">
-                    <a asp-action="ThemSinhVien" asp-controller="SinhVien" class="btn bg-success text-light fw-bold font-monospace">
+                    <a asp-action="ThemCanBo" asp-controller="CanBo" class="btn bg-success text-light fw-bold font-monospace">
                         <i class="fa-solid fa-plus"></i> Thêm Mới
                     </a>
                 </div>
@@ -110,8 +107,8 @@
             <table class="table table-bordered table-hover">
                 <thead>
                     <tr>
-                        <th>Mã sinh viên</th>
-                        <th>Tên sinh viên</th>
+                        <th>Mã CB/GV</th>
+                        <th>Tên CB/GV</th>
                         <th>Giới tính</th>
                         <th>Ngày sinh</th>
                         <th>Địa chỉ</th>
@@ -121,26 +118,26 @@
                 <tbody id="tableBody">
                     @if (Model.Count <= 5)
                     {
-                        @foreach (var sv in Model)
+                        @foreach (var cb in Model)
                         {
                             <tr class="data-row">
                                 <!-- Mặc định 10 dòng -->
-                                <td>@sv.MaSV</td>
-                                <td>@sv.TenSV</td>
-                                <td>@(sv.GioiTinh ? "Nam" : "Nữ")</td>
-                                <td>@sv.NgaySinh?.ToString("dd/MM/yyyy")</td>
-                                <td>@sv.DiaChi</td>
+                                <td>@cb.MaCB</td>
+                                <td>@cb.TenCB</td>
+                                <td>@(cb.GioiTinh ? "Nam" : "Nữ")</td>
+                                <td>@cb.NgaySinh?.ToString("dd/MM/yyyy")</td>
+                                <td>@cb.DiaChi</td>
                                 <td class="text-center">
                                     <a href="#" class="text-decoration-none text-black"><i class="fa-regular fa-eye"></i></a>
                                 </td>
                                 <td class="text-center">
-                                    <a asp-action="SuaSinhVien" asp-controller="SinhVien" asp-route-maSV="@sv.MaSV" class="text-decoration-none text-warning">
+                                    <a asp-action="SuaCanBo" asp-controller="CanBo" asp-route-maCB="@cb.MaCB" class="text-decoration-none text-warning">
                                         <i class="fa-duotone fa-solid fa-pen-to-square"></i>
                                     </a>
                                 </td>
                                 <td class="text-center">
                                     <a class="text-decoration-none text-danger"
-                                       asp-action="XoaSinhVien" asp-controller="SinhVien" asp-route-maSV="@sv.MaSV"
+                                       asp-action="XoaCanBo" asp-controller="CanBo" asp-route-maCB="@cb.MaCB"
                                        onclick="return confirm('Bạn có chắc muốn xóa sinh viên này không?');">
                                         <i class="fa-regular fa-trash-can"></i>
                                     </a>
@@ -154,8 +151,8 @@
                         {
                             <tr class="data-row @(i >= 10 ? "d-none" : "")">
                                 <!-- Mặc định 10 dòng -->
-                                <td>@Model[i].MaSV</td>
-                                <td>@Model[i].TenSV</td>
+                                <td>@Model[i].MaCB</td>
+                                <td>@Model[i].TenCB</td>
                                 <td>@(Model[i].GioiTinh ? "Nam" : "Nữ")</td>
                                 <td>@Model[i].NgaySinh?.ToString("dd/MM/yyyy")</td>
                                 <td>@Model[i].DiaChi</td>
@@ -164,13 +161,13 @@
                                     <a href="#" class="text-decoration-none text-black"><i class="fa-regular fa-eye"></i></a>
                                 </td>
                                 <td class="text-center">
-                                    <a asp-action="SuaSinhVien" asp-controller="SinhVien" asp-route-maSV="@Model[i].MaSV" class="text-decoration-none text-warning">
+                                    <a asp-action="SuaCanBo" asp-controller="CanBo" asp-route-maCB="@Model[i].MaCB" class="text-decoration-none text-warning">
                                         <i class="fa-duotone fa-solid fa-pen-to-square"></i>
                                     </a>
                                 </td>
                                 <td class="text-center">
                                     <a class="text-decoration-none text-danger"
-                                       asp-action="XoaSinhVien" asp-controller="SinhVien" asp-route-maSV="@Model[i].MaSV"
+                                       asp-action="XoaCanBo" asp-controller="CanBo" asp-route-maCB="@Model[i].MaCB"
                                        onclick="return confirm('Bạn có chắc muốn xóa sinh viên này không?');">
                                         <i class="fa-regular fa-trash-can"></i>
                                     </a>
@@ -194,5 +191,6 @@
         </div>
     </div>
 </div>
-<partial name="~/Views/SinhVien/BoLocSinhVien.cshtml"></partial>
-<script type="module" src="~/js/LoadSinhvien.js"></script>
+
+<partial name="~/Views/CanBo/BoLocCanBo.cshtml"></partial>
+<script type="module" src="~/js/LoadCanBo.js"></script>
