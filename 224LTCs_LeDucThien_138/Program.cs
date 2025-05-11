@@ -20,6 +20,11 @@ builder.Services.AddScoped<PhongHocRepos>();
 builder.Services.AddScoped<TaiKhoanAdminRepos>();
 builder.Services.AddScoped<HocViRepos>();
 builder.Services.AddScoped<ChucVuRepos>();
+builder.Services.AddScoped<LichHocRepos>();
+builder.Services.AddScoped<MonHocRepos>();
+builder.Services.AddScoped<LopHocPhanRepos>();
+builder.Services.AddScoped<CT_LHP_SVRepos>();
+builder.Services.AddScoped<HocPhanRepos>();
 
 var app = builder.Build();
 
@@ -40,7 +45,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=LopHocPhan}/{action=Index}/{id?}");
 
 app.Run();
 

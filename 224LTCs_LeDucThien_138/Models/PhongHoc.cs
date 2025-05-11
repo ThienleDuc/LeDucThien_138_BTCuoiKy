@@ -8,20 +8,20 @@ namespace _224LTCs_LeDucThien_138.Models
     {
         // MaPhong là khóa chính và sử dụng Identity trong CSDL
         [Key]
-        public int MaPhong { get; set; }
+        public int? MaPhong { get; set; }
 
         // TenPhong có độ dài tối đa là 50 ký tự
         [StringLength(50)]
         public string TenPhong { get; set; }
 
         // SucChua là kiểu INT, không cần giới hạn độ dài
-        public int SucChua { get; set; }
+        public int? SucChua { get; set; }
 
         // Constructor không có tham số
         public PhongHoc() { }
 
         // Constructor có tham số
-        public PhongHoc(int maPhong, string tenPhong, int sucChua)
+        public PhongHoc(int? maPhong, string tenPhong, int? sucChua)
         {
             MaPhong = maPhong;
             TenPhong = tenPhong;
@@ -133,13 +133,13 @@ namespace _224LTCs_LeDucThien_138.Models
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@TenPhong", tenPhong);
-                    int count = (int)cmd.ExecuteScalar();
+                    int? count = (int?)cmd.ExecuteScalar();
                     return count > 0;
                 }
             }
         }
 
-        public bool IsThisPhong(int maPhong, string tenPhong)
+        public bool IsThisPhong(int? maPhong, string tenPhong)
         {
             using (SqlConnection conn = _connectionDatabase.GetConnection())
             {
@@ -149,7 +149,7 @@ namespace _224LTCs_LeDucThien_138.Models
                 {
                     cmd.Parameters.AddWithValue("@MaPhong", maPhong);
                     cmd.Parameters.AddWithValue("@TenPhong", tenPhong);
-                    int count = (int)cmd.ExecuteScalar();
+                    int? count = (int?)cmd.ExecuteScalar();
                     return count > 0;
                 }
             }
@@ -166,7 +166,7 @@ namespace _224LTCs_LeDucThien_138.Models
                 cmd.Parameters.AddWithValue("@SucChua", phong.SucChua);
 
                 conn.Open();
-                int result = cmd.ExecuteNonQuery();
+                int? result = cmd.ExecuteNonQuery();
                 return result > 0;
             }
         }
@@ -183,12 +183,12 @@ namespace _224LTCs_LeDucThien_138.Models
                 cmd.Parameters.AddWithValue("@SucChua", phong.SucChua);
 
                 conn.Open();
-                int result = cmd.ExecuteNonQuery();
+                int? result = cmd.ExecuteNonQuery();
                 return result > 0;
             }
         }
 
-        public bool DeletePhong(int maPhong)
+        public bool DeletePhong(int? maPhong)
         {
             using (SqlConnection conn = _connectionDatabase.GetConnection())
             {
@@ -197,7 +197,7 @@ namespace _224LTCs_LeDucThien_138.Models
                 cmd.Parameters.AddWithValue("@MaPhong", maPhong);
 
                 conn.Open();
-                int result = cmd.ExecuteNonQuery();
+                int? result = cmd.ExecuteNonQuery();
                 return result > 0;
             }
         }
