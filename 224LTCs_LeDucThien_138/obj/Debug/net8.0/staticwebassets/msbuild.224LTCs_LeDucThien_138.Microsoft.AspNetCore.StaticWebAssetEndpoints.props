@@ -228,17 +228,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"skaq7oapyo"},{"Name":"integrity","Value":"sha256-DF/C40\u002BSrJFHgzlwdelNmENTdaBURAtI6\u002Bsedv5VccE="},{"Name":"label","Value":"_content/224LTCs_LeDucThien_138/js/LoadCanBo.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3576"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022DF/C40\u002BSrJFHgzlwdelNmENTdaBURAtI6\u002Bsedv5VccE=\u0022"},{"Name":"Last-Modified","Value":"Mon, 12 May 2025 13:02:55 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/224LTCs_LeDucThien_138/js/LoadLopHocPhan.8y2dtcnuxy.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoadLopHocPhan.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8y2dtcnuxy"},{"Name":"integrity","Value":"sha256-0NLALz3sin3wr4\u002B2iBY5qWoqHi7DJqDloPGYGfkpbQk="},{"Name":"label","Value":"_content/224LTCs_LeDucThien_138/js/LoadLopHocPhan.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4357"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00220NLALz3sin3wr4\u002B2iBY5qWoqHi7DJqDloPGYGfkpbQk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 12 May 2025 14:16:14 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/224LTCs_LeDucThien_138/js/LoadLopHocPhan.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoadLopHocPhan.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-0NLALz3sin3wr4\u002B2iBY5qWoqHi7DJqDloPGYGfkpbQk="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4357"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00220NLALz3sin3wr4\u002B2iBY5qWoqHi7DJqDloPGYGfkpbQk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 12 May 2025 14:16:14 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-E/4iDl20PGpzBfxqovqAteQsZT\u002Bcf7/SW9P9BkBSwto="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4706"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022E/4iDl20PGpzBfxqovqAteQsZT\u002Bcf7/SW9P9BkBSwto=\u0022"},{"Name":"Last-Modified","Value":"Mon, 12 May 2025 17:09:16 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/224LTCs_LeDucThien_138/js/LoadLopHocPhan.n35x6c7edl.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoadLopHocPhan.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"n35x6c7edl"},{"Name":"integrity","Value":"sha256-E/4iDl20PGpzBfxqovqAteQsZT\u002Bcf7/SW9P9BkBSwto="},{"Name":"label","Value":"_content/224LTCs_LeDucThien_138/js/LoadLopHocPhan.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4706"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022E/4iDl20PGpzBfxqovqAteQsZT\u002Bcf7/SW9P9BkBSwto=\u0022"},{"Name":"Last-Modified","Value":"Mon, 12 May 2025 17:09:16 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/224LTCs_LeDucThien_138/js/LoadPhongHoc.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoadPhongHoc.js'))</AssetFile>

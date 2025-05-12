@@ -13,9 +13,11 @@ namespace _224LTCs_LeDucThien_138.Models
         [StringLength(7)]
         public string MaHP { get; set; }
 
-        public int? MaMH { get; set; }
+        public string MaMH { get; set; }
 
         public string TenMH => MonHoc?.TenMH;
+
+        public int? SoTC => MonHoc?.SoTC;
 
         public int? MaLich { get; set; }
 
@@ -60,10 +62,9 @@ namespace _224LTCs_LeDucThien_138.Models
 
         public ICollection<CT_LHP_SV> CT_LHP_SVs { get; set; }
 
-        public LopHocPhan(string maLHP, string maHP, int? maMH, int? maLich, string maCB, 
-            int? maPhong, int? sLHienTai, int? sLToiDa, DateTime? ngayHoc, string ghiChu, 
-            HocPhan hocPhan, MonHoc monHoc, LichHoc lichHoc, CanBo canBo, PhongHoc phong, 
-            ICollection<CT_LHP_SV> cT_LHP_SVs)
+        public LopHocPhan(string maLHP, string maHP, string maMH, int? maLich, string maCB, int? maPhong, 
+            int? sLHienTai, int? sLToiDa, DateTime? ngayHoc, string ghiChu, HocPhan hocPhan, MonHoc monHoc, 
+            LichHoc lichHoc, CanBo canBo, PhongHoc phong, ICollection<CT_LHP_SV> cT_LHP_SVs)
         {
             MaLHP = maLHP;
             MaHP = maHP;
@@ -104,7 +105,7 @@ namespace _224LTCs_LeDucThien_138.Models
             using (SqlConnection conn = _connectionDatabase.GetConnection())
             {
                 string query = @"
-                SELECT lhp.*, mh.TenMH, lh.ThuNgay, lh.TietBatDau, lh.TietKetThuc,
+                SELECT lhp.*, mh.TenMH, mh.SoTC, lh.ThuNgay, lh.TietBatDau, lh.TietKetThuc,
                        cb.TenCB, p.TenPhong
                 FROM LopHocPhan lhp
                 LEFT JOIN MonHoc mh ON lhp.MaMH = mh.MaMH
@@ -135,7 +136,7 @@ namespace _224LTCs_LeDucThien_138.Models
                         {
                             MaLHP = reader["MaLHP"]?.ToString(),
                             MaHP = reader["MaHP"]?.ToString(),
-                            MaMH = reader["MaMH"] != DBNull.Value ? (int?)Convert.ToInt32(reader["MaMH"]) : null,
+                            MaMH = reader["MaMH"]?.ToString(),
                             MaLich = reader["MaLich"] != DBNull.Value ? (int?)Convert.ToInt32(reader["MaLich"]) : null,
                             MaCB = reader["MaCB"]?.ToString(),
                             MaPhong = reader["MaPhong"] != DBNull.Value ? (int?)Convert.ToInt32(reader["MaPhong"]) : null,
@@ -146,7 +147,8 @@ namespace _224LTCs_LeDucThien_138.Models
                             
                             MonHoc = new MonHoc
                             {
-                                TenMH = reader["TenMH"]?.ToString()
+                                TenMH = reader["TenMH"]?.ToString(),
+                                SoTC = reader["SoTC"] != DBNull.Value ? Convert.ToInt32(reader["SoTC"]) : null
                             },
                             LichHoc = new LichHoc
                             {
@@ -170,14 +172,14 @@ namespace _224LTCs_LeDucThien_138.Models
             return list;
         }
 
-        public List<LopHocPhan> GetLopHocPhanFiltered(string maNK = null, int? maKhoa = null, int? maNganh = null, string maHP = null, int? maPhong = null, int? maMH = null, string maCB = null, string keyword = null)
+        public List<LopHocPhan> GetLopHocPhanFiltered(string maNK = null, int? maKhoa = null, int? maNganh = null, string maHP = null, int? maPhong = null, string maMH = null, string maCB = null, string keyword = null)
         {
             List<LopHocPhan> list = new List<LopHocPhan>();
 
             using (SqlConnection conn = _connectionDatabase.GetConnection())
             {
                 string query = @"
-                    SELECT lhp.*, mh.TenMH, lh.ThuNgay, lh.TietBatDau, lh.TietKetThuc,
+                    SELECT lhp.*, mh.TenMH, mh.SoTC, lh.ThuNgay, lh.TietBatDau, lh.TietKetThuc,
                            cb.TenCB, p.TenPhong
                     FROM LopHocPhan lhp
                     LEFT JOIN MonHoc mh ON lhp.MaMH = mh.MaMH
@@ -214,7 +216,7 @@ namespace _224LTCs_LeDucThien_138.Models
                 cmd.Parameters.AddWithValue("@MaNganh", maNganh.HasValue ? (object)maNganh.Value : DBNull.Value);
                 cmd.Parameters.AddWithValue("@MaHP", string.IsNullOrEmpty(maHP) ? DBNull.Value : (object)maHP);
                 cmd.Parameters.AddWithValue("@MaPhong", maPhong.HasValue ? (object)maPhong.Value : DBNull.Value);
-                cmd.Parameters.AddWithValue("@MaMH", maMH.HasValue ? (object)maMH.Value : DBNull.Value);
+                cmd.Parameters.AddWithValue("@MaMH", string.IsNullOrEmpty(maMH) ? DBNull.Value : (object)maMH);
                 cmd.Parameters.AddWithValue("@MaCB", string.IsNullOrEmpty(maCB) ? DBNull.Value : (object)maCB);
                 cmd.Parameters.AddWithValue("@Keyword", string.IsNullOrWhiteSpace(keyword) ? DBNull.Value : (object)keyword);
 
@@ -228,7 +230,7 @@ namespace _224LTCs_LeDucThien_138.Models
                         {
                             MaLHP = reader["MaLHP"]?.ToString(),
                             MaHP = reader["MaHP"]?.ToString(),
-                            MaMH = reader["MaMH"] != DBNull.Value ? (int?)Convert.ToInt32(reader["MaMH"]) : null,
+                            MaMH = reader["MaMH"]?.ToString(),
                             MaLich = reader["MaLich"] != DBNull.Value ? (int?)Convert.ToInt32(reader["MaLich"]) : null,
                             MaCB = reader["MaCB"]?.ToString(),
                             MaPhong = reader["MaPhong"] != DBNull.Value ? (int?)Convert.ToInt32(reader["MaPhong"]) : null,
@@ -239,7 +241,8 @@ namespace _224LTCs_LeDucThien_138.Models
 
                             MonHoc = new MonHoc
                             {
-                                TenMH = reader["TenMH"]?.ToString()
+                                TenMH = reader["TenMH"]?.ToString(),
+                                SoTC = reader["SoTC"] != DBNull.Value ? Convert.ToInt32(reader["SoTC"]) : null
                             },
                             LichHoc = new LichHoc
                             {

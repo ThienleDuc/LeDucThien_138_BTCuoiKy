@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5z6fpSjr/Ec93zqMpRpr8RLLaw6XhUr8gmmIeC5bFz4=",
+  "Hash": "q+J8sX0M5/IBCTqeIl4itveHo0/NnagZmvCSOPsBtQg=",
   "Source": "224LTCs_LeDucThien_138",
   "BasePath": "_content/224LTCs_LeDucThien_138",
   "Mode": "Default",
@@ -451,8 +451,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "8y2dtcnuxy",
-      "Integrity": "0NLALz3sin3wr4+2iBY5qWoqHi7DJqDloPGYGfkpbQk=",
+      "Fingerprint": "n35x6c7edl",
+      "Integrity": "E/4iDl20PGpzBfxqovqAteQsZT+cf7/SW9P9BkBSwto=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\LoadLopHocPhan.js"
@@ -3402,51 +3402,6 @@
       ]
     },
     {
-      "Route": "js/LoadLopHocPhan.8y2dtcnuxy.js",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadLopHocPhan.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4357"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0NLALz3sin3wr4+2iBY5qWoqHi7DJqDloPGYGfkpbQk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 14:16:14 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "8y2dtcnuxy"
-        },
-        {
-          "Name": "label",
-          "Value": "js/LoadLopHocPhan.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-0NLALz3sin3wr4+2iBY5qWoqHi7DJqDloPGYGfkpbQk="
-        }
-      ]
-    },
-    {
       "Route": "js/LoadLopHocPhan.js",
       "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadLopHocPhan.js",
       "Selectors": [],
@@ -3457,7 +3412,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4357"
+          "Value": "4706"
         },
         {
           "Name": "Content-Type",
@@ -3465,11 +3420,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0NLALz3sin3wr4+2iBY5qWoqHi7DJqDloPGYGfkpbQk=\""
+          "Value": "\"E/4iDl20PGpzBfxqovqAteQsZT+cf7/SW9P9BkBSwto=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 14:16:14 GMT"
+          "Value": "Mon, 12 May 2025 17:09:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3479,7 +3434,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-0NLALz3sin3wr4+2iBY5qWoqHi7DJqDloPGYGfkpbQk="
+          "Value": "sha256-E/4iDl20PGpzBfxqovqAteQsZT+cf7/SW9P9BkBSwto="
+        }
+      ]
+    },
+    {
+      "Route": "js/LoadLopHocPhan.n35x6c7edl.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadLopHocPhan.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4706"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E/4iDl20PGpzBfxqovqAteQsZT+cf7/SW9P9BkBSwto=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 17:09:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n35x6c7edl"
+        },
+        {
+          "Name": "label",
+          "Value": "js/LoadLopHocPhan.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-E/4iDl20PGpzBfxqovqAteQsZT+cf7/SW9P9BkBSwto="
         }
       ]
     },

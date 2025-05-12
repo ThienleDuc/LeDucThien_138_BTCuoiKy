@@ -354,8 +354,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>8y2dtcnuxy</Fingerprint>
-      <Integrity>0NLALz3sin3wr4+2iBY5qWoqHi7DJqDloPGYGfkpbQk=</Integrity>
+      <Fingerprint>n35x6c7edl</Fingerprint>
+      <Integrity>E/4iDl20PGpzBfxqovqAteQsZT+cf7/SW9P9BkBSwto=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoadLopHocPhan.js'))</OriginalItemSpec>

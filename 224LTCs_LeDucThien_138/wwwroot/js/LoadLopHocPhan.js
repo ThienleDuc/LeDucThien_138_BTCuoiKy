@@ -42,6 +42,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    // Load Lịch Học
+    fetchData('/LopHocPhan/GetALLLichHoc', function (data) {
+        data.forEach(lh => {
+            const option = new Option(`Thứ: ${lh.thuNgay}, Từ tiết: ${lh.tietBatDau} → đến tiết: ${lh.tietKetThuc}`, lh.maLich);
+            document.getElementById('chooseLH').add(option);
+        });
+    });
+
+
     // Load Môn Học
     function LoadDataMonHoc() {
         const maMHSelect = document.getElementById('chooseMH');

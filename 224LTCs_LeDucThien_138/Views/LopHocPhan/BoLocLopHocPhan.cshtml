@@ -8,14 +8,14 @@
             </div>
             <form method="get" asp-action="TimKiem" asp-controller="LopHocPhan">
                 <div class="modal-body row">
-                    <di class="row mb-3">
+                    <div class="row mb-3">
                         <div class="d-grid">
                             <label for="chooseNK" class="form-label">Niên khóa</label>
                             <select id="chooseNK" class="form-select" name="maNK">
                                 <option selected disabled>Chọn niên khóa</option>
                             </select>
                         </div>
-                    </di>
+                    </div>
                     <div class="row mb-3">
                         <div class="col-6">
                             <input type="hidden" name="TuKhoa" value="@Context.Request.Query["TuKhoa"].ToString()" />

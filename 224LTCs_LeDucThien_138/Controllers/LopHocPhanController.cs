@@ -15,6 +15,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
         private readonly ChucVuRepos _chucVuRepos;
         private readonly HocPhanRepos _hocPhanRepos;
         private readonly MonHocRepos _monHocRepos;
+        private readonly LichHocRepos _lichHocRepos;
 
         public LopHocPhanController(ConnectionDatabase connectionDatabase)
         {
@@ -28,6 +29,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             _chucVuRepos = new ChucVuRepos(_connectionDatabase);
             _hocPhanRepos = new HocPhanRepos(connectionDatabase);
             _monHocRepos = new MonHocRepos(connectionDatabase);
+            _lichHocRepos = new LichHocRepos(connectionDatabase);
         }
 
         [HttpGet]
@@ -56,6 +58,13 @@ namespace _224LTCs_LeDucThien_138.Controllers
         public IActionResult GetALLChucVu()
         {
             var list = _chucVuRepos.GetAllChucVu();
+            return Json(list);
+        }
+
+        [HttpGet]
+        public IActionResult GetALLLichHoc()
+        {
+            var list = _lichHocRepos.GetAllLichHoc();
             return Json(list);
         }
 
@@ -93,8 +102,18 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return View(lhp);
         }
 
+        public IActionResult ThemLopHocPhan()
+        {
+            return View();
+        }
+
+        public IActionResult SuaLopHocPhan()
+        {
+            return View();
+        }
+
         [HttpGet]
-        public IActionResult TimKiem(string maNK = null, int? maKhoa = null, int? maNganh = null, string maHP = null, int? maPhong = null, int? maMH = null, string maCB = null, string TuKhoa = null)
+        public IActionResult TimKiem(string maNK = null, int? maKhoa = null, int? maNganh = null, string maHP = null, int? maPhong = null, string maMH = null, string maCB = null, string TuKhoa = null)
         {
             var lhp = _lopHocPhanRepos.GetLopHocPhanFiltered(maNK, maKhoa, maNganh, maHP, maPhong, maMH, maCB, TuKhoa);
             return View(lhp);
