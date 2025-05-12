@@ -41,9 +41,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const maKhoa = parseInt(this.value);
 
         maNganhSelect.innerHTML = '';
-        maNganhSelect.innerHTML = '<option selected disabled>Chuyên ngành</option>'
+        maNganhSelect.innerHTML = '<option selected disabled>Chọn chuyên ngành</option>'
         maLSHSelect.innerHTML = '';
-        maLSHSelect.innerHTML = '<option selected disabled>Lớp sinh hoạt</option>'
+        maLSHSelect.innerHTML = '<option selected disabled>Chọn lớp sinh hoạt</option>'
 
         fetchData(`/SinhVien/GetChuyenNganhByKhoa?maKhoa=${maKhoa}`, function (data) {
             data.forEach(cn => {
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const maLSHSelect = document.getElementById('chooseLSH');
 
         maLSHSelect.innerHTML = '';
-        maLSHSelect.innerHTML = '<option selected disabled>Lớp sinh hoạt</option>';
+        maLSHSelect.innerHTML = '<option selected disabled>Chọn lớp sinh hoạt</option>';
 
         fetchData(`/SinhVien/GetLopSinhHoat?maNganh=${maNganh}&maNK=${maNK}`, function (data) {
             data.forEach(lsh => {

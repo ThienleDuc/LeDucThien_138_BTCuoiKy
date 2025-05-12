@@ -246,8 +246,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>utt6kry0pw</Fingerprint>
-      <Integrity>gtzt8fP3gPxyMIWccmTyewj06Q9Hnv4Ov/tj1MAPxIo=</Integrity>
+      <Fingerprint>aou97irwkr</Fingerprint>
+      <Integrity>iqI4OlOTj50gPp8hR3FSTKa39FuFkCNAA+nivFh359U=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</OriginalItemSpec>
@@ -342,6 +342,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoadCanBo.js'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoadLopHocPhan.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>224LTCs_LeDucThien_138</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/224LTCs_LeDucThien_138</BasePath>
+      <RelativePath>js/LoadLopHocPhan.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>8y2dtcnuxy</Fingerprint>
+      <Integrity>0NLALz3sin3wr4+2iBY5qWoqHi7DJqDloPGYGfkpbQk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoadLopHocPhan.js'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoadPhongHoc.js'))">
       <SourceType>Package</SourceType>
       <SourceId>224LTCs_LeDucThien_138</SourceId>
@@ -372,8 +390,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>wu5fzzzw2c</Fingerprint>
-      <Integrity>mJW2X7ICU4fEP5BNuKj7EWcrb83MAnCXxB2Spqjqs3g=</Integrity>
+      <Fingerprint>annp2pnckb</Fingerprint>
+      <Integrity>9vnEPLloJyQCISuyjBkKWFR5Li/aHiRQhjBABfJ76yE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoadSinhvien.js'))</OriginalItemSpec>

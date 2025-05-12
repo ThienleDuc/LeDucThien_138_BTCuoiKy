@@ -73,6 +73,10 @@
       "PackagePath": "staticwebassets\\js\\LoadCanBo.js"
     },
     {
+      "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadLopHocPhan.js",
+      "PackagePath": "staticwebassets\\js\\LoadLopHocPhan.js"
+    },
+    {
       "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadPhongHoc.js",
       "PackagePath": "staticwebassets\\js\\LoadPhongHoc.js"
     },

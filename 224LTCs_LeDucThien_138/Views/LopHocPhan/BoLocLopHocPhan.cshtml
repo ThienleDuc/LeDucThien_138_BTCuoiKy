@@ -1,0 +1,75 @@
+﻿﻿<!-- Modal bộ lọc -->
+<div class="modal fade" id="filterModalLopHocPhan" tabindex="-1" aria-labelledby="filterModalLopHocPhanLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="filterModalLopHocPhanLabel">Bộ lọc lớp học phần</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+            </div>
+            <form method="get" asp-action="TimKiem" asp-controller="LopHocPhan">
+                <div class="modal-body row">
+                    <di class="row mb-3">
+                        <div class="d-grid">
+                            <label for="chooseNK" class="form-label">Niên khóa</label>
+                            <select id="chooseNK" class="form-select" name="maNK">
+                                <option selected disabled>Chọn niên khóa</option>
+                            </select>
+                        </div>
+                    </di>
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <input type="hidden" name="TuKhoa" value="@Context.Request.Query["TuKhoa"].ToString()" />
+                            <div class="mb-3">
+                                <label for="chooseKhoa" class="form-label">Khoa</label>
+                                <select id="chooseKhoa" class="form-select" name="maKhoa">
+                                    <option selected disabled>Chọn khoa</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="chooseCN" class="form-label">Chuyên ngành</label>
+                                <select id="chooseCN" class="form-select" name="maNganh">
+                                    <option selected disabled>Chọn chuyên ngành</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="chooseHP" class="form-label">Học phần</label>
+                                <select id="chooseHP" class="form-select" name="maHP">
+                                    <option selected disabled>Chọn học phần</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="choosePH" class="form-label">Phòng học</label>
+                                <select id="choosePH" class="form-select" name="maPhong">
+                                    <option selected disabled>Chọn phòng học</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="chooseMH" class="form-label">Môn học</label>
+                                <select id="chooseMH" class="form-select" name="maMH">
+                                    <option selected disabled>Chọn môn học</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="chooseCB" class="form-label">Giảng viên</label>
+                                <select id="chooseCB" class="form-select" name="maCB">
+                                    <option selected disabled>Chọn giảng viên</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <small><strong class="text-danger">*Lưu ý:</strong> Chọn khoa &rarr; chọn chuyên ngành và giảng viên.</small>
+                        <small><strong class="text-danger">________</strong> Chọn niên khóa &rarr; chọn học phần</small>
+                        <small><strong class="text-danger">________</strong> Chọn chuyên ngành &rarr; chọn môn học</small>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="submit" class="btn btn-primary">Áp dụng</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

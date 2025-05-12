@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AJ0PdboYLPCr+LHa5MO5llN2EFrK6D9zl33IaooS6lg=",
+  "Hash": "5z6fpSjr/Ec93zqMpRpr8RLLaw6XhUr8gmmIeC5bFz4=",
   "Source": "224LTCs_LeDucThien_138",
   "BasePath": "_content/224LTCs_LeDucThien_138",
   "Mode": "Default",
@@ -325,8 +325,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "utt6kry0pw",
-      "Integrity": "gtzt8fP3gPxyMIWccmTyewj06Q9Hnv4Ov/tj1MAPxIo=",
+      "Fingerprint": "aou97irwkr",
+      "Integrity": "iqI4OlOTj50gPp8hR3FSTKa39FuFkCNAA+nivFh359U=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -437,6 +437,27 @@
       "OriginalItemSpec": "wwwroot\\js\\LoadCanBo.js"
     },
     {
+      "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadLopHocPhan.js",
+      "SourceId": "224LTCs_LeDucThien_138",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\",
+      "BasePath": "_content/224LTCs_LeDucThien_138",
+      "RelativePath": "js/LoadLopHocPhan#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8y2dtcnuxy",
+      "Integrity": "0NLALz3sin3wr4+2iBY5qWoqHi7DJqDloPGYGfkpbQk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\LoadLopHocPhan.js"
+    },
+    {
       "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadPhongHoc.js",
       "SourceId": "224LTCs_LeDucThien_138",
       "SourceType": "Discovered",
@@ -472,8 +493,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "wu5fzzzw2c",
-      "Integrity": "mJW2X7ICU4fEP5BNuKj7EWcrb83MAnCXxB2Spqjqs3g=",
+      "Fingerprint": "annp2pnckb",
+      "Integrity": "9vnEPLloJyQCISuyjBkKWFR5Li/aHiRQhjBABfJ76yE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\LoadSinhvien.js"
@@ -2889,6 +2910,51 @@
       ]
     },
     {
+      "Route": "css/site.aou97irwkr.css",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10851"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iqI4OlOTj50gPp8hR3FSTKa39FuFkCNAA+nivFh359U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 11:56:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aou97irwkr"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iqI4OlOTj50gPp8hR3FSTKa39FuFkCNAA+nivFh359U="
+        }
+      ]
+    },
+    {
       "Route": "css/site.css",
       "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -2899,7 +2965,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10240"
+          "Value": "10851"
         },
         {
           "Name": "Content-Type",
@@ -2907,11 +2973,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"gtzt8fP3gPxyMIWccmTyewj06Q9Hnv4Ov/tj1MAPxIo=\""
+          "Value": "\"iqI4OlOTj50gPp8hR3FSTKa39FuFkCNAA+nivFh359U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 13:27:20 GMT"
+          "Value": "Mon, 12 May 2025 11:56:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2921,52 +2987,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-gtzt8fP3gPxyMIWccmTyewj06Q9Hnv4Ov/tj1MAPxIo="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.utt6kry0pw.css",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "10240"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"gtzt8fP3gPxyMIWccmTyewj06Q9Hnv4Ov/tj1MAPxIo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 13:27:20 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "utt6kry0pw"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-gtzt8fP3gPxyMIWccmTyewj06Q9Hnv4Ov/tj1MAPxIo="
+          "Value": "sha256-iqI4OlOTj50gPp8hR3FSTKa39FuFkCNAA+nivFh359U="
         }
       ]
     },
@@ -3321,7 +3342,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 13:27:20 GMT"
+          "Value": "Mon, 12 May 2025 13:02:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3358,7 +3379,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 13:27:20 GMT"
+          "Value": "Mon, 12 May 2025 13:02:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3377,6 +3398,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-DF/C40+SrJFHgzlwdelNmENTdaBURAtI6+sedv5VccE="
+        }
+      ]
+    },
+    {
+      "Route": "js/LoadLopHocPhan.8y2dtcnuxy.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadLopHocPhan.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4357"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0NLALz3sin3wr4+2iBY5qWoqHi7DJqDloPGYGfkpbQk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 14:16:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8y2dtcnuxy"
+        },
+        {
+          "Name": "label",
+          "Value": "js/LoadLopHocPhan.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0NLALz3sin3wr4+2iBY5qWoqHi7DJqDloPGYGfkpbQk="
+        }
+      ]
+    },
+    {
+      "Route": "js/LoadLopHocPhan.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadLopHocPhan.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4357"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0NLALz3sin3wr4+2iBY5qWoqHi7DJqDloPGYGfkpbQk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 14:16:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0NLALz3sin3wr4+2iBY5qWoqHi7DJqDloPGYGfkpbQk="
         }
       ]
     },
@@ -3463,6 +3566,51 @@
       ]
     },
     {
+      "Route": "js/LoadSinhvien.annp2pnckb.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadSinhvien.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2823"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9vnEPLloJyQCISuyjBkKWFR5Li/aHiRQhjBABfJ76yE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 13:02:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "annp2pnckb"
+        },
+        {
+          "Name": "label",
+          "Value": "js/LoadSinhvien.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9vnEPLloJyQCISuyjBkKWFR5Li/aHiRQhjBABfJ76yE="
+        }
+      ]
+    },
+    {
       "Route": "js/LoadSinhvien.js",
       "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadSinhvien.js",
       "Selectors": [],
@@ -3473,7 +3621,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2802"
+          "Value": "2823"
         },
         {
           "Name": "Content-Type",
@@ -3481,11 +3629,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"mJW2X7ICU4fEP5BNuKj7EWcrb83MAnCXxB2Spqjqs3g=\""
+          "Value": "\"9vnEPLloJyQCISuyjBkKWFR5Li/aHiRQhjBABfJ76yE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 13:27:20 GMT"
+          "Value": "Mon, 12 May 2025 13:02:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3495,52 +3643,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-mJW2X7ICU4fEP5BNuKj7EWcrb83MAnCXxB2Spqjqs3g="
-        }
-      ]
-    },
-    {
-      "Route": "js/LoadSinhvien.wu5fzzzw2c.js",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadSinhvien.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2802"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"mJW2X7ICU4fEP5BNuKj7EWcrb83MAnCXxB2Spqjqs3g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 13:27:20 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "wu5fzzzw2c"
-        },
-        {
-          "Name": "label",
-          "Value": "js/LoadSinhvien.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-mJW2X7ICU4fEP5BNuKj7EWcrb83MAnCXxB2Spqjqs3g="
+          "Value": "sha256-9vnEPLloJyQCISuyjBkKWFR5Li/aHiRQhjBABfJ76yE="
         }
       ]
     },
