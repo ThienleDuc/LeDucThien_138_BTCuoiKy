@@ -20,7 +20,6 @@ builder.Services.AddScoped<PhongHocRepos>();
 builder.Services.AddScoped<TaiKhoanAdminRepos>();
 builder.Services.AddScoped<HocViRepos>();
 builder.Services.AddScoped<ChucVuRepos>();
-builder.Services.AddScoped<LichHocRepos>();
 builder.Services.AddScoped<MonHocRepos>();
 builder.Services.AddScoped<LopHocPhanRepos>();
 builder.Services.AddScoped<CT_LHP_SVRepos>();

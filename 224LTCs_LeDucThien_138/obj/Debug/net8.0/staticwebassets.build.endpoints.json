@@ -1493,7 +1493,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4706"
+          "Value": "8406"
         },
         {
           "Name": "Content-Type",
@@ -1501,22 +1501,22 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"E/4iDl20PGpzBfxqovqAteQsZT+cf7/SW9P9BkBSwto=\""
+          "Value": "\"fHEBhIwnVWjyjFBK+DWSU+GKY/Knd4TtH0oJd9rj480=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 17:09:16 GMT"
+          "Value": "Tue, 13 May 2025 14:39:14 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-E/4iDl20PGpzBfxqovqAteQsZT+cf7/SW9P9BkBSwto="
+          "Value": "sha256-fHEBhIwnVWjyjFBK+DWSU+GKY/Knd4TtH0oJd9rj480="
         }
       ]
     },
     {
-      "Route": "js/LoadLopHocPhan.n35x6c7edl.js",
+      "Route": "js/LoadLopHocPhan.kwnyd9rhk7.js",
       "AssetFile": "js/LoadLopHocPhan.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1530,7 +1530,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4706"
+          "Value": "8406"
         },
         {
           "Name": "Content-Type",
@@ -1538,21 +1538,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"E/4iDl20PGpzBfxqovqAteQsZT+cf7/SW9P9BkBSwto=\""
+          "Value": "\"fHEBhIwnVWjyjFBK+DWSU+GKY/Knd4TtH0oJd9rj480=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 17:09:16 GMT"
+          "Value": "Tue, 13 May 2025 14:39:14 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "n35x6c7edl"
+          "Value": "kwnyd9rhk7"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-E/4iDl20PGpzBfxqovqAteQsZT+cf7/SW9P9BkBSwto="
+          "Value": "sha256-fHEBhIwnVWjyjFBK+DWSU+GKY/Knd4TtH0oJd9rj480="
         },
         {
           "Name": "label",
@@ -1803,88 +1803,6 @@
         {
           "Name": "label",
           "Value": "js/TogglePassword.js"
-        }
-      ]
-    },
-    {
-      "Route": "js/datatables-simple-demo.js",
-      "AssetFile": "js/datatables-simple-demo.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "321"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"3phc6m3mmzmZBhiJqrAufOd7OAjOJScoJBr+8TGcXsE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 13:27:20 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-3phc6m3mmzmZBhiJqrAufOd7OAjOJScoJBr+8TGcXsE="
-        }
-      ]
-    },
-    {
-      "Route": "js/datatables-simple-demo.mrcm95qwwq.js",
-      "AssetFile": "js/datatables-simple-demo.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "321"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"3phc6m3mmzmZBhiJqrAufOd7OAjOJScoJBr+8TGcXsE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 13:27:20 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "mrcm95qwwq"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-3phc6m3mmzmZBhiJqrAufOd7OAjOJScoJBr+8TGcXsE="
-        },
-        {
-          "Name": "label",
-          "Value": "js/datatables-simple-demo.js"
         }
       ]
     },

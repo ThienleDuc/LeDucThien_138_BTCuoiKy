@@ -288,24 +288,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\datatables-simple-demo.js'))">
-      <SourceType>Package</SourceType>
-      <SourceId>224LTCs_LeDucThien_138</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/224LTCs_LeDucThien_138</BasePath>
-      <RelativePath>js/datatables-simple-demo.js</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>mrcm95qwwq</Fingerprint>
-      <Integrity>3phc6m3mmzmZBhiJqrAufOd7OAjOJScoJBr+8TGcXsE=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\datatables-simple-demo.js'))</OriginalItemSpec>
-    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoadAvatar.js'))">
       <SourceType>Package</SourceType>
       <SourceId>224LTCs_LeDucThien_138</SourceId>
@@ -354,8 +336,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>n35x6c7edl</Fingerprint>
-      <Integrity>E/4iDl20PGpzBfxqovqAteQsZT+cf7/SW9P9BkBSwto=</Integrity>
+      <Fingerprint>kwnyd9rhk7</Fingerprint>
+      <Integrity>fHEBhIwnVWjyjFBK+DWSU+GKY/Knd4TtH0oJd9rj480=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoadLopHocPhan.js'))</OriginalItemSpec>

@@ -53,7 +53,8 @@ namespace _224LTCs_LeDucThien_138.Models
             {
                 string query = @"SELECT MaHP, MaNK, TenHP 
                          FROM HocPhan
-                         WHERE MaNK = @MaNK;";
+                         WHERE MaNK = @MaNK
+                         ORDER BY MaHP DESC;";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@MaNK", maNK);
 

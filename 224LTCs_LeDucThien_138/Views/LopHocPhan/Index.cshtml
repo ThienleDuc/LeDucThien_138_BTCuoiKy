@@ -147,14 +147,14 @@
                                         <a href="#" class="text-decoration-none text-black"><i class="fa-regular fa-eye"></i></a>
                                     </td>
                                     <td class="text-center">
-                                        <a asp-action="SuaLopHocPhan" asp-controller="LopHocPhan" asp-route-maSV="@lhp.MaLHP" class="text-decoration-none text-warning">
+                                        <a asp-action="SuaLopHocPhan" asp-controller="LopHocPhan" asp-route-maLHP="@lhp.MaLHP" class="text-decoration-none text-warning">
                                             <i class="fa-duotone fa-solid fa-pen-to-square"></i>
                                         </a>
                                     </td>
                                     <td class="text-center">
                                         <a class="text-decoration-none text-danger"
-                                           asp-action="XoaLopHocPhan" asp-controller="LopHocPhan" asp-route-maSV="@lhp.MaLHP"
-                                           onclick="return confirm('Bạn có chắc muốn xóa sinh viên này không?');">
+                                           asp-action="XoaLopHocPhan" asp-controller="LopHocPhan" asp-route-maLHP="@lhp.MaLHP"
+                                           onclick="return confirm('Bạn có chắc muốn xóa lớp học phần này không?');">
                                             <i class="fa-regular fa-trash-can"></i>
                                         </a>
                                     </td>
@@ -184,14 +184,14 @@
                                         <a href="#" class="text-decoration-none text-black"><i class="fa-regular fa-eye"></i></a>
                                     </td>
                                     <td class="text-center">
-                                        <a asp-action="SuaLopHocPhan" asp-controller="LopHocPhan" asp-route-maSV="@Model[i].MaLHP" class="text-decoration-none text-warning">
+                                        <a asp-action="SuaLopHocPhan" asp-controller="LopHocPhan" asp-route-maLHP="@Model[i].MaLHP" class="text-decoration-none text-warning">
                                             <i class="fa-duotone fa-solid fa-pen-to-square"></i>
                                         </a>
                                     </td>
                                     <td class="text-center">
                                         <a class="text-decoration-none text-danger"
-                                           asp-action="XoaLopHocPhan" asp-controller="LopHocPhan" asp-route-maSV="@Model[i].MaLHP"
-                                           onclick="return confirm('Bạn có chắc muốn xóa sinh viên này không?');">
+                                           asp-action="XoaLopHocPhan" asp-controller="LopHocPhan" asp-route-maLHP="@Model[i].MaLHP"
+                                           onclick="return confirm('Bạn có chắc muốn xóa lớp học phần này không?');">
                                             <i class="fa-regular fa-trash-can"></i>
                                         </a>
                                     </td>

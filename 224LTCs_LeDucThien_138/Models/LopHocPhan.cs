@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.Data.SqlClient;
+using System.Data;
 
 namespace _224LTCs_LeDucThien_138.Models
 {
@@ -15,20 +16,23 @@ namespace _224LTCs_LeDucThien_138.Models
 
         public string MaMH { get; set; }
 
+        public int? MaNganh => MonHoc?.MaNganh;
+
         public string TenMH => MonHoc?.TenMH;
 
         public int? SoTC => MonHoc?.SoTC;
 
-        public int? MaLich { get; set; }
-
-        public string ThuNgay => LichHoc?.ThuNgay;
-
-        public int? TietBatDau => LichHoc?.TietBatDau;
-
-        public int? TietKetThuc => LichHoc?.TietKetThuc;
-
         [StringLength(10)]
         public string MaCB { get; set; }
+
+        [StringLength(2)]
+        public string ThuNgay {  get; set; }
+
+        public int? TietBatDau { get; set; }
+
+        public int? TietKetThuc { get; set; }
+
+        public int? MaKhoa => CanBo?.MaKhoa;
 
         public string TenCB => CanBo?.TenCB;
 
@@ -44,6 +48,9 @@ namespace _224LTCs_LeDucThien_138.Models
 
         public string GhiChu { get; set; }
 
+        public string MaNK => HocPhan?.MaNK;
+
+        
         // Navigation properties
         [ForeignKey("MaHP")]
         public HocPhan HocPhan { get; set; }
@@ -51,26 +58,25 @@ namespace _224LTCs_LeDucThien_138.Models
         [ForeignKey("MaMH")]
         public MonHoc MonHoc { get; set; }
 
-        [ForeignKey("MaLich")]
-        public LichHoc LichHoc { get; set; }
-
         [ForeignKey("MaCB")]
         public CanBo CanBo { get; set; }
 
         [ForeignKey("MaPhong")]
         public PhongHoc Phong { get; set; }
-
+        
         public ICollection<CT_LHP_SV> CT_LHP_SVs { get; set; }
 
-        public LopHocPhan(string maLHP, string maHP, string maMH, int? maLich, string maCB, int? maPhong, 
+        public LopHocPhan(string maLHP, string maHP, string maMH, string maCB, string thuNgay, int? tietBatDau, int? tietKetThuc, int? maPhong, 
             int? sLHienTai, int? sLToiDa, DateTime? ngayHoc, string ghiChu, HocPhan hocPhan, MonHoc monHoc, 
-            LichHoc lichHoc, CanBo canBo, PhongHoc phong, ICollection<CT_LHP_SV> cT_LHP_SVs)
+            CanBo canBo, PhongHoc phong, ICollection<CT_LHP_SV> cT_LHP_SVs)
         {
             MaLHP = maLHP;
             MaHP = maHP;
             MaMH = maMH;
-            MaLich = maLich;
             MaCB = maCB;
+            ThuNgay = thuNgay;
+            TietBatDau = tietBatDau;
+            TietKetThuc = tietKetThuc;
             MaPhong = maPhong;
             SLHienTai = sLHienTai;
             SLToiDa = sLToiDa;
@@ -78,7 +84,6 @@ namespace _224LTCs_LeDucThien_138.Models
             GhiChu = ghiChu;
             HocPhan = hocPhan;
             MonHoc = monHoc;
-            LichHoc = lichHoc;
             CanBo = canBo;
             Phong = phong;
             CT_LHP_SVs = cT_LHP_SVs;
@@ -105,16 +110,14 @@ namespace _224LTCs_LeDucThien_138.Models
             using (SqlConnection conn = _connectionDatabase.GetConnection())
             {
                 string query = @"
-                SELECT lhp.*, mh.TenMH, mh.SoTC, lh.ThuNgay, lh.TietBatDau, lh.TietKetThuc,
-                       cb.TenCB, p.TenPhong
+                SELECT lhp.*, mh.TenMH, mh.SoTC, cb.TenCB, p.TenPhong
                 FROM LopHocPhan lhp
                 LEFT JOIN MonHoc mh ON lhp.MaMH = mh.MaMH
-                LEFT JOIN LichHoc lh ON lhp.MaLich = lh.MaLich
                 LEFT JOIN CanBo cb ON lhp.MaCB = cb.MaCB
                 LEFT JOIN Phong p ON lhp.MaPhong = p.MaPhong
                 LEFT JOIN HocPhan hp ON lhp.MaHP = hp.MaHP
                 ORDER BY lhp.MaMH, 
-                CASE lh.ThuNgay
+                CASE lhp.ThuNgay
                     WHEN '2'	THEN 2
                     WHEN '3'	THEN 3
                     WHEN '4'	THEN 4
@@ -137,10 +140,12 @@ namespace _224LTCs_LeDucThien_138.Models
                             MaLHP = reader["MaLHP"]?.ToString(),
                             MaHP = reader["MaHP"]?.ToString(),
                             MaMH = reader["MaMH"]?.ToString(),
-                            MaLich = reader["MaLich"] != DBNull.Value ? (int?)Convert.ToInt32(reader["MaLich"]) : null,
                             MaCB = reader["MaCB"]?.ToString(),
+                            ThuNgay = reader["ThuNgay"]?.ToString(),
+                            TietBatDau = reader["TietBatDau"] != DBNull.Value ? Convert.ToInt32(reader["TietBatDau"]) : null,
+                            TietKetThuc = reader["TietKetThuc"] != DBNull.Value ? Convert.ToInt32(reader["TietKetThuc"]) : null,
                             MaPhong = reader["MaPhong"] != DBNull.Value ? (int?)Convert.ToInt32(reader["MaPhong"]) : null,
-                            SLHienTai = reader["SLHienTai"] != DBNull.Value ? (int?)Convert.ToInt32(reader["SLHienTai"]) : null,
+                            SLHienTai = reader["SLHienTai"] != DBNull.Value ? (int?)Convert.ToInt32(reader["SLHienTai"]) : 0,
                             SLToiDa = reader["SLToiDa"] != DBNull.Value ? (int?)Convert.ToInt32(reader["SLToiDa"]) : null,
                             NgayHoc = reader["NgayHoc"] != DBNull.Value ? (DateTime?)Convert.ToDateTime(reader["NgayHoc"]) : null,
                             GhiChu = reader["GhiChu"]?.ToString(),
@@ -150,12 +155,7 @@ namespace _224LTCs_LeDucThien_138.Models
                                 TenMH = reader["TenMH"]?.ToString(),
                                 SoTC = reader["SoTC"] != DBNull.Value ? Convert.ToInt32(reader["SoTC"]) : null
                             },
-                            LichHoc = new LichHoc
-                            {
-                                ThuNgay = reader["ThuNgay"]?.ToString(),
-                                TietBatDau = reader["TietBatDau"] != DBNull.Value ? Convert.ToInt32(reader["TietBatDau"]) : null,
-                                TietKetThuc = reader["TietKetThuc"] != DBNull.Value ? Convert.ToInt32(reader["TietKetThuc"]) : null
-                            },
+                                
                             CanBo = new CanBo
                             {
                                 TenCB = reader["TenCB"]?.ToString()
@@ -172,6 +172,73 @@ namespace _224LTCs_LeDucThien_138.Models
             return list;
         }
 
+        public LopHocPhan GetLopHocPhanById(string maLHP)
+        {
+            LopHocPhan lhp = null;
+
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                string query = @" 
+                    SELECT lhp.*, mh.MaNganh, mh.TenMH, mh.SoTC, 
+                            cb.TenCB, p.TenPhong, hp.MaNK, cb.MaKhoa
+                    FROM LopHocPhan lhp
+                    LEFT JOIN MonHoc mh ON lhp.MaMH = mh.MaMH
+                    LEFT JOIN CanBo cb ON lhp.MaCB = cb.MaCB
+                    LEFT JOIN Phong p ON lhp.MaPhong = p.MaPhong
+                    LEFT JOIN HocPhan hp ON lhp.MaHP = hp.MaHP
+                    WHERE lhp.MaLHP = @MaLHP;";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@MaLHP", maLHP);
+
+                conn.Open();
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        lhp = new LopHocPhan
+                        {
+                            MaLHP = reader["MaLHP"]?.ToString(),
+                            MaHP = reader["MaHP"]?.ToString(),
+                            MaMH = reader["MaMH"]?.ToString(),
+                            MaCB = reader["MaCB"]?.ToString(),
+                            ThuNgay = reader["ThuNgay"]?.ToString(),
+                            TietBatDau = reader["TietBatDau"] != DBNull.Value ? Convert.ToInt32(reader["TietBatDau"]) : null,
+                            TietKetThuc = reader["TietKetThuc"] != DBNull.Value ? Convert.ToInt32(reader["TietKetThuc"]) : null,
+                            MaPhong = reader["MaPhong"] != DBNull.Value ? (int?)Convert.ToInt32(reader["MaPhong"]) : null,
+                            SLHienTai = reader["SLHienTai"] != DBNull.Value ? (int?)Convert.ToInt32(reader["SLHienTai"]) : 0,
+                            SLToiDa = reader["SLToiDa"] != DBNull.Value ? (int?)Convert.ToInt32(reader["SLToiDa"]) : null,
+                            NgayHoc = reader["NgayHoc"] != DBNull.Value ? (DateTime?)Convert.ToDateTime(reader["NgayHoc"]) : null,
+                            GhiChu = reader["GhiChu"]?.ToString(),
+
+                            MonHoc = new MonHoc
+                            {
+                                MaNganh = reader["MaNganh"] != DBNull.Value ? Convert.ToInt32(reader["MaNganh"]) : null,
+                                TenMH = reader["TenMH"]?.ToString(),
+                                SoTC = reader["SoTC"] != DBNull.Value ? Convert.ToInt32(reader["SoTC"]) : null
+                            },
+
+                            CanBo = new CanBo
+                            {
+                                MaKhoa = reader["MaKhoa"] != DBNull.Value ? Convert.ToInt32(reader["MaKhoa"]) : null,
+                                TenCB = reader["TenCB"]?.ToString()
+                            },
+                            Phong = new PhongHoc
+                            {
+                                TenPhong = reader["TenPhong"]?.ToString()
+                            },
+                            HocPhan = new HocPhan
+                            {
+                                MaNK = reader["MaNK"]?.ToString()
+                            }
+                        }; 
+                    }
+                }
+            }
+            return lhp;
+        }
+
         public List<LopHocPhan> GetLopHocPhanFiltered(string maNK = null, int? maKhoa = null, int? maNganh = null, string maHP = null, int? maPhong = null, string maMH = null, string maCB = null, string keyword = null)
         {
             List<LopHocPhan> list = new List<LopHocPhan>();
@@ -179,11 +246,9 @@ namespace _224LTCs_LeDucThien_138.Models
             using (SqlConnection conn = _connectionDatabase.GetConnection())
             {
                 string query = @"
-                    SELECT lhp.*, mh.TenMH, mh.SoTC, lh.ThuNgay, lh.TietBatDau, lh.TietKetThuc,
-                           cb.TenCB, p.TenPhong
+                    SELECT lhp.*, mh.TenMH, mh.SoTC, cb.TenCB, p.TenPhong
                     FROM LopHocPhan lhp
                     LEFT JOIN MonHoc mh ON lhp.MaMH = mh.MaMH
-                    LEFT JOIN LichHoc lh ON lhp.MaLich = lh.MaLich
                     LEFT JOIN CanBo cb ON lhp.MaCB = cb.MaCB
                     LEFT JOIN Phong p ON lhp.MaPhong = p.MaPhong
                     LEFT JOIN HocPhan hp ON lhp.MaHP = hp.MaHP
@@ -198,7 +263,7 @@ namespace _224LTCs_LeDucThien_138.Models
                         (@MaCB IS NULL OR lhp.MaCB = @MaCB) AND
                         (@Keyword IS NULL OR lhp.MaLHP LIKE '%' + @Keyword + '%' OR mh.TenMH LIKE '%' + @Keyword + '%')
                     ORDER BY lhp.MaMH,
-                        CASE lh.ThuNgay
+                        CASE lhp.ThuNgay
                             WHEN '2' THEN 2
                             WHEN '3' THEN 3
                             WHEN '4' THEN 4
@@ -231,10 +296,12 @@ namespace _224LTCs_LeDucThien_138.Models
                             MaLHP = reader["MaLHP"]?.ToString(),
                             MaHP = reader["MaHP"]?.ToString(),
                             MaMH = reader["MaMH"]?.ToString(),
-                            MaLich = reader["MaLich"] != DBNull.Value ? (int?)Convert.ToInt32(reader["MaLich"]) : null,
                             MaCB = reader["MaCB"]?.ToString(),
+                            ThuNgay = reader["ThuNgay"]?.ToString(),
+                            TietBatDau = reader["TietBatDau"] != DBNull.Value ? Convert.ToInt32(reader["TietBatDau"]) : null,
+                            TietKetThuc = reader["TietKetThuc"] != DBNull.Value ? Convert.ToInt32(reader["TietKetThuc"]) : null,
                             MaPhong = reader["MaPhong"] != DBNull.Value ? (int?)Convert.ToInt32(reader["MaPhong"]) : null,
-                            SLHienTai = reader["SLHienTai"] != DBNull.Value ? (int?)Convert.ToInt32(reader["SLHienTai"]) : null,
+                            SLHienTai = reader["SLHienTai"] != DBNull.Value ? (int?)Convert.ToInt32(reader["SLHienTai"]) : 0,
                             SLToiDa = reader["SLToiDa"] != DBNull.Value ? (int?)Convert.ToInt32(reader["SLToiDa"]) : null,
                             NgayHoc = reader["NgayHoc"] != DBNull.Value ? (DateTime?)Convert.ToDateTime(reader["NgayHoc"]) : null,
                             GhiChu = reader["GhiChu"]?.ToString(),
@@ -243,12 +310,6 @@ namespace _224LTCs_LeDucThien_138.Models
                             {
                                 TenMH = reader["TenMH"]?.ToString(),
                                 SoTC = reader["SoTC"] != DBNull.Value ? Convert.ToInt32(reader["SoTC"]) : null
-                            },
-                            LichHoc = new LichHoc
-                            {
-                                ThuNgay = reader["ThuNgay"]?.ToString(),
-                                TietBatDau = reader["TietBatDau"] != DBNull.Value ? Convert.ToInt32(reader["TietBatDau"]) : null,
-                                TietKetThuc = reader["TietKetThuc"] != DBNull.Value ? Convert.ToInt32(reader["TietKetThuc"]) : null
                             },
                             CanBo = new CanBo
                             {
@@ -264,6 +325,71 @@ namespace _224LTCs_LeDucThien_138.Models
             }
 
             return list;
+        }
+
+        public bool AddLopHocPhan(LopHocPhan lopHocPhan)
+        {
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                SqlCommand cmd = new SqlCommand("AddLopHocPhan", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@MaHP", lopHocPhan.MaHP ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@MaMH", lopHocPhan.MaMH ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@MaCB", lopHocPhan.MaCB ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@ThuNgay", lopHocPhan.ThuNgay ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@TietBatDau", lopHocPhan.TietBatDau ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@TietKetThuc", lopHocPhan.TietKetThuc ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@MaPhong", lopHocPhan.MaPhong ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@SLHienTai", lopHocPhan.SLHienTai ?? 0);
+                cmd.Parameters.AddWithValue("@SLToiDa", lopHocPhan.SLToiDa ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@NgayHoc", lopHocPhan.NgayHoc ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@GhiChu", lopHocPhan.GhiChu ?? (object)DBNull.Value);
+
+                conn.Open();
+                int result = cmd.ExecuteNonQuery();
+                return result > 0;
+            }
+        }
+
+        public bool UpdateLopHocPhan(LopHocPhan lopHocPhan)
+        {
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                SqlCommand cmd = new SqlCommand("UpdateLopHocPhan", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@MaLHP", lopHocPhan.MaLHP ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@MaHP", lopHocPhan.MaHP ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@MaMH", lopHocPhan.MaMH ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@MaCB", lopHocPhan.MaCB ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@ThuNgay", lopHocPhan.ThuNgay ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@TietBatDau", lopHocPhan.TietBatDau ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@TietKetThuc", lopHocPhan.TietKetThuc ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@MaPhong", lopHocPhan.MaPhong ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@SLHienTai", lopHocPhan.SLHienTai ?? 0);
+                cmd.Parameters.AddWithValue("@SLToiDa", lopHocPhan.SLToiDa ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@NgayHoc", lopHocPhan.NgayHoc ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@GhiChu", lopHocPhan.GhiChu ?? (object)DBNull.Value);
+
+                conn.Open();
+                int result = cmd.ExecuteNonQuery();
+                return result > 0;
+            }
+        }
+
+        public bool DeleteLopHocPhan(string maLHP)
+        {
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                string query = "DELETE FROM LopHocPhan WHERE MaLHP = @MaLHP";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@MaLHP", maLHP);
+
+                conn.Open();
+                int result = cmd.ExecuteNonQuery();
+                return result > 0;
+            }
         }
     }
 }

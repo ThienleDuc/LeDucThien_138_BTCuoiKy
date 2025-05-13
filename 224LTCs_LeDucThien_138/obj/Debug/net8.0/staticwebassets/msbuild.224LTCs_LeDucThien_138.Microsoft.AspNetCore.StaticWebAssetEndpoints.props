@@ -192,18 +192,6 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 11 May 2025 13:27:20 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/224LTCs_LeDucThien_138/js/datatables-simple-demo.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\datatables-simple-demo.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-3phc6m3mmzmZBhiJqrAufOd7OAjOJScoJBr\u002B8TGcXsE="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"321"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00223phc6m3mmzmZBhiJqrAufOd7OAjOJScoJBr\u002B8TGcXsE=\u0022"},{"Name":"Last-Modified","Value":"Sun, 11 May 2025 13:27:20 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/224LTCs_LeDucThien_138/js/datatables-simple-demo.mrcm95qwwq.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\datatables-simple-demo.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mrcm95qwwq"},{"Name":"integrity","Value":"sha256-3phc6m3mmzmZBhiJqrAufOd7OAjOJScoJBr\u002B8TGcXsE="},{"Name":"label","Value":"_content/224LTCs_LeDucThien_138/js/datatables-simple-demo.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"321"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00223phc6m3mmzmZBhiJqrAufOd7OAjOJScoJBr\u002B8TGcXsE=\u0022"},{"Name":"Last-Modified","Value":"Sun, 11 May 2025 13:27:20 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/224LTCs_LeDucThien_138/js/LoadAvatar.3gp3rpr4a2.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoadAvatar.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -231,14 +219,14 @@
     <StaticWebAssetEndpoint Include="_content/224LTCs_LeDucThien_138/js/LoadLopHocPhan.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoadLopHocPhan.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-E/4iDl20PGpzBfxqovqAteQsZT\u002Bcf7/SW9P9BkBSwto="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4706"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022E/4iDl20PGpzBfxqovqAteQsZT\u002Bcf7/SW9P9BkBSwto=\u0022"},{"Name":"Last-Modified","Value":"Mon, 12 May 2025 17:09:16 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-fHEBhIwnVWjyjFBK\u002BDWSU\u002BGKY/Knd4TtH0oJd9rj480="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"8406"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022fHEBhIwnVWjyjFBK\u002BDWSU\u002BGKY/Knd4TtH0oJd9rj480=\u0022"},{"Name":"Last-Modified","Value":"Tue, 13 May 2025 14:39:14 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/224LTCs_LeDucThien_138/js/LoadLopHocPhan.n35x6c7edl.js">
+    <StaticWebAssetEndpoint Include="_content/224LTCs_LeDucThien_138/js/LoadLopHocPhan.kwnyd9rhk7.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoadLopHocPhan.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"n35x6c7edl"},{"Name":"integrity","Value":"sha256-E/4iDl20PGpzBfxqovqAteQsZT\u002Bcf7/SW9P9BkBSwto="},{"Name":"label","Value":"_content/224LTCs_LeDucThien_138/js/LoadLopHocPhan.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4706"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022E/4iDl20PGpzBfxqovqAteQsZT\u002Bcf7/SW9P9BkBSwto=\u0022"},{"Name":"Last-Modified","Value":"Mon, 12 May 2025 17:09:16 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kwnyd9rhk7"},{"Name":"integrity","Value":"sha256-fHEBhIwnVWjyjFBK\u002BDWSU\u002BGKY/Knd4TtH0oJd9rj480="},{"Name":"label","Value":"_content/224LTCs_LeDucThien_138/js/LoadLopHocPhan.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8406"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022fHEBhIwnVWjyjFBK\u002BDWSU\u002BGKY/Knd4TtH0oJd9rj480=\u0022"},{"Name":"Last-Modified","Value":"Tue, 13 May 2025 14:39:14 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/224LTCs_LeDucThien_138/js/LoadPhongHoc.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoadPhongHoc.js'))</AssetFile>

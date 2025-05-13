@@ -15,7 +15,6 @@ namespace _224LTCs_LeDucThien_138.Controllers
         private readonly ChucVuRepos _chucVuRepos;
         private readonly HocPhanRepos _hocPhanRepos;
         private readonly MonHocRepos _monHocRepos;
-        private readonly LichHocRepos _lichHocRepos;
 
         public LopHocPhanController(ConnectionDatabase connectionDatabase)
         {
@@ -29,7 +28,6 @@ namespace _224LTCs_LeDucThien_138.Controllers
             _chucVuRepos = new ChucVuRepos(_connectionDatabase);
             _hocPhanRepos = new HocPhanRepos(connectionDatabase);
             _monHocRepos = new MonHocRepos(connectionDatabase);
-            _lichHocRepos = new LichHocRepos(connectionDatabase);
         }
 
         [HttpGet]
@@ -46,7 +44,6 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return Json(list);
         }
 
-
         [HttpGet]
         public IActionResult GetALLPhongHoc()
         {
@@ -58,13 +55,6 @@ namespace _224LTCs_LeDucThien_138.Controllers
         public IActionResult GetALLChucVu()
         {
             var list = _chucVuRepos.GetAllChucVu();
-            return Json(list);
-        }
-
-        [HttpGet]
-        public IActionResult GetALLLichHoc()
-        {
-            var list = _lichHocRepos.GetAllLichHoc();
             return Json(list);
         }
 
@@ -96,7 +86,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return Json(list);
         }
 
-        public IActionResult Index()
+                public IActionResult Index()
         {
             var lhp = _lopHocPhanRepos.GetAllLopHocPhan();
             return View(lhp);
@@ -107,9 +97,105 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return View();
         }
 
-        public IActionResult SuaLopHocPhan()
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult ThemLopHocPhan(LopHocPhan lopHocPhan)
         {
-            return View();
+            if (string.IsNullOrEmpty(lopHocPhan.MaHP)) {
+                TempData["ErrorMessage"] = "Chưa chọn học phần";
+                return View();
+            } 
+            
+            if (string.IsNullOrEmpty(lopHocPhan.MaCB))
+            {
+                TempData["ErrorMessage"] = "Chưa chọn giảng viên";
+                return View();
+            }
+
+            if (string.IsNullOrEmpty(lopHocPhan.MaMH))
+            {
+                TempData["ErrorMessage"] = "Chưa chọn môn học";
+                return View();
+            }
+
+            bool isAdded = _lopHocPhanRepos.AddLopHocPhan(lopHocPhan);
+
+            if (isAdded)
+            {
+                TempData["SuccessMessage"] = "Đã được thêm thành công!";
+                return RedirectToAction("Index", "LopHocPhan");
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "Có lỗi xảy ra khi thêm";
+            }
+
+            return RedirectToAction("Index", "LopHocPhan");
+        }
+
+        [HttpGet]
+        public IActionResult SuaLopHocPhan(string maLHP)
+        {
+            var list = _lopHocPhanRepos.GetLopHocPhanById(maLHP);
+            if (list == null)
+            {
+                TempData["ErrorMessage"] = "Lớp học phần không tồn tại.";
+                return RedirectToAction("Index");
+            }
+            return View(list);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult SuaLopHocPhan(LopHocPhan lopHocPhan)
+        {
+            if (string.IsNullOrEmpty(lopHocPhan.MaHP))
+            {
+                TempData["ErrorMessage"] = "Chưa chọn học phần";
+                return View();
+            }
+
+            if (string.IsNullOrEmpty(lopHocPhan.MaCB))
+            {
+                TempData["ErrorMessage"] = "Chưa chọn giảng viên";
+                return View();
+            }
+
+            if (string.IsNullOrEmpty(lopHocPhan.MaMH))
+            {
+                TempData["ErrorMessage"] = "Chưa chọn môn học";
+                return View();
+            }
+
+            bool isAdded = _lopHocPhanRepos.UpdateLopHocPhan(lopHocPhan);
+
+            if (isAdded)
+            {
+                TempData["SuccessMessage"] = "Đã được cập nhật thành công!";
+                return RedirectToAction("Index", "LopHocPhan");
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "Có lỗi xảy ra khi cập nhật";
+            }
+
+            return RedirectToAction("Index", "LopHocPhan");
+        }
+
+        public IActionResult XoaLopHocPhan(string maLHP)
+        {
+            bool isDeleted = _lopHocPhanRepos.DeleteLopHocPhan(maLHP);
+
+            if (isDeleted)
+            {
+                TempData["SuccessMessage"] = "Xóa thành công!";
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "Không tìm thấy hoặc có lỗi khi xóa!";
+            }
+
+            return RedirectToAction("Index");
         }
 
         [HttpGet]

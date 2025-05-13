@@ -274,8 +274,6 @@ namespace _224LTCs_LeDucThien_138.Models
                 }
             }
 
-            Console.WriteLine($"maCB: {maCB}");
-
             return cb;
         }
 
