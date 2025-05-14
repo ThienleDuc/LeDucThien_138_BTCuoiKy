@@ -1095,7 +1095,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 11:56:34 GMT"
+          "Value": "Wed, 14 May 2025 11:29:37 GMT"
         }
       ],
       "EndpointProperties": [
@@ -1140,7 +1140,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 11:56:34 GMT"
+          "Value": "Wed, 14 May 2025 11:29:37 GMT"
         }
       ],
       "EndpointProperties": [
@@ -1475,6 +1475,88 @@
         {
           "Name": "label",
           "Value": "js/LoadCanBo.js"
+        }
+      ]
+    },
+    {
+      "Route": "js/LoadChiTietLopHocPhan.js",
+      "AssetFile": "js/LoadChiTietLopHocPhan.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "355"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KiFs5/EZ4m/OvuTIrbFu30I8SezBYWOeX1Sp3hAUnSE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 11:57:06 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KiFs5/EZ4m/OvuTIrbFu30I8SezBYWOeX1Sp3hAUnSE="
+        }
+      ]
+    },
+    {
+      "Route": "js/LoadChiTietLopHocPhan.qnk9qdanef.js",
+      "AssetFile": "js/LoadChiTietLopHocPhan.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "355"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KiFs5/EZ4m/OvuTIrbFu30I8SezBYWOeX1Sp3hAUnSE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 11:57:06 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qnk9qdanef"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KiFs5/EZ4m/OvuTIrbFu30I8SezBYWOeX1Sp3hAUnSE="
+        },
+        {
+          "Name": "label",
+          "Value": "js/LoadChiTietLopHocPhan.js"
         }
       ]
     },

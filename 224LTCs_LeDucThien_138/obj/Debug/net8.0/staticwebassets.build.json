@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JK0VzY80pkpgzU+yGNv8i3ySCT7R/zpYSVyk6akQ1So=",
+  "Hash": "FytThKTwtwZcqz+oS2TZC6mW8Yak7ycc/KdG29Z/sEw=",
   "Source": "224LTCs_LeDucThien_138",
   "BasePath": "_content/224LTCs_LeDucThien_138",
   "Mode": "Default",
@@ -414,6 +414,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\LoadCanBo.js"
+    },
+    {
+      "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadChiTietLopHocPhan.js",
+      "SourceId": "224LTCs_LeDucThien_138",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\",
+      "BasePath": "_content/224LTCs_LeDucThien_138",
+      "RelativePath": "js/LoadChiTietLopHocPhan#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qnk9qdanef",
+      "Integrity": "KiFs5/EZ4m/OvuTIrbFu30I8SezBYWOeX1Sp3hAUnSE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\LoadChiTietLopHocPhan.js"
     },
     {
       "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadLopHocPhan.js",
@@ -2911,7 +2932,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 11:56:34 GMT"
+          "Value": "Wed, 14 May 2025 11:29:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2956,7 +2977,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 11:56:34 GMT"
+          "Value": "Wed, 14 May 2025 11:29:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3295,6 +3316,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-DF/C40+SrJFHgzlwdelNmENTdaBURAtI6+sedv5VccE="
+        }
+      ]
+    },
+    {
+      "Route": "js/LoadChiTietLopHocPhan.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadChiTietLopHocPhan.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "355"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KiFs5/EZ4m/OvuTIrbFu30I8SezBYWOeX1Sp3hAUnSE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 11:57:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KiFs5/EZ4m/OvuTIrbFu30I8SezBYWOeX1Sp3hAUnSE="
+        }
+      ]
+    },
+    {
+      "Route": "js/LoadChiTietLopHocPhan.qnk9qdanef.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadChiTietLopHocPhan.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "355"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KiFs5/EZ4m/OvuTIrbFu30I8SezBYWOeX1Sp3hAUnSE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 11:57:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qnk9qdanef"
+        },
+        {
+          "Name": "label",
+          "Value": "js/LoadChiTietLopHocPhan.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KiFs5/EZ4m/OvuTIrbFu30I8SezBYWOeX1Sp3hAUnSE="
         }
       ]
     },

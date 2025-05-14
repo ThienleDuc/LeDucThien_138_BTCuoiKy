@@ -204,5 +204,16 @@ namespace _224LTCs_LeDucThien_138.Controllers
             var lhp = _lopHocPhanRepos.GetLopHocPhanFiltered(maNK, maKhoa, maNganh, maHP, maPhong, maMH, maCB, TuKhoa);
             return View(lhp);
         }
+
+        public IActionResult XemChiTietLopHocPhan(string maLHP)
+        {
+            var list = _lopHocPhanRepos.GetLopHocPhanById(maLHP);
+            if (list == null)
+            {
+                TempData["ErrorMessage"] = "Lớp học phần không tồn tại.";
+                return RedirectToAction("Index");
+            }
+            return View(list);
+        }
     }
 }

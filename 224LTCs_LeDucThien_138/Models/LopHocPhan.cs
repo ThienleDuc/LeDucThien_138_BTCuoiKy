@@ -50,6 +50,7 @@ namespace _224LTCs_LeDucThien_138.Models
 
         public string MaNK => HocPhan?.MaNK;
 
+        public List<CT_LHP_SV> DanhSachSinhVienLopHocPhan { get; set; }
         
         // Navigation properties
         [ForeignKey("MaHP")]
@@ -89,18 +90,27 @@ namespace _224LTCs_LeDucThien_138.Models
             CT_LHP_SVs = cT_LHP_SVs;
         }
 
+        public LopHocPhan(List<CT_LHP_SV> danhSachSinhVienLopHocPhan)
+        {
+            DanhSachSinhVienLopHocPhan = danhSachSinhVienLopHocPhan;
+        }
+
         public LopHocPhan()
         {
         }
+
+        
     }
 
     public class LopHocPhanRepos
     {
         private ConnectionDatabase _connectionDatabase;
+        private CT_LHP_SVRepos _cT_LHP_SVRepos;
 
         public LopHocPhanRepos(ConnectionDatabase connectionDatabase)
         {
             _connectionDatabase = connectionDatabase;
+            _cT_LHP_SVRepos  = new CT_LHP_SVRepos(_connectionDatabase);
         }
 
         public List<LopHocPhan> GetAllLopHocPhan()
@@ -236,6 +246,12 @@ namespace _224LTCs_LeDucThien_138.Models
                     }
                 }
             }
+
+            if (lhp != null)
+            {
+                lhp.DanhSachSinhVienLopHocPhan = _cT_LHP_SVRepos.GetCT_SV_LHP_ById(maLHP);
+            }
+
             return lhp;
         }
 

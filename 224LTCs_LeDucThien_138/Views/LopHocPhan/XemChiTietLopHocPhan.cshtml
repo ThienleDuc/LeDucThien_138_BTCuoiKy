@@ -1,0 +1,146 @@
+﻿@model _224LTCs_LeDucThien_138.Models.LopHocPhan;
+
+@{
+    ViewData["Title"] = "Lớp Học Phần - Xem Chi Tiết";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["HeadCollapse"] = "LopHocPhan";
+    ViewData["LopHocPhan"] = "LopHocPhan-Detail";
+}
+
+<div class="container px-4">
+    <h1 class="mt-4 text-uppercase">Lớp Học Phần</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item active">Xem chi tiết lớp học phần</li>
+    </ol>
+
+    <div class="row mb-3">
+        <div class="col-4">
+            <div class="card shadow rounded-4">
+                <div class="card-body p-4">
+                    <div class="mb-3">
+                        <small>
+                            <strong class="text-danger">*Thông tin:</strong> Các thông tin liên quan đến lớp học phần, môn học, lịch học, giảng viên, phòng học.
+                        </small>
+                    </div>
+
+                    <div class="mb-1">
+                        <strong class="text-muted pe-3">Lớp Học Phần:</strong><span class="font-monospace">@Model.MaLHP</span>
+                    </div>
+                    <div class="mb-1">
+                        <strong class="text-muted pe-3">Học Phần:</strong><span class="font-monospace">@Model.MaHP</span>
+                    </div>
+                    <div class="mb-1">
+                        <strong class="text-muted pe-3">Giảng Viên:</strong><span class="font-monospace">@Model.TenCB</span>
+                    </div>
+                    <div class="mb-1">
+                        <strong class="text-muted pe-3">Số Tín Chỉ:</strong><span class="font-monospace">@Model.SoTC</span>
+                    </div>
+                    <div class="mb-1">
+                        <strong class="text-muted pe-3">Lịch Học:</strong><span class="font-monospace">Thứ @Model.ThuNgay, từ tiết @Model.TietBatDau &rarr; @Model.TietKetThuc</span>
+                    </div>
+                    <div class="mb-1">
+                        <strong class="text-muted pe-3">Phòng Học:</strong><span class="font-monospace">@Model.TenPhong</span>
+                    </div>
+                    <div class="mb-1">
+                        <strong class="text-muted pe-3">Ngày Học:</strong><span class="font-monospace">@Model.NgayHoc?.ToString("dd/MM/yyyy")</span>
+                    </div>
+                    <div class="mb-1">
+                        <strong class="text-muted pe-3">Ghi Chú:</strong><span class="font-monospace">@Model.GhiChu</span>
+                    </div>
+
+                    <div class="text-end mt-3">
+                        <a asp-action="Index" asp-controller="LopHocPhan" class="btn btn-light"><i class="fa-solid fa-arrow-left text-primary"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow rounded-4">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <small>
+                            <strong class="text-danger">*Thông tin:</strong> Danh sách sinh viên thuộc lớp học phần.
+                        </small>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <div class="d-flex justify-content-start align-items-center">
+                                <select id="rowsPerPage" class="form-select w-auto">
+                                    @if (Model.DanhSachSinhVienLopHocPhan.Count >= 50)
+                                    {
+                                        <option value="5">5</option>
+                                        <option value="10" selected>10</option>
+                                        <option value="25">25</option>
+                                        <option value="50">50</option>
+                                    }
+                                    else if (Model.DanhSachSinhVienLopHocPhan.Count >= 25)
+                                    {
+                                        <option value="5">5</option>
+                                        <option value="10" selected>10</option>
+                                        <option value="25">25</option>
+                                    }
+                                    else if (Model.DanhSachSinhVienLopHocPhan.Count >= 10)
+                                    {
+                                        <option value="5">5</option>
+                                        <option value="10" selected>10</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="5" selected>5</option>
+                                    }
+                                </select>
+                                <label for="rowsPerPage" class="ms-2 mb-0">Số lượng dòng trên bảng</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Mã sinh viên</th>
+                                    <th>Tên sinh viên</th>
+                                    <th>Email</th>
+                                    <th>Ghi chú</th>
+                                    <th class="text-center">Xem</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                @for (int i = 0; i < Model.DanhSachSinhVienLopHocPhan.Count; i++)
+                                {
+                                    var sv = Model.DanhSachSinhVienLopHocPhan[i];
+                                    <tr class="data-row @(i >= 10 ? "d-none" : "")">
+                                        <!-- Mặc định 10 dòng -->
+                                        <td class="align-middle text-center">@(i + 1)</td>
+                                        <td class="align-middle">@sv.MaSV</td>
+                                        <td class="align-middle">@sv.TenSV</td>
+                                        <td class="align-middle">@sv.Email</td>
+                                        <td class="align-middle @(string.IsNullOrEmpty(sv.GhiChu) ? "text-center" : "")">@(!string.IsNullOrEmpty(sv.GhiChu) ? sv.GhiChu : "-")</td>
+                                        <td class="align-middle text-center">
+                                            <a asp-action="XemChiTietLopHocPhan" asp-controller="LopHocPhan" asp-route-maLHP="@sv.MaLHP" class="text-decoration-none text-black">
+                                                <i class="fa-regular fa-eye"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="pagination-container" class="d-flex align-items-center justify-content-between">
+                        <div>
+                            Hiển thị <span id="startRow"></span> đến <span id="endRow"></span> trong số <span id="totalRows">@Model.DanhSachSinhVienLopHocPhan.Count</span> mục
+                        </div>
+
+                        <nav>
+                            <ul class="pagination m-0" id="pagination">
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="~/js/LoadChiTietLopHocPhan.js"></script>
