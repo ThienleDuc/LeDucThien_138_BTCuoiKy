@@ -17,7 +17,7 @@
 
 <div class="table-responsive">
     <table class="table table-bordered table-hover">
-        <thead class="table-primary">
+        <thead class="table-secondary">
             <tr>
                 <th>Mã sinh viên</th>
                 <th>Tên sinh viên</th>
@@ -39,7 +39,9 @@
                     <td>@Model[i].DiaChi</td>
 
                     <td class="text-center">
-                        <a href="#" class="text-decoration-none text-black"><i class="fa-regular fa-eye"></i></a>
+                        <a asp-action="XemChiTietSinhVien" asp-controller="SinhVien" asp-route-maSV="@Model[i].MaSV" class="text-decoration-none text-black">
+                            <i class="fa-regular fa-eye"></i>
+                        </a>
                     </td>
                     <td class="text-center">
                         <a asp-action="SuaSinhVien" asp-controller="SinhVien" asp-route-maSV="@Model[i].MaSV" class="text-decoration-none text-warning">

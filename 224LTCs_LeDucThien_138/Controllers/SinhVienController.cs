@@ -144,5 +144,17 @@ namespace _224LTCs_LeDucThien_138.Controllers
 
             return View(sv);
         }
+
+        [HttpGet]
+        public IActionResult XemChiTietSinhVien(string maSV)
+        {
+            var sv = _sinhVienRepos.GetSinhVienById(maSV);
+            if (sv == null)
+            {
+                TempData["ErrorMessage"] = "Sinh viên không tồn tại.";
+                return RedirectToAction("Index");
+            }
+            return View(sv);
+        }
     }
 }

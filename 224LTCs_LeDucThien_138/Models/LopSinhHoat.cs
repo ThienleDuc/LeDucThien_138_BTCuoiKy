@@ -15,7 +15,11 @@ namespace _224LTCs_LeDucThien_138.Models
         public string? TenLSH { get; set; }
 
         [ForeignKey("MaNK")]
-        public NienKhoa NienKhoa { get; set; }  
+        public NienKhoa NienKhoa { get; set; }
+
+        [ForeignKey("MaNganh")]
+
+        public ChuyenNganh ChuyenNganh { get; set; }
 
         [StringLength(4)]
         public string? MaNK { get; set; }
@@ -34,6 +38,11 @@ namespace _224LTCs_LeDucThien_138.Models
             NienKhoa = nienKhoa;
             MaNK = maNK;
             SinhViens = sinhViens;
+        }
+
+        public LopSinhHoat(ChuyenNganh chuyenNganh)
+        {
+            ChuyenNganh = chuyenNganh;
         }
     }
 

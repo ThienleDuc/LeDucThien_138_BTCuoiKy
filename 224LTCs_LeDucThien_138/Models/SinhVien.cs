@@ -40,6 +40,12 @@ namespace _224LTCs_LeDucThien_138.Models
 
         public string? Anh { get; set; }
 
+        public string? TenNganh => LopSinhHoat?.ChuyenNganh?.TenNganh;
+
+        public string? TenKhoa => LopSinhHoat?.ChuyenNganh?.Khoa?.TenKhoa;
+
+        public string? MaNK => LopSinhHoat?.MaNK;
+
         // Thêm navigation property để lấy TenLSH từ LopSinhHoat
         [ForeignKey("MaLSH")]
         public LopSinhHoat LopSinhHoat { get; set; }
@@ -185,10 +191,12 @@ namespace _224LTCs_LeDucThien_138.Models
             using (SqlConnection conn = _connectionDatabase.GetConnection())
             {
                 string query = @" 
-                SELECT sv.*, lsh.TenLSH
-                FROM SinhVien sv
-                LEFT JOIN LopSinhHoat lsh ON sv.MaLSH = lsh.MaLSH
-                WHERE sv.MaSV = @MaSV;";
+                    SELECT sv.*, lsh.TenLSH, lsh.MaNK, cn.TenNganh, k.TenKhoa
+                    FROM SinhVien sv
+                    LEFT JOIN LopSinhHoat lsh ON sv.MaLSH = lsh.MaLSH
+                    LEFT JOIN ChuyenNganh cn ON lsh.MaNganh = cn.MaNganh
+                    LEFT JOIN Khoa k ON cn.MaKhoa = k.MaKhoa
+                    WHERE sv.MaSV = @MaSV;";
 
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@MaSV", !string.IsNullOrEmpty(maSV) ? maSV : (object)DBNull.Value);
@@ -214,7 +222,16 @@ namespace _224LTCs_LeDucThien_138.Models
                             Anh = reader["Anh"]?.ToString(),
                             LopSinhHoat = new LopSinhHoat
                             {
-                                TenLSH = reader["TenLSH"]?.ToString()
+                                TenLSH = reader["TenLSH"]?.ToString(),
+                                MaNK = reader["MaNK"]?.ToString(),
+                                ChuyenNganh = new ChuyenNganh
+                                {
+                                    TenNganh = reader["TenNganh"]?.ToString(),
+                                    Khoa = new Khoa
+                                    {
+                                        TenKhoa = reader["TenKhoa"]?.ToString()
+                                    }
+                                }
                             }
                         };
                     }
