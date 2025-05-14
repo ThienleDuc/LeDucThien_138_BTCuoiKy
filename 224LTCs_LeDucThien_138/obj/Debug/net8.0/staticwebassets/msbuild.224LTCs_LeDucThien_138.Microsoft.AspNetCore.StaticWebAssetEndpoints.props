@@ -196,13 +196,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoadCanBo.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0gt423e5ek"},{"Name":"integrity","Value":"sha256-8EOhIL5ZIYbhjwvrT6dQ5\u002BldLoIzJQHMjpF6l37H3bQ="},{"Name":"label","Value":"_content/224LTCs_LeDucThien_138/js/LoadCanBo.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3714"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00228EOhIL5ZIYbhjwvrT6dQ5\u002BldLoIzJQHMjpF6l37H3bQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 14 May 2025 16:24:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3714"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00228EOhIL5ZIYbhjwvrT6dQ5\u002BldLoIzJQHMjpF6l37H3bQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 14 May 2025 16:26:23 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/224LTCs_LeDucThien_138/js/LoadCanBo.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoadCanBo.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8EOhIL5ZIYbhjwvrT6dQ5\u002BldLoIzJQHMjpF6l37H3bQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3714"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00228EOhIL5ZIYbhjwvrT6dQ5\u002BldLoIzJQHMjpF6l37H3bQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 14 May 2025 16:24:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3714"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00228EOhIL5ZIYbhjwvrT6dQ5\u002BldLoIzJQHMjpF6l37H3bQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 14 May 2025 16:26:23 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/224LTCs_LeDucThien_138/js/paginationModule.be9wowa0zr.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\paginationModule.js'))</AssetFile>
