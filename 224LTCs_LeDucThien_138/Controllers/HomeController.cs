@@ -80,7 +80,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
         }
 
 
-        public IActionResult XoaPhong(int? maPhong)
+        public IActionResult XoaPhong(int maPhong)
         {
             bool isDeleted = _phongHocRepos.DeletePhong(maPhong);
 
