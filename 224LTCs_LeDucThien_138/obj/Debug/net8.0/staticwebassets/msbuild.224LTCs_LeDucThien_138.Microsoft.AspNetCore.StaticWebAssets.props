@@ -300,8 +300,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>skaq7oapyo</Fingerprint>
-      <Integrity>DF/C40+SrJFHgzlwdelNmENTdaBURAtI6+sedv5VccE=</Integrity>
+      <Fingerprint>0gt423e5ek</Fingerprint>
+      <Integrity>8EOhIL5ZIYbhjwvrT6dQ5+ldLoIzJQHMjpF6l37H3bQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoadCanBo.js'))</OriginalItemSpec>

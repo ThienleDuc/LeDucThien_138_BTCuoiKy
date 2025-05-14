@@ -1,0 +1,93 @@
+﻿@model _224LTCs_LeDucThien_138.Models.CanBo
+@{
+    ViewData["Title"] = "Cán Bộ & Giảng Viên - Xem Chi Tiết Cán Bộ & Giảng viên";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["HeadCollapse"] = "CanBo";
+    ViewData["CanBo"] = "CanBo-Detail";
+}
+
+<div class="container px-4">
+    <h1 class="mt-4 text-uppercase">Cán bộ - Giảng viên</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item active">Xem chi tiết</li>
+    </ol>
+    <div class="row mb-4">
+        <!-- Card Ảnh Đại Diện -->
+        <div class="col-md-3">
+            <div class="card shadow rounded-4 text-center mb-2">
+                <div class="card-body p-4">
+                    <img src="@Url.Content(string.IsNullOrEmpty(Model.Anh) ? "~/assets/img/avatar-default.svg" : "~/assets/img/" + Model.Anh)"
+                         alt="Ảnh Đại Diện" class="rounded-circle mb-3" width="120" height="120" />
+                    <p class="text-muted small">Mã cán bộ: <span class="fw-bold">@Model.MaCB</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Thông Tin -->
+        <div class="col-md-9">
+            <div class="card shadow rounded-4">
+                <div class="card-body p-4">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="row mb-3 align-items-center">
+                                <label class="col-4 text-muted fw-bold">Họ và Tên</label>
+                                <p class="col form-control-plaintext font-monospace">@Model.TenCB</p>
+                            </div>
+
+                            <div class="row mb-3 align-items-center">
+                                <label class="col-4 text-muted fw-bold">Giới Tính</label>
+                                <p class="col form-control-plaintext font-monospace">@((Model.GioiTinh ? "Nam" : "Nữ"))</p>
+                            </div>
+
+                            <div class="row mb-3 align-items-center">
+                                <label class="col-4 text-muted fw-bold">Ngày Sinh</label>
+                                <p class="col form-control-plaintext font-monospace">@Model.NgaySinh?.ToString("dd/MM/yyyy")</p>
+                            </div>
+
+                            <div class="row mb-3 align-items-center">
+                                <label class="col-4 text-muted fw-bold">CCCD</label>
+                                <p class="col form-control-plaintext font-monospace">@Model.Cccd</p>
+                            </div>
+
+                            <div class="row mb-3 align-items-center">
+                                <label class="col-4 text-muted fw-bold">Địa Chỉ</label>
+                                <p class="col form-control-plaintext font-monospace">@Model.DiaChi</p>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="row mb-3 align-items-center">
+                                <label class="col-4 text-muted fw-bold">Số Điện Thoại</label>
+                                <p class="col form-control-plaintext font-monospace">@Model.Sdt</p>
+                            </div>
+
+                            <div class="row mb-3 align-items-center">
+                                <label class="col-4 text-muted fw-bold">Email</label>
+                                <p class="col form-control-plaintext font-monospace">@Model.Email</p>
+                            </div>
+
+                            <div class="row mb-3 align-items-center">
+                                <label class="col-4 text-muted fw-bold">Khoa</label>
+                                <p class="col form-control-plaintext font-monospace">@Model.TenKhoa</p>
+                            </div>
+
+                            <div class="row mb-3 align-items-center">
+                                <label class="col-4 text-muted fw-bold">Học vị</label>
+                                <p class="col form-control-plaintext font-monospace">@Model.TenHocVi</p>
+                            </div>
+
+                            <div class="row mb-3 align-items-center">
+                                <label class="col-4 text-muted fw-bold">Chức vụ</label>
+                                <p class="col form-control-plaintext font-monospace">@Model.TenChucVu</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-grid mt-3">
+                        <a asp-action="SuaCanBo" asp-controller="CanBo" asp-route-maCB="@Model.MaCB" class="btn btn-outline-primary btn-sm">Chỉnh sửa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

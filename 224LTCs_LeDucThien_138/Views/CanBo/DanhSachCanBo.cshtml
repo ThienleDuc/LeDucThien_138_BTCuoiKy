@@ -39,7 +39,9 @@
                     <td>@Model[i].DiaChi</td>
 
                     <td class="text-center">
-                        <a href="#" class="text-decoration-none text-black"><i class="fa-regular fa-eye"></i></a>
+                        <a asp-action="XemChiTietCanBo" asp-controller="CanBo" asp-route-maCB="@Model[i].MaCB" class="text-decoration-none text-black">
+                            <i class="fa-regular fa-eye"></i>
+                        </a>
                     </td>
                     <td class="text-center">
                         <a asp-action="SuaCanBo" asp-controller="CanBo" asp-route-maCB="@Model[i].MaCB" class="text-decoration-none text-warning">

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "71VL4RRo9A0/L8DlKTDNXS1UpHjxfnPIazS5ZarVBH0=",
+  "Hash": "xmbEy/l4OV4WrDRMM57pPosBgeWXCNpGt002Hg7oyBo=",
   "Source": "224LTCs_LeDucThien_138",
   "BasePath": "_content/224LTCs_LeDucThien_138",
   "Mode": "Default",
@@ -388,8 +388,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "skaq7oapyo",
-      "Integrity": "DF/C40+SrJFHgzlwdelNmENTdaBURAtI6+sedv5VccE=",
+      "Fingerprint": "0gt423e5ek",
+      "Integrity": "8EOhIL5ZIYbhjwvrT6dQ5+ldLoIzJQHMjpF6l37H3bQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\LoadCanBo.js"
@@ -3051,6 +3051,51 @@
       ]
     },
     {
+      "Route": "js/LoadCanBo.0gt423e5ek.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadCanBo.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3714"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8EOhIL5ZIYbhjwvrT6dQ5+ldLoIzJQHMjpF6l37H3bQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 16:24:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0gt423e5ek"
+        },
+        {
+          "Name": "label",
+          "Value": "js/LoadCanBo.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8EOhIL5ZIYbhjwvrT6dQ5+ldLoIzJQHMjpF6l37H3bQ="
+        }
+      ]
+    },
+    {
       "Route": "js/LoadCanBo.js",
       "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadCanBo.js",
       "Selectors": [],
@@ -3061,7 +3106,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3576"
+          "Value": "3714"
         },
         {
           "Name": "Content-Type",
@@ -3069,11 +3114,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DF/C40+SrJFHgzlwdelNmENTdaBURAtI6+sedv5VccE=\""
+          "Value": "\"8EOhIL5ZIYbhjwvrT6dQ5+ldLoIzJQHMjpF6l37H3bQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:41:24 GMT"
+          "Value": "Wed, 14 May 2025 16:24:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3083,52 +3128,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-DF/C40+SrJFHgzlwdelNmENTdaBURAtI6+sedv5VccE="
-        }
-      ]
-    },
-    {
-      "Route": "js/LoadCanBo.skaq7oapyo.js",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadCanBo.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3576"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DF/C40+SrJFHgzlwdelNmENTdaBURAtI6+sedv5VccE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:41:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "skaq7oapyo"
-        },
-        {
-          "Name": "label",
-          "Value": "js/LoadCanBo.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-DF/C40+SrJFHgzlwdelNmENTdaBURAtI6+sedv5VccE="
+          "Value": "sha256-8EOhIL5ZIYbhjwvrT6dQ5+ldLoIzJQHMjpF6l37H3bQ="
         }
       ]
     },

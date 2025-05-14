@@ -67,7 +67,9 @@ namespace _224LTCs_LeDucThien_138.Controllers
             canBo.MaHocVi = maHocVi;
 
             var cv = _chucVuRepos.GetChucVuByID((int)maChucVu);
-            if (!string.IsNullOrEmpty(cv.TenChucVu) && cv.TenChucVu.ToLower().Trim() == "giảng viên")
+            if (!string.IsNullOrEmpty(cv.TenChucVu) && cv.TenChucVu.ToLower().Trim() == "giảng viên"
+                || !string.IsNullOrEmpty(cv.TenChucVu) && cv.TenChucVu.ToLower().Trim() == "trưởng khoa"
+                || !string.IsNullOrEmpty(cv.TenChucVu) && cv.TenChucVu.ToLower().Trim() == "phó khoa")
             {
                 if (maKhoa == null)
                 {
@@ -117,7 +119,9 @@ namespace _224LTCs_LeDucThien_138.Controllers
             canBo.MaHocVi = maHocVi;
 
             var cv = _chucVuRepos.GetChucVuByID((int)maChucVu);
-            if (!string.IsNullOrEmpty(cv.TenChucVu) && cv.TenChucVu.ToLower().Trim() == "giảng viên")
+            if (!string.IsNullOrEmpty(cv.TenChucVu) && cv.TenChucVu.ToLower().Trim() == "giảng viên"
+                || !string.IsNullOrEmpty(cv.TenChucVu) && cv.TenChucVu.ToLower().Trim() == "trưởng khoa"
+                || !string.IsNullOrEmpty(cv.TenChucVu) && cv.TenChucVu.ToLower().Trim() == "phó khoa")
             {
                 if (maKhoa == null)
                 {
@@ -162,6 +166,18 @@ namespace _224LTCs_LeDucThien_138.Controllers
         {
             var cb = _canBoRepos.GetCanBoFiltered(maKhoa, maHocVi, maChucVu, TuKhoa);
             return View(cb);
+        }
+
+        [HttpGet]
+        public IActionResult XemChiTietCanBo(string maCB)
+        {
+            var sv = _canBoRepos.GetCanBoById(maCB);
+            if (sv == null)
+            {
+                TempData["ErrorMessage"] = "Sinh viên không tồn tại.";
+                return RedirectToAction("Index");
+            }
+            return View(sv);
         }
     }
 }

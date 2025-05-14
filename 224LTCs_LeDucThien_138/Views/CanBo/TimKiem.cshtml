@@ -1,6 +1,7 @@
 ﻿@model List<_224LTCs_LeDucThien_138.Models.CanBo>
 @{
     ViewData["Title"] = "Cán bộ & Giảng viên - Tìm kiếm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
     ViewData["HeadCollapse"] = "CanBo";
     ViewData["CanBo"] = "CanBo-TimKiem";
     var tuKhoa = Context.Request.Query["TuKhoa"].ToString();

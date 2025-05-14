@@ -3,12 +3,40 @@
   "WorkspaceRootPath": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\leducthien_138_btcuoiky\\224ltcs_leducthien_138\\views\\canbo\\danhsachcanbo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\canbo\\danhsachcanbo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\leducthien_138_btcuoiky\\224ltcs_leducthien_138\\wwwroot\\js\\loadcanbo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\wwwroot\\js\\loadcanbo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\leducthien_138_btcuoiky\\224ltcs_leducthien_138\\views\\canbo\\xemchitietcanbo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\canbo\\xemchitietcanbo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\leducthien_138_btcuoiky\\224ltcs_leducthien_138\\views\\canbo\\timkiem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\canbo\\timkiem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\leducthien_138_btcuoiky\\224ltcs_leducthien_138\\controllers\\canbocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\controllers\\canbocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\leducthien_138_btcuoiky\\224ltcs_leducthien_138\\views\\canbo\\danhsachcanbo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\canbo\\danhsachcanbo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\leducthien_138_btcuoiky\\224ltcs_leducthien_138\\views\\canbo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\canbo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\leducthien_138_btcuoiky\\224ltcs_leducthien_138\\views\\canbo\\suacanbo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\canbo\\suacanbo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\leducthien_138_btcuoiky\\224ltcs_leducthien_138\\views\\canbo\\themcanbo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\canbo\\themcanbo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\leducthien_138_btcuoiky\\224ltcs_leducthien_138\\models\\canbo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\models\\canbo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\leducthien_138_btcuoiky\\224ltcs_leducthien_138\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -19,24 +47,12 @@
       "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\models\\chucvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\leducthien_138_btcuoiky\\224ltcs_leducthien_138\\models\\canbo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\models\\canbo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\leducthien_138_btcuoiky\\224ltcs_leducthien_138\\views\\canbo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\canbo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\leducthien_138_btcuoiky\\224ltcs_leducthien_138\\models\\khoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\models\\khoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\leducthien_138_btcuoiky\\224ltcs_leducthien_138\\models\\hocvi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\models\\hocvi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\leducthien_138_btcuoiky\\224ltcs_leducthien_138\\views\\canbo\\suacanbo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\canbo\\suacanbo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\leducthien_138_btcuoiky\\224ltcs_leducthien_138\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,14 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\leducthien_138_btcuoiky\\224ltcs_leducthien_138\\models\\chuyennganh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\models\\chuyennganh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\leducthien_138_btcuoiky\\224ltcs_leducthien_138\\views\\canbo\\themcanbo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\canbo\\themcanbo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\leducthien_138_btcuoiky\\224ltcs_leducthien_138\\views\\canbo\\timkiem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|solutionrelative:224ltcs_leducthien_138\\views\\canbo\\timkiem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3ED539AE-E682-4843-9E5E-E2EEC1697D69}|224LTCs_LeDucThien_138\\224LTCs_LeDucThien_138.csproj|d:\\workspace\\project_ltcs\\leducthien_138_btcuoiky\\224ltcs_leducthien_138\\models\\connectiondatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,192 +90,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-14T15:16:06.335Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CanBoController.cs",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Controllers\\CanBoController.cs",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Controllers\\CanBoController.cs",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Controllers\\CanBoController.cs",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Controllers\\CanBoController.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAAAJgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T15:10:12.894Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "khoa.cs",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Models\\khoa.cs",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Models\\khoa.cs",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Models\\khoa.cs",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Models\\khoa.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAADwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T15:09:35.898Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\CanBo\\Index.cshtml",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\CanBo\\Index.cshtml",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\CanBo\\Index.cshtml",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\CanBo\\Index.cshtml",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFcAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-14T14:42:03.308Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DanhSachCanBo.cshtml",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\CanBo\\DanhSachCanBo.cshtml",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\CanBo\\DanhSachCanBo.cshtml",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\CanBo\\DanhSachCanBo.cshtml*",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\CanBo\\DanhSachCanBo.cshtml*",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABMAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-14T14:41:55.173Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CanBo.cs",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Models\\CanBo.cs",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Models\\CanBo.cs",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Models\\CanBo.cs",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Models\\CanBo.cs",
-              "ViewState": "AgIAACMBAAAAAAAAAAAAABMBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T14:46:20.211Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ChucVu.cs",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Models\\ChucVu.cs",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Models\\ChucVu.cs",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Models\\ChucVu.cs",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Models\\ChucVu.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T14:55:08.6Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HocVi.cs",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Models\\HocVi.cs",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Models\\HocVi.cs",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Models\\HocVi.cs",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Models\\HocVi.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACoAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T15:03:33.25Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Models\\ErrorViewModel.cs",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T12:37:25.401Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Program.cs",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Program.cs",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Program.cs",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T12:34:11.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SuaCanBo.cshtml",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\CanBo\\SuaCanBo.cshtml",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\CanBo\\SuaCanBo.cshtml",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\CanBo\\SuaCanBo.cshtml",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\CanBo\\SuaCanBo.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-14T14:44:27.886Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ChuyenNganh.cs",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Models\\ChuyenNganh.cs",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Models\\ChuyenNganh.cs",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Models\\ChuyenNganh.cs",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Models\\ChuyenNganh.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAEkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T14:59:56.937Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ThemCanBo.cshtml",
-              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\CanBo\\ThemCanBo.cshtml",
-              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\CanBo\\ThemCanBo.cshtml",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\CanBo\\ThemCanBo.cshtml",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\CanBo\\ThemCanBo.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-14T14:44:01.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "TimKiem.cshtml",
               "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\CanBo\\TimKiem.cshtml",
               "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\CanBo\\TimKiem.cshtml",
               "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\CanBo\\TimKiem.cshtml",
               "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\CanBo\\TimKiem.cshtml",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAAAGIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-14T14:43:41.364Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoadCanBo.js",
+              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadCanBo.js",
+              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\wwwroot\\js\\LoadCanBo.js",
+              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadCanBo.js",
+              "RelativeToolTip": "224LTCs_LeDucThien_138\\wwwroot\\js\\LoadCanBo.js",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAAEkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-14T16:22:01.468Z",
               "EditorCaption": ""
             },
             {
@@ -284,7 +133,182 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "XemChiTietCanBo.cshtml",
+              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\CanBo\\XemChiTietCanBo.cshtml",
+              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\CanBo\\XemChiTietCanBo.cshtml",
+              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\CanBo\\XemChiTietCanBo.cshtml",
+              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\CanBo\\XemChiTietCanBo.cshtml",
+              "ViewState": "AgIAABYAAAAAAAAAAAAUwDcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-14T15:59:28.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CanBoController.cs",
+              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Controllers\\CanBoController.cs",
+              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Controllers\\CanBoController.cs",
+              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Controllers\\CanBoController.cs",
+              "RelativeToolTip": "224LTCs_LeDucThien_138\\Controllers\\CanBoController.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAAAHkAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T15:10:12.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\CanBo\\Index.cshtml",
+              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\CanBo\\Index.cshtml",
+              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\CanBo\\Index.cshtml",
+              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\CanBo\\Index.cshtml",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAAFMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-14T14:42:03.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SuaCanBo.cshtml",
+              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\CanBo\\SuaCanBo.cshtml",
+              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\CanBo\\SuaCanBo.cshtml",
+              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\CanBo\\SuaCanBo.cshtml",
+              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\CanBo\\SuaCanBo.cshtml",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGkAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-14T14:44:27.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ThemCanBo.cshtml",
+              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\CanBo\\ThemCanBo.cshtml",
+              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\CanBo\\ThemCanBo.cshtml",
+              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\CanBo\\ThemCanBo.cshtml",
+              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\CanBo\\ThemCanBo.cshtml",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAHMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-14T14:44:01.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DanhSachCanBo.cshtml",
+              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\CanBo\\DanhSachCanBo.cshtml",
+              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\CanBo\\DanhSachCanBo.cshtml",
+              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\CanBo\\DanhSachCanBo.cshtml",
+              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\CanBo\\DanhSachCanBo.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADQAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-14T14:41:55.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CanBo.cs",
+              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Models\\CanBo.cs",
+              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Models\\CanBo.cs",
+              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Models\\CanBo.cs",
+              "RelativeToolTip": "224LTCs_LeDucThien_138\\Models\\CanBo.cs",
+              "ViewState": "AgIAALMAAAAAAAAAAAAAAEwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T14:46:20.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ChucVu.cs",
+              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Models\\ChucVu.cs",
+              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Models\\ChucVu.cs",
+              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Models\\ChucVu.cs",
+              "RelativeToolTip": "224LTCs_LeDucThien_138\\Models\\ChucVu.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T14:55:08.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "khoa.cs",
+              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Models\\khoa.cs",
+              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Models\\khoa.cs",
+              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Models\\khoa.cs",
+              "RelativeToolTip": "224LTCs_LeDucThien_138\\Models\\khoa.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T15:09:35.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-14T15:16:06.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HocVi.cs",
+              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Models\\HocVi.cs",
+              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Models\\HocVi.cs",
+              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Models\\HocVi.cs",
+              "RelativeToolTip": "224LTCs_LeDucThien_138\\Models\\HocVi.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACoAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T15:03:33.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "224LTCs_LeDucThien_138\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T12:37:25.401Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Program.cs",
+              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Program.cs",
+              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Program.cs",
+              "RelativeToolTip": "224LTCs_LeDucThien_138\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T12:34:11.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ChuyenNganh.cs",
+              "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Models\\ChuyenNganh.cs",
+              "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Models\\ChuyenNganh.cs",
+              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Models\\ChuyenNganh.cs",
+              "RelativeToolTip": "224LTCs_LeDucThien_138\\Models\\ChuyenNganh.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T14:59:56.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "ConnectionDatabase.cs",
               "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Models\\ConnectionDatabase.cs",
               "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Models\\ConnectionDatabase.cs",
@@ -292,12 +316,11 @@
               "RelativeToolTip": "224LTCs_LeDucThien_138\\Models\\ConnectionDatabase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T13:32:41.372Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T13:32:41.372Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "_TopNavBar.cshtml",
               "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\Shared\\_TopNavBar.cshtml",
               "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\Shared\\_TopNavBar.cshtml",
@@ -309,7 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\_ViewStart.cshtml",
@@ -321,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "_SideNavBar.cshtml",
               "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\Shared\\_SideNavBar.cshtml",
               "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\Shared\\_SideNavBar.cshtml",

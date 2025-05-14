@@ -192,17 +192,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Wed, 14 May 2025 12:59:05 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/224LTCs_LeDucThien_138/js/LoadCanBo.0gt423e5ek.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoadCanBo.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0gt423e5ek"},{"Name":"integrity","Value":"sha256-8EOhIL5ZIYbhjwvrT6dQ5\u002BldLoIzJQHMjpF6l37H3bQ="},{"Name":"label","Value":"_content/224LTCs_LeDucThien_138/js/LoadCanBo.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3714"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00228EOhIL5ZIYbhjwvrT6dQ5\u002BldLoIzJQHMjpF6l37H3bQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 14 May 2025 16:24:06 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/224LTCs_LeDucThien_138/js/LoadCanBo.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoadCanBo.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-DF/C40\u002BSrJFHgzlwdelNmENTdaBURAtI6\u002Bsedv5VccE="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3576"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022DF/C40\u002BSrJFHgzlwdelNmENTdaBURAtI6\u002Bsedv5VccE=\u0022"},{"Name":"Last-Modified","Value":"Wed, 14 May 2025 14:41:24 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/224LTCs_LeDucThien_138/js/LoadCanBo.skaq7oapyo.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoadCanBo.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"skaq7oapyo"},{"Name":"integrity","Value":"sha256-DF/C40\u002BSrJFHgzlwdelNmENTdaBURAtI6\u002Bsedv5VccE="},{"Name":"label","Value":"_content/224LTCs_LeDucThien_138/js/LoadCanBo.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3576"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022DF/C40\u002BSrJFHgzlwdelNmENTdaBURAtI6\u002Bsedv5VccE=\u0022"},{"Name":"Last-Modified","Value":"Wed, 14 May 2025 14:41:24 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8EOhIL5ZIYbhjwvrT6dQ5\u002BldLoIzJQHMjpF6l37H3bQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3714"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00228EOhIL5ZIYbhjwvrT6dQ5\u002BldLoIzJQHMjpF6l37H3bQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 14 May 2025 16:24:06 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/224LTCs_LeDucThien_138/js/paginationModule.be9wowa0zr.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\paginationModule.js'))</AssetFile>

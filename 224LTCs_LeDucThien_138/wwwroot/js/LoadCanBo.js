@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Với trang thêm cán bộ
             if (isAddPage) {
-                if (selectedText === 'giảng viên') {
+                if (selectedText === 'giảng viên' || selectedText === 'trưởng khoa' || selectedText === 'phó khoa') {
                     khoaSelect.classList.remove('d-none');
                     LoadDataKhoa();
                 } else {
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Với trang lọc
             if (isFilterPage) {
                 khoaSelect.innerHTML = '';
-                if (selectedText === 'giảng viên') {
+                if (selectedText === 'giảng viên' || selectedText === 'trưởng khoa' || selectedText === 'phó khoa') {
                     khoaSelect.innerHTML = '<option selected disabled>Chọn khoa</option>';
                     LoadDataKhoa();
                 } else {
