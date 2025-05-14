@@ -8,20 +8,20 @@ namespace _224LTCs_LeDucThien_138.Models
     {
         // MaPhong là khóa chính và sử dụng Identity trong CSDL
         [Key]
-        public int MaPhong { get; set; }
+        public int? MaPhong { get; set; }
 
         // TenPhong có độ dài tối đa là 50 ký tự
         [StringLength(50)]
         public string TenPhong { get; set; }
 
         // SucChua là kiểu INT, không cần giới hạn độ dài
-        public int SucChua { get; set; }
+        public int? SucChua { get; set; }
 
         // Constructor không có tham số
         public PhongHoc() { }
 
         // Constructor có tham số
-        public PhongHoc(int maPhong, string tenPhong, int sucChua)
+        public PhongHoc(int? maPhong, string tenPhong, int? sucChua)
         {
             MaPhong = maPhong;
             TenPhong = tenPhong;
@@ -53,9 +53,9 @@ namespace _224LTCs_LeDucThien_138.Models
                     {
                         list.Add(new PhongHoc
                         {
-                            MaPhong = reader.GetInt32(reader.GetOrdinal("MaPhong")),
-                            TenPhong = reader.GetString(reader.GetOrdinal("TenPhong")),
-                            SucChua = reader.GetInt32(reader.GetOrdinal("SucChua"))
+                            MaPhong = reader["MaPhong"] != null ? Convert.ToInt32(reader["MaPhong"]) : null,
+                            TenPhong = reader["TenPhong"]?.ToString(),
+                            SucChua = reader["SucChua"] != null ? Convert.ToInt32(reader["SucChua"]) : null
                         });
                     }
                 }
@@ -64,7 +64,7 @@ namespace _224LTCs_LeDucThien_138.Models
             return list;
         }
 
-        public PhongHoc GetPhongnById(string maPhong)
+        public PhongHoc GetPhongnById(int? maPhong)
         {
             PhongHoc phong = null;
             using (SqlConnection conn = _connectionDatabase.GetConnection())
@@ -73,7 +73,7 @@ namespace _224LTCs_LeDucThien_138.Models
                         FROM Phong
                         WHERE MaPhong = @MaPhong;";
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@MaPhong", maPhong);
+                cmd.Parameters.AddWithValue("@MaPhong", maPhong.HasValue ? maPhong : (object)DBNull.Value);
                 conn.Open();
 
                 using (SqlDataReader reader = cmd.ExecuteReader())
@@ -82,9 +82,9 @@ namespace _224LTCs_LeDucThien_138.Models
                     {
                         phong = new PhongHoc
                         {
-                            MaPhong = reader.GetInt32(reader.GetOrdinal("MaPhong")),
-                            TenPhong = reader.GetString(reader.GetOrdinal("TenPhong")),
-                            SucChua = reader.GetInt32(reader.GetOrdinal("SucChua"))
+                            MaPhong = reader["MaPhong"] != null ? Convert.ToInt32(reader["MaPhong"]) : null,
+                            TenPhong = reader["TenPhong"]?.ToString(),
+                            SucChua = reader["SucChua"] != null ? Convert.ToInt32(reader["SucChua"]) : null
                         };
                     }
                 }
@@ -101,7 +101,7 @@ namespace _224LTCs_LeDucThien_138.Models
             {
                 SqlCommand cmd = new SqlCommand("SearchPhong", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Keyword", keyword);
+                cmd.Parameters.AddWithValue("@Keyword", keyword ?? (object)DBNull.Value);
                 
                 conn.Open();
 
@@ -111,9 +111,9 @@ namespace _224LTCs_LeDucThien_138.Models
                     {
                         PhongHoc phong = new PhongHoc
                         {
-                            MaPhong = Convert.ToInt32(reader["MaPhong"]),
-                            TenPhong = reader.GetString(reader.GetOrdinal("TenPhong")),
-                            SucChua = Convert.ToInt32(reader["SucChua"])
+                            MaPhong = reader["MaPhong"] != null ? Convert.ToInt32(reader["MaPhong"]) : null,
+                            TenPhong = reader["TenPhong"]?.ToString(),
+                            SucChua = reader["SucChua"] != null ? Convert.ToInt32(reader["SucChua"]) : null
                         };
 
                         danhSach.Add(phong);
@@ -132,14 +132,14 @@ namespace _224LTCs_LeDucThien_138.Models
                 string query = "SELECT COUNT(*) FROM Phong WHERE TenPhong = @TenPhong";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@TenPhong", tenPhong);
+                    cmd.Parameters.AddWithValue("@TenPhong", tenPhong ?? (object)DBNull.Value);
                     int count = (int)cmd.ExecuteScalar();
                     return count > 0;
                 }
             }
         }
 
-        public bool IsThisPhong(int maPhong, string tenPhong)
+        public bool IsThisPhong(int? maPhong, string tenPhong)
         {
             using (SqlConnection conn = _connectionDatabase.GetConnection())
             {
@@ -147,8 +147,8 @@ namespace _224LTCs_LeDucThien_138.Models
                 string query = "SELECT COUNT(*) FROM Phong WHERE TenPhong = @TenPhong AND MaPhong = @MaPhong";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@MaPhong", maPhong);
-                    cmd.Parameters.AddWithValue("@TenPhong", tenPhong);
+                    cmd.Parameters.AddWithValue("@MaPhong", maPhong.HasValue ? maPhong : (object)DBNull.Value);
+                    cmd.Parameters.AddWithValue("@TenPhong", tenPhong ?? (object)DBNull.Value);
                     int count = (int)cmd.ExecuteScalar();
                     return count > 0;
                 }
@@ -163,7 +163,7 @@ namespace _224LTCs_LeDucThien_138.Models
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 cmd.Parameters.AddWithValue("@TenPhong", phong.TenPhong ?? (object)DBNull.Value);
-                cmd.Parameters.AddWithValue("@SucChua", phong.SucChua);
+                cmd.Parameters.AddWithValue("@SucChua", phong.SucChua.HasValue ? phong.SucChua : (object)DBNull.Value);
 
                 conn.Open();
                 int result = cmd.ExecuteNonQuery();
@@ -178,9 +178,9 @@ namespace _224LTCs_LeDucThien_138.Models
                 SqlCommand cmd = new SqlCommand("UpdatePhong", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@MaPhong", phong.MaPhong);
+                cmd.Parameters.AddWithValue("@MaPhong", phong.MaPhong.HasValue ? phong.MaPhong : (object)DBNull.Value);
                 cmd.Parameters.AddWithValue("@TenPhong", phong.TenPhong ?? (object)DBNull.Value);
-                cmd.Parameters.AddWithValue("@SucChua", phong.SucChua);
+                cmd.Parameters.AddWithValue("@SucChua", phong.SucChua.HasValue ? phong.SucChua : (object)DBNull.Value);
 
                 conn.Open();
                 int result = cmd.ExecuteNonQuery();
@@ -188,13 +188,13 @@ namespace _224LTCs_LeDucThien_138.Models
             }
         }
 
-        public bool DeletePhong(int maPhong)
+        public bool DeletePhong(int? maPhong)
         {
             using (SqlConnection conn = _connectionDatabase.GetConnection())
             {
                 string query = "DELETE FROM Phong WHERE MaPhong = @MaPhong";
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@MaPhong", maPhong);
+                cmd.Parameters.AddWithValue("@MaPhong", maPhong.HasValue ? maPhong : (object)DBNull.Value);
 
                 conn.Open();
                 int result = cmd.ExecuteNonQuery();

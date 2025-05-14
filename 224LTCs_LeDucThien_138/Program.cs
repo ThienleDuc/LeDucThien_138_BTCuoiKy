@@ -7,9 +7,7 @@ builder.Services.AddControllersWithViews();
 
 // New add services to the container.
 builder.Services.AddSingleton<ConnectionDatabase>();
-builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
-builder.Services.AddScoped<CookieHelper>();
 builder.Services.AddScoped<PhongHocRepos>();
 
 var app = builder.Build();
