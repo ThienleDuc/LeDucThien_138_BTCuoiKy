@@ -1,4 +1,0 @@
-D:\WORKSPACE\project_LTCs\LeDucThien_138_BTCuoiKy\224LTCs_LeDucThien_138\wwwroot\js\datatables-simple-demo.js
-D:\WORKSPACE\project_LTCs\LeDucThien_138_BTCuoiKy\224LTCs_LeDucThien_138\wwwroot\js\LoadAvatar.js
-D:\WORKSPACE\project_LTCs\LeDucThien_138_BTCuoiKy\224LTCs_LeDucThien_138\wwwroot\js\LoadPhongHoc.js
-D:\WORKSPACE\project_LTCs\LeDucThien_138_BTCuoiKy\224LTCs_LeDucThien_138\wwwroot\js\LoadSinhvien.js

@@ -13,9 +13,9 @@ namespace _224LTCs_LeDucThien_138.Models
         public int MaChucVu { get; set; }
 
         [StringLength(50)]
-        public string TenChucVu { get; set; }
+        public string? TenChucVu { get; set; }
 
-        public ChucVu(int maChucVu, string tenChucVu)
+        public ChucVu(int maChucVu, string? tenChucVu)
         {
             MaChucVu = maChucVu;
             TenChucVu = tenChucVu;
@@ -47,7 +47,7 @@ namespace _224LTCs_LeDucThien_138.Models
                         list.Add(new ChucVu
                         {
                             MaChucVu = reader.GetInt32(reader.GetOrdinal("MaChucVu")),
-                            TenChucVu = reader.GetString(reader.GetOrdinal("TenChucVu"))
+                            TenChucVu = reader["TenChucVu"]?.ToString()
                         });
                     }
                 }
@@ -56,10 +56,9 @@ namespace _224LTCs_LeDucThien_138.Models
             return list;
         }
 
-        public ChucVu GetChucVuByID(int? maChucVu)
+        public ChucVu GetChucVuByID(int maChucVu)
         {
-            if (maChucVu == null) return null;
-
+            ChucVu cv = null;
             using (SqlConnection conn = _connectionDatabase.GetConnection())
             {
                 string query = @"SELECT MaChucVu, TenChucVu FROM ChucVu WHERE MaChucVu = @MaChucVu;";
@@ -72,16 +71,16 @@ namespace _224LTCs_LeDucThien_138.Models
                 {
                     if (reader.Read())
                     {
-                        return new ChucVu
+                        cv = new ChucVu
                         {
                             MaChucVu = reader.GetInt32(reader.GetOrdinal("MaChucVu")),
-                            TenChucVu = reader.GetString(reader.GetOrdinal("TenChucVu"))
+                            TenChucVu = reader["TenChucVu"]?.ToString()
                         };
                     }
                 }
             }
 
-            return null;
+            return cv;
         }
 
     }

@@ -66,8 +66,8 @@ namespace _224LTCs_LeDucThien_138.Controllers
             canBo.MaChucVu = maChucVu;
             canBo.MaHocVi = maHocVi;
 
-            var cv = _chucVuRepos.GetChucVuByID(maChucVu);
-            if (cv.TenChucVu.ToLower().Trim() == "giảng viên")
+            var cv = _chucVuRepos.GetChucVuByID((int)maChucVu);
+            if (!string.IsNullOrEmpty(cv.TenChucVu) && cv.TenChucVu.ToLower().Trim() == "giảng viên")
             {
                 if (maKhoa == null)
                 {
@@ -76,7 +76,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
                 }
             }
 
-            bool isAdded = _canBoRepos.AddCanBo(canBo, maKhoa, maHocVi, maChucVu);
+            bool isAdded = _canBoRepos.AddCanBo(canBo);
 
             if (isAdded)
             {
@@ -106,8 +106,27 @@ namespace _224LTCs_LeDucThien_138.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult SuaCanBo(CanBo canBo, int? maKhoa, int? maHocVi, int? maChucVu)
         {
+            if (maHocVi == null || maChucVu == null)
+            {
+                TempData["ErrorMessage"] = "Có lỗi khi thay đổi chức vụ và học vị";
+                return RedirectToAction("Index", "CanBo");
+            }
 
-            bool isAdded = _canBoRepos.UpdateCanBo(canBo, maKhoa, maHocVi, maChucVu);
+            canBo.MaKhoa = maKhoa;
+            canBo.MaChucVu = maChucVu;
+            canBo.MaHocVi = maHocVi;
+
+            var cv = _chucVuRepos.GetChucVuByID((int)maChucVu);
+            if (!string.IsNullOrEmpty(cv.TenChucVu) && cv.TenChucVu.ToLower().Trim() == "giảng viên")
+            {
+                if (maKhoa == null)
+                {
+                    TempData["ErrorMessage"] = "Giảng viên bắt buộc phải chọn khoa";
+                    return RedirectToAction("Index", "CanBo");
+                }
+            }
+
+            bool isAdded = _canBoRepos.UpdateCanBo(canBo);
 
             if (isAdded)
             {

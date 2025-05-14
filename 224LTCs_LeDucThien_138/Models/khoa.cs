@@ -13,12 +13,12 @@ namespace _224LTCs_LeDucThien_138.Models
         public int MaKhoa { get; set; }
 
         [StringLength(50)]
-        public string TenKhoa { get; set; }
+        public string? TenKhoa { get; set; }
 
         // Navigation property
         public ICollection<ChuyenNganh> ChuyenNganhs { get; set; }
 
-        public Khoa(int maKhoa, string tenKhoa, ICollection<ChuyenNganh> chuyenNganhs)
+        public Khoa(int maKhoa, string? tenKhoa, ICollection<ChuyenNganh> chuyenNganhs)
         {
             MaKhoa = maKhoa;
             TenKhoa = tenKhoa;
@@ -51,7 +51,7 @@ namespace _224LTCs_LeDucThien_138.Models
                         list.Add(new Khoa
                         {
                             MaKhoa = reader.GetInt32(reader.GetOrdinal("MaKhoa")),
-                            TenKhoa = reader.GetString(reader.GetOrdinal("TenKhoa"))
+                            TenKhoa = reader["TenKhoa"]?.ToString()
                         });
                     }
                 }

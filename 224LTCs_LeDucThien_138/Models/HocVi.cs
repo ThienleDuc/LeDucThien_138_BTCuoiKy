@@ -13,9 +13,9 @@ namespace _224LTCs_LeDucThien_138.Models
         public int MaHocVi { get; set; }
 
         [StringLength(50)]
-        public string TenHocVi { get; set; }
+        public string? TenHocVi { get; set; }
 
-        public HocVi(int maHocVi, string tenHocVi)
+        public HocVi(int maHocVi, string? tenHocVi)
         {
             MaHocVi = maHocVi;
             TenHocVi = tenHocVi;
@@ -47,7 +47,7 @@ namespace _224LTCs_LeDucThien_138.Models
                         list.Add(new HocVi
                         {
                             MaHocVi = reader.GetInt32(reader.GetOrdinal("MaHocVi")),
-                            TenHocVi = reader.GetString(reader.GetOrdinal("TenHocVi"))
+                            TenHocVi = reader["TenHocVi"]?.ToString()
                         });
                     }
                 }

@@ -22,7 +22,7 @@ namespace _224LTCs_LeDucThien_138.Models
         public int? MaKhoa { get; set; }
 
         [StringLength(50)]
-        public string TenCB { get; set; }
+        public string? TenCB { get; set; }
 
         public bool GioiTinh { get; set; }
 
@@ -30,19 +30,19 @@ namespace _224LTCs_LeDucThien_138.Models
         public DateTime? NgaySinh { get; set; }
 
         [StringLength(12)]
-        public string Cccd { get; set; }
+        public string? Cccd { get; set; }
 
-        public string DiaChi { get; set; }
-
-        [StringLength(10)]
-        public string Sdt { get; set; }
-
-        public string Email { get; set; }
+        public string? DiaChi { get; set; }
 
         [StringLength(10)]
-        public string MatKhau { get; set; }
+        public string? Sdt { get; set; }
 
-        public string Anh { get; set; }
+        public string? Email { get; set; }
+
+        [StringLength(10)]
+        public string? MatKhau { get; set; }
+
+        public string? Anh { get; set; }
 
         // Navigation properties to get TenKhoa, TenHocVi, TenChucVu
         [ForeignKey("MaKhoa")]
@@ -56,17 +56,17 @@ namespace _224LTCs_LeDucThien_138.Models
 
         // Non-mapped properties for displaying TenKhoa, TenHocVi, TenChucVu
         [NotMapped]
-        public string TenKhoa => Khoa?.TenKhoa;
+        public string? TenKhoa => Khoa?.TenKhoa;
 
         [NotMapped]
-        public string TenHocVi => HocVi?.TenHocVi;
+        public string? TenHocVi => HocVi?.TenHocVi;
 
         [NotMapped]
-        public string TenChucVu => ChucVu?.TenChucVu;
+        public string? TenChucVu => ChucVu?.TenChucVu;
 
-        public CanBo(string maCB, int? maHocVi, int? maChucVu, int? maKhoa, string tenCB, bool gioiTinh, 
-            DateTime? ngaySinh, string cccd, string diaChi, string sdt, string email, 
-            string matKhau, string anh, Khoa khoa, HocVi hocVi, ChucVu chucVu)
+        public CanBo(string maCB, int? maHocVi, int? maChucVu, int? maKhoa, string? tenCB, bool gioiTinh, 
+            DateTime? ngaySinh, string? cccd, string? diaChi, string? sdt, string? email, 
+            string? matKhau, string? anh, Khoa khoa, HocVi hocVi, ChucVu chucVu)
         {
             MaCB = maCB;
             MaHocVi = maHocVi;
@@ -118,30 +118,30 @@ namespace _224LTCs_LeDucThien_138.Models
                     {
                         list.Add(new CanBo
                         {
-                            MaCB = reader["MaCB"] != DBNull.Value ? reader["MaCB"].ToString() : null,
+                            MaCB = reader.GetString(reader.GetOrdinal("MaCB")),
                             MaKhoa = reader["MaKhoa"] != DBNull.Value ? Convert.ToInt32(reader["MaKhoa"]) : null,
                             MaHocVi = reader["MaHocVi"] != DBNull.Value ? Convert.ToInt32(reader["MaHocVi"]) : null,
                             MaChucVu = reader["MaChucVu"] != DBNull.Value ? Convert.ToInt32(reader["MaChucVu"]) : null,
-                            TenCB = reader["TenCB"] != DBNull.Value ? reader["TenCB"].ToString() : null,
+                            TenCB = reader["TenCB"]?.ToString(),
                             GioiTinh = reader["GioiTinh"] != DBNull.Value && Convert.ToBoolean(reader["GioiTinh"]),
                             NgaySinh = reader["NgaySinh"] != DBNull.Value ? (DateTime?)reader["NgaySinh"] : null,
-                            Cccd = reader["Cccd"] != DBNull.Value ? reader["Cccd"].ToString() : null,
-                            DiaChi = reader["DiaChi"] != DBNull.Value ? reader["DiaChi"].ToString() : null,
-                            Sdt = reader["Sdt"] != DBNull.Value ? reader["Sdt"].ToString() : null,
-                            Email = reader["Email"] != DBNull.Value ? reader["Email"].ToString() : null,
-                            MatKhau = reader["MatKhau"] != DBNull.Value ? reader["MatKhau"].ToString() : null,
-                            Anh = reader["Anh"] != DBNull.Value ? reader["Anh"].ToString() : null,
+                            Cccd = reader["Cccd"]?.ToString(),
+                            DiaChi = reader["DiaChi"]?.ToString(),
+                            Sdt = reader["Sdt"]?.ToString(),
+                            Email = reader["Email"]?.ToString(),
+                            MatKhau = reader["MatKhau"]?.ToString(),
+                            Anh = reader["Anh"]?.ToString(),
                             Khoa = new Khoa
                             {
-                                TenKhoa = reader["TenKhoa"] != DBNull.Value ? reader["TenKhoa"].ToString() : null
+                                TenKhoa = reader.GetString(reader.GetOrdinal("TenKhoa"))
                             },
                             HocVi = new HocVi
                             {
-                                TenHocVi = reader["TenHocVi"] != DBNull.Value ? reader["TenHocVi"].ToString() : null
+                                TenHocVi = reader.GetString(reader.GetOrdinal("TenHocVi"))
                             },
                             ChucVu = new ChucVu
                             {
-                                TenChucVu = reader["TenChucVu"] != DBNull.Value ? reader["TenChucVu"].ToString() : null
+                                TenChucVu = reader.GetString(reader.GetOrdinal("TenChucVu"))    
                             }
                         });
                     }
@@ -186,30 +186,30 @@ namespace _224LTCs_LeDucThien_138.Models
                     {
                         list.Add(new CanBo
                         {
-                            MaCB = reader["MaCB"] != DBNull.Value ? reader["MaCB"].ToString() : null,
+                            MaCB = reader.GetString(reader.GetOrdinal("MaCB")),
                             MaKhoa = reader["MaKhoa"] != DBNull.Value ? Convert.ToInt32(reader["MaKhoa"]) : null,
                             MaHocVi = reader["MaHocVi"] != DBNull.Value ? Convert.ToInt32(reader["MaHocVi"]) : null,
                             MaChucVu = reader["MaChucVu"] != DBNull.Value ? Convert.ToInt32(reader["MaChucVu"]) : null,
-                            TenCB = reader["TenCB"] != DBNull.Value ? reader["TenCB"].ToString() : null,
+                            TenCB = reader["TenCB"]?.ToString(),
                             GioiTinh = reader["GioiTinh"] != DBNull.Value && Convert.ToBoolean(reader["GioiTinh"]),
                             NgaySinh = reader["NgaySinh"] != DBNull.Value ? (DateTime?)reader["NgaySinh"] : null,
-                            Cccd = reader["Cccd"] != DBNull.Value ? reader["Cccd"].ToString() : null,
-                            DiaChi = reader["DiaChi"] != DBNull.Value ? reader["DiaChi"].ToString() : null,
-                            Sdt = reader["Sdt"] != DBNull.Value ? reader["Sdt"].ToString() : null,
-                            Email = reader["Email"] != DBNull.Value ? reader["Email"].ToString() : null,
-                            MatKhau = reader["MatKhau"] != DBNull.Value ? reader["MatKhau"].ToString() : null,
-                            Anh = reader["Anh"] != DBNull.Value ? reader["Anh"].ToString() : null,
+                            Cccd = reader["Cccd"]?.ToString(),
+                            DiaChi = reader["DiaChi"]?.ToString(),
+                            Sdt = reader["Sdt"]?.ToString(),
+                            Email = reader["Email"]?.ToString(),
+                            MatKhau = reader["MatKhau"]?.ToString(),
+                            Anh = reader["Anh"]?.ToString(),
                             Khoa = new Khoa
                             {
-                                TenKhoa = reader["TenKhoa"] != DBNull.Value ? reader["TenKhoa"].ToString() : null
+                                TenKhoa = reader.GetString(reader.GetOrdinal("TenKhoa"))
                             },
                             HocVi = new HocVi
                             {
-                                TenHocVi = reader["TenHocVi"] != DBNull.Value ? reader["TenHocVi"].ToString() : null
+                                TenHocVi = reader.GetString(reader.GetOrdinal("TenHocVi"))
                             },
                             ChucVu = new ChucVu
                             {
-                                TenChucVu = reader["TenChucVu"] != DBNull.Value ? reader["TenChucVu"].ToString() : null
+                                TenChucVu = reader.GetString(reader.GetOrdinal("TenChucVu"))
                             }
                         });
                     }
@@ -244,51 +244,49 @@ namespace _224LTCs_LeDucThien_138.Models
                     {
                         cb = new CanBo
                         {
-                            MaCB = reader["MaCB"] != DBNull.Value ? reader["MaCB"].ToString() : null,
+                            MaCB = reader.GetString(reader.GetOrdinal("MaCB")),
                             MaKhoa = reader["MaKhoa"] != DBNull.Value ? Convert.ToInt32(reader["MaKhoa"]) : null,
                             MaHocVi = reader["MaHocVi"] != DBNull.Value ? Convert.ToInt32(reader["MaHocVi"]) : null,
                             MaChucVu = reader["MaChucVu"] != DBNull.Value ? Convert.ToInt32(reader["MaChucVu"]) : null,
-                            TenCB = reader["TenCB"] != DBNull.Value ? reader["TenCB"].ToString() : null,
+                            TenCB = reader["TenCB"]?.ToString(),
                             GioiTinh = reader["GioiTinh"] != DBNull.Value && Convert.ToBoolean(reader["GioiTinh"]),
                             NgaySinh = reader["NgaySinh"] != DBNull.Value ? (DateTime?)reader["NgaySinh"] : null,
-                            Cccd = reader["Cccd"] != DBNull.Value ? reader["Cccd"].ToString() : null,
-                            DiaChi = reader["DiaChi"] != DBNull.Value ? reader["DiaChi"].ToString() : null,
-                            Sdt = reader["Sdt"] != DBNull.Value ? reader["Sdt"].ToString() : null,
-                            Email = reader["Email"] != DBNull.Value ? reader["Email"].ToString() : null,
-                            MatKhau = reader["MatKhau"] != DBNull.Value ? reader["MatKhau"].ToString() : null,
-                            Anh = reader["Anh"] != DBNull.Value ? reader["Anh"].ToString() : null,
+                            Cccd = reader["Cccd"]?.ToString(),
+                            DiaChi = reader["DiaChi"]?.ToString(),
+                            Sdt = reader["Sdt"]?.ToString(),
+                            Email = reader["Email"]?.ToString(),
+                            MatKhau = reader["MatKhau"]?.ToString(),
+                            Anh = reader["Anh"]?.ToString(),
                             Khoa = new Khoa
                             {
-                                TenKhoa = reader["TenKhoa"] != DBNull.Value ? reader["TenKhoa"].ToString() : null
+                                TenKhoa = reader.GetString(reader.GetOrdinal("TenKhoa"))
                             },
                             HocVi = new HocVi
                             {
-                                TenHocVi = reader["TenHocVi"] != DBNull.Value ? reader["TenHocVi"].ToString() : null
+                                TenHocVi = reader.GetString(reader.GetOrdinal("TenHocVi"))
                             },
                             ChucVu = new ChucVu
                             {
-                                TenChucVu = reader["TenChucVu"] != DBNull.Value ? reader["TenChucVu"].ToString() : null
+                                TenChucVu = reader.GetString(reader.GetOrdinal("TenChucVu"))
                             }
                         };
                     }
                 }
             }
 
-            Console.WriteLine($"maCB: {maCB}");
-
             return cb;
         }
 
-        public bool AddCanBo(CanBo canBo, int? maKhoa, int? maHocVi, int? maChucVu)
+        public bool AddCanBo(CanBo canBo)
         {
             using (SqlConnection conn = _connectionDatabase.GetConnection())
             {
                 SqlCommand cmd = new SqlCommand("AddCanBo", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@MaHocVi", maHocVi);
-                cmd.Parameters.AddWithValue("@MaChucVu", maChucVu);
-                cmd.Parameters.AddWithValue("@MaKhoa", maKhoa ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@MaHocVi", canBo.MaHocVi ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@MaChucVu", canBo.MaChucVu ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@MaKhoa", canBo.MaKhoa ?? (object)DBNull.Value);
                 cmd.Parameters.AddWithValue("@TenCB", canBo.TenCB ?? (object)DBNull.Value);
                 cmd.Parameters.AddWithValue("@GioiTinh", canBo.GioiTinh);
                 cmd.Parameters.AddWithValue("@NgaySinh", canBo.NgaySinh ?? (object)DBNull.Value);
@@ -305,16 +303,16 @@ namespace _224LTCs_LeDucThien_138.Models
             }
         }
 
-        public bool UpdateCanBo(CanBo canBo, int? maKhoa, int? maHocVi, int? maChucVu)
+        public bool UpdateCanBo(CanBo canBo)
         {
             using (SqlConnection conn = _connectionDatabase.GetConnection())
             {
                 SqlCommand cmd = new SqlCommand("UpdateCanBo", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@MaHocVi", maHocVi);
-                cmd.Parameters.AddWithValue("@MaChucVu", maChucVu);
-                cmd.Parameters.AddWithValue("@MaKhoa", maKhoa ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@MaHocVi", canBo.MaHocVi ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@MaChucVu", canBo.MaChucVu ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@MaKhoa", canBo.MaKhoa ?? (object)DBNull.Value);
                 cmd.Parameters.AddWithValue("@MaCB", canBo.MaCB ?? (object)DBNull.Value);
                 cmd.Parameters.AddWithValue("@TenCB", canBo.TenCB ?? (object)DBNull.Value);
                 cmd.Parameters.AddWithValue("@GioiTinh", canBo.GioiTinh);
