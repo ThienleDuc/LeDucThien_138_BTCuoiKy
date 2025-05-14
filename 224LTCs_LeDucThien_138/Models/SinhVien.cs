@@ -15,10 +15,10 @@ namespace _224LTCs_LeDucThien_138.Models
         [StringLength(14)]
         public string MaSV { get; set; }
 
-        public string MaLSH { get; set; }  
+        public string? MaLSH { get; set; }  
 
         [StringLength(50)]
-        public string TenSV { get; set; }
+        public string? TenSV { get; set; }
 
         public bool GioiTinh { get; set; }
 
@@ -26,19 +26,19 @@ namespace _224LTCs_LeDucThien_138.Models
         public DateTime? NgaySinh { get; set; }
 
         [StringLength(12)]
-        public string Cccd { get; set; }
+        public string? Cccd { get; set; }
 
-        public string DiaChi { get; set; }
-
-        [StringLength(10)]
-        public string Sdt { get; set; }
-
-        public string Email { get; set; }
+        public string? DiaChi { get; set; }
 
         [StringLength(10)]
-        public string MatKhau { get; set; }
+        public string? Sdt { get; set; }
 
-        public string Anh { get; set; }
+        public string? Email { get; set; }
+
+        [StringLength(10)]
+        public string? MatKhau { get; set; }
+
+        public string? Anh { get; set; }
 
         // Thêm navigation property để lấy TenLSH từ LopSinhHoat
         [ForeignKey("MaLSH")]
@@ -46,10 +46,10 @@ namespace _224LTCs_LeDucThien_138.Models
 
         // Không ánh xạ sang DB, chỉ dùng để hiển thị TenLSH
         [NotMapped]
-        public string TenLSH => LopSinhHoat?.TenLSH;
+        public string? TenLSH => LopSinhHoat?.TenLSH;
 
-        public SinhVien(string maSV, string maLSH, string tenSV, bool gioiTinh, DateTime? ngaySinh, 
-            string cccd, string diaChi, string sdt, string email, string matKhau, string anh, 
+        public SinhVien(string maSV, string? maLSH, string? tenSV, bool gioiTinh, DateTime? ngaySinh, 
+            string? cccd, string? diaChi, string? sdt, string? email, string? matKhau, string? anh, 
             LopSinhHoat lopSinhHoat)
         {
             MaSV = maSV;
@@ -95,20 +95,20 @@ namespace _224LTCs_LeDucThien_138.Models
                     {
                         list.Add(new SinhVien
                         {
-                            MaSV = reader["MaSV"] != DBNull.Value ? reader["MaSV"].ToString() : null,
-                            MaLSH = reader["MaLSH"] != DBNull.Value ? reader["MaLSH"].ToString() : null,
-                            TenSV = reader["TenSV"] != DBNull.Value ? reader["TenSV"].ToString() : null,
+                            MaSV = reader.GetString(reader.GetOrdinal("MaSV")),
+                            MaLSH = reader["MaLSH"]?.ToString(),
+                            TenSV = reader["TenSV"]?.ToString(),
                             GioiTinh = reader["GioiTinh"] != DBNull.Value && Convert.ToBoolean(reader["GioiTinh"]),
                             NgaySinh = reader["NgaySinh"] != DBNull.Value ? (DateTime?)reader["NgaySinh"] : null,
-                            Cccd = reader["Cccd"] != DBNull.Value ? reader["Cccd"].ToString() : null,
-                            DiaChi = reader["DiaChi"] != DBNull.Value ? reader["DiaChi"].ToString() : null,
-                            Sdt = reader["Sdt"] != DBNull.Value ? reader["Sdt"].ToString() : null,
-                            Email = reader["Email"] != DBNull.Value ? reader["Email"].ToString() : null,
-                            MatKhau = reader["MatKhau"] != DBNull.Value ? reader["MatKhau"].ToString() : null,
-                            Anh = reader["Anh"] != DBNull.Value ? reader["Anh"].ToString() : null,
+                            Cccd = reader["Cccd"]?.ToString(),
+                            DiaChi = reader["DiaChi"]?.ToString(),
+                            Sdt = reader["Sdt"]?.ToString(),
+                            Email = reader["Email"]?.ToString(),
+                            MatKhau = reader["MatKhau"]?.ToString(),
+                            Anh = reader["Anh"]?.ToString(),
                             LopSinhHoat = new LopSinhHoat
-                            {
-                                TenLSH = reader["TenLSH"] != DBNull.Value ? reader["TenLSH"].ToString() : null
+                            {       
+                                TenLSH = reader["TenLSH"]?.ToString()
                             }
                         });
                     }
@@ -118,7 +118,7 @@ namespace _224LTCs_LeDucThien_138.Models
             return list;
         }
 
-        public List<SinhVien> GetSinhVienFiltered(string maNK = null, int? maKhoa = null, int? maNganh = null, string maLSH = null, string keyword = null)
+        public List<SinhVien> GetSinhVienFiltered(string? maNK = null, int? maKhoa = null, int? maNganh = null, string? maLSH = null, string? keyword = null)
         {
             List<SinhVien> list = new List<SinhVien>();
 
@@ -154,7 +154,7 @@ namespace _224LTCs_LeDucThien_138.Models
                     {
                         list.Add(new SinhVien
                         {
-                            MaSV = reader["MaSV"]?.ToString(),
+                            MaSV = reader.GetString(reader.GetOrdinal("MaSV")),
                             MaLSH = reader["MaLSH"]?.ToString(),
                             TenSV = reader["TenSV"]?.ToString(),
                             GioiTinh = reader["GioiTinh"] != DBNull.Value && Convert.ToBoolean(reader["GioiTinh"]),
@@ -191,7 +191,7 @@ namespace _224LTCs_LeDucThien_138.Models
                 WHERE sv.MaSV = @MaSV;";
 
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@MaSV", maSV);
+                cmd.Parameters.AddWithValue("@MaSV", !string.IsNullOrEmpty(maSV) ? maSV : (object)DBNull.Value);
 
                 conn.Open();
 
@@ -201,7 +201,7 @@ namespace _224LTCs_LeDucThien_138.Models
                     {
                         sv = new SinhVien
                         {
-                            MaSV = reader["MaSV"]?.ToString(),
+                            MaSV = reader.GetString(reader.GetOrdinal("MaSV")),
                             MaLSH = reader["MaLSH"]?.ToString(),
                             TenSV = reader["TenSV"]?.ToString(),
                             GioiTinh = reader["GioiTinh"] != DBNull.Value && Convert.ToBoolean(reader["GioiTinh"]),
@@ -225,7 +225,7 @@ namespace _224LTCs_LeDucThien_138.Models
             return sv;
         }
 
-        public bool AddSinhVien(SinhVien sinhVien, string maNK, int maKhoa, int maNganh, string maLSH)
+        public bool AddSinhVien(SinhVien sinhVien, string? maNK, int? maKhoa, int? maNganh, string? maLSH)
         {
             using (SqlConnection conn = _connectionDatabase.GetConnection())
             {
@@ -283,7 +283,7 @@ namespace _224LTCs_LeDucThien_138.Models
             {
                 string query = "DELETE FROM SinhVien WHERE MaSV = @MaSV";
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@MaSV", maSV);
+                cmd.Parameters.AddWithValue("@MaSV", !string.IsNullOrEmpty(maSV) ? maSV : (object)DBNull.Value);
 
                 conn.Open();
                 int result = cmd.ExecuteNonQuery();

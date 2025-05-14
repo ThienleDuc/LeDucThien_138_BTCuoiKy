@@ -12,13 +12,13 @@ namespace _224LTCs_LeDucThien_138.Models
         public int? MaNganh { get; set; }
 
         [StringLength(10)]
-        public string TenLSH { get; set; }
+        public string? TenLSH { get; set; }
 
         [ForeignKey("MaNK")]
         public NienKhoa NienKhoa { get; set; }  
 
         [StringLength(4)]
-        public string MaNK { get; set; }
+        public string? MaNK { get; set; }
 
         public ICollection<SinhVien> SinhViens { get; set; }
 
@@ -26,7 +26,7 @@ namespace _224LTCs_LeDucThien_138.Models
         {
         }
 
-        public LopSinhHoat(string maLSH, int? maNganh, string tenLSH, NienKhoa nienKhoa, string maNK, ICollection<SinhVien> sinhViens)
+        public LopSinhHoat(string maLSH, int? maNganh, string? tenLSH, NienKhoa nienKhoa, string? maNK, ICollection<SinhVien> sinhViens)
         {
             MaLSH = maLSH;
             MaNganh = maNganh;
@@ -46,7 +46,7 @@ namespace _224LTCs_LeDucThien_138.Models
             _connectionDatabase = connectionDatabase;
         }
 
-        public List<LopSinhHoat> GetLopSinhHoatById(int maNganh, string maNK)
+        public List<LopSinhHoat> GetLopSinhHoatById(int? maNganh, string? maNK)
         {
             List<LopSinhHoat> list = new List<LopSinhHoat>();
 
@@ -56,8 +56,8 @@ namespace _224LTCs_LeDucThien_138.Models
                          FROM LopSinhHoat
                          WHERE MaNganh = @MaNganh AND MaNK = @MaNK;";
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@MaNganh", maNganh);
-                cmd.Parameters.AddWithValue("@MaNK", maNK);
+                cmd.Parameters.AddWithValue("@MaNganh", maNganh.HasValue ? maNganh : (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@MaNK", !string.IsNullOrEmpty(maNK) ? maNK : (object)DBNull.Value);
                 conn.Open();
 
                 using (SqlDataReader reader = cmd.ExecuteReader())
@@ -67,9 +67,9 @@ namespace _224LTCs_LeDucThien_138.Models
                         list.Add(new LopSinhHoat
                         {
                             MaLSH = reader.GetString(reader.GetOrdinal("MaLSH")),
-                            MaNganh = reader.GetInt32(reader.GetOrdinal("MaNganh")),
-                            TenLSH = reader.GetString(reader.GetOrdinal("TenLSH")),
-                            MaNK = reader.GetString(reader.GetOrdinal("MaNK"))
+                            MaNganh = reader["MaNganh"] != DBNull.Value ? Convert.ToInt32(reader["MaNganh"]) : null,
+                            TenLSH = reader["TenLSH"]?.ToString(),
+                            MaNK = reader["MaNK"]?.ToString()
                         });
                     }
                 }

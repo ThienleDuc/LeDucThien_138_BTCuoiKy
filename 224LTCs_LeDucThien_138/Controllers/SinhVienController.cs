@@ -38,14 +38,14 @@ namespace _224LTCs_LeDucThien_138.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetChuyenNganhByKhoa(int maKhoa)
+        public IActionResult GetChuyenNganhByKhoa(int? maKhoa)
         {
             var list = _chuyenNganhRepos.GetChuyenNganhByKhoa(maKhoa);
             return Json(list);
         }
 
         [HttpGet]
-        public IActionResult GetLopSinhHoat(int maNganh, string maNK)
+        public IActionResult GetLopSinhHoat(int? maNganh, string? maNK)
         {
             var list = _lopSinhHoatRepos.GetLopSinhHoatById(maNganh, maNK);
             return Json(list);
@@ -65,9 +65,9 @@ namespace _224LTCs_LeDucThien_138.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult ThemSinhVien(SinhVien sinhVien, string maNK, int maKhoa, int maNganh, string maLSH)
+        public IActionResult ThemSinhVien(SinhVien sinhVien, string? maNK, int? maKhoa, int? maNganh, string? maLSH)
         {
-            if (string.IsNullOrEmpty(maNK) || maKhoa <= 0 || maNganh <= 0 || string.IsNullOrEmpty(maLSH)) 
+            if (string.IsNullOrEmpty(maNK) || maKhoa == null || maNganh == null || string.IsNullOrEmpty(maLSH)) 
             {
                 TempData["ErrorMessage"] = "Có lỗi khi thêm niên khóa, Khoa, ngành và lớp sinh hoạt";
             } else
@@ -138,7 +138,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
         }
 
         [HttpGet]
-        public IActionResult TimKiem(string maNK,int? maKhoa, int? maNganh, string maLSH, string TuKhoa)
+        public IActionResult TimKiem(string? maNK,int? maKhoa, int? maNganh, string? maLSH, string? TuKhoa)
         {
             var sv = _sinhVienRepos.GetSinhVienFiltered(maNK, maKhoa, maNganh, maLSH, TuKhoa);
 

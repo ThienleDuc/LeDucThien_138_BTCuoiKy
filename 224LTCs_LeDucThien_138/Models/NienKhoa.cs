@@ -7,14 +7,14 @@ namespace _224LTCs_LeDucThien_138.Models
     {
         [Key]
         [StringLength(4)]
-        public string MaNK { get; set; }
+        public string? MaNK { get; set; }
 
         [StringLength(50)]
-        public string TenNK { get; set; }
+        public string? TenNK { get; set; }
 
         ICollection<LopSinhHoat> LopSinhHoat { get; set; }
 
-        public NienKhoa(string maNK, string tenNK, ICollection<LopSinhHoat> lopSinhHoat)
+        public NienKhoa(string? maNK, string? tenNK, ICollection<LopSinhHoat> lopSinhHoat)
         {
             MaNK = maNK;
             TenNK = tenNK;
@@ -51,8 +51,8 @@ namespace _224LTCs_LeDucThien_138.Models
                     {
                         list.Add(new NienKhoa
                         {
-                            MaNK = reader.GetString(reader.GetOrdinal("MaNK")),
-                            TenNK = reader.GetString(reader.GetOrdinal("TenNK"))
+                            MaNK = reader["MaNK"]?.ToString(),
+                            TenNK = reader["TenNK"]?.ToString()
                         });
                     }
                 }

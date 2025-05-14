@@ -19,7 +19,7 @@
             <form method="post" asp-action="SuaSinhVien" asp-controller="SinhVien">
                 <div class="row">
                     <div class="text-end">
-                        <button onclick="history.back()" class="btn btn-close fw-bold bg-secondary border rounded" title="Đóng"></button>
+                        <a asp-action="Index" asp-controller="SinhVien" class="btn btn-close fw-bold bg-secondary border rounded" title="Đóng"></a>
                     </div>
 
                     <input type="hidden" name="MaSV" value="@Model.MaSV" />
