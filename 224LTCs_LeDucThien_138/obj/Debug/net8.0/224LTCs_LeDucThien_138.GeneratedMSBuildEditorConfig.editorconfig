@@ -1,0 +1,93 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = _224LTCs_LeDucThien_138
+build_property.RootNamespace = _224LTCs_LeDucThien_138
+build_property.ProjectDir = D:\WORKSPACE\project_LTCs\LeDucThien_138_BTCuoiKy\224LTCs_LeDucThien_138\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\WORKSPACE\project_LTCs\LeDucThien_138_BTCuoiKy\224LTCs_LeDucThien_138
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[D:/WORKSPACE/project_LTCs/LeDucThien_138_BTCuoiKy/224LTCs_LeDucThien_138/Views/CanBo/BoLocCanBo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuQm9cQm9Mb2NDYW5Cby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/WORKSPACE/project_LTCs/LeDucThien_138_BTCuoiKy/224LTCs_LeDucThien_138/Views/CanBo/DanhSachCanBo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuQm9cRGFuaFNhY2hDYW5Cby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/WORKSPACE/project_LTCs/LeDucThien_138_BTCuoiKy/224LTCs_LeDucThien_138/Views/CanBo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuQm9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/WORKSPACE/project_LTCs/LeDucThien_138_BTCuoiKy/224LTCs_LeDucThien_138/Views/CanBo/SuaCanBo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuQm9cU3VhQ2FuQm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/WORKSPACE/project_LTCs/LeDucThien_138_BTCuoiKy/224LTCs_LeDucThien_138/Views/CanBo/ThemCanBo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuQm9cVGhlbUNhbkJvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/WORKSPACE/project_LTCs/LeDucThien_138_BTCuoiKy/224LTCs_LeDucThien_138/Views/CanBo/TimKiem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuQm9cVGltS2llbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/WORKSPACE/project_LTCs/LeDucThien_138_BTCuoiKy/224LTCs_LeDucThien_138/Views/CanBo/XemChiTietCanBo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuQm9cWGVtQ2hpVGlldENhbkJvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/WORKSPACE/project_LTCs/LeDucThien_138_BTCuoiKy/224LTCs_LeDucThien_138/Views/Error/Error401.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JcRXJyb3I0MDEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/WORKSPACE/project_LTCs/LeDucThien_138_BTCuoiKy/224LTCs_LeDucThien_138/Views/Error/Error404.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JcRXJyb3I0MDQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/WORKSPACE/project_LTCs/LeDucThien_138_BTCuoiKy/224LTCs_LeDucThien_138/Views/Shared/_LayoutError.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/WORKSPACE/project_LTCs/LeDucThien_138_BTCuoiKy/224LTCs_LeDucThien_138/Views/Shared/_LayoutLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/WORKSPACE/project_LTCs/LeDucThien_138_BTCuoiKy/224LTCs_LeDucThien_138/Views/Shared/_SideNavBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWRlTmF2QmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/WORKSPACE/project_LTCs/LeDucThien_138_BTCuoiKy/224LTCs_LeDucThien_138/Views/Shared/_TopNavBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ub3BOYXZCYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/WORKSPACE/project_LTCs/LeDucThien_138_BTCuoiKy/224LTCs_LeDucThien_138/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/WORKSPACE/project_LTCs/LeDucThien_138_BTCuoiKy/224LTCs_LeDucThien_138/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/WORKSPACE/project_LTCs/LeDucThien_138_BTCuoiKy/224LTCs_LeDucThien_138/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-b2fjofgvqj
