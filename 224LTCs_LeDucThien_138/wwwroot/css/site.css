@@ -473,6 +473,6 @@ body {
     cursor: pointer;
 }
 
-    .option:hover {
-        background-color: #e0e0e0;
-    }
+.option:hover {
+    background-color: #e0e0e0;
+}

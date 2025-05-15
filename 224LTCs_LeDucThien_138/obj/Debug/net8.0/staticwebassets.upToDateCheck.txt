@@ -13,15 +13,10 @@ wwwroot\assets\img\logo-truong-250.png
 wwwroot\css\site.css
 wwwroot\css\styles.css
 wwwroot\favicon.ico
-wwwroot\js\LoadAvatar.js
-wwwroot\js\LoadCanBo.js
 wwwroot\js\LoadChiTietLopHocPhan.js
 wwwroot\js\LoadLopHocPhan.js
-wwwroot\js\LoadPhongHoc.js
-wwwroot\js\LoadSinhvien.js
 wwwroot\js\paginationModule.js
 wwwroot\js\scripts.js
-wwwroot\js\TogglePassword.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap.min.css

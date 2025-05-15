@@ -7,8 +7,6 @@ builder.Services.AddControllersWithViews();
 
 // New add services to the container.
 builder.Services.AddSingleton<ConnectionDatabase>();
-builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-
 builder.Services.AddScoped<SinhVienRepos>();
 builder.Services.AddScoped<CanBoRepos>();
 builder.Services.AddScoped<LopSinhHoatRepos>();
@@ -22,6 +20,7 @@ builder.Services.AddScoped<MonHocRepos>();
 builder.Services.AddScoped<LopHocPhanRepos>();
 builder.Services.AddScoped<CT_LHP_SVRepos>();
 builder.Services.AddScoped<HocPhanRepos>();
+
 
 var app = builder.Build();
 
