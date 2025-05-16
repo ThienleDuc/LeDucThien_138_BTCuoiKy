@@ -1,4 +1,5 @@
 ﻿using _224LTCs_LeDucThien_138.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace _224LTCs_LeDucThien_138.Controllers
@@ -58,11 +59,13 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return View(sv);
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult ThemSinhVien()
         {
             return View();
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult ThemSinhVien(SinhVien sinhVien, string? maNK, int? maKhoa, int? maNganh, string? maLSH)
@@ -89,6 +92,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return RedirectToAction("Index", "SinhVien");
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public IActionResult SuaSinhVien(string maSV)
         {
@@ -101,6 +105,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return View(sv);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult SuaSinhVien(SinhVien sinhVien)
@@ -121,6 +126,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return RedirectToAction("Index", "SinhVien");
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult XoaSinhVien(string maSV)
         {
             bool isDeleted = _sinhVienRepos.DeleteSinhVien(maSV);

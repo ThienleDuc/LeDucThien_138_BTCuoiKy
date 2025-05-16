@@ -1,4 +1,5 @@
 ﻿using _224LTCs_LeDucThien_138.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace _224LTCs_LeDucThien_138.Controllers
@@ -14,6 +15,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             _taiKhoanAdminRepos = new TaiKhoanAdminRepos(_connectionDatabase);
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult AdminSetting()
         {
             string MaTaiKhoan = User.Identity.Name;
@@ -26,6 +28,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return View(admin);
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult UpdateTaiKhoanAdmin()
         {
             string MaTaiKhoan = User.Identity.Name;
@@ -39,6 +42,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return View(admin);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult UpdateTaiKhoanAdmin(TaiKhoanAdmin taiKhoanAdmin)

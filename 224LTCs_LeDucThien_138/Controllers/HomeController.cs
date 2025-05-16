@@ -1,4 +1,5 @@
 ﻿using _224LTCs_LeDucThien_138.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace _224LTCs_LeDucThien_138.Controllers
@@ -23,6 +24,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return View(phong);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult ThemPhong(PhongHoc phong)
@@ -50,6 +52,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return Redirect("Index");
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult SuaPhong(PhongHoc phong)
@@ -79,7 +82,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return Redirect("Index");
         }
 
-
+        [Authorize(Roles = "Admin")]
         public IActionResult XoaPhong(int maPhong)
         {
             bool isDeleted = _phongHocRepos.DeletePhong(maPhong);
