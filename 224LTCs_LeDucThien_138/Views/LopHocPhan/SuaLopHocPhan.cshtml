@@ -1,0 +1,153 @@
+﻿@model _224LTCs_LeDucThien_138.Models.LopHocPhan;
+
+@{
+    ViewData["Title"] = "Lớp Học Phân - Cập nhật thông tin Lớp Học Phân";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["HeadCollapse"] = "LopHocPhan";
+    ViewData["LopHocPhan"] = "LopHocPhan-Update";
+}
+
+<div class="container px-4">
+    <h1 class="mt-4 text-uppercase">Lớp Học Phần</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item active">
+            <a asp-action="Index" asp-controller="LopHocPhan" class="btn-link link-secondary text-decoration-none">Xem Danh Sách</a>
+        </li>
+        <li class="breadcrumb-item active">Cập nhật thông tin lớp học phần</li>
+    </ol>
+    <!-- Hiển thị thông báo từ TempData -->
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show mb-3" role="alert">
+            @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Đóng"></button>
+        </div>
+    }
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show mb-3" role="alert">
+            @TempData["ErrorMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Đóng"></button>
+        </div>
+    }
+    <!-- Card Cập nhật thông tin Lớp Học Phân -->
+    <div class="card shadow rounded-4">
+        <div class="card-body p-4">
+            <form method="post" asp-action="SuaLopHocPhan" asp-controller="LopHocPhan">
+                <div class="row mb-3">
+                    <small>
+                        <strong class="text-danger">*Lưu ý:</strong> Chọn khoa &rarr; chọn chuyên ngành và giảng viên.
+                        Chọn niên khóa &rarr; chọn học phần. Chọn chuyên ngành &rarr; chọn môn học. Chọn phòng học, học phần &rarr; chọn lịch học.
+                        Không để trống học phần, môn học, lịch học, giảng viên, phòng học
+                    </small>
+                </div>
+                <input type="hidden" name="MaLHP" value="@Model.MaLHP"/>
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <label for="chooseNK" class="form-label">Niên khóa</label>
+                                <select id="chooseNK" class="form-select" data-selected="@Model.MaNK" disabled required>
+                                    <option selected disabled>Chọn niên khóa</option>
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <label for="chooseHP" class="form-label">Học phần</label>
+                                <select id="chooseHP" class="form-select" data-selected="@Model.MaHP" disabled required>
+                                    <option selected disabled>Chọn học phần</option>
+                                </select>
+                                <input type="hidden" name="maHP" value="@Model.MaHP"/>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <label for="chooseKhoa" class="form-label">Khoa</label>
+                                <select id="chooseKhoa" class="form-select" name="maKhoa" data-selected="@Model.MaKhoa" disabled required>
+                                    <option selected disabled>Chọn khoa</option>
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <label for="chooseCN" class="form-label">Chuyên ngành</label>
+                                <select id="chooseCN" class="form-select" name="maNganh" data-selected="@Model.MaNganh" disabled required>
+                                    <option selected disabled>Chọn chuyên ngành</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <label for="chooseMH" class="form-label">Môn học</label>
+                                <select id="chooseMH" class="form-select" data-selected="@Model.MaMH" disabled required>
+                                    <option selected disabled>Chọn môn học</option>
+                                </select>
+                                <input type="hidden" name="maMH" value="@Model.MaMH"/>
+                            </div>
+                            <div class="col-6">
+                                <label for="choosePH" class="form-label">Phòng học</label>
+                                <select id="choosePH" class="form-select" name="maPhong" data-selected="@Model.MaPhong" required>
+                                    <option selected disabled>Chọn phòng học</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="chooseCB" class="form-label">Giảng viên</label>
+                                <select id="chooseCB" class="form-select" name="maCB" data-selected="@Model.MaCB" required>
+                                    <option selected disabled>Chọn giảng viên</option>
+                                </select>
+                            </div>
+                            <div class="col-6 align-content-end">
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary fw-bold font-monospace">Cập nhật</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex flex-column h-100">
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <label for="ngayHoc" class="form-label">Ngày học</label>
+                                    <input type="date" id="ngayHoc" name="NgayHoc" class="form-control" value="@Model.NgayHoc?.ToString("yyyy-MM-dd")" required />
+                                </div>
+                                <div class="col-6">
+                                    <label for="slToiDa" class="form-label">Số lượng tối đa</label>
+                                    <input type="number" id="slToiDa" name="SLToiDa" class="form-control" min="1" value="@Model.SLToiDa" required />
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-4">
+                                    <label for="chooseThu" class="form-label">Thứ</label>
+                                    <select id="chooseThu" name="thuNgay" class="form-select" data-selected="@Model.ThuNgay" required>
+                                        <option selected disabled>Thứ</option>
+                                    </select>
+                                </div>
+                                <div class="col-4">
+                                    <label for="chooseTietBD" class="form-label">Từ tiết</label>
+                                    <select id="chooseTietBD" name="tietBatDau" class="form-select" data-selected="@Model.TietBatDau" required>
+                                        <option selected disabled>Từ</option>
+                                    </select>
+                                </div>
+                                <div class="col-4">
+                                    <label for="chooseTietKT" class="form-label">Đến tiết</label>
+                                    <select id="chooseTietKT" name="tietKetThuc" class="form-select" data-selected="@Model.TietKetThuc" required>
+                                        <option selected disabled>Đến</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1">
+                                <div class="d-flex flex-column h-100">
+                                    <label for="ghiChu" class="form-label">Ghi chú</label>
+                                    <textarea id="ghiChu" name="GhiChu" class="form-control flex-grow-1" placeholder="Nhập ghi chú" style="resize: none;">@Model.GhiChu</textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script type="module" src="~/js/LoadLopHocPhan.js"></script>
