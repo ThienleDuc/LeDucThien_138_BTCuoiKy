@@ -1,4 +1,5 @@
 ﻿using _224LTCs_LeDucThien_138.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace _224LTCs_LeDucThien_138.Controllers
@@ -92,11 +93,13 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return View(lhp);
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult ThemLopHocPhan()
         {
             return View();
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult ThemLopHocPhan(LopHocPhan lopHocPhan)
@@ -133,6 +136,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return RedirectToAction("Index", "LopHocPhan");
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public IActionResult SuaLopHocPhan(string maLHP)
         {
@@ -145,6 +149,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return View(list);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult SuaLopHocPhan(LopHocPhan lopHocPhan)
@@ -182,6 +187,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return RedirectToAction("Index", "LopHocPhan");
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult XoaLopHocPhan(string maLHP)
         {
             bool isDeleted = _lopHocPhanRepos.DeleteLopHocPhan(maLHP);

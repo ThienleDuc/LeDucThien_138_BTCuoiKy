@@ -1,4 +1,5 @@
 ﻿using _224LTCs_LeDucThien_138.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace _224LTCs_LeDucThien_138.Controllers
@@ -47,11 +48,13 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return View(cb);
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult ThemCanBo()
         { 
             return View();
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult ThemCanBo(CanBo canBo, int? maKhoa, int? maHocVi, int? maChucVu)
@@ -92,6 +95,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return RedirectToAction("Index", "CanBo");
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public IActionResult SuaCanBo(string maCB)
         {
@@ -103,7 +107,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             }
             return View(sv);
         }
-
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult SuaCanBo(CanBo canBo, int? maKhoa, int? maHocVi, int? maChucVu)
@@ -145,6 +149,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return RedirectToAction("Index", "CanBo");
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult XoaCanBo(string maCB)
         {
             bool isDeleted = _canBoRepos.DeleteCanBo(maCB);
