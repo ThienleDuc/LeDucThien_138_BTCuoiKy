@@ -60,9 +60,9 @@ namespace _224LTCs_LeDucThien_138.Models
                     {
                         list.Add(new ChuyenNganh
                         {
-                            MaNganh = reader.GetInt32(reader.GetOrdinal("MaNganh")),
+                            MaNganh = Convert.ToInt32(reader["MaNganh"]),
                             MaKhoa = reader["MaKhoa"] != DBNull.Value ? Convert.ToInt32(reader["MaKhoa"]) : null,
-                            TenNganh = reader["TenNganh"]?.ToString()
+                            TenNganh = reader["TenNganh"].ToString()
                         });
                     }
                 }

@@ -15,6 +15,7 @@ wwwroot\css\styles.css
 wwwroot\favicon.ico
 wwwroot\js\LoadCanBo.js
 wwwroot\js\LoadPhongHoc.js
+wwwroot\js\LoadSinhvien.js
 wwwroot\js\paginationModule.js
 wwwroot\js\scripts.js
 wwwroot\js\TogglePassword.js

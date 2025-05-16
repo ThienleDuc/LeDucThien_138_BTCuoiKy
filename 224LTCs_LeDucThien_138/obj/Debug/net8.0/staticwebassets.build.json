@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oTuZC8YjAD2I1fVX4cpo/1k5iwyAmtUcfSsLl+e9Q0k=",
+  "Hash": "V0y7y5damNmjfTJniW7/244xMilHAf88fL4XHOMKHHc=",
   "Source": "224LTCs_LeDucThien_138",
   "BasePath": "_content/224LTCs_LeDucThien_138",
   "Mode": "Default",
@@ -414,6 +414,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\LoadPhongHoc.js"
+    },
+    {
+      "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadSinhvien.js",
+      "SourceId": "224LTCs_LeDucThien_138",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\",
+      "BasePath": "_content/224LTCs_LeDucThien_138",
+      "RelativePath": "js/LoadSinhvien#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wu5fzzzw2c",
+      "Integrity": "mJW2X7ICU4fEP5BNuKj7EWcrb83MAnCXxB2Spqjqs3g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\LoadSinhvien.js"
     },
     {
       "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\paginationModule.js",
@@ -1700,7 +1721,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:44:37 GMT"
+          "Value": "Fri, 16 May 2025 10:56:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1745,7 +1766,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:44:37 GMT"
+          "Value": "Fri, 16 May 2025 10:56:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1790,7 +1811,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:44:37 GMT"
+          "Value": "Fri, 16 May 2025 10:56:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1827,7 +1848,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:44:37 GMT"
+          "Value": "Fri, 16 May 2025 10:56:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3232,6 +3253,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-KiFs5/EZ4m/OvuTIrbFu30I8SezBYWOeX1Sp3hAUnSE="
+        }
+      ]
+    },
+    {
+      "Route": "js/LoadSinhvien.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadSinhvien.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2802"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mJW2X7ICU4fEP5BNuKj7EWcrb83MAnCXxB2Spqjqs3g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 10:46:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mJW2X7ICU4fEP5BNuKj7EWcrb83MAnCXxB2Spqjqs3g="
+        }
+      ]
+    },
+    {
+      "Route": "js/LoadSinhvien.wu5fzzzw2c.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadSinhvien.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2802"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mJW2X7ICU4fEP5BNuKj7EWcrb83MAnCXxB2Spqjqs3g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 10:46:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wu5fzzzw2c"
+        },
+        {
+          "Name": "label",
+          "Value": "js/LoadSinhvien.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mJW2X7ICU4fEP5BNuKj7EWcrb83MAnCXxB2Spqjqs3g="
         }
       ]
     },

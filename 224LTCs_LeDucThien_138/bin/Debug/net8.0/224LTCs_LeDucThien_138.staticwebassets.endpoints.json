@@ -29,7 +29,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:44:37 GMT"
+          "Value": "Fri, 16 May 2025 10:56:56 GMT"
         }
       ],
       "EndpointProperties": [
@@ -74,7 +74,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:44:37 GMT"
+          "Value": "Fri, 16 May 2025 10:56:56 GMT"
         }
       ],
       "EndpointProperties": [
@@ -1475,6 +1475,88 @@
         {
           "Name": "label",
           "Value": "js/LoadPhongHoc.js"
+        }
+      ]
+    },
+    {
+      "Route": "js/LoadSinhvien.js",
+      "AssetFile": "js/LoadSinhvien.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2802"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mJW2X7ICU4fEP5BNuKj7EWcrb83MAnCXxB2Spqjqs3g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 10:46:55 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mJW2X7ICU4fEP5BNuKj7EWcrb83MAnCXxB2Spqjqs3g="
+        }
+      ]
+    },
+    {
+      "Route": "js/LoadSinhvien.wu5fzzzw2c.js",
+      "AssetFile": "js/LoadSinhvien.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2802"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mJW2X7ICU4fEP5BNuKj7EWcrb83MAnCXxB2Spqjqs3g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 10:46:55 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wu5fzzzw2c"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mJW2X7ICU4fEP5BNuKj7EWcrb83MAnCXxB2Spqjqs3g="
+        },
+        {
+          "Name": "label",
+          "Value": "js/LoadSinhvien.js"
         }
       ]
     },

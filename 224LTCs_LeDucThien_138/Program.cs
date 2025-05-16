@@ -14,6 +14,9 @@ builder.Services.AddScoped<KhoaRepos>();
 builder.Services.AddScoped<ChuyenNganhRepos>();
 builder.Services.AddScoped<HocViRepos>();
 builder.Services.AddScoped<ChucVuRepos>();
+builder.Services.AddScoped<SinhVienRepos>();
+builder.Services.AddScoped<LopSinhHoatRepos>();
+builder.Services.AddScoped<NienKhoaRepos>();
 
 var app = builder.Build();
 

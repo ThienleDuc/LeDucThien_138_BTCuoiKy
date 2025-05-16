@@ -50,7 +50,7 @@ namespace _224LTCs_LeDucThien_138.Models
                     {
                         list.Add(new Khoa
                         {
-                            MaKhoa = reader.GetInt32(reader.GetOrdinal("MaKhoa")),
+                            MaKhoa = Convert.ToInt32(reader["MaKhoa"]),
                             TenKhoa = reader["TenKhoa"]?.ToString()
                         });
                     }
