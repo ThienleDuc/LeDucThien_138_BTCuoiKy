@@ -3,22 +3,20 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace _224LTCs_LeDucThien_138.Controllers
 {
-    public class Setting : Controller
+    public class SettingController : Controller
     {
         private readonly ConnectionDatabase _connectionDatabase;
         private readonly TaiKhoanAdminRepos _taiKhoanAdminRepos;
-        private readonly CookieHelper _cookieHelper;
 
-        public Setting(ConnectionDatabase connectionDatabase, CookieHelper cookieHelper)
+        public SettingController(ConnectionDatabase connectionDatabase)
         {
             _connectionDatabase = connectionDatabase;
             _taiKhoanAdminRepos = new TaiKhoanAdminRepos(_connectionDatabase);
-            _cookieHelper = cookieHelper;
         }
 
         public IActionResult AdminSetting()
         {
-            string MaTaiKhoan = _cookieHelper.GetCookie("MaTaiKhoan");
+            string MaTaiKhoan = User.Identity.Name;
 
             var admin = _taiKhoanAdminRepos.GetAdminById(MaTaiKhoan);
 
@@ -30,7 +28,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
 
         public IActionResult UpdateTaiKhoanAdmin()
         {
-            string MaTaiKhoan = _cookieHelper.GetCookie("MaTaiKhoan");
+            string MaTaiKhoan = User.Identity.Name;
 
             var admin = _taiKhoanAdminRepos.GetAdminById(MaTaiKhoan);
 
@@ -45,7 +43,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult UpdateTaiKhoanAdmin(TaiKhoanAdmin taiKhoanAdmin)
         {
-            string MaTaiKhoan = _cookieHelper.GetCookie("MaTaiKhoan");
+            string MaTaiKhoan = User.Identity.Name; ;
             taiKhoanAdmin.MaTaiKhoan = MaTaiKhoan;
 
             if (!string.IsNullOrEmpty(MaTaiKhoan)) {
@@ -67,7 +65,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
         [HttpPost]
         public IActionResult UploadAvatar(IFormFile Anh)
         {
-            string MaTaiKhoan = _cookieHelper.GetCookie("MaTaiKhoan");
+            string MaTaiKhoan = User.Identity.Name;
 
             var admin = _taiKhoanAdminRepos.GetAdminById(MaTaiKhoan);
 
@@ -95,12 +93,22 @@ namespace _224LTCs_LeDucThien_138.Controllers
                     return RedirectToAction("AdminSetting", "Setting");
                 }
 
-                var fileName = Path.GetFileName(Anh.FileName); 
-                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/assets/img", fileName);
+                var fileName = $"{Guid.NewGuid()}_{Path.GetFileName(Anh.FileName)}";
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/assets/img/user", fileName);
 
                 using (var stream = new FileStream(path, FileMode.Create))
                 {
                     Anh.CopyTo(stream);
+                }
+
+                // Xóa ảnh cũ nếu tồn tại
+                if (!string.IsNullOrEmpty(admin.Anh))
+                {
+                    var oldPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/assets/img/user", admin.Anh);
+                    if (System.IO.File.Exists(oldPath))
+                    {
+                        System.IO.File.Delete(oldPath);
+                    }
                 }
 
                 // Cập nhật tên file ảnh vào đối tượng admin

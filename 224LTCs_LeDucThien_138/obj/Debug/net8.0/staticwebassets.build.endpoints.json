@@ -29,7 +29,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 16:46:32 GMT"
+          "Value": "Fri, 16 May 2025 16:52:35 GMT"
         }
       ],
       "EndpointProperties": [
@@ -74,7 +74,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 16:46:32 GMT"
+          "Value": "Fri, 16 May 2025 16:52:35 GMT"
         }
       ],
       "EndpointProperties": [
@@ -413,8 +413,8 @@
       ]
     },
     {
-      "Route": "assets/img/401-error.png",
-      "AssetFile": "assets/img/401-error.png",
+      "Route": "assets/img/origin/401-error.png",
+      "AssetFile": "assets/img/origin/401-error.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -439,7 +439,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 16:37:01 GMT"
+          "Value": "Fri, 16 May 2025 16:49:21 GMT"
         }
       ],
       "EndpointProperties": [
@@ -450,8 +450,8 @@
       ]
     },
     {
-      "Route": "assets/img/401-error.q8qj44nupi.png",
-      "AssetFile": "assets/img/401-error.png",
+      "Route": "assets/img/origin/401-error.q8qj44nupi.png",
+      "AssetFile": "assets/img/origin/401-error.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -476,7 +476,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 16:37:01 GMT"
+          "Value": "Fri, 16 May 2025 16:49:21 GMT"
         }
       ],
       "EndpointProperties": [
@@ -490,341 +490,13 @@
         },
         {
           "Name": "label",
-          "Value": "assets/img/401-error.png"
+          "Value": "assets/img/origin/401-error.png"
         }
       ]
     },
     {
-      "Route": "assets/img/Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg",
-      "AssetFile": "assets/img/Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "43662"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"28qLt6AurFDOZbGGf6lhPVqDs6kwJ52xn81jd1U0DCE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 16:37:01 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-28qLt6AurFDOZbGGf6lhPVqDs6kwJ52xn81jd1U0DCE="
-        }
-      ]
-    },
-    {
-      "Route": "assets/img/Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.pntc0l69lj.jpg",
-      "AssetFile": "assets/img/Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "43662"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"28qLt6AurFDOZbGGf6lhPVqDs6kwJ52xn81jd1U0DCE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 16:37:01 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "pntc0l69lj"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-28qLt6AurFDOZbGGf6lhPVqDs6kwJ52xn81jd1U0DCE="
-        },
-        {
-          "Name": "label",
-          "Value": "assets/img/Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg"
-        }
-      ]
-    },
-    {
-      "Route": "assets/img/anh-avatar-cute-49.jpg",
-      "AssetFile": "assets/img/anh-avatar-cute-49.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "86517"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"rx3nd25xbChSpkGZ1G2nRDAIS99njw9EN75TE0SYR/A=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 16:37:01 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-rx3nd25xbChSpkGZ1G2nRDAIS99njw9EN75TE0SYR/A="
-        }
-      ]
-    },
-    {
-      "Route": "assets/img/anh-avatar-cute-49.nuajc5qo7n.jpg",
-      "AssetFile": "assets/img/anh-avatar-cute-49.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "86517"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"rx3nd25xbChSpkGZ1G2nRDAIS99njw9EN75TE0SYR/A=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 16:37:01 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "nuajc5qo7n"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-rx3nd25xbChSpkGZ1G2nRDAIS99njw9EN75TE0SYR/A="
-        },
-        {
-          "Name": "label",
-          "Value": "assets/img/anh-avatar-cute-49.jpg"
-        }
-      ]
-    },
-    {
-      "Route": "assets/img/anime-avatar-2.4eqxpcqwwo.jpg",
-      "AssetFile": "assets/img/anime-avatar-2.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "87840"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 16:37:01 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "4eqxpcqwwo"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs="
-        },
-        {
-          "Name": "label",
-          "Value": "assets/img/anime-avatar-2.jpg"
-        }
-      ]
-    },
-    {
-      "Route": "assets/img/anime-avatar-2.jpg",
-      "AssetFile": "assets/img/anime-avatar-2.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "87840"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 16:37:01 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs="
-        }
-      ]
-    },
-    {
-      "Route": "assets/img/avatar-anime-1.56lf5zd8mq.jpg",
-      "AssetFile": "assets/img/avatar-anime-1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "675819"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"7XnztGEnkNIPc/LhfLCxtvPe7xustMRPE8fS/FFXQ2g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 16:37:01 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "56lf5zd8mq"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-7XnztGEnkNIPc/LhfLCxtvPe7xustMRPE8fS/FFXQ2g="
-        },
-        {
-          "Name": "label",
-          "Value": "assets/img/avatar-anime-1.jpg"
-        }
-      ]
-    },
-    {
-      "Route": "assets/img/avatar-anime-1.jpg",
-      "AssetFile": "assets/img/avatar-anime-1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "675819"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"7XnztGEnkNIPc/LhfLCxtvPe7xustMRPE8fS/FFXQ2g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 16:37:01 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-7XnztGEnkNIPc/LhfLCxtvPe7xustMRPE8fS/FFXQ2g="
-        }
-      ]
-    },
-    {
-      "Route": "assets/img/avatar-default.gidimodmst.svg",
-      "AssetFile": "assets/img/avatar-default.svg",
+      "Route": "assets/img/origin/avatar-default.gidimodmst.svg",
+      "AssetFile": "assets/img/origin/avatar-default.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -849,7 +521,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 16:37:01 GMT"
+          "Value": "Fri, 16 May 2025 16:49:21 GMT"
         }
       ],
       "EndpointProperties": [
@@ -863,13 +535,13 @@
         },
         {
           "Name": "label",
-          "Value": "assets/img/avatar-default.svg"
+          "Value": "assets/img/origin/avatar-default.svg"
         }
       ]
     },
     {
-      "Route": "assets/img/avatar-default.svg",
-      "AssetFile": "assets/img/avatar-default.svg",
+      "Route": "assets/img/origin/avatar-default.svg",
+      "AssetFile": "assets/img/origin/avatar-default.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -894,7 +566,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 16:37:01 GMT"
+          "Value": "Fri, 16 May 2025 16:49:21 GMT"
         }
       ],
       "EndpointProperties": [
@@ -905,8 +577,8 @@
       ]
     },
     {
-      "Route": "assets/img/error-404-monochrome.svg",
-      "AssetFile": "assets/img/error-404-monochrome.svg",
+      "Route": "assets/img/origin/error-404-monochrome.svg",
+      "AssetFile": "assets/img/origin/error-404-monochrome.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -931,7 +603,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 16:37:01 GMT"
+          "Value": "Fri, 16 May 2025 16:49:21 GMT"
         }
       ],
       "EndpointProperties": [
@@ -942,8 +614,8 @@
       ]
     },
     {
-      "Route": "assets/img/error-404-monochrome.yp87i3fbss.svg",
-      "AssetFile": "assets/img/error-404-monochrome.svg",
+      "Route": "assets/img/origin/error-404-monochrome.yp87i3fbss.svg",
+      "AssetFile": "assets/img/origin/error-404-monochrome.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -968,7 +640,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 16:37:01 GMT"
+          "Value": "Fri, 16 May 2025 16:49:21 GMT"
         }
       ],
       "EndpointProperties": [
@@ -982,13 +654,13 @@
         },
         {
           "Name": "label",
-          "Value": "assets/img/error-404-monochrome.svg"
+          "Value": "assets/img/origin/error-404-monochrome.svg"
         }
       ]
     },
     {
-      "Route": "assets/img/logo-truong-250.6ybn1kf7h1.png",
-      "AssetFile": "assets/img/logo-truong-250.png",
+      "Route": "assets/img/origin/logo-truong-250.6ybn1kf7h1.png",
+      "AssetFile": "assets/img/origin/logo-truong-250.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1013,7 +685,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 16:37:01 GMT"
+          "Value": "Fri, 16 May 2025 16:49:21 GMT"
         }
       ],
       "EndpointProperties": [
@@ -1027,13 +699,13 @@
         },
         {
           "Name": "label",
-          "Value": "assets/img/logo-truong-250.png"
+          "Value": "assets/img/origin/logo-truong-250.png"
         }
       ]
     },
     {
-      "Route": "assets/img/logo-truong-250.png",
-      "AssetFile": "assets/img/logo-truong-250.png",
+      "Route": "assets/img/origin/logo-truong-250.png",
+      "AssetFile": "assets/img/origin/logo-truong-250.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1058,13 +730,341 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 16:37:01 GMT"
+          "Value": "Fri, 16 May 2025 16:49:21 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
           "Value": "sha256-wkImCvT8NWbg9DFAQoGfm8VHvz5/5gV4J8luYDgQVEA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/user/Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg",
+      "AssetFile": "assets/img/user/Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "43662"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"28qLt6AurFDOZbGGf6lhPVqDs6kwJ52xn81jd1U0DCE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 16:49:21 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-28qLt6AurFDOZbGGf6lhPVqDs6kwJ52xn81jd1U0DCE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/user/Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.pntc0l69lj.jpg",
+      "AssetFile": "assets/img/user/Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "43662"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"28qLt6AurFDOZbGGf6lhPVqDs6kwJ52xn81jd1U0DCE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 16:49:21 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pntc0l69lj"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-28qLt6AurFDOZbGGf6lhPVqDs6kwJ52xn81jd1U0DCE="
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/user/Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/user/anh-avatar-cute-49.jpg",
+      "AssetFile": "assets/img/user/anh-avatar-cute-49.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "86517"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rx3nd25xbChSpkGZ1G2nRDAIS99njw9EN75TE0SYR/A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 16:49:21 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rx3nd25xbChSpkGZ1G2nRDAIS99njw9EN75TE0SYR/A="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/user/anh-avatar-cute-49.nuajc5qo7n.jpg",
+      "AssetFile": "assets/img/user/anh-avatar-cute-49.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "86517"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rx3nd25xbChSpkGZ1G2nRDAIS99njw9EN75TE0SYR/A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 16:49:21 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nuajc5qo7n"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rx3nd25xbChSpkGZ1G2nRDAIS99njw9EN75TE0SYR/A="
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/user/anh-avatar-cute-49.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/user/anime-avatar-2.4eqxpcqwwo.jpg",
+      "AssetFile": "assets/img/user/anime-avatar-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "87840"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 16:49:21 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4eqxpcqwwo"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs="
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/user/anime-avatar-2.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/user/anime-avatar-2.jpg",
+      "AssetFile": "assets/img/user/anime-avatar-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "87840"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 16:49:21 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/user/dc28d1ea-12d8-452d-9c5a-3618d080eb7b_anime-avatar-2.4eqxpcqwwo.jpg",
+      "AssetFile": "assets/img/user/dc28d1ea-12d8-452d-9c5a-3618d080eb7b_anime-avatar-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "87840"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 16:49:21 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4eqxpcqwwo"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs="
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/user/dc28d1ea-12d8-452d-9c5a-3618d080eb7b_anime-avatar-2.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/user/dc28d1ea-12d8-452d-9c5a-3618d080eb7b_anime-avatar-2.jpg",
+      "AssetFile": "assets/img/user/dc28d1ea-12d8-452d-9c5a-3618d080eb7b_anime-avatar-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "87840"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 16:49:21 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs="
         }
       ]
     },

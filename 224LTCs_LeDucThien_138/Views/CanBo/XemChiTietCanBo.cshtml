@@ -10,7 +10,7 @@
     <h1 class="mt-4 text-uppercase">Cán bộ - Giảng viên</h1>
     <ol class="breadcrumb mb-4">
         <li class="breadcrumb-item active">
-            <a asp-action="Index" asp-controller="CanBo" class="btn-link link-secondary text-decoration-none">Cán bộ & Giảng Viên</a>
+            <a asp-action="Index" asp-controller="CanBo" class="btn-link link-secondary text-decoration-none">Xem danh sách</a>
         </li>
         <li class="breadcrumb-item active">Xem chi tiết</li>
     </ol>
@@ -19,7 +19,7 @@
         <div class="col-md-3">
             <div class="card shadow rounded-4 text-center mb-2">
                 <div class="card-body p-4">
-                    <img src="@Url.Content(string.IsNullOrEmpty(Model.Anh) ? "~/assets/img/avatar-default.svg" : "~/assets/img/" + Model.Anh)"
+                    <img src="@Url.Content(string.IsNullOrEmpty(Model.Anh) ? "~/assets/img/origin/avatar-default.svg" : "~/assets/img/user/" + Model.Anh)"
                          alt="Ảnh Đại Diện" class="rounded-circle mb-3" width="120" height="120" />
                     <p class="text-muted small">Mã cán bộ: <span class="fw-bold">@Model.MaCB</span></p>
                 </div>
