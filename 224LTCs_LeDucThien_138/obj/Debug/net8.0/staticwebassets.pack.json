@@ -65,8 +65,16 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadCanBo.js",
+      "PackagePath": "staticwebassets\\js\\LoadCanBo.js"
+    },
+    {
       "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadPhongHoc.js",
       "PackagePath": "staticwebassets\\js\\LoadPhongHoc.js"
+    },
+    {
+      "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\TogglePassword.js",
+      "PackagePath": "staticwebassets\\js\\TogglePassword.js"
     },
     {
       "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\paginationModule.js",

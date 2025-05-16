@@ -9,6 +9,11 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<ConnectionDatabase>();
 
 builder.Services.AddScoped<PhongHocRepos>();
+builder.Services.AddScoped<CanBoRepos>();
+builder.Services.AddScoped<KhoaRepos>();
+builder.Services.AddScoped<ChuyenNganhRepos>();
+builder.Services.AddScoped<HocViRepos>();
+builder.Services.AddScoped<ChucVuRepos>();
 
 var app = builder.Build();
 

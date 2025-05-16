@@ -1,8 +1,17 @@
 {
   "ExpandedNodes": [
     "",
-    "\\224LTCs_LeDucThien_138"
+    "\\224LTCs_LeDucThien_138",
+    "\\224LTCs_LeDucThien_138\\bin\\Debug",
+    "\\224LTCs_LeDucThien_138\\bin\\Release",
+    "\\224LTCs_LeDucThien_138\\obj\\Debug",
+    "\\224LTCs_LeDucThien_138\\obj\\Debug\\net8.0",
+    "\\224LTCs_LeDucThien_138\\obj\\Debug\\net8.0\\ref",
+    "\\224LTCs_LeDucThien_138\\obj\\Release",
+    "\\224LTCs_LeDucThien_138\\obj\\Release\\net8.0",
+    "\\224LTCs_LeDucThien_138\\obj\\Release\\net8.0\\ref",
+    "\\224LTCs_LeDucThien_138\\obj\\Release\\net8.0\\refint"
   ],
-  "SelectedNode": "\\224LTCs_LeDucThien_138\\Program.cs",
+  "SelectedNode": "\\224LTCs_LeDucThien_138\\bin",
   "PreviewInSolutionExplorer": false
 }
