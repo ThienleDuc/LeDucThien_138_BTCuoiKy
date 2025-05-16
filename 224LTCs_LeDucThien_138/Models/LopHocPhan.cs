@@ -12,21 +12,21 @@ namespace _224LTCs_LeDucThien_138.Models
         public string MaLHP { get; set; }
 
         [StringLength(7)]
-        public string MaHP { get; set; }
+        public string? MaHP { get; set; }
 
-        public string MaMH { get; set; }
+        public string? MaMH { get; set; }
 
         public int? MaNganh => MonHoc?.MaNganh;
 
-        public string TenMH => MonHoc?.TenMH;
+        public string? TenMH => MonHoc?.TenMH;
 
         public int? SoTC => MonHoc?.SoTC;
 
         [StringLength(10)]
-        public string MaCB { get; set; }
+        public string? MaCB { get; set; }
 
         [StringLength(2)]
-        public string ThuNgay {  get; set; }
+        public string? ThuNgay {  get; set; }
 
         public int? TietBatDau { get; set; }
 
@@ -34,11 +34,11 @@ namespace _224LTCs_LeDucThien_138.Models
 
         public int? MaKhoa => CanBo?.MaKhoa;
 
-        public string TenCB => CanBo?.TenCB;
+        public string? TenCB => CanBo?.TenCB;
 
         public int? MaPhong { get; set; }
 
-        public string TenPhong => Phong?.TenPhong;
+        public string? TenPhong => Phong?.TenPhong;
 
         public int? SLHienTai { get; set; }
 
@@ -46,9 +46,9 @@ namespace _224LTCs_LeDucThien_138.Models
 
         public DateTime? NgayHoc { get; set; }
 
-        public string GhiChu { get; set; }
+        public string? GhiChu { get; set; }
 
-        public string MaNK => HocPhan?.MaNK;
+        public string? MaNK => HocPhan?.MaNK;
 
         public List<CT_LHP_SV> DanhSachSinhVienLopHocPhan { get; set; }
         
@@ -67,8 +67,8 @@ namespace _224LTCs_LeDucThien_138.Models
         
         public ICollection<CT_LHP_SV> CT_LHP_SVs { get; set; }
 
-        public LopHocPhan(string maLHP, string maHP, string maMH, string maCB, string thuNgay, int? tietBatDau, int? tietKetThuc, int? maPhong, 
-            int? sLHienTai, int? sLToiDa, DateTime? ngayHoc, string ghiChu, HocPhan hocPhan, MonHoc monHoc, 
+        public LopHocPhan(string maLHP, string? maHP, string? maMH, string? maCB, string? thuNgay, int? tietBatDau, int? tietKetThuc, int? maPhong, 
+            int? sLHienTai, int? sLToiDa, DateTime? ngayHoc, string? ghiChu, HocPhan hocPhan, MonHoc monHoc, 
             CanBo canBo, PhongHoc phong, ICollection<CT_LHP_SV> cT_LHP_SVs)
         {
             MaLHP = maLHP;
@@ -147,7 +147,7 @@ namespace _224LTCs_LeDucThien_138.Models
                     {
                         list.Add(new LopHocPhan
                         {
-                            MaLHP = reader["MaLHP"]?.ToString(),
+                            MaLHP = reader.GetString(reader.GetOrdinal("MaLHP")),
                             MaHP = reader["MaHP"]?.ToString(),
                             MaMH = reader["MaMH"]?.ToString(),
                             MaCB = reader["MaCB"]?.ToString(),
@@ -209,7 +209,7 @@ namespace _224LTCs_LeDucThien_138.Models
                     {
                         lhp = new LopHocPhan
                         {
-                            MaLHP = reader["MaLHP"]?.ToString(),
+                            MaLHP = reader.GetString(reader.GetOrdinal("MaLHP")),
                             MaHP = reader["MaHP"]?.ToString(),
                             MaMH = reader["MaMH"]?.ToString(),
                             MaCB = reader["MaCB"]?.ToString(),
@@ -255,7 +255,7 @@ namespace _224LTCs_LeDucThien_138.Models
             return lhp;
         }
 
-        public List<LopHocPhan> GetLopHocPhanFiltered(string maNK = null, int? maKhoa = null, int? maNganh = null, string maHP = null, int? maPhong = null, string maMH = null, string maCB = null, string keyword = null)
+        public List<LopHocPhan> GetLopHocPhanFiltered(string? maNK = null, int? maKhoa = null, int? maNganh = null, string? maHP = null, int? maPhong = null, string? maMH = null, string? maCB = null, string? keyword = null)
         {
             List<LopHocPhan> list = new List<LopHocPhan>();
 
@@ -309,7 +309,7 @@ namespace _224LTCs_LeDucThien_138.Models
                     {
                         list.Add(new LopHocPhan
                         {
-                            MaLHP = reader["MaLHP"]?.ToString(),
+                            MaLHP = reader.GetString(reader.GetOrdinal("MaLHP")),
                             MaHP = reader["MaHP"]?.ToString(),
                             MaMH = reader["MaMH"]?.ToString(),
                             MaCB = reader["MaCB"]?.ToString(),

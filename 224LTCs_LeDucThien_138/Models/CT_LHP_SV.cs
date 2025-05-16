@@ -12,9 +12,9 @@ namespace _224LTCs_LeDucThien_138.Models
 
         [Key, Column(Order = 1)]
         [StringLength(20)]
-        public string MaLHP { get; set; }
+        public string? MaLHP { get; set; }
 
-        public string GhiChu { get; set; }
+        public string? GhiChu { get; set; }
 
         // Navigation properties
         [ForeignKey("MaSV")]
@@ -24,12 +24,12 @@ namespace _224LTCs_LeDucThien_138.Models
         public LopHocPhan LopHocPhan { get; set; }
 
         // Read-only properties for convenience
-        public string TenSV => SinhVien?.TenSV;
-        public string Email => SinhVien?.Email;
+        public string? TenSV => SinhVien?.TenSV;
+        public string? Email => SinhVien?.Email;
 
         public CT_LHP_SV() { }
 
-        public CT_LHP_SV(string maSV, string maLHP, string ghiChu, SinhVien sinhVien, LopHocPhan lopHocPhan)
+        public CT_LHP_SV(string maSV, string? maLHP, string? ghiChu, SinhVien sinhVien, LopHocPhan lopHocPhan)
         {
             MaSV = maSV;
             MaLHP = maLHP;
@@ -61,7 +61,7 @@ namespace _224LTCs_LeDucThien_138.Models
                     WHERE ct.MaLHP = @MaLHP";
 
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@MaLHP", maLHP);
+                cmd.Parameters.AddWithValue("@MaLHP", maLHP ?? (object)DBNull.Value);
 
                 conn.Open();
 
@@ -72,7 +72,7 @@ namespace _224LTCs_LeDucThien_138.Models
                         CT_LHP_SV ct = new CT_LHP_SV
                         {
                             MaLHP = reader["MaLHP"]?.ToString(),
-                            MaSV = reader["MaSV"]?.ToString(),
+                            MaSV = reader.GetString(reader.GetOrdinal("MaSV")),
                             GhiChu = reader["GhiChu"]?.ToString(),
                             SinhVien = new SinhVien
                             {

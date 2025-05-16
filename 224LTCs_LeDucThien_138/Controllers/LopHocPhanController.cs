@@ -199,7 +199,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
         }
 
         [HttpGet]
-        public IActionResult TimKiem(string maNK = null, int? maKhoa = null, int? maNganh = null, string maHP = null, int? maPhong = null, string maMH = null, string maCB = null, string TuKhoa = null)
+        public IActionResult TimKiem(string? maNK = null, int? maKhoa = null, int? maNganh = null, string? maHP = null, int? maPhong = null, string? maMH = null, string? maCB = null, string? TuKhoa = null)
         {
             var lhp = _lopHocPhanRepos.GetLopHocPhanFiltered(maNK, maKhoa, maNganh, maHP, maPhong, maMH, maCB, TuKhoa);
             return View(lhp);

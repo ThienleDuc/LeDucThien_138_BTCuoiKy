@@ -16,18 +16,18 @@ namespace _224LTCs_LeDucThien_138.Models
         public int? MaNganh{ get; set; }
 
         [StringLength(50)]
-        public string TenMH { get; set; }
+        public string? TenMH { get; set; }
 
         public int? SoTC { get; set; }
 
         [ForeignKey("MaNganh")]
         public ChuyenNganh ChuyenNganh { get; set; }
 
-        public string TenNganh => ChuyenNganh?.TenNganh;
+        public string? TenNganh => ChuyenNganh?.TenNganh;
         // Navigation property
         public ICollection<LopHocPhan> LopHocPhans { get; set; }
 
-        public MonHoc(string maMH, int? maNganh, string tenMH, int? soTC, ChuyenNganh chuyenNganh, ICollection<LopHocPhan> lopHocPhans)
+        public MonHoc(string maMH, int? maNganh, string? tenMH, int? soTC, ChuyenNganh chuyenNganh, ICollection<LopHocPhan> lopHocPhans)
         {
             MaMH = maMH;
             MaNganh = maNganh;
@@ -64,7 +64,7 @@ namespace _224LTCs_LeDucThien_138.Models
                     {
                         list.Add(new MonHoc
                         {
-                            MaMH = reader.IsDBNull(reader.GetOrdinal("MaMH")) ? null : reader.GetString(reader.GetOrdinal("MaMH")),
+                            MaMH = reader.GetString(reader.GetOrdinal("MaMH")),
                             MaNganh = reader.IsDBNull(reader.GetOrdinal("MaNganh")) ? null : reader.GetInt32(reader.GetOrdinal("MaNganh")),
                             TenMH = reader.IsDBNull(reader.GetOrdinal("TenMH")) ? null : reader.GetString(reader.GetOrdinal("TenMH")),
                             SoTC = reader.IsDBNull(reader.GetOrdinal("SoTC")) ? null : reader.GetInt32(reader.GetOrdinal("SoTC")),

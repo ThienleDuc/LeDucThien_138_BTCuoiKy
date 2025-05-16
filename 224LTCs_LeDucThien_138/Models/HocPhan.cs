@@ -11,10 +11,10 @@ namespace _224LTCs_LeDucThien_138.Models
         public string MaHP { get; set; }
 
         [StringLength(4)]
-        public string MaNK { get; set; }
+        public string? MaNK { get; set; }
 
         [StringLength(50)]
-        public string TenHP { get; set; }
+        public string? TenHP { get; set; }
 
         // Navigation properties
         [ForeignKey("MaNK")]
@@ -22,7 +22,7 @@ namespace _224LTCs_LeDucThien_138.Models
 
         public ICollection<LopHocPhan> LopHocPhans { get; set; }
 
-        public HocPhan(string maHP, string maNK, string tenHP, NienKhoa nienKhoa, ICollection<LopHocPhan> lopHocPhans)
+        public HocPhan(string maHP, string? maNK, string? tenHP, NienKhoa nienKhoa, ICollection<LopHocPhan> lopHocPhans)
         {
             MaHP = maHP;
             MaNK = maNK;
@@ -45,7 +45,7 @@ namespace _224LTCs_LeDucThien_138.Models
             _connectionDatabase = connectionDatabase;
         }
 
-        public List<HocPhan> GetHocPhanByNienKhoa(string maNK)
+        public List<HocPhan> GetHocPhanByNienKhoa(string? maNK)
         {
             List<HocPhan> list = new List<HocPhan>();
 
@@ -65,7 +65,7 @@ namespace _224LTCs_LeDucThien_138.Models
                     {
                         list.Add(new HocPhan
                         {
-                            MaHP = reader.IsDBNull(reader.GetOrdinal("MaHP")) ? null : reader.GetString(reader.GetOrdinal("MaHP")),
+                            MaHP = reader.GetString(reader.GetOrdinal("MaHP")),
                             MaNK = reader.IsDBNull(reader.GetOrdinal("MaNK")) ? null : reader.GetString(reader.GetOrdinal("MaNK")),
                             TenHP = reader.IsDBNull(reader.GetOrdinal("TenHP")) ? null : reader.GetString(reader.GetOrdinal("TenHP"))
                         });
