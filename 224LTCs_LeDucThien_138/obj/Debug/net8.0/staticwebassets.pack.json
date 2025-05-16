@@ -21,36 +21,36 @@
       "PackagePath": "staticwebassets\\assets\\demo\\datatables-demo.js"
     },
     {
-      "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\401-error.png",
-      "PackagePath": "staticwebassets\\assets\\img\\401-error.png"
+      "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\origin\\401-error.png",
+      "PackagePath": "staticwebassets\\assets\\img\\origin\\401-error.png"
     },
     {
-      "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg"
+      "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\origin\\avatar-default.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\origin\\avatar-default.svg"
     },
     {
-      "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\anh-avatar-cute-49.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\anh-avatar-cute-49.jpg"
+      "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\origin\\error-404-monochrome.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\origin\\error-404-monochrome.svg"
     },
     {
-      "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\anime-avatar-2.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\anime-avatar-2.jpg"
+      "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\origin\\logo-truong-250.png",
+      "PackagePath": "staticwebassets\\assets\\img\\origin\\logo-truong-250.png"
     },
     {
-      "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\avatar-anime-1.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\avatar-anime-1.jpg"
+      "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\user\\Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg"
     },
     {
-      "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\avatar-default.svg",
-      "PackagePath": "staticwebassets\\assets\\img\\avatar-default.svg"
+      "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\user\\anh-avatar-cute-49.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\anh-avatar-cute-49.jpg"
     },
     {
-      "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\error-404-monochrome.svg",
-      "PackagePath": "staticwebassets\\assets\\img\\error-404-monochrome.svg"
+      "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\user\\anime-avatar-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\anime-avatar-2.jpg"
     },
     {
-      "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\logo-truong-250.png",
-      "PackagePath": "staticwebassets\\assets\\img\\logo-truong-250.png"
+      "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\user\\dc28d1ea-12d8-452d-9c5a-3618d080eb7b_anime-avatar-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\dc28d1ea-12d8-452d-9c5a-3618d080eb7b_anime-avatar-2.jpg"
     },
     {
       "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\css\\site.css",

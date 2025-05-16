@@ -1,8 +1,4 @@
-﻿@{
-    string UserType = Context.Request.Cookies["UserType"];
-    string HoTen = Context.Request.Cookies["HoTen"];
-
-}
+﻿@using System.Security.Claims
 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
     <div class="sb-sidenav-menu">
         <div class="nav">
@@ -62,19 +58,19 @@
             <div class="collapse" id="collapseLogin" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                 <nav class="sb-sidenav-menu-nested nav">
                     <a class="nav-link" asp-area="" asp-action="Admin" asp-controller="Login">Admin</a>
-                    <a class="nav-link" asp-area="" asp-action="CanBo" asp-controller="Login">Giảng viên</a>
+                    <a class="nav-link" asp-area="" asp-action="CanBo" asp-controller="Login">Cán Bộ - Giảng Viên</a>
                     <a class="nav-link" asp-area="" asp-action="SinhVien" asp-controller="Login">Sinh viên</a>
                 </nav>
             </div>
         </div>
     </div>
     <div class="sb-sidenav-footer">
-        @if (!string.IsNullOrEmpty(UserType) && !string.IsNullOrEmpty(HoTen))
+        @if (User.Identity.IsAuthenticated)
         {
-            @if (UserType == "Admin")
+            @if (User.IsInRole("Admin"))
             {
-                <div class="small">Đăng nhập từ: <span class="ps-1 fw-bold">@UserType</span></div>
-                <div class="small fw-bold">@HoTen</div>
+                <div class="small">Đăng nhập từ: <span class="ps-1 fw-bold">@User.FindFirst(ClaimTypes.Role)?.Value</span></div>
+                <div class="small fw-bold">@User.FindFirst("HoTen")?.Value</div>
             }
         }
         else

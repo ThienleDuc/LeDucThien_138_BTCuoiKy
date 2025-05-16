@@ -17,7 +17,7 @@
                     <form method="post" asp-action="UploadAvatar" asp-controller="Setting" enctype="multipart/form-data">
                         <!-- Ảnh đại diện hiển thị mặc định -->
                         <img id="anhDaiDien"
-                             src="@Url.Content(string.IsNullOrEmpty(Model.Anh) ? "~/assets/img/avatar-default.svg" : "~/assets/img/" + Model.Anh)"
+                             src="@Url.Content(string.IsNullOrEmpty(Model.Anh) ? "~/assets/img/origin/avatar-default.svg" : "~/assets/img/user/" + Model.Anh)"
                              alt="Ảnh Đại Diện" class="rounded-circle mb-3" width="120" height="120">
 
                         <!-- Input file ẩn -->

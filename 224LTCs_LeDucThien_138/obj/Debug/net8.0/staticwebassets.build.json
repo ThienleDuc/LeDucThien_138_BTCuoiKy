@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zRp7q8QaewROeCVUWj9jD2dpcUoz2039/v5an0DVtBE=",
+  "Hash": "GfSyV+N/FEE7PkabI2gq/dQlMZEd9j9nZGOvUhhXYuk=",
   "Source": "224LTCs_LeDucThien_138",
   "BasePath": "_content/224LTCs_LeDucThien_138",
   "Mode": "Default",
@@ -143,12 +143,12 @@
       "OriginalItemSpec": "wwwroot\\assets\\demo\\datatables-demo.js"
     },
     {
-      "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\401-error.png",
+      "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\origin\\401-error.png",
       "SourceId": "224LTCs_LeDucThien_138",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\",
       "BasePath": "_content/224LTCs_LeDucThien_138",
-      "RelativePath": "assets/img/401-error#[.{fingerprint}]?.png",
+      "RelativePath": "assets/img/origin/401-error#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -161,78 +161,15 @@
       "Integrity": "ZvBJAQ5hXzu5yN+3whtq3l5SVGJQ5BxqoeRjpDX0FMc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\401-error.png"
+      "OriginalItemSpec": "wwwroot\\assets\\img\\origin\\401-error.png"
     },
     {
-      "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\anh-avatar-cute-49.jpg",
+      "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\origin\\avatar-default.svg",
       "SourceId": "224LTCs_LeDucThien_138",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\",
       "BasePath": "_content/224LTCs_LeDucThien_138",
-      "RelativePath": "assets/img/anh-avatar-cute-49#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "nuajc5qo7n",
-      "Integrity": "rx3nd25xbChSpkGZ1G2nRDAIS99njw9EN75TE0SYR/A=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\anh-avatar-cute-49.jpg"
-    },
-    {
-      "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\anime-avatar-2.jpg",
-      "SourceId": "224LTCs_LeDucThien_138",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\",
-      "BasePath": "_content/224LTCs_LeDucThien_138",
-      "RelativePath": "assets/img/anime-avatar-2#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "4eqxpcqwwo",
-      "Integrity": "JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\anime-avatar-2.jpg"
-    },
-    {
-      "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\avatar-anime-1.jpg",
-      "SourceId": "224LTCs_LeDucThien_138",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\",
-      "BasePath": "_content/224LTCs_LeDucThien_138",
-      "RelativePath": "assets/img/avatar-anime-1#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "56lf5zd8mq",
-      "Integrity": "7XnztGEnkNIPc/LhfLCxtvPe7xustMRPE8fS/FFXQ2g=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\avatar-anime-1.jpg"
-    },
-    {
-      "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\avatar-default.svg",
-      "SourceId": "224LTCs_LeDucThien_138",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\",
-      "BasePath": "_content/224LTCs_LeDucThien_138",
-      "RelativePath": "assets/img/avatar-default#[.{fingerprint}]?.svg",
+      "RelativePath": "assets/img/origin/avatar-default#[.{fingerprint}]?.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -245,15 +182,15 @@
       "Integrity": "GGUSByByWMfdqPaqM2fql9orYmmmjOq0+LrSJguQ234=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\avatar-default.svg"
+      "OriginalItemSpec": "wwwroot\\assets\\img\\origin\\avatar-default.svg"
     },
     {
-      "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\error-404-monochrome.svg",
+      "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\origin\\error-404-monochrome.svg",
       "SourceId": "224LTCs_LeDucThien_138",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\",
       "BasePath": "_content/224LTCs_LeDucThien_138",
-      "RelativePath": "assets/img/error-404-monochrome#[.{fingerprint}]?.svg",
+      "RelativePath": "assets/img/origin/error-404-monochrome#[.{fingerprint}]?.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -266,36 +203,15 @@
       "Integrity": "GuryUo0+xyzRuEVttjuLmS8hqxoE9FucfaX/mboMWj8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\error-404-monochrome.svg"
+      "OriginalItemSpec": "wwwroot\\assets\\img\\origin\\error-404-monochrome.svg"
     },
     {
-      "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg",
+      "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\origin\\logo-truong-250.png",
       "SourceId": "224LTCs_LeDucThien_138",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\",
       "BasePath": "_content/224LTCs_LeDucThien_138",
-      "RelativePath": "assets/img/Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "pntc0l69lj",
-      "Integrity": "28qLt6AurFDOZbGGf6lhPVqDs6kwJ52xn81jd1U0DCE=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg"
-    },
-    {
-      "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\logo-truong-250.png",
-      "SourceId": "224LTCs_LeDucThien_138",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\",
-      "BasePath": "_content/224LTCs_LeDucThien_138",
-      "RelativePath": "assets/img/logo-truong-250#[.{fingerprint}]?.png",
+      "RelativePath": "assets/img/origin/logo-truong-250#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -308,7 +224,91 @@
       "Integrity": "wkImCvT8NWbg9DFAQoGfm8VHvz5/5gV4J8luYDgQVEA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\logo-truong-250.png"
+      "OriginalItemSpec": "wwwroot\\assets\\img\\origin\\logo-truong-250.png"
+    },
+    {
+      "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\user\\anh-avatar-cute-49.jpg",
+      "SourceId": "224LTCs_LeDucThien_138",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\",
+      "BasePath": "_content/224LTCs_LeDucThien_138",
+      "RelativePath": "assets/img/user/anh-avatar-cute-49#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nuajc5qo7n",
+      "Integrity": "rx3nd25xbChSpkGZ1G2nRDAIS99njw9EN75TE0SYR/A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\user\\anh-avatar-cute-49.jpg"
+    },
+    {
+      "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\user\\anime-avatar-2.jpg",
+      "SourceId": "224LTCs_LeDucThien_138",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\",
+      "BasePath": "_content/224LTCs_LeDucThien_138",
+      "RelativePath": "assets/img/user/anime-avatar-2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4eqxpcqwwo",
+      "Integrity": "JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\user\\anime-avatar-2.jpg"
+    },
+    {
+      "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\user\\dc28d1ea-12d8-452d-9c5a-3618d080eb7b_anime-avatar-2.jpg",
+      "SourceId": "224LTCs_LeDucThien_138",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\",
+      "BasePath": "_content/224LTCs_LeDucThien_138",
+      "RelativePath": "assets/img/user/dc28d1ea-12d8-452d-9c5a-3618d080eb7b_anime-avatar-2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4eqxpcqwwo",
+      "Integrity": "JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\user\\dc28d1ea-12d8-452d-9c5a-3618d080eb7b_anime-avatar-2.jpg"
+    },
+    {
+      "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\user\\Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg",
+      "SourceId": "224LTCs_LeDucThien_138",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\",
+      "BasePath": "_content/224LTCs_LeDucThien_138",
+      "RelativePath": "assets/img/user/Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pntc0l69lj",
+      "Integrity": "28qLt6AurFDOZbGGf6lhPVqDs6kwJ52xn81jd1U0DCE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\user\\Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg"
     },
     {
       "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\css\\site.css",
@@ -1784,7 +1784,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 11:35:02 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1829,7 +1829,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 11:35:02 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1874,7 +1874,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 11:35:02 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1911,7 +1911,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 11:35:02 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1948,7 +1948,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1993,7 +1993,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2030,7 +2030,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2075,7 +2075,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2112,7 +2112,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2157,7 +2157,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2194,7 +2194,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2231,7 +2231,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2254,8 +2254,8 @@
       ]
     },
     {
-      "Route": "assets/img/401-error.png",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\401-error.png",
+      "Route": "assets/img/origin/401-error.png",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\origin\\401-error.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2276,7 +2276,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2291,8 +2291,8 @@
       ]
     },
     {
-      "Route": "assets/img/401-error.q8qj44nupi.png",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\401-error.png",
+      "Route": "assets/img/origin/401-error.q8qj44nupi.png",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\origin\\401-error.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2313,7 +2313,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2327,7 +2327,7 @@
         },
         {
           "Name": "label",
-          "Value": "assets/img/401-error.png"
+          "Value": "assets/img/origin/401-error.png"
         },
         {
           "Name": "integrity",
@@ -2336,254 +2336,8 @@
       ]
     },
     {
-      "Route": "assets/img/anh-avatar-cute-49.jpg",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\anh-avatar-cute-49.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "86517"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"rx3nd25xbChSpkGZ1G2nRDAIS99njw9EN75TE0SYR/A=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-rx3nd25xbChSpkGZ1G2nRDAIS99njw9EN75TE0SYR/A="
-        }
-      ]
-    },
-    {
-      "Route": "assets/img/anh-avatar-cute-49.nuajc5qo7n.jpg",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\anh-avatar-cute-49.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "86517"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"rx3nd25xbChSpkGZ1G2nRDAIS99njw9EN75TE0SYR/A=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "nuajc5qo7n"
-        },
-        {
-          "Name": "label",
-          "Value": "assets/img/anh-avatar-cute-49.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-rx3nd25xbChSpkGZ1G2nRDAIS99njw9EN75TE0SYR/A="
-        }
-      ]
-    },
-    {
-      "Route": "assets/img/anime-avatar-2.4eqxpcqwwo.jpg",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\anime-avatar-2.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "87840"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "4eqxpcqwwo"
-        },
-        {
-          "Name": "label",
-          "Value": "assets/img/anime-avatar-2.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs="
-        }
-      ]
-    },
-    {
-      "Route": "assets/img/anime-avatar-2.jpg",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\anime-avatar-2.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "87840"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs="
-        }
-      ]
-    },
-    {
-      "Route": "assets/img/avatar-anime-1.56lf5zd8mq.jpg",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\avatar-anime-1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "675819"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"7XnztGEnkNIPc/LhfLCxtvPe7xustMRPE8fS/FFXQ2g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "56lf5zd8mq"
-        },
-        {
-          "Name": "label",
-          "Value": "assets/img/avatar-anime-1.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-7XnztGEnkNIPc/LhfLCxtvPe7xustMRPE8fS/FFXQ2g="
-        }
-      ]
-    },
-    {
-      "Route": "assets/img/avatar-anime-1.jpg",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\avatar-anime-1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "675819"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"7XnztGEnkNIPc/LhfLCxtvPe7xustMRPE8fS/FFXQ2g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-7XnztGEnkNIPc/LhfLCxtvPe7xustMRPE8fS/FFXQ2g="
-        }
-      ]
-    },
-    {
-      "Route": "assets/img/avatar-default.gidimodmst.svg",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\avatar-default.svg",
+      "Route": "assets/img/origin/avatar-default.gidimodmst.svg",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\origin\\avatar-default.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2604,7 +2358,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2618,7 +2372,7 @@
         },
         {
           "Name": "label",
-          "Value": "assets/img/avatar-default.svg"
+          "Value": "assets/img/origin/avatar-default.svg"
         },
         {
           "Name": "integrity",
@@ -2627,8 +2381,8 @@
       ]
     },
     {
-      "Route": "assets/img/avatar-default.svg",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\avatar-default.svg",
+      "Route": "assets/img/origin/avatar-default.svg",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\origin\\avatar-default.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2649,7 +2403,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2664,8 +2418,8 @@
       ]
     },
     {
-      "Route": "assets/img/error-404-monochrome.svg",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\error-404-monochrome.svg",
+      "Route": "assets/img/origin/error-404-monochrome.svg",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\origin\\error-404-monochrome.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2686,7 +2440,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2701,8 +2455,8 @@
       ]
     },
     {
-      "Route": "assets/img/error-404-monochrome.yp87i3fbss.svg",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\error-404-monochrome.svg",
+      "Route": "assets/img/origin/error-404-monochrome.yp87i3fbss.svg",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\origin\\error-404-monochrome.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2723,7 +2477,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2737,7 +2491,7 @@
         },
         {
           "Name": "label",
-          "Value": "assets/img/error-404-monochrome.svg"
+          "Value": "assets/img/origin/error-404-monochrome.svg"
         },
         {
           "Name": "integrity",
@@ -2746,90 +2500,8 @@
       ]
     },
     {
-      "Route": "assets/img/Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "43662"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"28qLt6AurFDOZbGGf6lhPVqDs6kwJ52xn81jd1U0DCE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-28qLt6AurFDOZbGGf6lhPVqDs6kwJ52xn81jd1U0DCE="
-        }
-      ]
-    },
-    {
-      "Route": "assets/img/Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.pntc0l69lj.jpg",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "43662"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"28qLt6AurFDOZbGGf6lhPVqDs6kwJ52xn81jd1U0DCE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "pntc0l69lj"
-        },
-        {
-          "Name": "label",
-          "Value": "assets/img/Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-28qLt6AurFDOZbGGf6lhPVqDs6kwJ52xn81jd1U0DCE="
-        }
-      ]
-    },
-    {
-      "Route": "assets/img/logo-truong-250.6ybn1kf7h1.png",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\logo-truong-250.png",
+      "Route": "assets/img/origin/logo-truong-250.6ybn1kf7h1.png",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\origin\\logo-truong-250.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2850,7 +2522,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2864,7 +2536,7 @@
         },
         {
           "Name": "label",
-          "Value": "assets/img/logo-truong-250.png"
+          "Value": "assets/img/origin/logo-truong-250.png"
         },
         {
           "Name": "integrity",
@@ -2873,8 +2545,8 @@
       ]
     },
     {
-      "Route": "assets/img/logo-truong-250.png",
-      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\logo-truong-250.png",
+      "Route": "assets/img/origin/logo-truong-250.png",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\origin\\logo-truong-250.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2895,7 +2567,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2906,6 +2578,334 @@
         {
           "Name": "integrity",
           "Value": "sha256-wkImCvT8NWbg9DFAQoGfm8VHvz5/5gV4J8luYDgQVEA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/user/anh-avatar-cute-49.jpg",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\user\\anh-avatar-cute-49.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "86517"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rx3nd25xbChSpkGZ1G2nRDAIS99njw9EN75TE0SYR/A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rx3nd25xbChSpkGZ1G2nRDAIS99njw9EN75TE0SYR/A="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/user/anh-avatar-cute-49.nuajc5qo7n.jpg",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\user\\anh-avatar-cute-49.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "86517"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rx3nd25xbChSpkGZ1G2nRDAIS99njw9EN75TE0SYR/A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nuajc5qo7n"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/user/anh-avatar-cute-49.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rx3nd25xbChSpkGZ1G2nRDAIS99njw9EN75TE0SYR/A="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/user/anime-avatar-2.4eqxpcqwwo.jpg",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\user\\anime-avatar-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "87840"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4eqxpcqwwo"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/user/anime-avatar-2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/user/anime-avatar-2.jpg",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\user\\anime-avatar-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "87840"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/user/dc28d1ea-12d8-452d-9c5a-3618d080eb7b_anime-avatar-2.4eqxpcqwwo.jpg",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\user\\dc28d1ea-12d8-452d-9c5a-3618d080eb7b_anime-avatar-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "87840"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 16:10:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4eqxpcqwwo"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/user/dc28d1ea-12d8-452d-9c5a-3618d080eb7b_anime-avatar-2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/user/dc28d1ea-12d8-452d-9c5a-3618d080eb7b_anime-avatar-2.jpg",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\user\\dc28d1ea-12d8-452d-9c5a-3618d080eb7b_anime-avatar-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "87840"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 16:10:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JPO3Bp5TsDumH8Tqpy/7r/J6c+fC48nCt26EAyIWYPs="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/user/Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\user\\Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "43662"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"28qLt6AurFDOZbGGf6lhPVqDs6kwJ52xn81jd1U0DCE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-28qLt6AurFDOZbGGf6lhPVqDs6kwJ52xn81jd1U0DCE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/user/Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.pntc0l69lj.jpg",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\user\\Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "43662"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"28qLt6AurFDOZbGGf6lhPVqDs6kwJ52xn81jd1U0DCE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pntc0l69lj"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/user/Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-28qLt6AurFDOZbGGf6lhPVqDs6kwJ52xn81jd1U0DCE="
         }
       ]
     },
@@ -2932,7 +2932,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 11:04:19 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2969,7 +2969,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 11:04:19 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3014,7 +3014,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3059,7 +3059,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3096,7 +3096,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3141,7 +3141,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3178,7 +3178,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 11:32:39 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3223,7 +3223,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 11:32:39 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3260,7 +3260,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:32:30 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3305,7 +3305,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:32:30 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3342,7 +3342,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 11:03:11 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3379,7 +3379,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 11:03:11 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3424,7 +3424,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 11:03:11 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3461,7 +3461,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 11:03:11 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3506,7 +3506,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3543,7 +3543,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3588,7 +3588,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:46:55 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3625,7 +3625,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:46:55 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3670,7 +3670,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3715,7 +3715,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3752,7 +3752,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3797,7 +3797,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3834,7 +3834,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:32:30 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3871,7 +3871,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:32:30 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3916,7 +3916,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3953,7 +3953,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3998,7 +3998,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4035,7 +4035,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4080,7 +4080,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4117,7 +4117,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4162,7 +4162,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4199,7 +4199,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4244,7 +4244,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4281,7 +4281,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4326,7 +4326,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4363,7 +4363,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4408,7 +4408,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4453,7 +4453,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4490,7 +4490,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4535,7 +4535,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4572,7 +4572,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4609,7 +4609,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4646,7 +4646,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4691,7 +4691,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4736,7 +4736,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4773,7 +4773,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4818,7 +4818,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4855,7 +4855,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4900,7 +4900,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4937,7 +4937,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4982,7 +4982,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5019,7 +5019,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5064,7 +5064,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5101,7 +5101,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5138,7 +5138,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5183,7 +5183,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5228,7 +5228,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5265,7 +5265,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5310,7 +5310,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5347,7 +5347,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5384,7 +5384,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5421,7 +5421,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5466,7 +5466,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5511,7 +5511,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5556,7 +5556,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5601,7 +5601,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5638,7 +5638,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5683,7 +5683,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5720,7 +5720,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5757,7 +5757,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5794,7 +5794,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5839,7 +5839,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5884,7 +5884,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5921,7 +5921,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5966,7 +5966,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6003,7 +6003,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6048,7 +6048,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6085,7 +6085,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6122,7 +6122,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6167,7 +6167,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6204,7 +6204,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6249,7 +6249,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6286,7 +6286,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6323,7 +6323,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6368,7 +6368,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6405,7 +6405,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6450,7 +6450,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6495,7 +6495,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6540,7 +6540,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6585,7 +6585,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6630,7 +6630,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6667,7 +6667,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6712,7 +6712,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6749,7 +6749,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6794,7 +6794,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6831,7 +6831,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6876,7 +6876,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6913,7 +6913,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6950,7 +6950,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6995,7 +6995,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7032,7 +7032,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7077,7 +7077,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7114,7 +7114,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7151,7 +7151,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7196,7 +7196,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7241,7 +7241,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7278,7 +7278,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7323,7 +7323,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7360,7 +7360,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7405,7 +7405,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7442,7 +7442,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7479,7 +7479,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7524,7 +7524,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7561,7 +7561,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7606,7 +7606,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7651,7 +7651,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7688,7 +7688,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7733,7 +7733,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7778,7 +7778,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7815,7 +7815,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7852,7 +7852,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7897,7 +7897,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7934,7 +7934,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7979,7 +7979,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8016,7 +8016,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8061,7 +8061,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8098,7 +8098,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8143,7 +8143,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8180,7 +8180,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8217,7 +8217,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8262,7 +8262,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8299,7 +8299,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8344,7 +8344,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8389,7 +8389,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8426,7 +8426,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8471,7 +8471,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8508,7 +8508,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8553,7 +8553,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 14:21:22 GMT"
         },
         {
           "Name": "Cache-Control",

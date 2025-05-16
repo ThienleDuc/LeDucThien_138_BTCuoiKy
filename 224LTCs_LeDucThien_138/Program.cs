@@ -21,10 +21,18 @@ builder.Services.AddScoped<MonHocRepos>();
 builder.Services.AddScoped<LopHocPhanRepos>();
 builder.Services.AddScoped<CT_LHP_SVRepos>();
 builder.Services.AddScoped<HocPhanRepos>();
+
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
-builder.Services.AddScoped<CookieHelper>();
 builder.Services.AddScoped<TaiKhoanAdminRepos>();
+
+builder.Services.AddAuthentication("AdminScheme")
+    .AddCookie("AdminScheme", o =>
+    {
+        o.LoginPath = "/Login/Admin";
+        o.Cookie.Name = "AdminAuthCookie";
+        o.ExpireTimeSpan = TimeSpan.FromDays(30);
+    });
 
 var app = builder.Build();
 
@@ -41,6 +49,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

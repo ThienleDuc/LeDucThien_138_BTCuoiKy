@@ -21,7 +21,13 @@
                 <th>Mã phòng</th>
                 <th>Tên phòng</th>
                 <th>Sức chứa</th>
-                <th colspan="3" class="text-center">Hành động</th>
+                @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                {
+                    <th colspan="3" class="text-center">Hành động</th>
+                } else
+                {
+                    <th class="text-center">Xem</th>
+                }
             </tr>
         </thead>
         <tbody id="tableBody">
@@ -35,22 +41,26 @@
                     <td class="text-center">
                         <a href="#" class="text-decoration-none text-black"><i class="fa-regular fa-eye"></i></a>
                     </td>
-                    <td class="text-center">
-                        <a href="#" class="text-decoration-none text-warning"
-                           data-bs-toggle="modal" data-bs-target="#updatePhongModal"
-                           data-maphong="@Model[i].MaPhong"
-                           data-tenphong="@Model[i].TenPhong"
-                           data-soluong="@Model[i].SucChua">
-                            <i class="fa-duotone fa-solid fa-pen-to-square"></i>
-                        </a>
-                    </td>
-                    <td class="text-center">
-                        <a class="text-decoration-none text-danger"
-                           asp-action="XoaPhong" asp-controller="Home" asp-route-maPhong="@Model[i].MaPhong"
-                           onclick="return confirm('Bạn có chắc muốn xóa phòng học này không?');">
-                            <i class="fa-regular fa-trash-can"></i>
-                        </a>
-                    </td>
+
+                    @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                    {
+                        <td class="text-center">
+                            <a href="#" class="text-decoration-none text-warning"
+                               data-bs-toggle="modal" data-bs-target="#updatePhongModal"
+                               data-maphong="@Model[i].MaPhong"
+                               data-tenphong="@Model[i].TenPhong"
+                               data-soluong="@Model[i].SucChua">
+                                <i class="fa-duotone fa-solid fa-pen-to-square"></i>
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a class="text-decoration-none text-danger"
+                               asp-action="XoaPhong" asp-controller="Home" asp-route-maPhong="@Model[i].MaPhong"
+                               onclick="return confirm('Bạn có chắc muốn xóa phòng học này không?');">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </a>
+                        </td>
+                    }
                 </tr>
             }
         </tbody>
