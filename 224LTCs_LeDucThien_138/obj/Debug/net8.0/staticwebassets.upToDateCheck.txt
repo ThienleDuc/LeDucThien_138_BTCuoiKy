@@ -14,6 +14,8 @@ wwwroot\css\site.css
 wwwroot\css\styles.css
 wwwroot\favicon.ico
 wwwroot\js\LoadCanBo.js
+wwwroot\js\LoadChiTietLopHocPhan.js
+wwwroot\js\LoadLopHocPhan.js
 wwwroot\js\LoadPhongHoc.js
 wwwroot\js\LoadSinhvien.js
 wwwroot\js\paginationModule.js

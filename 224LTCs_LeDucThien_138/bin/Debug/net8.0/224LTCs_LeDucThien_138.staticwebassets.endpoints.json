@@ -29,7 +29,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:56:56 GMT"
+          "Value": "Fri, 16 May 2025 11:27:43 GMT"
         }
       ],
       "EndpointProperties": [
@@ -74,7 +74,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:56:56 GMT"
+          "Value": "Fri, 16 May 2025 11:27:43 GMT"
         }
       ],
       "EndpointProperties": [
@@ -1095,7 +1095,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 11:04:19 GMT"
         }
       ],
       "EndpointProperties": [
@@ -1132,7 +1132,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 11:04:19 GMT"
         }
       ],
       "EndpointProperties": [
@@ -1393,6 +1393,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-8EOhIL5ZIYbhjwvrT6dQ5+ldLoIzJQHMjpF6l37H3bQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/LoadChiTietLopHocPhan.js",
+      "AssetFile": "js/LoadChiTietLopHocPhan.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "355"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KiFs5/EZ4m/OvuTIrbFu30I8SezBYWOeX1Sp3hAUnSE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 11:03:11 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KiFs5/EZ4m/OvuTIrbFu30I8SezBYWOeX1Sp3hAUnSE="
+        }
+      ]
+    },
+    {
+      "Route": "js/LoadChiTietLopHocPhan.qnk9qdanef.js",
+      "AssetFile": "js/LoadChiTietLopHocPhan.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "355"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KiFs5/EZ4m/OvuTIrbFu30I8SezBYWOeX1Sp3hAUnSE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 11:03:11 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qnk9qdanef"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KiFs5/EZ4m/OvuTIrbFu30I8SezBYWOeX1Sp3hAUnSE="
+        },
+        {
+          "Name": "label",
+          "Value": "js/LoadChiTietLopHocPhan.js"
+        }
+      ]
+    },
+    {
+      "Route": "js/LoadLopHocPhan.js",
+      "AssetFile": "js/LoadLopHocPhan.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8406"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fHEBhIwnVWjyjFBK+DWSU+GKY/Knd4TtH0oJd9rj480=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 11:03:11 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fHEBhIwnVWjyjFBK+DWSU+GKY/Knd4TtH0oJd9rj480="
+        }
+      ]
+    },
+    {
+      "Route": "js/LoadLopHocPhan.kwnyd9rhk7.js",
+      "AssetFile": "js/LoadLopHocPhan.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8406"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fHEBhIwnVWjyjFBK+DWSU+GKY/Knd4TtH0oJd9rj480=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 11:03:11 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kwnyd9rhk7"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fHEBhIwnVWjyjFBK+DWSU+GKY/Knd4TtH0oJd9rj480="
+        },
+        {
+          "Name": "label",
+          "Value": "js/LoadLopHocPhan.js"
         }
       ]
     },

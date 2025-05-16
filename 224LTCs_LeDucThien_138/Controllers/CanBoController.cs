@@ -162,7 +162,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
         }
 
         [HttpGet]
-        public IActionResult TimKiem(string? maKhoa = null, int? maHocVi = null, int? maChucVu = null, string? TuKhoa = null)
+        public IActionResult TimKiem(int? maKhoa = null, int? maHocVi = null, int? maChucVu = null, string? TuKhoa = null)
         {
             var cb = _canBoRepos.GetCanBoFiltered(maKhoa, maHocVi, maChucVu, TuKhoa);
             return View(cb);

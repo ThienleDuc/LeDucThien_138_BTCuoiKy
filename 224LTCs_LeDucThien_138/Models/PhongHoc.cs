@@ -21,6 +21,7 @@ namespace _224LTCs_LeDucThien_138.Models
         public PhongHoc() { }
 
         // Constructor có tham số
+
         public PhongHoc(int maPhong, string tenPhong, int? sucChua)
         {
             MaPhong = maPhong;
@@ -197,6 +198,7 @@ namespace _224LTCs_LeDucThien_138.Models
                 cmd.Parameters.AddWithValue("@MaPhong", maPhong);
 
                 conn.Open();
+
                 int result = cmd.ExecuteNonQuery();
                 return result > 0;
             }

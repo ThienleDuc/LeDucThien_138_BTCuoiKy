@@ -1,0 +1,86 @@
+﻿<!-- Hiển thị thông báo từ TempData -->
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show mb-3" role="alert">
+        @TempData["SuccessMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Đóng"></button>
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show mb-3" role="alert">
+        @TempData["ErrorMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Đóng"></button>
+    </div>
+}
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+        <thead class="table-secondary">
+            <tr>
+                <th class="text-truncate">Mã LHP</th>
+                <th class="text-truncate">HP</th>
+                <th class="text-truncate">Tên môn học</th>
+                <th class="text-truncate">Số TC</th>
+                <th class="text-truncate">Thứ</th>
+                <th class="text-truncate">Từ tiết</th>
+                <th class="text-truncate">Đến tiết</th>
+                <th class="text-truncate">Giảng viên</th>
+                <th class="text-truncate">Phòng</th>
+                <th class="text-truncate">Đã ĐK</th>
+                <th class="text-truncate">Tối đa</th>
+                <th class="text-truncate">Ngày học</th>
+                <th colspan="3" class="text-center text-truncate">Hành động</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                <tr class="data-row @(i >= 10 ? "d-none" : "")">
+                    <!-- Mặc định 10 dòng -->
+                    <td class="align-middle">@Model[i].MaLHP</td>
+                    <td class="align-middle">@Model[i].MaHP</td>
+                    <td class="align-middle">@Model[i].TenMH</td>
+                    <td class="align-middle">@Model[i].SoTC</td>
+                    <td class="align-middle text-center">@Model[i].ThuNgay</td>
+                    <td class="align-middle text-center">@Model[i].TietBatDau</td>
+                    <td class="align-middle text-center">@Model[i].TietKetThuc</td>
+                    <td class="align-middle">@Model[i].TenCB</td>
+                    <td class="align-middle text-center">@Model[i].TenPhong</td>
+                    <td class="align-middle text-center">@Model[i].SLHienTai</td>
+                    <td class="align-middle text-center">@Model[i].SLToiDa</td>
+                    <td class="align-middle">@Model[i].NgayHoc?.ToString("dd/MM/yyyy")</td>
+
+                    <td class="align-middle text-center">
+                        <a asp-action="XemChiTietLopHocPhan" asp-controller="LopHocPhan" asp-route-maLHP="@Model[i].MaLHP" class="text-decoration-none text-black">
+                            <i class="fa-regular fa-eye"></i>
+                        </a>
+                    </td>
+                    <td class="align-middle text-center">
+                        <a asp-action="SuaLopHocPhan" asp-controller="LopHocPhan" asp-route-maLHP="@Model[i].MaLHP" class="text-decoration-none text-warning">
+                            <i class="fa-duotone fa-solid fa-pen-to-square"></i>
+                        </a>
+                    </td>
+                    <td class="align-middle text-center">
+                        <a class="text-decoration-none text-danger"
+                           asp-action="XoaLopHocPhan" asp-controller="LopHocPhan" asp-route-maLHP="@Model[i].MaLHP"
+                           onclick="return confirm('Bạn có chắc muốn xóa lớp học phần này không?');">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div id="pagination-container" class="d-flex align-items-center justify-content-between">
+    <div>
+        Hiển thị <span id="startRow"></span> đến <span id="endRow"></span> trong số <span id="totalRows">@Model.Count</span> mục
+    </div>
+
+    <nav>
+        <ul class="pagination m-0" id="pagination">
+        </ul>
+    </nav>
+</div>

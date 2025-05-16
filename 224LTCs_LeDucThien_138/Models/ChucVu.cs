@@ -59,6 +59,7 @@ namespace _224LTCs_LeDucThien_138.Models
         public ChucVu GetChucVuByID(int maChucVu)
         {
             ChucVu cv = null;
+
             using (SqlConnection conn = _connectionDatabase.GetConnection())
             {
                 string query = @"SELECT MaChucVu, TenChucVu FROM ChucVu WHERE MaChucVu = @MaChucVu;";

@@ -151,7 +151,7 @@ namespace _224LTCs_LeDucThien_138.Models
             return list;
         }
 
-        public List<CanBo> GetCanBoFiltered(string? maKhoa = null, int? maHocVi = null, int? maChucVu = null, string? keyword = null)
+        public List<CanBo> GetCanBoFiltered(int? maKhoa = null, int? maHocVi = null, int? maChucVu = null, string? keyword = null)
         {
             List<CanBo> list = new List<CanBo>();
 
@@ -174,7 +174,7 @@ namespace _224LTCs_LeDucThien_138.Models
 
                 SqlCommand cmd = new SqlCommand(query, conn);
 
-                cmd.Parameters.AddWithValue("@MaKhoa", string.IsNullOrEmpty(maKhoa) ? DBNull.Value : (object)maKhoa);
+                cmd.Parameters.AddWithValue("@MaKhoa", maKhoa.HasValue? (object)maKhoa.Value : DBNull.Value);
                 cmd.Parameters.AddWithValue("@MaHocVi", maHocVi.HasValue ? (object)maHocVi.Value : DBNull.Value);
                 cmd.Parameters.AddWithValue("@MaChucVu", maChucVu.HasValue ? (object)maChucVu.Value : DBNull.Value);
                 cmd.Parameters.AddWithValue("@Keyword", string.IsNullOrWhiteSpace(keyword) ? DBNull.Value : (object)keyword);

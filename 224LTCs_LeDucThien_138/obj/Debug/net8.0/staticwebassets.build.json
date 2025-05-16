@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "V0y7y5damNmjfTJniW7/244xMilHAf88fL4XHOMKHHc=",
+  "Hash": "/MaQVHeLlpH0hCOyNBG2eQcHAyssF78j/SeoBGLt9M8=",
   "Source": "224LTCs_LeDucThien_138",
   "BasePath": "_content/224LTCs_LeDucThien_138",
   "Mode": "Default",
@@ -393,6 +393,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\LoadCanBo.js"
+    },
+    {
+      "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadChiTietLopHocPhan.js",
+      "SourceId": "224LTCs_LeDucThien_138",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\",
+      "BasePath": "_content/224LTCs_LeDucThien_138",
+      "RelativePath": "js/LoadChiTietLopHocPhan#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qnk9qdanef",
+      "Integrity": "KiFs5/EZ4m/OvuTIrbFu30I8SezBYWOeX1Sp3hAUnSE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\LoadChiTietLopHocPhan.js"
+    },
+    {
+      "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadLopHocPhan.js",
+      "SourceId": "224LTCs_LeDucThien_138",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\",
+      "BasePath": "_content/224LTCs_LeDucThien_138",
+      "RelativePath": "js/LoadLopHocPhan#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kwnyd9rhk7",
+      "Integrity": "fHEBhIwnVWjyjFBK+DWSU+GKY/Knd4TtH0oJd9rj480=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\LoadLopHocPhan.js"
     },
     {
       "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadPhongHoc.js",
@@ -1721,7 +1763,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:56:56 GMT"
+          "Value": "Fri, 16 May 2025 11:27:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1766,7 +1808,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:56:56 GMT"
+          "Value": "Fri, 16 May 2025 11:27:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1811,7 +1853,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:56:56 GMT"
+          "Value": "Fri, 16 May 2025 11:27:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1848,7 +1890,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:56:56 GMT"
+          "Value": "Fri, 16 May 2025 11:27:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2869,7 +2911,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 11:04:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2906,7 +2948,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 10:31:50 GMT"
+          "Value": "Fri, 16 May 2025 11:04:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3171,6 +3213,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-8EOhIL5ZIYbhjwvrT6dQ5+ldLoIzJQHMjpF6l37H3bQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/LoadChiTietLopHocPhan.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadChiTietLopHocPhan.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "355"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KiFs5/EZ4m/OvuTIrbFu30I8SezBYWOeX1Sp3hAUnSE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 11:03:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KiFs5/EZ4m/OvuTIrbFu30I8SezBYWOeX1Sp3hAUnSE="
+        }
+      ]
+    },
+    {
+      "Route": "js/LoadChiTietLopHocPhan.qnk9qdanef.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadChiTietLopHocPhan.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "355"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KiFs5/EZ4m/OvuTIrbFu30I8SezBYWOeX1Sp3hAUnSE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 11:03:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qnk9qdanef"
+        },
+        {
+          "Name": "label",
+          "Value": "js/LoadChiTietLopHocPhan.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KiFs5/EZ4m/OvuTIrbFu30I8SezBYWOeX1Sp3hAUnSE="
+        }
+      ]
+    },
+    {
+      "Route": "js/LoadLopHocPhan.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadLopHocPhan.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8406"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fHEBhIwnVWjyjFBK+DWSU+GKY/Knd4TtH0oJd9rj480=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 11:03:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fHEBhIwnVWjyjFBK+DWSU+GKY/Knd4TtH0oJd9rj480="
+        }
+      ]
+    },
+    {
+      "Route": "js/LoadLopHocPhan.kwnyd9rhk7.js",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\js\\LoadLopHocPhan.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8406"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fHEBhIwnVWjyjFBK+DWSU+GKY/Knd4TtH0oJd9rj480=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 11:03:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kwnyd9rhk7"
+        },
+        {
+          "Name": "label",
+          "Value": "js/LoadLopHocPhan.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fHEBhIwnVWjyjFBK+DWSU+GKY/Knd4TtH0oJd9rj480="
         }
       ]
     },

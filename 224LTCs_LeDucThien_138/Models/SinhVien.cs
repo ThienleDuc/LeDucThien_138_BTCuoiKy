@@ -56,6 +56,7 @@ namespace _224LTCs_LeDucThien_138.Models
 
         public SinhVien(string maSV, string? maLSH, string? tenSV, bool gioiTinh, DateTime? ngaySinh, 
             string? cccd, string? diaChi, string? sdt, string? email, string? matKhau, string? anh, 
+
             LopSinhHoat lopSinhHoat)
         {
             MaSV = maSV;
@@ -242,17 +243,17 @@ namespace _224LTCs_LeDucThien_138.Models
             return sv;
         }
 
-        public bool AddSinhVien(SinhVien sinhVien, string? maNK, int? maKhoa, int? maNganh, string? maLSH)
+        public bool AddSinhVien(SinhVien sinhVien, string maNK, int? maKhoa, int? maNganh, string maLSH)
         {
             using (SqlConnection conn = _connectionDatabase.GetConnection())
             {
                 SqlCommand cmd = new SqlCommand("AddSinhVien", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@MaNK", maNK);
-                cmd.Parameters.AddWithValue("@MaKhoa", maKhoa);
-                cmd.Parameters.AddWithValue("@MaNganh", maNganh);
-                cmd.Parameters.AddWithValue("@MaLSH", maLSH);
+                cmd.Parameters.AddWithValue("@MaNK", !string.IsNullOrEmpty(maNK) ? maNK : (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@MaKhoa", maKhoa.HasValue ? maKhoa : (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@MaNganh", maNganh.HasValue ? maNganh : (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@MaLSH", !string.IsNullOrEmpty(maLSH) ? maLSH : (object)DBNull.Value);
                 cmd.Parameters.AddWithValue("@TenSV", sinhVien.TenSV ?? (object)DBNull.Value);
                 cmd.Parameters.AddWithValue("@GioiTinh", sinhVien.GioiTinh);
                 cmd.Parameters.AddWithValue("@NgaySinh", sinhVien.NgaySinh ?? (object)DBNull.Value);
