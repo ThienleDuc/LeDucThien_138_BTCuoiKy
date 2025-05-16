@@ -33,7 +33,9 @@
                     <td>@Model[i].TenPhong</td>
                     <td>@Model[i].SucChua</td>
                     <td class="text-center">
-                        <a href="#" class="text-decoration-none text-black"><i class="fa-regular fa-eye"></i></a>
+                        <a asp-action="TimKiem" asp-controller="LopHocPhan" asp-route-maPhong="@Model[i].MaPhong" class="text-decoration-none text-black">
+                            <i class="fa-regular fa-eye"></i>
+                        </a>
                     </td>
                     <td class="text-center">
                         <a href="#" class="text-decoration-none text-warning"

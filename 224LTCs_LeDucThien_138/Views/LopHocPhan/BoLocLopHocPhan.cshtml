@@ -41,7 +41,7 @@
                         <div class="col-6">
                             <div class="mb-3">
                                 <label for="choosePH" class="form-label">Phòng học</label>
-                                <select id="choosePH" class="form-select" name="maPhong">
+                                <select id="choosePH" class="form-select" name="maPhong" data-selected="@Context.Request.Query["maPhong"].ToString()">
                                     <option selected disabled>Chọn phòng học</option>
                                 </select>
                             </div>

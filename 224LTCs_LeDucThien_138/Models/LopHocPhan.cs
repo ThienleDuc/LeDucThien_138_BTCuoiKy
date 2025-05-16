@@ -277,7 +277,9 @@ namespace _224LTCs_LeDucThien_138.Models
                         (@MaPhong IS NULL OR lhp.MaPhong = @MaPhong) AND
                         (@MaMH IS NULL OR lhp.MaMH = @MaMH) AND
                         (@MaCB IS NULL OR lhp.MaCB = @MaCB) AND
-                        (@Keyword IS NULL OR lhp.MaLHP LIKE '%' + @Keyword + '%' OR mh.TenMH LIKE '%' + @Keyword + '%')
+                        (@Keyword IS NULL OR lhp.MaLHP LIKE '%' + @Keyword + '%' 
+                                        OR mh.TenMH LIKE '%' + @Keyword + '%'
+                                        OR p.TenPhong LIKE '%' + @Keyword + '%')
                     ORDER BY lhp.MaMH,
                         CASE lhp.ThuNgay
                             WHEN '2' THEN 2
