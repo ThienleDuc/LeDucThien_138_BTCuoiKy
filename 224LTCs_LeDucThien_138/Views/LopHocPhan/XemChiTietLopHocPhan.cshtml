@@ -120,7 +120,7 @@
                                         <td class="align-middle">@sv.Email</td>
                                         <td class="align-middle @(string.IsNullOrEmpty(sv.GhiChu) ? "text-center" : "")">@(!string.IsNullOrEmpty(sv.GhiChu) ? sv.GhiChu : "-")</td>
                                         <td class="align-middle text-center">
-                                            <a asp-action="XemChiTietLopHocPhan" asp-controller="LopHocPhan" asp-route-maLHP="@sv.MaLHP" class="text-decoration-none text-black">
+                                            <a asp-action="XemChiTietSinhVien" asp-controller="SinhVien" asp-route-maSV="@sv.MaSV" class="text-decoration-none text-black">
                                                 <i class="fa-regular fa-eye"></i>
                                             </a>
                                         </td>
