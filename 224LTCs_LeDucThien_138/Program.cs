@@ -21,6 +21,10 @@ builder.Services.AddScoped<MonHocRepos>();
 builder.Services.AddScoped<LopHocPhanRepos>();
 builder.Services.AddScoped<CT_LHP_SVRepos>();
 builder.Services.AddScoped<HocPhanRepos>();
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+builder.Services.AddScoped<CookieHelper>();
+builder.Services.AddScoped<TaiKhoanAdminRepos>();
 
 var app = builder.Build();
 
