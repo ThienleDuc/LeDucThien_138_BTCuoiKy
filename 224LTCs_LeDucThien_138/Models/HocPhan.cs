@@ -39,6 +39,7 @@ namespace _224LTCs_LeDucThien_138.Models
     public class HocPhanRepos
     {
         private ConnectionDatabase _connectionDatabase;
+        private CT_LHP_SVRepos _cT_LHP_SVRepos;
 
         public HocPhanRepos(ConnectionDatabase connectionDatabase)
         {
@@ -76,6 +77,37 @@ namespace _224LTCs_LeDucThien_138.Models
             return list;
         }
 
+        public List<HocPhan> GetHocPhanByMaxMaNK()
+        {
+            List<HocPhan> list = new List<HocPhan>();
+
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                string query = @"
+                    SELECT MaHP, MaNK, TenHP
+                    FROM HocPhan
+                    WHERE MaNK = (SELECT MAX(MaNK) FROM NienKhoa)
+                    ORDER BY MaHP DESC;";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+
+                conn.Open();
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        list.Add(new HocPhan
+                        {
+                            MaHP = reader.GetString(reader.GetOrdinal("MaHP")),
+                            MaNK = reader.IsDBNull(reader.GetOrdinal("MaNK")) ? null : reader.GetString(reader.GetOrdinal("MaNK")),
+                            TenHP = reader.IsDBNull(reader.GetOrdinal("TenHP")) ? null : reader.GetString(reader.GetOrdinal("TenHP"))
+                        });
+                    }
+                }
+            }
+
+            return list;
+        }
     }
 
 }

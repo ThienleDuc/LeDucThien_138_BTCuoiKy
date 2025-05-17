@@ -50,6 +50,14 @@ namespace _224LTCs_LeDucThien_138.Models
         [ForeignKey("MaLSH")]
         public LopSinhHoat LopSinhHoat { get; set; }
 
+        [ForeignKey("MaSV")]
+        public CT_LHP_SV CT_LHP_SV { get; set; }
+
+        public List<HocPhan> DanhSachHocPhan;
+
+        // Map MaHP -> danh sách lịch học
+        public Dictionary<string, List<CT_LHP_SV>> LichHocTheoHocPhan { get; set; } = new();
+
         // Không ánh xạ sang DB, chỉ dùng để hiển thị TenLSH
         [NotMapped]
         public string? TenLSH => LopSinhHoat?.TenLSH;
@@ -78,10 +86,14 @@ namespace _224LTCs_LeDucThien_138.Models
     public class SinhVienRepos
     {
         private ConnectionDatabase _connectionDatabase;
+        private HocPhanRepos _hocPhanRepos;
+        private CT_LHP_SVRepos _ctLHP_SVRepos;
 
         public SinhVienRepos(ConnectionDatabase connectionDatabase)
         {
             _connectionDatabase = connectionDatabase;
+            _hocPhanRepos = new HocPhanRepos(_connectionDatabase);
+            _ctLHP_SVRepos = new CT_LHP_SVRepos(_connectionDatabase);
         }
 
         public List<SinhVien> GetAllSinhVien()
@@ -238,8 +250,17 @@ namespace _224LTCs_LeDucThien_138.Models
                     }
                 }
             }
-            Console.WriteLine($"maSV: {maSV}");
 
+            if (sv != null)
+            {
+                sv.DanhSachHocPhan = _hocPhanRepos.GetHocPhanByMaxMaNK();
+
+                foreach(var hp in sv.DanhSachHocPhan)
+                {
+                    var lichhoc = _ctLHP_SVRepos.GetLichHocOfSinhVien(maSV, hp.MaHP);
+                    sv.LichHocTheoHocPhan[hp.MaHP] = lichhoc;
+                }
+            }
             return sv;
         }
 
