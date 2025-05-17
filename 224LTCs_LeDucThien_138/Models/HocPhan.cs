@@ -108,6 +108,33 @@ namespace _224LTCs_LeDucThien_138.Models
 
             return list;
         }
+
+        public string GetMaHPMoiNhat()
+        {
+            string maHP = null;
+
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                string query = @"
+                    SELECT TOP 1 MaHP
+                    FROM HocPhan
+                    WHERE MaNK = (SELECT MAX(MaNK) FROM HocPhan)
+                    ORDER BY MaHP DESC;";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    conn.Open();
+                    object result = cmd.ExecuteScalar();
+
+                    if (result != null && result != DBNull.Value)
+                    {
+                        maHP = result.ToString();
+                    }
+                }
+            }
+
+            return maHP;
+        }
     }
 
 }

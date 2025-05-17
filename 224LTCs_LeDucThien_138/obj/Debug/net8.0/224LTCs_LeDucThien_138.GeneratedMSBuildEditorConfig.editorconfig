@@ -144,6 +144,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2luaFZpZW5cQm9Mb2NTaW5oVmllbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/WORKSPACE/project_LTCs/LeDucThien_138_BTCuoiKy/224LTCs_LeDucThien_138/Views/SinhVien/DangKyLophocPhan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2luaFZpZW5cRGFuZ0t5TG9waG9jUGhhbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/WORKSPACE/project_LTCs/LeDucThien_138_BTCuoiKy/224LTCs_LeDucThien_138/Views/SinhVien/DanhSachSinhVien.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2luaFZpZW5cRGFuaFNhY2hTaW5oVmllbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -160,8 +164,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2luaFZpZW5cVGhlbVNpbmhWaWVuLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/WORKSPACE/project_LTCs/LeDucThien_138_BTCuoiKy/224LTCs_LeDucThien_138/Views/SinhVien/ThongBaoSauDangKy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2luaFZpZW5cVGhvbmdCYW9TYXVEYW5nS3kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/WORKSPACE/project_LTCs/LeDucThien_138_BTCuoiKy/224LTCs_LeDucThien_138/Views/SinhVien/TimKiem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2luaFZpZW5cVGltS2llbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/WORKSPACE/project_LTCs/LeDucThien_138_BTCuoiKy/224LTCs_LeDucThien_138/Views/SinhVien/XacNhanDangKy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2luaFZpZW5cWGFjTmhhbkRhbmdLeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/WORKSPACE/project_LTCs/LeDucThien_138_BTCuoiKy/224LTCs_LeDucThien_138/Views/SinhVien/XemChiTietSinhVien.cshtml]

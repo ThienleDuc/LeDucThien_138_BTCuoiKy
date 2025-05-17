@@ -12,7 +12,9 @@ namespace _224LTCs_LeDucThien_138.Controllers
         private readonly ChuyenNganhRepos _chuyenNganhRepos;
         private readonly NienKhoaRepos _nienKhoaRepos;
         private readonly LopSinhHoatRepos _lopSinhHoatRepos;
-
+        private readonly HocPhanRepos _hocPhanRepos;
+        private readonly CT_LHP_SVRepos _ctLHP_SVRepos;
+        private readonly LopHocPhanRepos _lopHocPhanRepos;
 
         public SinhVienController(ConnectionDatabase connectionDatabase)
         {
@@ -22,6 +24,9 @@ namespace _224LTCs_LeDucThien_138.Controllers
             _chuyenNganhRepos = new ChuyenNganhRepos(_connectionDatabase);
             _nienKhoaRepos = new NienKhoaRepos(_connectionDatabase);
             _lopSinhHoatRepos = new LopSinhHoatRepos(_connectionDatabase);
+            _hocPhanRepos = new HocPhanRepos(_connectionDatabase);
+            _ctLHP_SVRepos = new CT_LHP_SVRepos(_connectionDatabase);
+            _lopHocPhanRepos = new LopHocPhanRepos(connectionDatabase);
         }
 
         [HttpGet]
@@ -158,7 +163,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             if (sv == null)
             {
                 TempData["ErrorMessage"] = "Sinh viên không tồn tại.";
-                return RedirectToAction("Index");
+                return RedirectToAction("SinhVien", "Login");
             }
             return View(sv);
         }
@@ -172,10 +177,135 @@ namespace _224LTCs_LeDucThien_138.Controllers
             if (sv == null)
             {
                 TempData["ErrorMessage"] = "Sinh viên không tồn tại.";
-                return RedirectToAction("Index");
+                return RedirectToAction("SinhVien", "Login");
             }
 
             return View(sv);
+        }
+
+        public IActionResult DangKyLophocPhan()
+        {
+            string maSV = "22010222101";
+
+            var sv = _sinhVienRepos.GetSinhVienById(maSV);
+
+            if (sv == null)
+            {
+                TempData["ErrorMessage"] = "Sinh viên không tồn tại.";
+                return RedirectToAction("SinhVien", "Login");
+            }
+
+            string maHP = _hocPhanRepos.GetMaHPMoiNhat();
+            ViewBag.MaHP = maHP;
+            
+            return View(sv);
+        }
+
+        [HttpPost]
+        public IActionResult XacNhanDangKy(List<string> MaLHPs)
+        {
+            if (MaLHPs == null || !MaLHPs.Any())
+            {
+                TempData["ErrorMessage"] = "Bạn chưa chọn lớp nào.";
+                return RedirectToAction("DangKyLopHocPhan");
+            }
+
+            // Lấy thông tin lớp học phần từ MaLHPs
+            List<LopHocPhan> danhSachLop = new List<LopHocPhan>();
+            foreach(var maLHP in MaLHPs)
+            {
+                var lop = _lopHocPhanRepos.GetLopHocPhanById(maLHP);
+                if (lop != null)
+                {
+                    danhSachLop.Add(lop);
+                }
+            }
+
+            string maHP = _hocPhanRepos.GetMaHPMoiNhat();
+            ViewBag.MaHP = maHP;
+
+            return View("XacNhanDangKy", new SinhVien
+            {
+                DanhSachLopHocPhanDaChon = danhSachLop
+            });
+        }
+
+        [HttpPost]
+        public IActionResult DangKyLopHocPhan(List<string> MaLHPs)
+        {
+            string MaSV = "22010222101";
+            var errors = new List<string>();
+            bool tatCaThanhCong = true;
+
+            foreach (var maLHP in MaLHPs)
+            {
+                bool ketQua = _ctLHP_SVRepos.SinhVienRegisterLopHocPhan(MaSV, maLHP, null, errors);
+                if (!ketQua)
+                {
+                    tatCaThanhCong = false;
+                }
+            }
+
+            if (tatCaThanhCong)
+            {
+                TempData["MaLHPs"] = string.Join(",", MaLHPs);
+                return RedirectToAction("ThongBaoSauDangKy");
+            }
+            else
+            {
+                TempData["DanhSachLoi"] = string.Join("|||", errors);
+                return RedirectToAction("ThongBaoSauDangKy");
+            }
+        }
+
+        public IActionResult ThongBaoSauDangKy()
+        {
+            string maSV = "22010222101";
+
+            var sv = _sinhVienRepos.GetSinhVienById(maSV);
+
+            if (sv == null)
+            {
+                TempData["ErrorMessage"] = "Sinh viên không tồn tại.";
+                return RedirectToAction("SinhVien", "Login");
+            }
+
+            string maHP = _hocPhanRepos.GetMaHPMoiNhat();
+            ViewBag.MaHP = maHP;
+
+            // Lấy danh sách MaLHPs đã đăng ký từ TempData (nếu có)
+            if (TempData["MaLHPs"] != null)
+            {
+                var maLHPs = TempData["MaLHPs"].ToString().Split(',').ToList();
+                ViewBag.MaLHPsDaDangKy = maLHPs;
+            }
+
+            if (TempData["DanhSachLoi"] != null)
+            {
+                ViewBag.DanhSachLoi = TempData["DanhSachLoi"].ToString().Split("|||").ToList();
+            }
+
+            return View(sv);
+        }
+
+        [HttpPost]
+        public IActionResult HuyDangKyLopHocPhan(List<string> MaLHPs)
+        {
+            string MaSV = "22010222101";
+
+            if (string.IsNullOrEmpty(MaSV) || MaLHPs == null || MaLHPs.Count == 0)
+            {
+                TempData["Error"] = "Vui lòng chọn ít nhất một lớp học phần để hủy.";
+                return RedirectToAction("DangKyLophocPhan");
+            }
+
+            foreach (var maLHP in MaLHPs)
+            {
+                _ctLHP_SVRepos.DeleteLopHocPhanOfSinhVien(MaSV, maLHP);
+            }
+
+            TempData["Message"] = "Đã hủy thành công các lớp học phần đã chọn.";
+            return RedirectToAction("DangKyLophocPhan");
         }
     }
 }

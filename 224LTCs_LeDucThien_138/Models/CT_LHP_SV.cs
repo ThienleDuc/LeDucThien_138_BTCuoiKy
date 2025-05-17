@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.Data.SqlClient;
+using System.Data;
 
 namespace _224LTCs_LeDucThien_138.Models
 {
@@ -12,7 +13,7 @@ namespace _224LTCs_LeDucThien_138.Models
 
         [Key, Column(Order = 1)]
         [StringLength(20)]
-        public string? MaLHP { get; set; }
+        public string MaLHP { get; set; }
 
         public string? GhiChu { get; set; }
 
@@ -25,11 +26,14 @@ namespace _224LTCs_LeDucThien_138.Models
 
         // Read-only properties for convenience
         public string? TenSV => SinhVien?.TenSV;
+
         public string? Email => SinhVien?.Email;
 
         public string? MaHP => LopHocPhan?.MaHP;
 
         public string? TenMH => LopHocPhan.TenMH;
+
+        public int? SoTC => LopHocPhan?.MonHoc?.SoTC;
 
         public string? TenCB => LopHocPhan.TenCB;
 
@@ -47,7 +51,7 @@ namespace _224LTCs_LeDucThien_138.Models
 
         public CT_LHP_SV() { }
 
-        public CT_LHP_SV(string maSV, string? maLHP, string? ghiChu, SinhVien sinhVien, LopHocPhan lopHocPhan)
+        public CT_LHP_SV(string maSV, string maLHP, string? ghiChu, SinhVien sinhVien, LopHocPhan lopHocPhan)
         {
             MaSV = maSV;
             MaLHP = maLHP;
@@ -89,7 +93,7 @@ namespace _224LTCs_LeDucThien_138.Models
                     {
                         CT_LHP_SV ct = new CT_LHP_SV
                         {
-                            MaLHP = reader["MaLHP"]?.ToString(),
+                            MaLHP = reader.GetString(reader.GetOrdinal("MaLHP")),
                             MaSV = reader.GetString(reader.GetOrdinal("MaSV")),
                             GhiChu = reader["GhiChu"]?.ToString(),
                             SinhVien = new SinhVien
@@ -114,9 +118,9 @@ namespace _224LTCs_LeDucThien_138.Models
             using (SqlConnection conn = _connectionDatabase.GetConnection())
             {
                 string query = @"
-                    SELECT lhp.MaLHP, lhp.MaHP, mh.TenMH, cb.TenCB, p.TenPhong,
-		                    lhp.ThuNgay, lhp.TietBatDau, lhp.TietKetThuc, 
-		                    lhp.NgayHoc, lhp.GhiChu
+                    SELECT lhp.MaLHP, lhp.MaHP, mh.TenMH, mh.SoTC, 
+                            cb.TenCB, p.TenPhong,lhp.ThuNgay, lhp.TietBatDau, 
+                            lhp.TietKetThuc,lhp.NgayHoc, lhp.GhiChu
                     FROM CT_LHP_SV ct
                     LEFT JOIN LopHocPhan lhp ON ct.MaLHP = lhp.MaLHP
                     LEFT JOIN MonHoc mh ON mh.MaMH = lhp.MaMH
@@ -138,13 +142,14 @@ namespace _224LTCs_LeDucThien_138.Models
                     {
                         var ct = new CT_LHP_SV
                         {
-                            MaLHP = reader["MaLHP"]?.ToString(),
+                            MaLHP = reader.GetString(reader.GetOrdinal("MaLHP")),
                             LopHocPhan = new LopHocPhan
                             {
                                 MaHP = reader["MaHP"]?.ToString(),
                                 MonHoc = new MonHoc
                                 {
                                     TenMH = reader["TenMH"]?.ToString(),
+                                    SoTC = Convert.ToInt32(reader["SoTC"])
                                 },
                                 CanBo = new CanBo
                                 {
@@ -169,6 +174,65 @@ namespace _224LTCs_LeDucThien_138.Models
 
             return danhSach;
         }
+
+        public bool DeleteLopHocPhanOfSinhVien(string maSV, string maLHP)
+        {
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                string query = @"
+                DELETE FROM CT_LHP_SV
+                WHERE MaSV = @MaSV AND MaLHP = @MaLHP";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@MaSV", maSV ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@MaLHP", maLHP ?? (object)DBNull.Value);
+
+                conn.Open();
+                int result= cmd.ExecuteNonQuery();
+
+                return result> 0;
+            }
+        }
+
+        public bool SinhVienRegisterLopHocPhan(string maSV, string maLHP, string? ghiChu, List<string> errors)
+        {
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                using (SqlCommand cmd = new SqlCommand("DangKyLopHocPhan", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@MaSV", maSV ?? (object)DBNull.Value);
+                    cmd.Parameters.AddWithValue("@MaLHP", maLHP ?? (object)DBNull.Value);
+
+                    // Giả sử stored procedure trả về 0 nếu đã tồn tại, 1 nếu đăng ký thành công
+                    var returnParameter = cmd.Parameters.Add("@ReturnVal", SqlDbType.Int);
+                    returnParameter.Direction = ParameterDirection.ReturnValue;
+
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+
+                    int result = (int)returnParameter.Value;
+
+                    if (result == 0)
+                    {
+                        errors.Add($"Lỗi: Lớp học phần [{maLHP}] đã được đăng ký.");
+                        return false;
+                    }
+                    else if (result == 1)
+                    {
+                        // Thành công
+                        return true;
+                    }
+                    else
+                    {
+                        errors.Add("Có lỗi không xác định xảy ra khi đăng ký lớp học phần.");
+                        return false;
+                    }
+                }
+            }
+        }
+
     }
 
 }

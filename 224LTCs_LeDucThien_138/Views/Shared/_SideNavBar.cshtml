@@ -53,9 +53,14 @@
 
             <div class="sb-sidenav-menu-heading border-top border-secondary">Sinh viên</div>
 
-            <a class="nav-link collapse @(ViewData["SinhVien"] == "SinhVien-LichHoc" ? "active" : "")" asp-action="XemThoiKhoaBieu" asp-controller="SinhVien">
+            <a class="nav-link @(ViewData["SinhVien"] == "SinhVien-LichHoc" ? "active" : "")" asp-action="XemThoiKhoaBieu" asp-controller="SinhVien">
                 <div class="sb-nav-link-icon"><i class="fa-solid fa-calendar-days"></i></div>
                 Lịch học
+            </a>
+
+            <a class="nav-link @(ViewData["SinhVien"] == "SinhVien-DangKyLHP" ? "active" : "")" asp-action="DangKyLopHocPhan" asp-controller="SinhVien">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-registered"></i></div>
+                Đăng ký LHP
             </a>
 
             <div class="sb-sidenav-menu-heading border-top border-secondary">Đăng nhập</div>
