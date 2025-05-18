@@ -146,9 +146,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
         [Authorize(Roles = "SinhVien")]
         public IActionResult SinhVienSetting()
         {
-            string MaSV = "22010222101";
-
-            var sv = _sinhVienRepos.GetSinhVienById(MaSV);
+            var sv = _sinhVienRepos.GetSinhVienById(User.Identity.Name);
 
             if (sv == null)
             {
@@ -161,9 +159,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
         public IActionResult UpdateTaiKhoanSinhVien()
         {
             {
-                string MaSV = "22010222101";
-
-                var sv = _sinhVienRepos.GetSinhVienById(MaSV);
+                var sv = _sinhVienRepos.GetSinhVienById(User.Identity.Name);
 
                 if (sv == null)
                 {
@@ -198,8 +194,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
         [HttpPost]
         public IActionResult UploadAvatarTaiKhoanSinhVien(IFormFile Anh)
         {
-            string MaSV = "22010222101"; // hoặc lấy từ Identity.Name
-            var sv = _sinhVienRepos.GetSinhVienById(MaSV);
+            var sv = _sinhVienRepos.GetSinhVienById(User.Identity.Name);
             if (sv == null) return RedirectToAction("Error401", "Error");
 
             if (HandleAvatarUpload(
