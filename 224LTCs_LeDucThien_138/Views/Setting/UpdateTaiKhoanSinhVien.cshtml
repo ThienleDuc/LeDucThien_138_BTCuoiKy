@@ -1,4 +1,4 @@
-﻿@model _224LTCs_LeDucThien_138.Models.TaiKhoanAdmin;
+﻿@model _224LTCs_LeDucThien_138.Models.SinhVien;
 @{
     ViewData["Title"] = "Admin - Cập nhật";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -8,19 +8,22 @@
     <h1 class="mt-4 text-uppercase">Thông tin chung</h1>
     <ol class="breadcrumb mb-4">
         <li class="breadcrumb-item active">
-            <a asp-action="AdminSetting" asp-controller="Setting" class="btn-link link-secondary text-decoration-none">Thông tin tài khoản</a>
+            <a asp-action="SinhVienSetting" asp-controller="Setting" class="btn-link link-secondary text-decoration-none">Thông tin tài khoản</a>
         </li>
         <li class="breadcrumb-item active">Cập nhật thông tin</li>
     </ol>
-     <!-- Card Thông Tin -->
+    <!-- Card Thông Tin -->
     <div class="card shadow rounded-4">
         <div class="card-body p-4">
-            <form method="post" asp-area="" asp-action="UpdateTaiKhoanAdmin" asp-controller="Setting">
+            <form method="post" asp-action="SuaSinhVien" asp-controller="Setting">
                 <div class="row">
+                    <input type="hidden" name="MaSV" value="@Model.MaSV" />
+                    <input type="hidden" name="MaLSH" value="@Model.MaLSH" />
+
                     <div class="col-md-6">
                         <div class="mb-3">
                             <label for="hoTen" class="form-label">Họ và Tên</label>
-                            <input type="text" class="form-control" id="hoTen" name="HoTen" value="@Model.HoTen" required />
+                            <input type="text" class="form-control" id="hoTen" name="TenSV" placeholder="Nhập họ và tên" value="@Model.TenSV" required />
                         </div>
 
                         <div class="mb-3">
@@ -37,7 +40,7 @@
 
                         <div class="mb-3">
                             <label for="ngaySinh" class="form-label">Ngày Sinh</label>
-                            <input type="date" class="form-control" id="NgaySinh" name="NgaySinh" value="@Model.NgaySinh?.ToString("yyyy-MM-dd")" required>
+                            <input type="date" class="form-control" id="ngaySinh" name="NgaySinh" value="@Model.NgaySinh?.ToString("yyyy-MM-dd")" required>
                         </div>
                     </div>
 
@@ -45,18 +48,24 @@
                         <div class="row mb-3">
                             <div class="col-md-6">
                                 <label for="sdt" class="form-label">Số Điện Thoại</label>
-                                <input type="tel" pattern="[0-9]{10}" inputmode="numeric"  class="form-control" id="sdt" maxlength="10" name="Sdt" value="@Model.Sdt" />
+                                <input type="tel" pattern="[0-9]{10}" inputmode="numeric" maxlength="10" class="form-control" id="sdt" name="Sdt" placeholder="Nhập số điện thoại" value="@Model.Sdt" />
                             </div>
                             <div class="col-md-6">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" name="Email" value="@Model.Email" required />
+                                <input type="email" class="form-control" id="email" name="Email" placeholder="Nhập email" value="@Model.Email" required />
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label for="cccd" class="form-label">Căn cước</label>
+                                <input type="text" inputmode="numeric" class="form-control" id="cccd" name="Cccd" placeholder="Nhập số căn cước" value="@Model.Cccd" />
                             </div>
                         </div>
 
                         <div class="mb-3 flex-grow-1">
                             <div class="d-flex flex-column h-100">
                                 <label for="diaChi" class="form-label">Địa Chỉ</label>
-                                <textarea class="form-control flex-grow-1" style="resize: none;" id="diaChi" name="DiaChi">@Model.DiaChi</textarea>
+                                <textarea class="form-control flex-grow-1" style="resize: none;" id="diaChi" name="DiaChi" placeholder="Nhập địa chỉ">@Model.DiaChi</textarea>
                             </div>
                         </div>
                     </div>
@@ -66,7 +75,7 @@
                             <div class="col-md-6">
                                 <label for="password" class="form-label">Mật khẩu</label>
                                 <div class="input-group border rounded">
-                                    <input type="password" id="password" name="MatKhau" class="form-control border-0" value="@Model.MatKhau" placeholder="Nhập mật khẩu" required />
+                                    <input type="password" id="password" name="MatKhau" class="form-control border-0" placeholder="Nhập mật khẩu" value="@Model.MatKhau" required />
                                     <span class="input-group-text" style="cursor: pointer;" id="togglePassword">
                                         <i class="fa-solid fa-eye" id="eyeIcon"></i>
                                     </span>
@@ -74,7 +83,7 @@
                             </div>
                             <div class="col-md-6 align-content-end">
                                 <div class="d-grid">
-                                    <button type="submit" class="btn btn-primary fw-bold">Cập Nhật</button>
+                                    <button type="submit" class="btn btn-primary fw-bold font-monospace">Cập nhật</button>
                                 </div>
                             </div>
                         </div>

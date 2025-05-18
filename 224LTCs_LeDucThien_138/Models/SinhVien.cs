@@ -353,5 +353,22 @@ namespace _224LTCs_LeDucThien_138.Models
             }
         }
 
+        public bool UpdateAvatarSinhVien(SinhVien sinhVien)
+        {
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                SqlCommand cmd = new SqlCommand("UpdateAvatarSinhVien", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@MaSV", sinhVien.MaSV ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@Anh", sinhVien.Anh ?? (object)DBNull.Value);
+
+                conn.Open();
+                int result = cmd.ExecuteNonQuery();
+                return result > 0;
+            }
+        }
+
+
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xmIGqu7Z2Q/zZ09IPqY7xTYqP2uah/YDnt4eTXUB1dg=",
+  "Hash": "4diwMGLbo9+lRkitEnnMHhQbUKJNDH9A9KBYTqoIdWI=",
   "Source": "224LTCs_LeDucThien_138",
   "BasePath": "_content/224LTCs_LeDucThien_138",
   "Mode": "Default",
@@ -225,6 +225,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\origin\\logo-truong-250.png"
+    },
+    {
+      "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\user\\1b663ce7-637e-4459-af7b-7f8d0a8f3138.jpg",
+      "SourceId": "224LTCs_LeDucThien_138",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\",
+      "BasePath": "_content/224LTCs_LeDucThien_138",
+      "RelativePath": "assets/img/user/1b663ce7-637e-4459-af7b-7f8d0a8f3138#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "56lf5zd8mq",
+      "Integrity": "7XnztGEnkNIPc/LhfLCxtvPe7xustMRPE8fS/FFXQ2g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\user\\1b663ce7-637e-4459-af7b-7f8d0a8f3138.jpg"
     },
     {
       "Identity": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\user\\anh-avatar-cute-49.jpg",
@@ -2578,6 +2599,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-wkImCvT8NWbg9DFAQoGfm8VHvz5/5gV4J8luYDgQVEA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/user/1b663ce7-637e-4459-af7b-7f8d0a8f3138.56lf5zd8mq.jpg",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\user\\1b663ce7-637e-4459-af7b-7f8d0a8f3138.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "675819"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7XnztGEnkNIPc/LhfLCxtvPe7xustMRPE8fS/FFXQ2g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 08:24:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "56lf5zd8mq"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/user/1b663ce7-637e-4459-af7b-7f8d0a8f3138.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7XnztGEnkNIPc/LhfLCxtvPe7xustMRPE8fS/FFXQ2g="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/user/1b663ce7-637e-4459-af7b-7f8d0a8f3138.jpg",
+      "AssetFile": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\user\\1b663ce7-637e-4459-af7b-7f8d0a8f3138.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "675819"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7XnztGEnkNIPc/LhfLCxtvPe7xustMRPE8fS/FFXQ2g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 08:24:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7XnztGEnkNIPc/LhfLCxtvPe7xustMRPE8fS/FFXQ2g="
         }
       ]
     },
