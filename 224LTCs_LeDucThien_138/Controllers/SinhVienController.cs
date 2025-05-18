@@ -183,11 +183,10 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return View(sv);
         }
 
+        [Authorize(Roles = "SinhVien")]
         public IActionResult DangKyLophocPhan()
         {
-            string maSV = "22010222101";
-
-            var sv = _sinhVienRepos.GetSinhVienById(maSV);
+            var sv = _sinhVienRepos.GetSinhVienById(User.Identity.Name);
 
             if (sv == null)
             {
@@ -201,6 +200,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return View(sv);
         }
 
+        [Authorize(Roles = "SinhVien")]
         [HttpPost]
         public IActionResult XacNhanDangKy(List<string> MaLHPs)
         {
@@ -230,10 +230,11 @@ namespace _224LTCs_LeDucThien_138.Controllers
             });
         }
 
+        [Authorize(Roles = "SinhVien")]
         [HttpPost]
         public IActionResult DangKyLopHocPhan(List<string> MaLHPs)
         {
-            string MaSV = "22010222101";
+            string MaSV = User.Identity.Name;
             var errors = new List<string>();
             bool tatCaThanhCong = true;
 
@@ -258,9 +259,10 @@ namespace _224LTCs_LeDucThien_138.Controllers
             }
         }
 
+        [Authorize(Roles = "SinhVien")]
         public IActionResult ThongBaoSauDangKy()
         {
-            string maSV = "22010222101";
+            string maSV = User.Identity.Name;
 
             var sv = _sinhVienRepos.GetSinhVienById(maSV);
 
@@ -288,10 +290,11 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return View(sv);
         }
 
+        [Authorize(Roles = "SinhVien")]
         [HttpPost]
         public IActionResult HuyDangKyLopHocPhan(List<string> MaLHPs)
         {
-            string MaSV = "22010222101";
+            string MaSV = User.Identity.Name;
 
             if (string.IsNullOrEmpty(MaSV) || MaLHPs == null || MaLHPs.Count == 0)
             {
