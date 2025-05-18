@@ -64,13 +64,13 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return View(sv);
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(AuthenticationSchemes = "AdminScheme", Roles = "Admin")]
         public IActionResult ThemSinhVien()
         {
             return View();
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(AuthenticationSchemes = "AdminScheme", Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult ThemSinhVien(SinhVien sinhVien, string? maNK, int? maKhoa, int? maNganh, string? maLSH)
@@ -97,7 +97,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return RedirectToAction("Index", "SinhVien");
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(AuthenticationSchemes = "AdminScheme", Roles = "Admin")]
         [HttpGet]
         public IActionResult SuaSinhVien(string maSV)
         {
@@ -110,7 +110,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return View(sv);
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(AuthenticationSchemes = "AdminScheme", Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult SuaSinhVien(SinhVien sinhVien)
@@ -131,7 +131,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return RedirectToAction("Index", "SinhVien");
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(AuthenticationSchemes = "AdminScheme", Roles = "Admin")]
         public IActionResult XoaSinhVien(string maSV)
         {
             bool isDeleted = _sinhVienRepos.DeleteSinhVien(maSV);
@@ -168,7 +168,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return View(sv);
         }
 
-        [Authorize(Roles = "SinhVien")]
+        [Authorize(AuthenticationSchemes ="SinhVienScheme", Roles = "SinhVien")]
         public IActionResult XemThoiKhoaBieu()
         {
             var sv = _sinhVienRepos.GetSinhVienById(User.Identity.Name);
@@ -182,7 +182,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return View(sv);
         }
 
-        [Authorize(Roles = "SinhVien")]
+        [Authorize(AuthenticationSchemes ="SinhVienScheme", Roles = "SinhVien")]
         public IActionResult DangKyLophocPhan()
         {
             var sv = _sinhVienRepos.GetSinhVienById(User.Identity.Name);
@@ -199,7 +199,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return View(sv);
         }
 
-        [Authorize(Roles = "SinhVien")]
+        [Authorize(AuthenticationSchemes ="SinhVienScheme", Roles = "SinhVien")]
         [HttpPost]
         public IActionResult XacNhanDangKy(List<string> MaLHPs)
         {
@@ -229,7 +229,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             });
         }
 
-        [Authorize(Roles = "SinhVien")]
+        [Authorize(AuthenticationSchemes ="SinhVienScheme", Roles = "SinhVien")]
         [HttpPost]
         public IActionResult DangKyLopHocPhan(List<string> MaLHPs)
         {
@@ -258,7 +258,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             }
         }
 
-        [Authorize(Roles = "SinhVien")]
+        [Authorize(AuthenticationSchemes ="SinhVienScheme", Roles = "SinhVien")]
         public IActionResult ThongBaoSauDangKy()
         {
             string maSV = User.Identity.Name;
@@ -289,7 +289,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return View(sv);
         }
 
-        [Authorize(Roles = "SinhVien")]
+        [Authorize(AuthenticationSchemes ="SinhVienScheme", Roles = "SinhVien")]
         [HttpPost]
         public IActionResult HuyDangKyLopHocPhan(List<string> MaLHPs)
         {

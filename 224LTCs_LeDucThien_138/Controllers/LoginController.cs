@@ -3,6 +3,7 @@ using _224LTCs_LeDucThien_138.Models;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
+
 namespace _224LTCs_LeDucThien_138.Controllers
 {
     public class LoginController : Controller
@@ -20,21 +21,22 @@ namespace _224LTCs_LeDucThien_138.Controllers
             _sinhVienRepos = new SinhVienRepos(_connectionDatabase);
         }
 
+        [AllowAnonymous]
+        [HttpGet]
         public IActionResult Admin()
         {
             return View();
         }
 
-        // Xử lý đăng nhập
+        // Xử lý đăng nhập Admin
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Admin(string username, string password, bool rememberMe)
         {
-            // Kiểm tra đăng nhập
             var admin = _taiKhoanAdminRepos.GetTaiKhoanAdmin(username, password);
 
             if (admin == null)
             {
-                // Đăng nhập thất bại
                 ViewBag.ErrorMessage = "Tài khoản hoặc mật khẩu không đúng!";
                 return View();
             }
@@ -53,14 +55,14 @@ namespace _224LTCs_LeDucThien_138.Controllers
                 ExpiresUtc = DateTimeOffset.UtcNow.AddDays(30)
             };
 
-            await HttpContext.SignInAsync("AdminScheme", 
+            await HttpContext.SignInAsync("AdminScheme",
                 new ClaimsPrincipal(claimsIdentity),
                 authProperties);
 
             return RedirectToAction("Index", "Home");
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(AuthenticationSchemes = "AdminScheme", Roles = "Admin")]
         [HttpPost]
         public async Task<IActionResult> AdminLogout()
         {
@@ -68,25 +70,29 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        [AllowAnonymous]
+        [HttpGet]
         public IActionResult GiangVien()
         {
             return View();
         }
 
+        [AllowAnonymous]
+        [HttpGet]
         public IActionResult SinhVien()
         {
             return View();
         }
 
+        // Xử lý đăng nhập SinhVien
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> SinhVien(string username, string password, bool rememberMe)
         {
-            // Kiểm tra đăng nhập
             var sv = _sinhVienRepos.GetTaiKhoanSinhVien(username, password);
 
             if (sv == null)
             {
-                // Đăng nhập thất bại
                 ViewBag.ErrorMessage = "Tài khoản hoặc mật khẩu không đúng!";
                 return View();
             }
@@ -112,8 +118,8 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return RedirectToAction("XemThoiKhoaBieu", "SinhVien");
         }
 
-        // Phương thức Logout cho Admin
-        [Authorize(Roles = "SinhVien")]
+        // Phương thức Logout cho SinhVien
+        [Authorize(AuthenticationSchemes = "SinhVienScheme", Roles = "SinhVien")]
         [HttpPost]
         public async Task<IActionResult> SinhVienLogout()
         {

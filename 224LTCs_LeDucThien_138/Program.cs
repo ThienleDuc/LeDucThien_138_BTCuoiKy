@@ -1,4 +1,4 @@
-using _224LTCs_LeDucThien_138.Models;
+﻿using _224LTCs_LeDucThien_138.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,21 +26,46 @@ builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
 builder.Services.AddScoped<TaiKhoanAdminRepos>();
 
-builder.Services.AddAuthentication("AdminScheme")
-    .AddCookie("AdminScheme", o =>
+builder.Services.AddAuthentication(options =>
+{
+    // Dùng policy scheme làm mặc định
+    options.DefaultScheme = "DualScheme";
+    options.DefaultChallengeScheme = "DualScheme";
+    options.DefaultSignInScheme = "DualScheme";
+})
+// Policy scheme này “chuyển tiếp” sang AdminScheme hoặc SinhVienScheme
+.AddPolicyScheme("DualScheme", "Dynamic scheme", options =>
+{
+    options.ForwardDefaultSelector = context =>
     {
-        o.LoginPath = "/Login/Admin";
-        o.Cookie.Name = "AdminAuthCookie";
-        o.ExpireTimeSpan = TimeSpan.FromDays(30);
-    });
-
-builder.Services.AddAuthentication("SinhVienScheme")
-    .AddCookie("SinhVienScheme", o =>
-    {
-        o.LoginPath = "/Login/SinhVien";
-        o.Cookie.Name = "SinhVienAuthCookie";
-        o.ExpireTimeSpan = TimeSpan.FromDays(30);
-    });
+        // Nếu request có cookie AdminAuthCookie, chọn AdminScheme
+        if (context.Request.Cookies.ContainsKey("AdminAuthCookie"))
+            return "AdminScheme";
+        // Nếu request có cookie SinhVienAuthCookie, chọn SinhVienScheme
+        if (context.Request.Cookies.ContainsKey("SinhVienAuthCookie"))
+            return "SinhVienScheme";
+        // Ngược lại, dùng scheme theo challenge (login)
+        var path = context.Request.Path;
+        if (path.StartsWithSegments("/Login/Admin", StringComparison.OrdinalIgnoreCase))
+            return "AdminScheme";
+        if (path.StartsWithSegments("/Login/SinhVien", StringComparison.OrdinalIgnoreCase))
+            return "SinhVienScheme";
+        // Mặc định rẽ về SinhVienScheme (hoặc AdminScheme tuỳ bạn)
+        return "AdminScheme";
+    };
+})
+.AddCookie("AdminScheme", o =>
+{
+    o.LoginPath = "/Login/Admin";
+    o.Cookie.Name = "AdminAuthCookie";
+    o.ExpireTimeSpan = TimeSpan.FromDays(30);
+})
+.AddCookie("SinhVienScheme", o =>
+{
+    o.LoginPath = "/Login/SinhVien";
+    o.Cookie.Name = "SinhVienAuthCookie";
+    o.ExpireTimeSpan = TimeSpan.FromDays(30);
+});
 
 var app = builder.Build();
 

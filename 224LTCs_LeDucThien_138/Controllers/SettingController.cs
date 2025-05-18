@@ -17,7 +17,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             _sinhVienRepos = new SinhVienRepos(_connectionDatabase);
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(AuthenticationSchemes = "AdminScheme", Roles = "Admin")]
         public IActionResult AdminSetting()
         {
             string MaTaiKhoan = User.Identity.Name;
@@ -30,7 +30,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return View(admin);
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(AuthenticationSchemes = "AdminScheme", Roles = "Admin")]
         public IActionResult UpdateTaiKhoanAdmin()
         {
             string MaTaiKhoan = User.Identity.Name;
@@ -44,7 +44,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return View(admin);
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(AuthenticationSchemes = "AdminScheme", Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult UpdateTaiKhoanAdmin(TaiKhoanAdmin taiKhoanAdmin)
@@ -117,7 +117,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return true;
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(AuthenticationSchemes = "AdminScheme", Roles = "Admin")]
         [HttpPost]
         public IActionResult UploadAvatarTaiKhoanAdmin(IFormFile Anh)
         {
@@ -143,7 +143,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return RedirectToAction("AdminSetting", "Setting");
         }
 
-        [Authorize(Roles = "SinhVien")]
+        [Authorize(AuthenticationSchemes ="SinhVienScheme", Roles = "SinhVien")]
         public IActionResult SinhVienSetting()
         {
             var sv = _sinhVienRepos.GetSinhVienById(User.Identity.Name);
@@ -155,7 +155,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return View(sv);
         }
 
-        [Authorize(Roles = "SinhVien")]
+        [Authorize(AuthenticationSchemes ="SinhVienScheme", Roles = "SinhVien")]
         public IActionResult UpdateTaiKhoanSinhVien()
         {
             {
@@ -169,7 +169,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             }
         }
 
-        [Authorize(Roles = "SinhVien")]
+        [Authorize(AuthenticationSchemes ="SinhVienScheme", Roles = "SinhVien")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult SuaSinhVien(SinhVien sinhVien)
@@ -190,7 +190,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return RedirectToAction("Index", "SinhVien");
         }
 
-        [Authorize(Roles = "SinhVien")]
+        [Authorize(AuthenticationSchemes ="SinhVienScheme", Roles = "SinhVien")]
         [HttpPost]
         public IActionResult UploadAvatarTaiKhoanSinhVien(IFormFile Anh)
         {
