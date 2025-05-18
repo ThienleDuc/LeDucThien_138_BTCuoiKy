@@ -1,0 +1,106 @@
+﻿@model _224LTCs_LeDucThien_138.Models.TaiKhoanAdmin;
+@{
+    ViewData["Title"] = "Admin - Setting";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container px-4">
+    <h1 class="mt-4 text-uppercase">Thông tin chung</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item active">Thông tin tài khoản</li>
+    </ol>
+    <div class="row mb-4">
+        <!-- Card Ảnh Đại Diện -->
+        <div class="col-md-3">
+            <div class="card shadow rounded-4 text-center mb-2">
+                <div class="card-body p-4">
+                    <form method="post" asp-action="UploadAvatar" asp-controller="Setting" enctype="multipart/form-data">
+                        <!-- Ảnh đại diện hiển thị mặc định -->
+                        <img id="anhDaiDien"
+                             src="@Url.Content(string.IsNullOrEmpty(Model.Anh) ? "~/assets/img/origin/avatar-default.svg" : "~/assets/img/user/" + Model.Anh)"
+                             alt="Ảnh Đại Diện" class="rounded-circle mb-3" width="120" height="120">
+
+                        <!-- Input file ẩn -->
+                        <input type="file" id="uploadAnh" name="Anh" accept="image/*" hidden />
+
+                        <p class="text-muted small mb-2">
+                            <strong class="text-danger">*Lưu ý:</strong> jpg/jpeg/png &lt;2MB
+                        </p>                        
+                        
+                        <div class="d-flex align-items-center justify-content-center">
+                            <!-- Nút chọn ảnh -->
+                            <div class="px-1 d-grid">
+                                <button type="button" class="btn btn-primary btn-sm fw-bold font-monospace" onclick="document.getElementById('uploadAnh').click();">
+                                    Chọn ảnh
+                                </button>
+                            </div>
+
+                            <!-- Nút tải ảnh lên (ẩn ban đầu) -->
+                            <div class="px-1 d-grid d-none" id="div-btnUploadAvatar">
+                                <button type="submit" id="btnUploadAvatar" class="btn btn-success btn-sm fw-bold font-monospace">
+                                    Đăng tải
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Hiển thị thông báo từ TempData -->
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    @TempData["SuccessMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Đóng"></button>
+                </div>
+            }
+
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    @TempData["ErrorMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Đóng"></button>
+                </div>
+            }
+        </div>
+
+        <!-- Card Thông Tin -->
+        <div class="col-md-6">
+            <div class="card shadow rounded-4">
+                <div class="card-body p-4">
+                    <div class="row mb-3 align-items-center">
+                        <label for="hoTen" class="col-3 form-label mb-0 text-muted fw-bold text-black">Họ và Tên</label>
+                        <p class="col form-control-plaintext mb-0 font-monospace">@Model.HoTen</p> <!-- Chỉ hiển thị thông tin -->
+                    </div>
+                    <div class="row mb-3 align-items-center">
+                        <label class="col-3 form-label mb-0 text-muted fw-bold text-black">Giới Tính</label>
+                        <p class="col form-control-plaintext mb-0 font-monospace">@((Model.GioiTinh ? "Nam" : "Nữ"))</p> <!-- Hiển thị Giới tính -->
+                    </div>
+                    <div class="row mb-3 align-items-center">
+                        <label class="col-3 form-label mb-0 text-muted fw-bold text-black">Ngày Sinh</label>
+                        <p class="col form-control-plaintext mb-0 font-monospace">@Model.NgaySinh?.ToString("dd/MM/yyyy")</p> <!-- Chỉ hiển thị thông tin -->
+                    </div>
+                    <div class="row mb-3 align-items-center">
+                        <label for="diaChi" class="col-3 form-label mb-0 text-muted fw-bold">Địa Chỉ</label>
+                        <p class="col form-control-plaintext mb-0 font-monospace">@Model.DiaChi</p> <!-- Chỉ hiển thị thông tin -->
+                    </div>
+                    <div class="row mb-3 align-items-center">
+                        <label for="sdt" class="col-3 form-label mb-0 text-muted fw-bold">Số Điện Thoại</label>
+                        <p class="col form-control-plaintext mb-0 font-monospace">@Model.Sdt</p> <!-- Chỉ hiển thị thông tin -->
+                    </div>
+                    <div class="row mb-3 align-items-center">
+                        <label for="email" class="col-3 form-label mb-0 text-muted fw-bold">Email</label>
+                        <p class="col form-control-plaintext mb-0 font-monospace">@Model.Email</p> <!-- Chỉ hiển thị thông tin -->
+                    </div>
+                    <div class="d-grid">
+                        <a asp-action="UpdateTaiKhoanAdmin" asp-controller="Setting" class="btn-link text-decoration-none">
+                            Thay đổi
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/js/LoadAvatar.js"></script>
+<script src="~/js/TogglePassword.js"></script>

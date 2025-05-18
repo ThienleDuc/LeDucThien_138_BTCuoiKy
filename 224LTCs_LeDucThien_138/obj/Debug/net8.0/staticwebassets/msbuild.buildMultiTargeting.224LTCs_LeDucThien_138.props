@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\224LTCs_LeDucThien_138.props" />
+</Project>

@@ -1,0 +1,44 @@
+﻿﻿<!-- Modal bộ lọc -->
+<div class="modal fade" id="filterModalSinhVien" tabindex="-1" aria-labelledby="filterModalSinhVienLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="filterModalSinhVienLabel">Bộ lọc sinh viên</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+            </div>
+            <form method="get" asp-action="TimKiem" asp-controller="SinhVien">
+                <div class="modal-body">
+                    <input type="hidden" name="TuKhoa" value="@Context.Request.Query["TuKhoa"].ToString()" />
+                    <div class="mb-3">
+                        <label for="chooseKhoa" class="form-label">Khoa</label>
+                        <select id="chooseKhoa" class="form-select" name="maKhoa">
+                            <option selected disabled>Chọn khoa</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="chooseCN" class="form-label">Chuyên ngành</label>
+                        <select id="chooseCN" class="form-select" name="maNganh">
+                            <option selected disabled>Chọn chuyên ngành</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="chooseNK" class="form-label">Niên khóa</label>
+                        <select id="chooseNK" class="form-select" name="maNK">
+                            <option selected disabled>Chọn niên khóa</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="chooseLSH" class="form-label">Lớp sinh hoạt</label>
+                        <select id="chooseLSH" class="form-select" name="maLSH">
+                            <option selected disabled>Chọn lớp sinh hoạt</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="submit" class="btn btn-primary">Áp dụng</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

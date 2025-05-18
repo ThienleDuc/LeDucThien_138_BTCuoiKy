@@ -1,0 +1,56 @@
+﻿<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+    <div class="container-fluid">
+        <div class="row w-100">
+            <!-- Sidebar Toggle chiếm 2 phần -->
+            <div class="col-2 d-flex align-items-center">
+                <button class="btn btn-link btn-sm order-1 order-lg-0 me-4" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            </div>
+
+            <!-- Navbar Brand chiếm 6 phần -->
+            <div class="col-6 d-flex align-items-center">
+                <a class="navbar-brand d-flex align-items-center" asp-area="" asp-action="Index" asp-controller="Home" id="navbarBrand">
+                    <img src="@Url.Content("~/assets/img/origin/logo-truong-250.png")" alt="Logo" style="height: 42px; object-fit: contain;">
+                    <div class="ps-2" style="font-size: 0.9rem;">
+                        <div class="text-primary fw-bold">Đại Học Đà Nẵng</div>
+                        <div class="fw-bold" style="font-size: 0.8rem;">Trường Đại Học Sư Phạm Kỹ Thuật</div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Navbar Search và Navbar chiếm 6 phần -->
+            <div class="col-4 d-flex justify-content-end align-items-center">
+                <!-- Navbar Search -->
+                <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0 flex-grow-1">
+                    <div class="input-group" title="Theo tên LHP hoặc Môn học">
+                        <input class="form-control" type="text" placeholder="Tìm kiếm lớp học phần..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                        <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+
+                <!-- Navbar -->
+                <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                @if (User.IsInRole("Admin"))
+                                {
+                                    <li><a class="dropdown-item" asp-area="" asp-action="AdminSetting" asp-controller="Setting"><i class="fa-solid fa-gear"></i><span class="ps-1">Cài đặt</span></a></li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                }
+                                <form method="post" asp-action="Logout" asp-controller="Login">
+                                        <li><button type="submit" class="dropdown-item"><i class="fa-solid fa-right-from-bracket"></i><span class="ps-1">Logout</span></button></li>
+                                    </form>
+                            } else
+                            {
+                                <li class="dropdown-item-text">Chưa đăng nhập!</li>
+
+                            }
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
