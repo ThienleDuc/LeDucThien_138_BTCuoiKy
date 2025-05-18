@@ -1,11 +1,9 @@
-wwwroot\assets\demo\chart-area-demo.js
-wwwroot\assets\demo\chart-bar-demo.js
-wwwroot\assets\demo\chart-pie-demo.js
-wwwroot\assets\demo\datatables-demo.js
 wwwroot\assets\img\origin\401-error.png
 wwwroot\assets\img\origin\avatar-default.svg
 wwwroot\assets\img\origin\error-404-monochrome.svg
 wwwroot\assets\img\origin\logo-truong-250.png
+wwwroot\assets\img\user\1b663ce7-637e-4459-af7b-7f8d0a8f3138.jpg
+wwwroot\assets\img\user\69ac12ab-e056-47b3-b0f1-e27966d80ce0.jpg
 wwwroot\assets\img\user\anh-avatar-cute-49.jpg
 wwwroot\assets\img\user\anime-avatar-2.jpg
 wwwroot\assets\img\user\dc28d1ea-12d8-452d-9c5a-3618d080eb7b_anime-avatar-2.jpg

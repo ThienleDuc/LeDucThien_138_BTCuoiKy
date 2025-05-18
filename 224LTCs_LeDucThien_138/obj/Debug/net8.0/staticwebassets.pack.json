@@ -5,22 +5,6 @@
       "PackagePath": "staticwebassets\\224LTCs_LeDucThien_138.8gt8xmmslb.bundle.scp.css"
     },
     {
-      "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\demo\\chart-area-demo.js",
-      "PackagePath": "staticwebassets\\assets\\demo\\chart-area-demo.js"
-    },
-    {
-      "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\demo\\chart-bar-demo.js",
-      "PackagePath": "staticwebassets\\assets\\demo\\chart-bar-demo.js"
-    },
-    {
-      "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\demo\\chart-pie-demo.js",
-      "PackagePath": "staticwebassets\\assets\\demo\\chart-pie-demo.js"
-    },
-    {
-      "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\demo\\datatables-demo.js",
-      "PackagePath": "staticwebassets\\assets\\demo\\datatables-demo.js"
-    },
-    {
       "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\origin\\401-error.png",
       "PackagePath": "staticwebassets\\assets\\img\\origin\\401-error.png"
     },
@@ -35,6 +19,14 @@
     {
       "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\origin\\logo-truong-250.png",
       "PackagePath": "staticwebassets\\assets\\img\\origin\\logo-truong-250.png"
+    },
+    {
+      "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\user\\1b663ce7-637e-4459-af7b-7f8d0a8f3138.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\1b663ce7-637e-4459-af7b-7f8d0a8f3138.jpg"
+    },
+    {
+      "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\user\\69ac12ab-e056-47b3-b0f1-e27966d80ce0.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\69ac12ab-e056-47b3-b0f1-e27966d80ce0.jpg"
     },
     {
       "Id": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\wwwroot\\assets\\img\\user\\Hinh-anh-avatar-cute-chibi-nu-ngo-nghinh-1.jpg",

@@ -14,7 +14,8 @@
         <div class="col-md-3">
             <div class="card shadow rounded-4 text-center mb-2">
                 <div class="card-body p-4">
-                    <form method="post" asp-action="UploadAvatar" asp-controller="Setting" enctype="multipart/form-data">
+
+                    <form method="post" asp-action="UploadAvatarTaiKhoanAdmin" asp-controller="Setting" enctype="multipart/form-data">
                         <!-- Ảnh đại diện hiển thị mặc định -->
                         <img id="anhDaiDien"
                              src="@Url.Content(string.IsNullOrEmpty(Model.Anh) ? "~/assets/img/origin/avatar-default.svg" : "~/assets/img/user/" + Model.Anh)"

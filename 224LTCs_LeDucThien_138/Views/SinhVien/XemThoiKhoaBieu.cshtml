@@ -1,0 +1,100 @@
+﻿@model _224LTCs_LeDucThien_138.Models.SinhVien
+@{
+    ViewData["Title"] = "Sinh viên - Lịch Học";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["SinhVien"] = "SinhVien-LichHoc";
+}
+
+<div class="container px-4">
+    <h1 class="mt-4 text-uppercase">Sinh viên</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item active">Lịch học</li>
+    </ol>
+
+    <div class="mb-3">
+        <div class="card shadow">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-6 border-end border-2 border-secondary">
+                        <div class="mb-1">
+                            <strong class="text-muted pe-3">Mã Sinh Viên:</strong><span class="font-monospace">@Model.MaSV</span>
+                        </div>
+                        <div class="mb-1">
+                            <strong class="text-muted pe-3">Họ Và Tên:</strong><span class="font-monospace">@Model.TenSV</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <ul class="mb-0">
+                            <li>Tiết 1 bắt đầu từ 7h00 sáng, tiết 7 bắt đầu từ 13h00.</li>
+                            <li>Mỗi tiết học kéo dài 50 phút, nghỉ giải lao 10 phút.</li>
+                            <li>Các lớp có ghi chú H sẽ bị hủy nếu sĩ số đăng ký chưa đạt chuẩn tối thiểu.</li>
+                            <li>Các lớp có ghi chú G là lớp ghép.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @foreach (var hp in Model.DanhSachHocPhan)
+    {
+        var lichHocList = Model.LichHocTheoHocPhan.ContainsKey(hp.MaHP) ? Model.LichHocTheoHocPhan[hp.MaHP] : new List<CT_LHP_SV>();
+
+        <div class="mb-3">
+            <div class="card shadow">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <small>
+                            <strong class="text-danger">*Thông tin:</strong> Danh sách lớp học phần thuộc học kỳ @hp.TenHP.
+                        </small>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead class="table-secondary">
+                                <tr>
+                                    <th>Mã LHP</th>
+                                    <th>Tên môn học</th>
+                                    <th>Thứ</th>
+                                    <th>Từ tiết</th>
+                                    <th>Đến tiết</th>
+                                    <th>Giảng viên</th>
+                                    <th>Phòng</th>
+                                    <th>Ngày học</th>
+                                    <th>Ghi chú</th>
+                                    <th class="text-center">Xem</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                @for (int i = 0; i < lichHocList.Count; i++)
+                                {
+                                    var lh = lichHocList[i];
+                                    <tr class="data-row @(i >= 10 ? "d-none" : "")">
+                                        <td>@lh.MaLHP</td>
+                                        <td>@lh.TenMH</td>
+                                        <td class="text-center">@lh.ThuNgay</td>
+                                        <td class="text-center">@lh.TietBatDau</td>
+                                        <td class="text-center">@lh.TietKetThuc</td>
+                                        <td>@lh.TenCB</td>
+                                        <td class="text-center">@lh.TenPhong</td>
+                                        <td class="text-center">@lh.NgayHoc?.ToString("dd/MM/yyyy")</td>
+                                        <td class="@(string.IsNullOrEmpty(lh.LHP_GhiChu) ? "text-center" : "")">
+                                            @(!string.IsNullOrEmpty(lh.LHP_GhiChu) ? lh.LHP_GhiChu : "-")
+                                        </td>
+                                        <td class="text-center">
+                                            <a asp-action="XemChiTietLopHocPhan"
+                                               asp-controller="LopHocPhan"
+                                               asp-route-maLHP="@lh.MaLHP"
+                                               class="text-decoration-none text-black">
+                                                <i class="fa-regular fa-eye"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>
