@@ -168,11 +168,10 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return View(sv);
         }
 
+        [Authorize(Roles = "SinhVien")]
         public IActionResult XemThoiKhoaBieu()
         {
-            string maSV = "22010222101";
-
-            var sv = _sinhVienRepos.GetSinhVienById(maSV);
+            var sv = _sinhVienRepos.GetSinhVienById(User.Identity.Name);
 
             if (sv == null)
             {
