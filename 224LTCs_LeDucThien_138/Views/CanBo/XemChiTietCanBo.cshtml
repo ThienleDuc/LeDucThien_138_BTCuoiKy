@@ -20,7 +20,7 @@
             <div class="card shadow rounded-4 text-center mb-2">
                 <div class="card-body p-4">
                     <img src="@Url.Content(string.IsNullOrEmpty(Model.Anh) ? "~/assets/img/origin/avatar-default.svg" : "~/assets/img/user/" + Model.Anh)"
-                         alt="Ảnh Đại Diện" class="rounded-circle mb-3" width="120" height="120" />
+                    alt="Ảnh Đại Diện" class="rounded-circle mb-3" width="120" height="120" />
                     <p class="text-muted small">Mã cán bộ: <span class="fw-bold">@Model.MaCB</span></p>
                 </div>
             </div>
@@ -86,9 +86,15 @@
                         </div>
                     </div>
 
-                    <div class="d-grid mt-3">
-                        <a asp-action="SuaCanBo" asp-controller="CanBo" asp-route-maCB="@Model.MaCB" class="btn btn-outline-primary btn-sm">Chỉnh sửa</a>
-                    </div>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <div class="d-grid mt-3">
+                                <a asp-action="SuaCanBo" asp-controller="CanBo" asp-route-maCB="@Model.MaCB" class="btn btn-outline-primary btn-sm">Chỉnh sửa</a>
+                            </div>
+                        }
+                    }
                 </div>
             </div>
         </div>

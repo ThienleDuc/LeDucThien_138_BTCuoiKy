@@ -22,28 +22,7 @@
                 <div class="col-6">
                     <div class="d-flex justify-content-start align-items-center">
                         <select id="rowsPerPage" class="form-select w-auto">
-                            @if (Model.Count >= 50)
-                            {
-                                <option value="5">5</option>
-                                <option value="10" selected>10</option>
-                                <option value="25">25</option>
-                                <option value="50">50</option>
-                            }
-                            else if (Model.Count >= 25)
-                            {
-                                <option value="5">5</option>
-                                <option value="10" selected>10</option>
-                                <option value="25">25</option>
-                            }
-                            else if (Model.Count >= 10)
-                            {
-                                <option value="5">5</option>
-                                <option value="10" selected>10</option>
-                            }
-                            else
-                            {
-                                <option value="5" selected>5</option>
-                            }
+                            <partial name="~/Views/Shared/LuaChonPhanTrang.cshtml" model="Model"></partial>
                         </select>
                         <label for="rowsPerPage" class="ms-2 mb-0">Số lượng dòng trên bảng</label>
                     </div>
@@ -82,11 +61,17 @@
                         <i class="fa-solid fa-filter text-muted"></i> Lọc
                     </button>
                 </div>
-                <div class="col-6 d-flex justify-content-end">
-                    <a asp-action="ThemCanBo" asp-controller="CanBo" class="btn bg-success text-light fw-bold font-monospace">
-                        <i class="fa-solid fa-plus"></i> Thêm Mới
-                    </a>
-                </div>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <div class="col-6 d-flex justify-content-end">
+                            <a asp-action="ThemCanBo" asp-controller="CanBo" class="btn bg-success text-light fw-bold font-monospace">
+                                <i class="fa-solid fa-plus"></i> Thêm Mới
+                            </a>
+                        </div>
+                    }
+                }
             </div>
             <partial name="~/Views/CanBo/DanhSachCanBo.cshtml" model="Model"></partial>
         </div>

@@ -88,10 +88,16 @@
                         </div>
                     </div>
 
-                    <div class="d-grid mt-3">
-                        <a asp-action="SuaSinhVien" asp-controller="SinhVien" asp-route-maSV="@Model.MaSV"
-                           class="btn btn-outline-primary btn-sm">Chỉnh sửa</a>
-                    </div>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <div class="d-grid mt-3">
+                                <a asp-action="SuaSinhVien" asp-controller="SinhVien" asp-route-maSV="@Model.MaSV"
+                                   class="btn btn-outline-primary btn-sm">Chỉnh sửa</a>
+                            </div>
+                        }
+                    }
                 </div>
             </div>
         </div>

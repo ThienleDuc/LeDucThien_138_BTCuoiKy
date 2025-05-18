@@ -1,4 +1,7 @@
-﻿<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+﻿@{
+    var tuKhoa = Context.Request.Query["TuKhoa"].ToString();
+}
+<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
     <div class="container-fluid">
         <div class="row w-100">
             <!-- Sidebar Toggle chiếm 2 phần -->
@@ -20,10 +23,15 @@
             <!-- Navbar Search và Navbar chiếm 6 phần -->
             <div class="col-4 d-flex justify-content-end align-items-center">
                 <!-- Navbar Search -->
-                <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0 flex-grow-1">
-                    <div class="input-group" title="Theo tên LHP hoặc Môn học">
-                        <input class="form-control" type="text" placeholder="Tìm kiếm lớp học phần..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-                        <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                <form method="get" asp-action="TimKiem" asp-controller="LopHocPhan" class="flex-grow-1" onsubmit="return validateSearch()">
+                    <div class="d-flex justify-content-end">
+                        <div class="d-md-inline-block form-inline flex-grow-1">
+                            <div class="input-group">
+                                <input id="tuKhoaInput" class="form-control" type="text" placeholder="Tìm kiếm lớp học phần (Mã LHP, Tên Môn học, Phòng học, Giảng viên)" aria-label="Tìm kiếm..."
+                                       aria-describedby="btnNavbarSearch" name="TuKhoa" value="@tuKhoa" title="Tìm kiếm lớp học phần (Mã LHP, Tên Môn học, Phòng học, Giảng viên)" />
+                                <button class="btn btn-primary" id="btnNavbarSearch" type="submit"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
                     </div>
                 </form>
 

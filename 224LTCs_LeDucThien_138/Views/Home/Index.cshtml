@@ -22,24 +22,7 @@
                 <div class="col-6">
                     <div class="d-flex justify-content-start align-items-center">
                         <select id="rowsPerPage" class="form-select w-auto">
-                            @if (Model.Count >= 50)
-                            {
-                                <option value="5">5</option>
-                                <option value="10" selected>10</option>
-                                <option value="25">25</option>
-                                <option value="50">50</option>
-                            } else if (Model.Count >= 25)
-                            {
-                                <option value="5">5</option>
-                                <option value="10" selected>10</option>
-                                <option value="25">25</option>
-                            } else if (Model.Count >= 10){
-                                <option value="5">5</option>
-                                <option value="10" selected>10</option>
-                            } else
-                            {
-                                <option value="5" selected>5</option>
-                            }
+                            <partial name="~/Views/Shared/LuaChonPhanTrang.cshtml" model="Model"></partial>
                         </select>
                         <label for="rowsPerPage" class="ms-2 mb-0">Số lượng dòng trên bảng</label>
                     </div>
@@ -71,12 +54,18 @@
                     </div>
                 </div>
             </div>
-            <div class="mb-3 d-flex justify-content-start">
-                <a href="#" class="btn bg-success text-light fw-bold font-monospace"
-                   data-bs-toggle="modal" data-bs-target="#addPhongModal">
-                    <i class="fa-solid fa-plus"></i> Thêm Mới
-                </a>
-            </div>
+            @if (User.Identity.IsAuthenticated)
+            {
+                @if (User.IsInRole("Admin"))
+                {
+                    <div class="mb-3 d-flex justify-content-start">
+                        <a href="#" class="btn bg-success text-light fw-bold font-monospace"
+                           data-bs-toggle="modal" data-bs-target="#addPhongModal">
+                            <i class="fa-solid fa-plus"></i> Thêm Mới
+                        </a>
+                    </div>
+                }
+            }
             <partial name="~/Views/Home/DanhSachPhonghoc.cshtml" model="Model"></partial>
         </div>
     </div>
