@@ -73,7 +73,6 @@
             <div class="collapse" id="collapseLogin" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                 <nav class="sb-sidenav-menu-nested nav">
                     <a class="nav-link" asp-action="Admin" asp-controller="Login">Admin</a>
-                    <a class="nav-link" asp-action="CanBo" asp-controller="Login">Cán Bộ - Giảng Viên</a>
                     <a class="nav-link" asp-action="SinhVien" asp-controller="Login">Sinh viên</a>
                 </nav>
             </div>
@@ -86,6 +85,10 @@
             {
                 <div class="small">Đăng nhập từ: <span class="ps-1 fw-bold">@User.FindFirst(ClaimTypes.Role)?.Value</span></div>
                 <div class="small fw-bold">@User.FindFirst("HoTen")?.Value</div>
+            } else if (User.IsInRole("SinhVien"))
+            {
+                <div class="small">Đăng nhập từ: <span class="ps-1 fw-bold">@User.FindFirst(ClaimTypes.Role)?.Value</span></div>
+                <div class="small fw-bold">@User.FindFirst("TenSV")?.Value</div>
             }
         }
         else

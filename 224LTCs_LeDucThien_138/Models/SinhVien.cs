@@ -369,6 +369,42 @@ namespace _224LTCs_LeDucThien_138.Models
             }
         }
 
+        public SinhVien GetTaiKhoanSinhVien(string maSV, string matKhau)
+        {
+            SinhVien sv = null;
+            using (SqlConnection conn = _connectionDatabase.GetConnection())
+            {
+                string query = @"SELECT MaSV, MaLSH, TenSV, GioiTinh, NgaySinh, Cccd, DiaChi, Sdt, Email, MatKhau, Anh
+                         FROM SinhVien
+                         WHERE MaSV = @MaSV AND MatKhau = @MatKhau;";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@MaSV", maSV);
+                cmd.Parameters.AddWithValue("@MatKhau", matKhau);
+                conn.Open();
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        sv = new SinhVien
+                        {
+                            MaSV = reader.GetString(reader.GetOrdinal("MaSV")),
+                            MaLSH = reader.IsDBNull(reader.GetOrdinal("MaLSH")) ? null : reader.GetString(reader.GetOrdinal("MaLSH")),
+                            TenSV = reader.GetString(reader.GetOrdinal("TenSV")),
+                            GioiTinh = reader["GioiTinh"] != DBNull.Value && Convert.ToBoolean(reader["GioiTinh"]),
+                            NgaySinh = reader["NgaySinh"] != DBNull.Value ? (DateTime?)reader.GetDateTime(reader.GetOrdinal("NgaySinh")) : null,
+                            Cccd = reader.IsDBNull(reader.GetOrdinal("Cccd")) ? null : reader.GetString(reader.GetOrdinal("Cccd")),
+                            DiaChi = reader.IsDBNull(reader.GetOrdinal("DiaChi")) ? null : reader.GetString(reader.GetOrdinal("DiaChi")),
+                            Sdt = reader.IsDBNull(reader.GetOrdinal("Sdt")) ? null : reader.GetString(reader.GetOrdinal("Sdt")),
+                            Email = reader.IsDBNull(reader.GetOrdinal("Email")) ? null : reader.GetString(reader.GetOrdinal("Email")),
+                            MatKhau = reader.GetString(reader.GetOrdinal("MatKhau")),
+                            Anh = reader.IsDBNull(reader.GetOrdinal("Anh")) ? null : reader.GetString(reader.GetOrdinal("Anh"))
+                        };
+                    }
+                }
+            }
+            return sv;
+        }
 
     }
 }

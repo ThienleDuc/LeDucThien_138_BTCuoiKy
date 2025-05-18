@@ -34,6 +34,14 @@ builder.Services.AddAuthentication("AdminScheme")
         o.ExpireTimeSpan = TimeSpan.FromDays(30);
     });
 
+builder.Services.AddAuthentication("SinhVienScheme")
+    .AddCookie("SinhVienScheme", o =>
+    {
+        o.LoginPath = "/Login/SinhVien";
+        o.Cookie.Name = "SinhVienAuthCookie";
+        o.ExpireTimeSpan = TimeSpan.FromDays(30);
+    });
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

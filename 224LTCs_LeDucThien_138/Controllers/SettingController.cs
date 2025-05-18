@@ -143,6 +143,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return RedirectToAction("AdminSetting", "Setting");
         }
 
+        [Authorize(Roles = "SinhVien")]
         public IActionResult SinhVienSetting()
         {
             string MaSV = "22010222101";
@@ -156,6 +157,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return View(sv);
         }
 
+        [Authorize(Roles = "SinhVien")]
         public IActionResult UpdateTaiKhoanSinhVien()
         {
             {
@@ -171,6 +173,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             }
         }
 
+        [Authorize(Roles = "SinhVien")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult SuaSinhVien(SinhVien sinhVien)
@@ -191,6 +194,7 @@ namespace _224LTCs_LeDucThien_138.Controllers
             return RedirectToAction("Index", "SinhVien");
         }
 
+        [Authorize(Roles = "SinhVien")]
         [HttpPost]
         public IActionResult UploadAvatarTaiKhoanSinhVien(IFormFile Anh)
         {

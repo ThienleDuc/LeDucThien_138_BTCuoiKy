@@ -38,14 +38,19 @@
                                 {
                                     <li><a class="dropdown-item" asp-area="" asp-action="AdminSetting" asp-controller="Setting"><i class="fa-solid fa-gear"></i><span class="ps-1">Cài đặt</span></a></li>
                                     <li><hr class="dropdown-divider" /></li>
-                                }
-                                <form method="post" asp-action="Logout" asp-controller="Login">
+                                    <form method="post" asp-action="AdminLogout" asp-controller="Login">
                                         <li><button type="submit" class="dropdown-item"><i class="fa-solid fa-right-from-bracket"></i><span class="ps-1">Logout</span></button></li>
                                     </form>
+                                } else if (User.IsInRole("SinhVien"))
+                                {
+                                    <li><a class="dropdown-item" asp-area="" asp-action="SinhVienSetting" asp-controller="Setting"><i class="fa-solid fa-gear"></i><span class="ps-1">Cài đặt</span></a></li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <form method="post" asp-action="SinhVienLogout" asp-controller="Login">
+                                    <li><button type="submit" class="dropdown-item"><i class="fa-solid fa-right-from-bracket"></i><span class="ps-1">Logout</span></button></li>
+                                    </form>
+                                }
                             } else
                             {
-                                <li><a class="dropdown-item" asp-area="" asp-action="SinhVienSetting" asp-controller="Setting"><i class="fa-solid fa-gear"></i><span class="ps-1">Cài đặt</span></a></li>
-                                <li><hr class="dropdown-divider" /></li>
                                 <li class="dropdown-item-text">Chưa đăng nhập!</li>
 
                             }
