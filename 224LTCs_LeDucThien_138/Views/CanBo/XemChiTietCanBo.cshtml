@@ -14,7 +14,7 @@
         </li>
         <li class="breadcrumb-item active">Xem chi tiết</li>
     </ol>
-    <div class="row mb-4">
+    <div class="row mb-3">
         <!-- Card Ảnh Đại Diện -->
         <div class="col-md-3">
             <div class="card shadow rounded-4 text-center mb-2">
@@ -98,5 +98,73 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="row mb-3">
+        @foreach (var hp in Model.DanhSachHocPhan)
+        {
+            var lichDayList = Model.LichDayTheoHocPhan.ContainsKey(hp.MaHP) ? Model.LichDayTheoHocPhan[hp.MaHP] : new List<LopHocPhan>();
+
+            @if (lichDayList.Any())
+            {
+                <div class="mb-3">
+                    <div class="card shadow rounded-4">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <small>
+                                    <strong class="text-danger">*Thông tin:</strong> Danh sách lớp học phần thuộc học kỳ @hp.TenHP.
+                                </small>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover">
+                                    <thead class="table-secondary">
+                                        <tr>
+                                            <th>Mã LHP</th>
+                                            <th>Tên môn học</th>
+                                            <th>Thứ</th>
+                                            <th>Từ tiết</th>
+                                            <th>Đến tiết</th>
+                                            <th>Giảng viên</th>
+                                            <th>Phòng</th>
+                                            <th>Ngày học</th>
+                                            <th>Ghi chú</th>
+                                            <th class="text-center">Xem</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tableBody">
+                                        @for (int i = 0; i < lichDayList.Count; i++)
+                                        {
+                                            var ld = lichDayList[i];
+                                            <tr class="data-row @(i >= 10 ? "d-none" : "")">
+                                                <td>@ld.MaLHP</td>
+                                                <td>@ld.TenMH</td>
+                                                <td class="text-center">@ld.ThuNgay</td>
+                                                <td class="text-center">@ld.TietBatDau</td>
+                                                <td class="text-center">@ld.TietKetThuc</td>
+                                                <td>@ld.TenCB</td>
+                                                <td class="text-center">@ld.TenPhong</td>
+                                                <td class="text-center">@ld.NgayHoc?.ToString("dd/MM/yyyy")</td>
+                                                <td class="@(string.IsNullOrEmpty(ld.GhiChu) ? "text-center" : "")">
+                                                    @(!string.IsNullOrEmpty(ld.GhiChu) ? ld.GhiChu : "-")
+                                                </td>
+                                                <td class="text-center">
+                                                    <a asp-action="XemChiTietLopHocPhan"
+                                                        asp-controller="LopHocPhan"
+                                                        asp-route-maLHP="@ld.MaLHP"
+                                                        class="text-decoration-none text-black">
+                                                        <i class="fa-regular fa-eye"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+
     </div>
 </div>

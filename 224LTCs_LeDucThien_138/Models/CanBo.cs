@@ -64,6 +64,10 @@ namespace _224LTCs_LeDucThien_138.Models
         [NotMapped]
         public string? TenChucVu => ChucVu?.TenChucVu;
 
+        public List<HocPhan> DanhSachHocPhan { get; set; } = new();
+        // Map MaHP -> danh sách lịch học
+        public Dictionary<string, List<LopHocPhan>> LichDayTheoHocPhan { get; set; } = new();
+
         public CanBo(string maCB, int? maHocVi, int? maChucVu, int? maKhoa, string? tenCB, bool gioiTinh, 
             DateTime? ngaySinh, string? cccd, string? diaChi, string? sdt, string? email, 
             string? matKhau, string? anh, Khoa khoa, HocVi hocVi, ChucVu chucVu)
@@ -90,10 +94,14 @@ namespace _224LTCs_LeDucThien_138.Models
     public class CanBoRepos
     {
         private ConnectionDatabase _connectionDatabase;
+        private LopHocPhanRepos _lopHocPhanRepos;
+        private HocPhanRepos _hocPhanRepos;
 
         public CanBoRepos(ConnectionDatabase connectionDatabase)
         {
             _connectionDatabase = connectionDatabase;
+            _lopHocPhanRepos = new LopHocPhanRepos(connectionDatabase);
+            _hocPhanRepos = new HocPhanRepos(_connectionDatabase);
         }
 
         public List<CanBo> GetAllCanBo()
@@ -271,6 +279,17 @@ namespace _224LTCs_LeDucThien_138.Models
                             }
                         };
                     }
+                }
+            }
+
+            if (cb != null)
+            {
+                cb.DanhSachHocPhan = _hocPhanRepos.GetHocPhanByMaxMaNK();
+
+                foreach (var hp in cb.DanhSachHocPhan)
+                {
+                    var lichday= _lopHocPhanRepos.GetLopHocPhanFiltered(maHP: hp.MaHP, maCB: maCB);
+                    cb.LichDayTheoHocPhan[hp.MaHP] = lichday;
                 }
             }
 
