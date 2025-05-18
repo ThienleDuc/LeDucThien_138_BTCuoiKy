@@ -1,0 +1,87 @@
+﻿@model _224LTCs_LeDucThien_138.Models.TaiKhoanAdmin;
+@{
+    ViewData["Title"] = "Admin - Cập nhật";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container px-4 py-4">
+    <h1 class="mt-4 text-uppercase">Thông tin chung</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item active">
+            <a asp-action="AdminSetting" asp-controller="Setting" class="btn-link link-secondary text-decoration-none">Thông tin tài khoản</a>
+        </li>
+        <li class="breadcrumb-item active">Cập nhật thông tin</li>
+    </ol>
+     <!-- Card Thông Tin -->
+    <div class="card shadow rounded-4">
+        <div class="card-body p-4">
+            <form method="post" asp-area="" asp-action="UpdateTaiKhoanAdmin" asp-controller="Setting">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="hoTen" class="form-label">Họ và Tên</label>
+                            <input type="text" class="form-control" id="hoTen" name="HoTen" value="@Model.HoTen" required />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Giới Tính</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="GioiTinh" id="nam" value="true" @(Model.GioiTinh ? "checked" : "")>
+                                <label class="form-check-label" for="nam">Nam</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="GioiTinh" id="nu" value="false" @(!Model.GioiTinh ? "checked" : "")>
+                                <label class="form-check-label" for="nu">Nữ</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="ngaySinh" class="form-label">Ngày Sinh</label>
+                            <input type="date" class="form-control" id="NgaySinh" name="NgaySinh" value="@Model.NgaySinh?.ToString("yyyy-MM-dd")" required>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 d-flex flex-column">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="sdt" class="form-label">Số Điện Thoại</label>
+                                <input type="tel" pattern="[0-9]{10}" inputmode="numeric"  class="form-control" id="sdt" maxlength="10" name="Sdt" value="@Model.Sdt" />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="Email" value="@Model.Email" required />
+                            </div>
+                        </div>
+
+                        <div class="mb-3 flex-grow-1">
+                            <div class="d-flex flex-column h-100">
+                                <label for="diaChi" class="form-label">Địa Chỉ</label>
+                                <textarea class="form-control flex-grow-1" style="resize: none;" id="diaChi" name="DiaChi">@Model.DiaChi</textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="password" class="form-label">Mật khẩu</label>
+                                <div class="input-group border rounded">
+                                    <input type="password" id="password" name="MatKhau" class="form-control border-0" value="@Model.MatKhau" placeholder="Nhập mật khẩu" required />
+                                    <span class="input-group-text" style="cursor: pointer;" id="togglePassword">
+                                        <i class="fa-solid fa-eye" id="eyeIcon"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 align-content-end">
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary fw-bold">Cập Nhật</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="~/js/TogglePassword.js"></script>

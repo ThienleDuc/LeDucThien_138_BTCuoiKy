@@ -1,0 +1,188 @@
+﻿@model _224LTCs_LeDucThien_138.Models.SinhVien
+@{
+    ViewData["Title"] = "Sinh viên - Đăng Ký LHP";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["SinhVien"] = "SinhVien-DangKyLHP";
+}
+
+<div class="container px-4">
+    <h1 class="mt-4 text-uppercase">Sinh viên</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item active">Đăng ký lớp học phần</li>
+    </ol>
+
+    <div class="mb-3">
+        <div class="card shadow">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-6 border-end border-2 border-secondary">
+                        <div class="mb-1">
+                            <strong class="text-muted pe-3">Mã Sinh Viên:</strong><span class="font-monospace">@Model.MaSV</span>
+                        </div>
+                        <div class="mb-1">
+                            <strong class="text-muted pe-3">Họ Và Tên:</strong><span class="font-monospace">@Model.TenSV</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <ul class="mb-0">
+                            <li>Tiết 1 bắt đầu từ 7h00 sáng, tiết 7 bắt đầu từ 13h00.</li>
+                            <li>Mỗi tiết học kéo dài 50 phút, nghỉ giải lao 10 phút.</li>
+                            <li>Các lớp có ghi chú H sẽ bị hủy nếu sĩ số đăng ký chưa đạt chuẩn tối thiểu.</li>
+                            <li>Các lớp có ghi chú G là lớp ghép.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mb-3">
+        <div class="card shadow">
+            <form method="post" asp-action="HuyDangKyLopHocPhan" asp-controller="SinhVien">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <small>
+                            <strong class="text-danger">*Thông tin:</strong> Danh sách lớp học phần thuộc học kỳ <strong class="text-danger">[@ViewBag.MaHP]</strong> đã đăng ký
+                        </small>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead class="table-secondary">
+                                <tr>
+                                    <th>Mã LHP</th>
+                                    <th>Tên môn học</th>
+                                    <th>Số TC</th>
+                                    <th>Thứ</th>
+                                    <th>Từ tiết</th>
+                                    <th>Đến tiết</th>
+                                    <th>Giảng viên</th>
+                                    <th>Phòng</th>
+                                    <th>Ngày học</th>
+                                    <th>Ghi chú</th>
+                                    <th class="text-center">Chọn</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                @for (int i = 0; i < Model.LichHocMoiNhat.Count; i++)
+                                {
+                                    var lh = Model.LichHocMoiNhat[i];
+                                    <tr class="data-row @(i >= 10 ? "d-none" : "")">
+                                        <td>@lh.MaLHP</td>
+                                        <td>@lh.TenMH</td>
+                                        <td class="text-center">@lh.SoTC</td>
+                                        <td class="text-center">@lh.ThuNgay</td>
+                                        <td class="text-center">@lh.TietBatDau</td>
+                                        <td class="text-center">@lh.TietKetThuc</td>
+                                        <td>@lh.TenCB</td>
+                                        <td class="text-center">@lh.TenPhong</td>
+                                        <td class="text-center">@lh.NgayHoc?.ToString("dd/MM/yyyy")</td>
+                                        <td class="@(string.IsNullOrEmpty(lh.LHP_GhiChu) ? "text-center" : "")">
+                                            @(!string.IsNullOrEmpty(lh.LHP_GhiChu) ? lh.LHP_GhiChu : "-")
+                                        </td>
+                                        <td class="text-center">
+                                            <input type="hidden" name="MaSV" value="@Model.MaSV" />
+                                            <input type="checkbox" name="MaLHPs" value="@lh.MaLHP" />
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-danger" onclick="return confirm('Bạn có chắc chắn muốn hủy các lớp học phần đã chọn?')">Hủy Bỏ</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="mb-3">
+        <div class="card shadow">
+            <form method="post" asp-action="XacNhanDangKy" asp-controller="SinhVien">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <small>
+                            <strong class="text-danger">*Thông tin:</strong> Danh sách lớp học phần thuộc học kỳ <strong class="text-danger">[@ViewBag.MaHP]</strong>
+                        </small>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead class="table-secondary">
+                                <tr>
+                                    <th>Mã LHP</th>
+                                    <th>Tên môn học</th>
+                                    <th>Số TC</th>
+                                    <th>Thứ</th>
+                                    <th>Từ tiết</th>
+                                    <th>Đến tiết</th>
+                                    <th>Giảng viên</th>
+                                    <th>Phòng</th>
+                                    <th>Ngày học</th>
+                                    <th>Ghi chú</th>
+                                    <th class="text-center">Chọn</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                @for (int i = 0; i < Model.DanhSachLopHocPhanMoiNhat.Count; i++)
+                                {
+                                    var lh = Model.DanhSachLopHocPhanMoiNhat[i];
+                                    <tr class="data-row @(i >= 10 ? "d-none" : "")">
+                                        <td>@lh.MaLHP</td>
+                                        <td>@lh.TenMH</td>
+                                        <td class="text-center">@lh.SoTC</td>
+                                        <td class="text-center">@lh.ThuNgay</td>
+                                        <td class="text-center">@lh.TietBatDau</td>
+                                        <td class="text-center">@lh.TietKetThuc</td>
+                                        <td>@lh.TenCB</td>
+                                        <td class="text-center">@lh.TenPhong</td>
+                                        <td class="text-center">@lh.NgayHoc?.ToString("dd/MM/yyyy")</td>
+                                        <td class="@(string.IsNullOrEmpty(lh.GhiChu) ? "text-center" : "")">
+                                            @(!string.IsNullOrEmpty(lh.GhiChu) ? lh.GhiChu : "-")
+                                        </td>
+                                        <td class="text-center">
+                                            <input type="checkbox" name="MaLHPs" value="@lh.MaLHP" />
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    @if (TempData["SuccessMessage"] != null)
+                    {
+                        <div class="alert alert-success alert-dismissible fade show mb-3" role="alert">
+                            @TempData["SuccessMessage"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Đóng"></button>
+                        </div>
+                    }
+
+                    @if (TempData["ErrorMessage"] != null)
+                    {
+                        <div class="alert alert-danger alert-dismissible fade show mb-3" role="alert">
+                            @TempData["ErrorMessage"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Đóng"></button>
+                        </div>
+                    }
+                    <div>
+                        <button type="submit" class="btn btn-success">Đăng Ký</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const rows = document.querySelectorAll("tr.data-row");
+
+        rows.forEach(row => {
+            row.addEventListener("click", function (e) {
+                // Nếu người dùng click vào chính checkbox thì không xử lý nữa
+                if (e.target.tagName.toLowerCase() === "input") return;
+
+                const checkbox = row.querySelector('input[type="checkbox"]');
+                if (checkbox) {
+                    checkbox.checked = !checkbox.checked;
+                }
+            });
+        });
+    });
+</script>

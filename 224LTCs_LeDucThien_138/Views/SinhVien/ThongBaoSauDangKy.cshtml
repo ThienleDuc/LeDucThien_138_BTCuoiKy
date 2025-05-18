@@ -1,0 +1,103 @@
+﻿@model _224LTCs_LeDucThien_138.Models.SinhVien
+@{
+    ViewData["Title"] = "Sinh viên - Đăng Ký LHP";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["SinhVien"] = "SinhVien-DangKyLHP";
+}
+
+<div class="container px-4">
+    <h1 class="mt-4 text-uppercase">Sinh viên</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item active">
+            <a asp-action="DangKyLopHocPhan" asp-controller="SinhVien" class="btn-link link-secondary text-decoration-none">
+                Đăng ký lớp học phần
+            </a>
+        </li>
+        <li class="breadcrumb-item active">Thông báo</li>
+    </ol>
+
+    <div class="mb-3">
+        <div class="card shadow">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-6 border-end border-2 border-secondary">
+                        <div class="mb-1">
+                            <strong class="text-muted pe-3">Mã Sinh Viên:</strong><span class="font-monospace">@Model.MaSV</span>
+                        </div>
+                        <div class="mb-1">
+                            <strong class="text-muted pe-3">Họ Và Tên:</strong><span class="font-monospace">@Model.TenSV</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <ul>
+                            @if (ViewBag.MaLHPsDaDangKy != null)
+                            {
+                                @foreach (var ma in (List<string>)ViewBag.MaLHPsDaDangKy)
+                                {
+                                    <li class="text-success">Đã đăng ký lớp học phần @ma.</li>
+                                }
+                            }
+
+                            @if (ViewBag.DanhSachLoi != null)
+                            {
+                                @foreach (var loi in (List<string>)ViewBag.DanhSachLoi)
+                                {
+                                    <li class="text-danger">@loi</li>
+                                }
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mb-3">
+        <div class="card shadow">
+            <div class="card-body">
+                <div class="mb-3">
+                    <small>
+                        <strong class="text-danger">*Thông tin:</strong> Danh sách lớp học phần thuộc học kỳ <strong class="text-danger">[@ViewBag.MaHP]</strong>
+                    </small>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead class="table-secondary">
+                            <tr>
+                                <th>Mã LHP</th>
+                                <th>Tên môn học</th>
+                                <th>Số TC</th>
+                                <th>Thứ</th>
+                                <th>Từ tiết</th>
+                                <th>Đến tiết</th>
+                                <th>Giảng viên</th>
+                                <th>Phòng</th>
+                                <th>Ngày học</th>
+                                <th>Ghi chú</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            @for (int i = 0; i < Model.LichHocMoiNhat.Count; i++)
+                            {
+                                var lh = Model.LichHocMoiNhat[i];
+                                <tr class="data-row @(i >= 10 ? "d-none" : "")">
+                                    <td>@lh.MaLHP</td>
+                                    <td>@lh.TenMH</td>
+                                    <td class="text-center">@lh.SoTC</td>
+                                    <td class="text-center">@lh.ThuNgay</td>
+                                    <td class="text-center">@lh.TietBatDau</td>
+                                    <td class="text-center">@lh.TietKetThuc</td>
+                                    <td>@lh.TenCB</td>
+                                    <td class="text-center">@lh.TenPhong</td>
+                                    <td class="text-center">@lh.NgayHoc?.ToString("dd/MM/yyyy")</td>
+                                    <td class="@(string.IsNullOrEmpty(lh.LHP_GhiChu) ? "text-center" : "")">
+                                        @(!string.IsNullOrEmpty(lh.LHP_GhiChu) ? lh.LHP_GhiChu : "-")
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

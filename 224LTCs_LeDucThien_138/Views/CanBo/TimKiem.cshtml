@@ -1,0 +1,99 @@
+﻿@model List<_224LTCs_LeDucThien_138.Models.CanBo>
+@{
+    ViewData["Title"] = "Cán bộ & Giảng viên - Tìm kiếm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["HeadCollapse"] = "CanBo";
+    ViewData["CanBo"] = "CanBo-TimKiem";
+    var tuKhoa = Context.Request.Query["TuKhoa"].ToString();
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4 text-uppercase">Cán bộ - Giảng viên</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item active">Tìm kiếm</li>
+    </ol>
+
+    <div class="card mb-4">
+        <div class="card-header text-uppercase">
+            <i class="fa-solid fa-list me-1"></i>
+            Phòng học
+        </div>
+        <div class="card-body">
+            <div class="row mb-3">
+                <div class="col-6">
+                    <div class="d-flex justify-content-start align-items-center">
+                        <select id="rowsPerPage" class="form-select w-auto">
+                            @if (Model.Count >= 50)
+                            {
+                                <option value="5">5</option>
+                                <option value="10" selected>10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                            }
+                            else if (Model.Count >= 25)
+                            {
+                                <option value="5">5</option>
+                                <option value="10" selected>10</option>
+                                <option value="25">25</option>
+                            }
+                            else if (Model.Count >= 10)
+                            {
+                                <option value="5">5</option>
+                                <option value="10" selected>10</option>
+                            }
+                            else
+                            {
+                                <option value="5" selected>5</option>
+                            }
+                        </select>
+                        <label for="rowsPerPage" class="ms-2 mb-0">Số lượng dòng trên bảng</label>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="d-flex gap-2 align-items-center justify-content-end">
+                        <form method="get" asp-action="TimKiem" asp-controller="CanBo" onsubmit="return validateSearch()">
+                            <div class="d-flex justify-content-end">
+                                <div class="d-md-inline-block form-inline flex-grow-1">
+                                    <div class="input-group">
+                                        <input id="tuKhoaInput" class="form-control" type="text" placeholder="Tìm kiếm..." aria-label="Tìm kiếm..." aria-describedby="btnNavbarSearch" name="TuKhoa" value="@tuKhoa" />
+                                        <button class="btn btn-primary" id="btnNavbarSearch" type="@(!string.IsNullOrWhiteSpace(tuKhoa) ? "submit" : "button") "><i class="fas fa-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <script>
+                            function validateSearch() {
+                                const input = document.getElementById('tuKhoaInput').value.trim();
+                                if (input === '') {
+                                    // Nếu rỗng, không cho submit
+                                    return false;
+                                }
+                                // Cho phép submit nếu có giá trị
+                                return true;
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-6 d-flex justify-content-start gap-2">
+                    <a asp-action="TimKiem" asp-controller="CanBo" class="btn border rounded bg-transparent">
+                        <i class="fa-solid fa-arrows-rotate text-success"></i> Làm mới
+                    </a>
+                    <button class="btn btn-light border rounded" data-bs-toggle="modal" data-bs-target="#filterModalCanBo">
+                        <i class="fa-solid fa-filter text-muted"></i> Lọc
+                    </button>
+                </div>
+                <div class="col-6 d-flex justify-content-end">
+                    <a asp-action="ThemCanBo" asp-controller="CanBo" class="btn bg-success text-light fw-bold font-monospace">
+                        <i class="fa-solid fa-plus"></i> Thêm Mới
+                    </a>
+                </div>
+            </div>
+            <partial name="~/Views/CanBo/DanhSachCanBo.cshtml" model="Model"></partial>
+        </div>
+    </div>
+</div>
+<partial name="~/Views/CanBo/BoLocCanBo.cshtml"></partial>
+<script type="module" src="~/js/LoadCanBo.js"></script>

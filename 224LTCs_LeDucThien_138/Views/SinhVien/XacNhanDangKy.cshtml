@@ -1,0 +1,77 @@
+﻿@model _224LTCs_LeDucThien_138.Models.SinhVien
+@{
+    ViewData["Title"] = "Sinh viên - Xác Nhận";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["SinhVien"] = "SinhVien-DangKyLHP";
+}
+
+<div class="container px-4">
+    <h1 class="mt-4 text-uppercase">Sinh viên</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item active">
+            <a asp-action="DangKyLopHocPhan" asp-controller="SinhVien" class="btn-link link-secondary text-decoration-none">
+                Đăng ký lớp học phần
+            </a>
+        </li>
+        <li class="breadcrumb-item active">Xác nhận đăng ký</li>
+    </ol>
+
+    <div class="mb-3">
+        <div class="card shadow">
+            <form method="post" asp-action="DangKyLopHocPhan" asp-controller="SinhVien">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <small>
+                            <strong class="text-danger">*Thông tin:</strong> Danh sách lớp học phần thuộc học kỳ <strong class="text-danger">[@ViewBag.MaHP]</strong>
+                        </small>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead class="table-secondary">
+                                <tr>
+                                    <th>Mã LHP</th>
+                                    <th>Tên môn học</th>
+                                    <th>Số TC</th>
+                                    <th>Thứ</th>
+                                    <th>Từ tiết</th>
+                                    <th>Đến tiết</th>
+                                    <th>Giảng viên</th>
+                                    <th>Phòng</th>
+                                    <th>Ngày học</th>
+                                    <th>Ghi chú</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                @for (int i = 0; i < Model.DanhSachLopHocPhanDaChon.Count; i++)
+                                {
+                                    var lh = Model.DanhSachLopHocPhanDaChon[i];
+                                    <tr class="data-row @(i >= 10 ? "d-none" : "")">
+                                        <td>
+                                            @lh.MaLHP
+                                            <input type="hidden" name="MaLHPs" value="@lh.MaLHP" />
+                                        </td>
+                                        <td>@lh.TenMH</td>
+                                        <td class="text-center">@lh.SoTC</td>
+                                        <td class="text-center">@lh.ThuNgay</td>
+                                        <td class="text-center">@lh.TietBatDau</td>
+                                        <td class="text-center">@lh.TietKetThuc</td>
+                                        <td>@lh.TenCB</td>
+                                        <td class="text-center">@lh.TenPhong</td>
+                                        <td class="text-center">@lh.NgayHoc?.ToString("dd/MM/yyyy")</td>
+                                        <td class="@(string.IsNullOrEmpty(lh.GhiChu) ? "text-center" : "")">
+                                            @(!string.IsNullOrEmpty(lh.GhiChu) ? lh.GhiChu : "-")
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <a asp-action="DangKyLopHocPhan" asp-controller="SinhVien" class="btn btn-danger">Quay về</a>
+                        <button type="submit" class="btn btn-success">Đăng Ký</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

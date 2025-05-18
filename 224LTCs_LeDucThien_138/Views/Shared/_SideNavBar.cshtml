@@ -1,0 +1,99 @@
+﻿@using System.Security.Claims
+<nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+    <div class="sb-sidenav-menu">
+        <div class="nav">
+            <div class="sb-sidenav-menu-heading text-secondary text-uppercase fs-6">Quản lý lớp học phần</div>
+            <div class="sb-sidenav-menu-heading border-top border-secondary">Thông tin chung</div>
+            <a class="nav-link collapsed @(ViewData["HeadCollapse"] == "Home"? "active" : "")" asp-action="Index" asp-controller="Home" data-bs-toggle="collapse" data-bs-target="#collapsePhong" aria-expanded="false" aria-controls="collapsePhong">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-list"></i></div>
+                Phòng học
+                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+            </a>
+            <div class="collapse" id="collapsePhong" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                <nav class="sb-sidenav-menu-nested nav">
+                    <a class="nav-link @(ViewData["Home"] == "Home-Index" ? "active" : "")" asp-action="Index" asp-controller="Home">Danh sách</a>
+                    <a class="nav-link @(ViewData["Home"] == "Home-TimKiem" ? "active" : "")" asp-action="TimKiem" asp-controller="Home">Tìm kiếm</a>
+                </nav>
+            </div>
+            <a class="nav-link collapsed @(ViewData["HeadCollapse"] == "LopHocPhan"? "active" : "")" asp-action="Index" asp-controller="LopHocPhan" data-bs-toggle="collapse" data-bs-target="#collapseLHP" aria-expanded="false" aria-controls="collapseLHP">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-door-open"></i></div>
+                Lớp học phần
+                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+            </a>
+            <div class="collapse" id="collapseLHP" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                <nav class="sb-sidenav-menu-nested nav">
+                    <a class="nav-link @(ViewData["LopHocPhan"] == "LopHocPhan-Index" ? "active" : "")" asp-action="Index" asp-controller="LopHocPhan">Danh sách</a>
+                    <a class="nav-link @(ViewData["LopHocPhan"] == "LopHocPhan-TimKiem" ? "active" : "")" asp-action="TimKiem" asp-controller="LopHocPhan">Tìm kiếm</a>
+                </nav>
+            </div>
+
+            <a class="nav-link @(ViewData["HeadCollapse"] == "SinhVien"? "active" : "")" asp-action="Index" asp-controller="SinhVien" data-bs-toggle="collapse" data-bs-target="#collapseSinhVien" aria-expanded="false" aria-controls="collapseSinhVien">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                Sinh viên
+                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+            </a>
+            <div class="collapse" id="collapseSinhVien" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                <nav class="sb-sidenav-menu-nested nav">
+                    <a class="nav-link @(ViewData["SinhVien"] == "SinhVien-Index" ? "active" : "")" asp-action="Index" asp-controller="SinhVien">Danh sách</a>
+                    <a class="nav-link @(ViewData["SinhVien"] == "SinhVien-TimKiem" ? "active" : "")" asp-action="TimKiem" asp-controller="SinhVien">Tìm kiếm</a>
+                </nav>
+            </div>
+
+            <a class="nav-link collapsed @(ViewData["HeadCollapse"] == "CanBo"? "active" : "")" asp-action="Index" asp-controller="CanBo" data-bs-toggle="collapse" data-bs-target="#collapseCanBo" aria-expanded="false" aria-controls="collapseCanBo">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                Cán bộ - Giảng viên
+                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+            </a>
+            <div class="collapse" id="collapseCanBo" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                <nav class="sb-sidenav-menu-nested nav">
+                    <a class="nav-link @(ViewData["CanBo"] == "CanBo-Index" ? "active" : "")" asp-action="Index" asp-controller="CanBo">Danh sách</a>
+                    <a class="nav-link @(ViewData["CanBo"] == "CanBo-TimKiem" ? "active" : "")" asp-action="TimKiem" asp-controller="CanBo">Tìm kiếm</a>
+                </nav>
+            </div>
+
+            <div class="sb-sidenav-menu-heading border-top border-secondary">Sinh viên</div>
+
+            <a class="nav-link @(ViewData["SinhVien"] == "SinhVien-LichHoc" ? "active" : "")" asp-action="XemThoiKhoaBieu" asp-controller="SinhVien">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-calendar-days"></i></div>
+                Lịch học
+            </a>
+
+            <a class="nav-link @(ViewData["SinhVien"] == "SinhVien-DangKyLHP" ? "active" : "")" asp-action="DangKyLopHocPhan" asp-controller="SinhVien">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-registered"></i></div>
+                Đăng ký LHP
+            </a>
+
+            <div class="sb-sidenav-menu-heading border-top border-secondary">Đăng nhập</div>
+
+            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLogin" aria-expanded="false" aria-controls="collapseLogin">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-right-to-bracket"></i></div>
+                Đăng nhập
+                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+            </a>
+            <div class="collapse" id="collapseLogin" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                <nav class="sb-sidenav-menu-nested nav">
+                    <a class="nav-link" asp-action="Admin" asp-controller="Login">Admin</a>
+                    <a class="nav-link" asp-action="SinhVien" asp-controller="Login">Sinh viên</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="sb-sidenav-footer">
+        @if (User.Identity.IsAuthenticated)
+        {
+            @if (User.IsInRole("Admin"))
+            {
+                <div class="small">Đăng nhập từ: <span class="ps-1 fw-bold">@User.FindFirst(ClaimTypes.Role)?.Value</span></div>
+                <div class="small fw-bold">@User.FindFirst("HoTen")?.Value</div>
+            } else if (User.IsInRole("SinhVien"))
+            {
+                <div class="small">Đăng nhập từ: <span class="ps-1 fw-bold">@User.FindFirst(ClaimTypes.Role)?.Value</span></div>
+                <div class="small fw-bold">@User.FindFirst("TenSV")?.Value</div>
+            }
+        }
+        else
+        {
+            <div class="small fw-bold">Chưa đăng nhập</div>
+        }
+    </div>
+</nav>
