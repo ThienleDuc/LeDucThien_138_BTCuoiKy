@@ -196,8 +196,7 @@
               "ViewState": "AgIAAF0AAAAAAAAAAAAAAHQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-18T12:35:25.576Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -210,8 +209,7 @@
               "ViewState": "AgIAADkAAAAAAAAAAAAAADYAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-18T12:52:53.88Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -255,8 +253,8 @@
               "Title": "XemChiTietSinhVien.cshtml",
               "DocumentMoniker": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\SinhVien\\XemChiTietSinhVien.cshtml",
               "RelativeDocumentMoniker": "224LTCs_LeDucThien_138\\Views\\SinhVien\\XemChiTietSinhVien.cshtml",
-              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\SinhVien\\XemChiTietSinhVien.cshtml*",
-              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\SinhVien\\XemChiTietSinhVien.cshtml*",
+              "ToolTip": "D:\\WORKSPACE\\project_LTCs\\LeDucThien_138_BTCuoiKy\\224LTCs_LeDucThien_138\\Views\\SinhVien\\XemChiTietSinhVien.cshtml",
+              "RelativeToolTip": "224LTCs_LeDucThien_138\\Views\\SinhVien\\XemChiTietSinhVien.cshtml",
               "ViewState": "AgIAAFgAAAAAAAAAAAAswG0AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-18T12:38:24.188Z",

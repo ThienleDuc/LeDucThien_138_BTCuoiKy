@@ -75,28 +75,7 @@
                         <div class="col-6">
                             <div class="d-flex justify-content-start align-items-center">
                                 <select id="rowsPerPage" class="form-select w-auto">
-                                    @if (Model.DanhSachSinhVienLopHocPhan.Count >= 50)
-                                    {
-                                        <option value="5">5</option>
-                                        <option value="10" selected>10</option>
-                                        <option value="25">25</option>
-                                        <option value="50">50</option>
-                                    }
-                                    else if (Model.DanhSachSinhVienLopHocPhan.Count >= 25)
-                                    {
-                                        <option value="5">5</option>
-                                        <option value="10" selected>10</option>
-                                        <option value="25">25</option>
-                                    }
-                                    else if (Model.DanhSachSinhVienLopHocPhan.Count >= 10)
-                                    {
-                                        <option value="5">5</option>
-                                        <option value="10" selected>10</option>
-                                    }
-                                    else
-                                    {
-                                        <option value="5" selected>5</option>
-                                    }
+                                    <partial name="~/Views/Shared/LuaChonPhanTrang.cshtml" model="Model"></partial>
                                 </select>
                                 <label for="rowsPerPage" class="ms-2 mb-0">Số lượng dòng trên bảng</label>
                             </div>
